@@ -8,18 +8,18 @@ export default class App extends Component {
   render(){
     return(
       <div className="grid-container">
-        <div className="grid-nav">
+        <div className="grid-contact">
 
           <img src="instagram-icon.png" alt="IG"/><section>info@pranawellness.life</section>
         </div>
-
+        <div className="grid-nav">TEST</div>
         <div className="grid-header">
-        <div className="home-header">
-          <section className="welcomeText">WELCOME TO</section>
-          <section className="pranaText">PRANA</section>
-          <section className="wellnessText">wellness</section>
-          <section className="statementText">Focused on helping companies + individuals lead happier, healthier lives.</section>
-        </div>
+          <div className="home-header">
+            <section className="welcomeText">WELCOME TO</section>
+            <section className="pranaText">PRANA</section>
+            <section className="wellnessText">wellness</section>
+            <section className="statementText">Focused on helping companies + individuals lead happier, healthier lives.</section>
+          </div>
         </div>
 
         <div className="grid-main">
@@ -30,10 +30,14 @@ export default class App extends Component {
           <section className="home-main-header">WELLNESS SERVICES</section>
           <button>browse services</button>
         </div>
+        <div className="grid-contact">
 
+          <img src="instagram-icon.png" alt="IG"/><section>info@pranawellness.life</section>
+        </div>
         <div className="grid-footer">
         
         </div>
+        
       </div>
     )
   }

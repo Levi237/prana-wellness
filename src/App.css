@@ -13,37 +13,227 @@
   display: grid;
   width: 100vw;
   min-height: 100vh;
-  /* grid-template-rows: 46px 340px auto 200px; */
-  grid-template-rows: 46px 738px auto 256px;
-  grid-template-columns: 100vw;
+  grid-template-rows: 46px 190px 738px auto 256px;
+  /* grid-template-columns: 100vw; */
   background-color: #fff;
   grid-gap: 0;
   margin: 0;
 grid-template-areas:
-  '  nav '
-  '  header '
-  '  main '
-  '  footer ';
+  ' contact '
+  ' nav '
+  ' header '
+  ' main '
+  ' footer ';
   grid-gap: 0;
 } 
 
+@media screen and (max-width: 956px) {
+  .grid-container {
+    /* display: grid; */
+    /* width: 100vw; */
+    /* min-height: 100vh; */
+    grid-template-rows: 46px 738px auto 46px 256px;
+    /* grid-template-columns: 100vw; */
+    /* background-color: #fff; */
+    /* grid-gap: 0; */
+    /* margin: 0; */
+  grid-template-areas:
+    ' nav '
+    ' header '
+    ' main '
+    ' contact '
+    ' footer ';
+      /* grid-gap: 0; */
+  }
+}
+/*************************************************************************************************************/
+/***************************************         .grid-contact         ***************************************/
+/*************************************************************************************************************/
+.grid-contact {
+  grid-area: contact;
+  background-color: #965BA5;
+  position: relative;
+}
+.grid-contact > img {
+  height: 22px;
+  width: 22px;
+  position: absolute;
+  left: calc(100vw - 460px);
+  top: 12px;
+}
+.grid-contact > section {
+  position: absolute;
+  width: 268px;
+  height: 24px;
+  left: calc(100vw - 400px);
+  top: 12px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+/*********************************************************************************************************/
+/***************************************         .grid-nav         ***************************************/
+/*********************************************************************************************************/
 .grid-nav {
   grid-area: nav;
-  background-color: #965BA5;
+  background-color: transparent;
+  /* margin-bottom: -40px; */
 }
 
+
+@media screen and (max-width: 945px) {
+
+}
+/************************************************************************************************************/
+/***************************************         .grid-header         ***************************************/
+/************************************************************************************************************/
 .grid-header {
   grid-area: header;
   background-color: rgb(0, 0, 0, .5);
   background: url(home-header.png);
   background-size:cover;
+  margin-bottom: -50px;
+  margin-top: -190px;
 }
-
+.home-header {
+  margin-top: 109px;
+  color: #FFF;
+  text-align: center;
+}
+.home-header > .welcomeText {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 48px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  
+  color: #A0CD4D;
+}
+.home-header > .pranaText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 88px;
+  letter-spacing: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.home-header > .wellnessText {
+  font-family: 'Merriweather', sans-serif;
+  font-style: italic;
+  font-size: 65px;
+  text-transform: lowercase;
+}
+.home-header > .statementText {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 48px;
+  margin-top: 67px;
+  text-align: center;
+}
+@media screen and (max-width: 945px) {
+  .home-header > .welcomeText {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5vw;
+    line-height: 48px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    color: #A0CD4D;
+  }
+  .home-header > .pranaText {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12vw;
+    letter-spacing: 5vw;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .home-header > .wellnessText {
+    font-family: 'Merriweather', sans-serif;
+    font-style: italic;
+    font-size: 10vw;
+    text-transform: lowercase;
+  }
+  .home-header > .statementText {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 4vw;
+    line-height: 48px;
+    margin-top: 67px;
+  }
+}
+/**********************************************************************************************************/
+/***************************************         .grid-main         ***************************************/
+/**********************************************************************************************************/
 .grid-main {
   background-color: #FFF;
   padding-bottom: 108px;
+  text-align: center;
 }
 
+.home-main-top {
+  font-family: 'Merriweather', sans-serif;
+  position: absolute;
+  width: 946px;
+  height: 150px;
+  top: 709px;
+  margin: 0 calc(50vw - 473px);
+  background: #965BA5;
+  color: white;
+  font-family: Merriweather;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.home-main-header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 130px auto 50px auto;  
+  color: #965BA5;
+}
+@media screen and (max-width: 945px) {
+  .home-main-top {
+    /* font-family: 'Merriweather', sans-serif; */
+    /* position: absolute; */
+    width: 100vw;
+    height: 70px;
+    /* top: 709px; */
+    margin: 0;
+    /* background: #965BA5; */
+    /* color: white; */
+    /* font-family: Merriweather; */
+    /* font-style: italic; */
+    /* font-weight: bold; */
+    font-size: 10px;
+    line-height: 16px;
+    /* text-align: center; */
+  }
+}
+/************************************************************************************************************/
+/***************************************         .grid-footer         ***************************************/
+/************************************************************************************************************/
 .grid-footer {
   background-color: #965BA5;
 }

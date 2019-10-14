@@ -16,6 +16,7 @@ code {
 
 button {
   border: 1px solid #965BA5;
+  background-color: transparent;
   box-sizing: border-box;
   padding: 20px 50px;
   font-family: Montserrat;
@@ -33,84 +34,6 @@ button {
 
 
 
-.grid-header {
-  margin-bottom: -50px;
-}
-
-.home-header {
-  margin-top: 109px;
-  color: #FFF;
-  text-align: center;
-}
-.home-header > .welcomeText {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 48px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  font-weight: bold;
-  
-  color: #A0CD4D;
-}
-.home-header > .pranaText {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 88px;
-  letter-spacing: 50px;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-.home-header > .wellnessText {
-  font-family: 'Merriweather', sans-serif;
-  font-style: italic;
-  font-size: 65px;
-  text-transform: lowercase;
-}
-.home-header > .statementText {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 100;
-  font-size: 24px;
-  line-height: 48px;
-  margin-top: 67px;
-}
-
-
-
-.grid-main {
-  text-align: center;
-}
-.home-main-top {
-  font-family: 'Merriweather', sans-serif;
-  position: absolute;
-  width: 946px;
-  height: 150px;
-  top: 709px;
-  margin: 0 calc(50vw - 473px);
-  background: #965BA5;
-  color: white;
-  font-family: Merriweather;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 38px;
-  text-align: center;
-}
-
-.home-main-header {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 30px;
-
-  text-align: center;
-  text-transform: uppercase;
-  margin: 130px auto 50px auto;
-  
-  color: #965BA5;
-}
 
 
 
@@ -118,30 +41,4 @@ button {
 
 
 
-.grid-nav > img {
-  height: 22px;
-  width: 22px;
-  position: absolute;
-  left: calc(100vw - 460px);
-  top: 12px;
-}
-.grid-nav > section {
-  position: absolute;
-  width: 268px;
-  height: 24px;
-  left: calc(100vw - 400px);
-  top: 12px;
 
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-
-  display: flex;
-  align-items: center;
-  text-align: right;
-  text-transform: uppercase;
-
-  color: #FFFFFF;
-}
