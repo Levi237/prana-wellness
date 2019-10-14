@@ -10,7 +10,7 @@ export default class App extends Component {
       <div className="grid-container">
         <div className="grid-nav">
 
-          <img src="instagram-icon.png"/><section>info@pranawellness.life</section>
+          <img src="instagram-icon.png" alt="IG"/><section>info@pranawellness.life</section>
         </div>
 
         <div className="grid-header">
@@ -28,6 +28,7 @@ export default class App extends Component {
             Prana is seen as a universal energy which flows in currents in and around the body.
           </div>
           <section className="home-main-header">WELLNESS SERVICES</section>
+          <button>browse services</button>
         </div>
 
         <div className="grid-footer">
