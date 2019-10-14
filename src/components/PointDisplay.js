@@ -21,7 +21,7 @@ export default class PointDisplay extends Component {
             largeText: "Breathing",
             image: "point-placeholder.png"
         }]
-        }
+    }
     render(){
         const { points } = this.state
         console.log(points);
@@ -31,7 +31,7 @@ export default class PointDisplay extends Component {
                     <div>
                         <section>{point.smallText}</section><section>{point.largeText}</section>
                     </div>
-                    <img className="pointBackgroundImage" src="point-placeholder.png" alt="point-box" />
+                    <img className="pointBackgroundImage" src={`${point.image}`} alt="point-box" />
                 </div>
             )
         })

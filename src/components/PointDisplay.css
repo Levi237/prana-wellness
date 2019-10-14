@@ -21,7 +21,6 @@
     position: absolute;
     z-index: 2;
     margin: 2vw;
-    /* margin: -18vw 2vw 2vw 2vw */
 }
 .point-box > div > section:first-of-type {
     font-family: 'Montserrat', sans-serif;
@@ -35,5 +34,4 @@
     font-family: 'Merriweather', sans-serif;
     font-style: italic;
     font-size: 3vw;
-    /* text-transform: lowercase; */
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import PointDisplay from './components/PointDisplay';
+import PackageDisplay from './components/PackageDisplay';
 
 import './App.css';
 
@@ -40,6 +41,9 @@ export default class App extends Component {
           <PointDisplay />
           <br /><br /><br/>
           <button>browse services</button>
+
+
+          <PackageDisplay />
         </div>
         <div className="grid-contact">
 
