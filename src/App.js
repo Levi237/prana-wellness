@@ -12,7 +12,9 @@ export default class App extends Component {
 
           <img src="instagram-icon.png" alt="IG"/><section>info@pranawellness.life</section>
         </div>
-        <div className="grid-nav">TEST</div>
+        <div className="grid-nav">
+          <div className="home-nav"><section></section><section></section><section></section></div>
+        </div>
         <div className="grid-header">
           <div className="home-header">
             <section className="welcomeText">WELCOME TO</section>
