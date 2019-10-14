@@ -98,6 +98,11 @@ grid-template-areas:
   background-color: white;
   margin: 6px 0;
 }
+.home-logo {
+  float: left;
+  margin-left: 40px;
+  margin-top: 30px;
+}
 @media screen and (max-width: 945px) {
   .home-hamburger {
     float: right;
