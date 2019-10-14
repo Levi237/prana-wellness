@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import PointDisplay from './components/PointDisplay';
+
 import './App.css';
 
 // import firebase from 'firebase/app'
@@ -9,8 +11,8 @@ export default class App extends Component {
     return(
       <div className="grid-container">
         <div className="grid-contact">
-
-          <img src="instagram-icon.png" alt="IG"/><section>info@pranawellness.life</section>
+          <img src="instagram-icon.png" alt="IG"/>
+          <section>info@pranawellness.life</section>
         </div>
         <div className="grid-nav">
           <div className="home-logo">
@@ -35,6 +37,8 @@ export default class App extends Component {
             Prana is seen as a universal energy which flows in currents in and around the body.
           </div>
           <section className="home-main-header">WELLNESS SERVICES</section>
+          <PointDisplay />
+          <br/>
           <button>browse services</button>
         </div>
         <div className="grid-contact">

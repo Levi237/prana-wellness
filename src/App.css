@@ -94,7 +94,7 @@ grid-template-areas:
 }
 .home-hamburger > section {
   width: 35px;
-  height: 5px;
+  height: 4px;
   background-color: white;
   margin: 6px 0;
 }
@@ -115,7 +115,6 @@ grid-template-areas:
 /************************************************************************************************************/
 .grid-header {
   grid-area: header;
-  background-color: rgb(0, 0, 0, .5);
   background: url(home-header.png);
   background-size:cover;
   margin-bottom: -50px;
@@ -126,23 +125,23 @@ grid-template-areas:
   color: #FFF;
   text-align: center;
 }
-.home-header > .welcomeText {
+.welcomeText, .pranaText, .statementText {
   font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: bold;
+  text-align: center;
+}
+.welcomeText, .pranaText {
+  text-transform: uppercase;
+}
+.home-header > .welcomeText {
   font-size: 28px;
   line-height: 48px;
   letter-spacing: 3px;
-  text-transform: uppercase;
   font-weight: bold;
-  
   color: #A0CD4D;
 }
 .home-header > .pranaText {
-  font-family: 'Montserrat', sans-serif;
   font-size: 88px;
   letter-spacing: 50px;
-  text-transform: uppercase;
   font-weight: 100;
 }
 .home-header > .wellnessText {
@@ -152,52 +151,30 @@ grid-template-areas:
   text-transform: lowercase;
 }
 .home-header > .statementText {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 100;
   font-size: 24px;
   line-height: 48px;
   margin-top: 67px;
-  text-align: center;
   padding: 0 10px;
 }
 @media screen and (max-width: 945px) {
   .grid-header {
-    /* grid-area: header;
-    background-color: rgb(0, 0, 0, .5);
-    background: url(home-header.png);
-    background-size:cover; */
     margin-bottom: -50px;
     margin-top: -72px;
   }
   .home-header > .welcomeText {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: bold;
     font-size: 5vw;
-    line-height: 48px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-weight: bold;
-    
-    color: #A0CD4D;
+    /* line-height: 48px; */
+    /* letter-spacing: 3px; */
   }
   .home-header > .pranaText {
-    font-family: 'Montserrat', sans-serif;
     font-size: 12vw;
     letter-spacing: 5vw;
-    text-transform: uppercase;
-    font-weight: 100;
   }
   .home-header > .wellnessText {
-    font-family: 'Merriweather', sans-serif;
-    font-style: italic;
     font-size: 10vw;
-    text-transform: lowercase;
   }
   .home-header > .statementText {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
     font-weight: 100;
     font-size: 4vw;
     line-height: 7vw;
