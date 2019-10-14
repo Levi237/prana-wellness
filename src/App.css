@@ -1,22 +1,49 @@
-.App {
-  text-align: center;
-}
+/* CREATE GRID */
+/* Grid is basic, blog styl, need nav header main footer, the rest can be inline-block */
+/* Mobile shall be scalable to screen size */
+/* Tablet to DeskTop shall be fixed content with scalable margins */
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+/*********************************************************************************************************/
+/***************************************                           ***************************************/
+/***************************************           GRID            ***************************************/
+/***************************************         CONTAINER         ***************************************/
+/***************************************                           ***************************************/
+/*********************************************************************************************************/
+.grid-container {
+  display: grid;
+  width: 100vw;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* grid-template-rows: 46px 340px auto 200px; */
+  grid-template-rows: 46px 738px auto 256px;
+  grid-template-columns: 100vw;
+  background-color: #fff;
+  grid-gap: 0;
+  margin: 0;
+grid-template-areas:
+  '  nav '
+  '  header '
+  '  main '
+  '  footer ';
+  grid-gap: 0;
+} 
+
+.grid-nav {
+  grid-area: nav;
+  background-color: #965BA5;
 }
 
-.App-link {
-  color: #09d3ac;
+.grid-header {
+  grid-area: header;
+  background-color: rgb(0, 0, 0, .5);
+  background: url(home-header.png);
+  background-size:cover;
+}
+
+.grid-main {
+  background-color: #FFF;
+  padding-bottom: 108px;
+}
+
+.grid-footer {
+  background-color: #965BA5;
 }

@@ -7,7 +7,23 @@ import './App.css';
 export default class App extends Component {
   render(){
     return(
-      <>Hello World</>
+      <div className="grid-container">
+        <div className="grid-nav">
+
+        </div>
+
+        <div className="grid-header">
+        
+        </div>
+
+        <div className="grid-main">
+        
+        </div>
+
+        <div className="grid-footer">
+        
+        </div>
+      </div>
     )
   }
 }
