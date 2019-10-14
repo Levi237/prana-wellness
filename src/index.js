@@ -31,5 +31,3 @@ import 'firebase/storage';
     document.getElementById('root'));
 
 serviceWorker.unregister();
-
-
