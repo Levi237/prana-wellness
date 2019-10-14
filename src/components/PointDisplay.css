@@ -26,10 +26,14 @@
 .point-box > div > section:first-of-type {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2vw;
+    letter-spacing: 3px;
+    margin-top: 5vw;
 }
 .point-box > div > section:last-of-type {
     font-family: 'Merriweather', sans-serif;
     font-style: italic;
-    font-size: 2.8vw;
+    font-size: 3vw;
     /* text-transform: lowercase; */
 }

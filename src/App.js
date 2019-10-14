@@ -38,7 +38,7 @@ export default class App extends Component {
           </div>
           <section className="home-main-header">WELLNESS SERVICES</section>
           <PointDisplay />
-          <br/>
+          <br /><br /><br/>
           <button>browse services</button>
         </div>
         <div className="grid-contact">
