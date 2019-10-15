@@ -25,6 +25,10 @@
 .logo-box {
   width: 160px;
 }
+.logo-box img {
+  margin: 0 10%;
+  width: 80%;
+}
 .logo-box .pranaText {
   font-size: 26px;
   letter-spacing: 11px;
@@ -34,10 +38,6 @@
 .logo-box .wellnessText {
   font-size: 14px;
   margin-top: -6px;
-}
-.logo-box img {
-  margin: 0 10%;
-  width: 80%;
 }
 /*********************************************************************************************************/
 /***************************************                           ***************************************/
