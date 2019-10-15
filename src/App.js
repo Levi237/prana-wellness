@@ -4,8 +4,10 @@ import { Switch, Route, Redirect }  from 'react-router-dom';
 import * as routes    from './constants/routes';
 import Nav            from './components/Nav'
 
-import HomeMain   from './components/Home/HomeMain';
 import HomeHeader   from './components/Home/HomeHeader';
+import HomeMain   from './components/Home/HomeMain';
+import AboutHeader   from './components/About/AboutHeader';
+import AboutMain   from './components/About/AboutMain';
 import PackageDisplay from './components/PackageDisplay';
 import MeetStephanie  from './components/MeetStephanie';
 
@@ -53,15 +55,23 @@ export default class App extends Component {
         </div>
 
         <div className="grid-header">
-        <HomeHeader />
+          <Switch>
+          
+            <Route path={routes.HOME} exact render={() => 
+                    <HomeHeader /> }/>
+            <Route path={routes.INFO} exact render={() => 
+                    <AboutHeader /> }/>
+          </Switch>
 
         </div>
 
         <div className="grid-main">
         <Switch>
-          
+          <Route path={routes.HOME} exact render={() => 
+                    <HomeMain /> }/>
+          <Route path={routes.INFO} exact render={() => 
+                    <AboutMain /> }/>
         </Switch>
-          <HomeMain />
 
           <PackageDisplay />
           <MeetStephanie />

@@ -1,7 +1,5 @@
 import React from 'react';
 
-// import PointDisplay   from '../PointDisplay';
-
  const HomeHeader = () => {
     return(<>
           <div className="home-header">
@@ -11,7 +9,6 @@ import React from 'react';
             <section className="statementText">Focused on helping companies + individuals lead happier, healthier lives.</section>
           </div>
     </>)
- 
 }
 
 export default HomeHeader

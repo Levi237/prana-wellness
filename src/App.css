@@ -49,7 +49,7 @@
   display: grid;
   width: 100vw;
   min-height: 100vh;
-  grid-template-rows: 46px 190px 738px auto 256px;
+  grid-template-rows: 46px 190px 625px auto 256px;
   /* grid-template-columns: 100vw; */
   background-color: #fff;
   grid-gap: 0;
@@ -175,15 +175,16 @@ grid-template-areas:
 /************************************************************************************************************/
 .grid-header {
   grid-area: header;
-  background: url(home-header.png);
-  background-size:cover;
-  margin-bottom: -50px;
-  margin-top: -190px;
 }
 .home-header {
-  margin-top: 109px;
+  background: url(home-header.png);
+  background-size: cover;
   color: #FFF;
   text-align: center;
+  margin-bottom: -100px;
+  margin-top: -190px;
+  height: 638px;
+  padding-top: 100px;
 }
 
 .welcomeText, .pranaText, .statementText {
@@ -254,7 +255,8 @@ grid-template-areas:
   position: absolute;
   width: 946px;
   height: 150px;
-  margin: -75px calc(50vw - 473px);
+  /* margin: -265px calc(50vw - 473px); */
+  margin: -150px calc(50vw - 473px) 0 calc(50vw - 473px);
   background: #965BA5;
   color: white;
   font-family: Merriweather;
@@ -273,7 +275,7 @@ grid-template-areas:
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
-  margin: 130px auto 50px auto;  
+  margin: 57px auto 50px auto;  
   color: #965BA5;
 }
 @media screen and (max-width: 945px) {
