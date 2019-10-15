@@ -1,5 +1,5 @@
 ## Prana Wellness
-<div style="text-align: center;">
+<div style="text-align: center; width: 100%">
 <strong>Currently in Development</strong>
 
 ![Prana Wellness Logo](mobile-prana-preview.gif) 
