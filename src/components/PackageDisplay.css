@@ -59,10 +59,38 @@ margin: 30px 5px 20px 5px;
     .price-pack-box {
         /* background: rgba(150, 91, 165, 0.15); */
         /* height: 470px; */
+        height: 90vw;
         /* margin-top: -70px; */
-        /* padding-top: 90px; */
+        padding-top: 80px;
         /* position: relative; */
         width: 80vw;
         /* margin-bottom: -70px; */
+    }
+    .price-pack-box section {
+        padding-right: 10vw;
+        padding-left: 10vw;
+    }v
+    .price-pack-box section:first-of-type {
+        /* font-family: 'Merriweather', sans-serif; */
+        /* font-weight: bold; */
+        font-size: 8vw;
+        /* margin-bottom: 5px; */
+    }
+    .price-pack-box section:nth-of-type(2) {
+        /* font-family: 'Merriweather', sans-serif; */
+        /* font-weight: bold; */
+        font-size: 5vw;
+        /* margin-bottom: 5px; */
+    }
+    .price-pack-box section:last-of-type {
+        /* font-family: 'Merriweather', sans-serif; */
+        /* font-weight: bold; */
+        font-size: 4vw;
+        /* margin-bottom: 5px; */
+        margin: 6vw auto 1vw auto;
+    }
+    .pack-container button {
+        margin-top: 0px;
+        /* position: relative; */
     }
 }

@@ -27,11 +27,18 @@
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.2vw;
-    letter-spacing: 3px;
+    letter-spacing: .5vw;
     margin-top: 5vw;
 }
 .point-box > div > section:last-of-type {
     font-family: 'Merriweather', sans-serif;
     font-style: italic;
     font-size: 3vw;
+}
+
+@media screen and (max-width: 945px) {
+    .point-box {
+        transform: scale(2);
+        margin: 12vw;
+    }
 }

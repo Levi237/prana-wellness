@@ -29,3 +29,10 @@ button {
   text-transform: uppercase;
   color: #965BA5;
 }
+
+@media screen and (max-width: 945px) {
+  button {
+    padding: 2.4vw 5.8vw;
+    font-size: 3vw;
+  }
+}
