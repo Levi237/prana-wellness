@@ -52,7 +52,11 @@ export default class App extends Component {
           <img src="instagram-icon.png" alt="IG"/><section>info@pranawellness.life</section>
         </div>
         <div className="grid-footer">
-        
+          <div className="logo-box">
+            <img src="icon_white.png" alt="icon-white" />
+            <section className="pranaText" >PRANA</section>
+            <section className="wellnessText">wellness</section>
+          </div>
         </div>
         
       </div>

@@ -2,7 +2,43 @@
 /* Grid is basic, blog styl, need nav header main footer, the rest can be inline-block */
 /* Mobile shall be scalable to screen size */
 /* Tablet to DeskTop shall be fixed content with scalable margins */
-
+/*********************************************************************************************************/
+/***************************************                           ***************************************/
+/***************************************           LOGO            ***************************************/
+/***************************************          STYLING          ***************************************/
+/***************************************                           ***************************************/
+/*********************************************************************************************************/
+.pranaText, .wellnessText {
+  text-align: center;
+  color: #FFF;
+}
+.pranaText {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.wellnessText {
+  font-family: 'Merriweather', sans-serif;
+  font-style: italic;
+  text-transform: lowercase;
+}
+.logo-box {
+  width: 160px;
+}
+.logo-box .pranaText {
+  font-size: 26px;
+  letter-spacing: 11px;
+  margin-top: -10px;
+  margin-left: 11px;
+}
+.logo-box .wellnessText {
+  font-size: 14px;
+  margin-top: -6px;
+}
+.logo-box img {
+  margin: 0 10%;
+  width: 80%;
+}
 /*********************************************************************************************************/
 /***************************************                           ***************************************/
 /***************************************           GRID            ***************************************/
@@ -125,19 +161,21 @@ grid-template-areas:
   color: #FFF;
   text-align: center;
 }
+
 .welcomeText, .pranaText, .statementText {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
-.welcomeText, .pranaText {
-  text-transform: uppercase;
-}
+
+
+
 .home-header > .welcomeText {
   font-size: 28px;
   line-height: 48px;
   letter-spacing: 3px;
   font-weight: bold;
   color: #A0CD4D;
+  text-transform: uppercase;
 }
 .home-header > .pranaText {
   font-size: 88px;
@@ -145,10 +183,7 @@ grid-template-areas:
   font-weight: 100;
 }
 .home-header > .wellnessText {
-  font-family: 'Merriweather', sans-serif;
-  font-style: italic;
   font-size: 65px;
-  text-transform: lowercase;
 }
 .home-header > .statementText {
   font-weight: 100;
@@ -219,20 +254,11 @@ grid-template-areas:
 }
 @media screen and (max-width: 945px) {
   .home-main-top {
-    /* font-family: 'Merriweather', sans-serif; */
-    /* position: absolute; */
     width: 100vw;
     height: 70px;
-    /* top: 709px; */
     margin: 0;
-    /* background: #965BA5; */
-    /* color: white; */
-    /* font-family: Merriweather; */
-    /* font-style: italic; */
-    /* font-weight: bold; */
     font-size: 10px;
     line-height: 16px;
-    /* text-align: center; */
   }
 }
 /************************************************************************************************************/
