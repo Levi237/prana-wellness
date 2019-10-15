@@ -124,6 +124,9 @@ grid-template-areas:
   z-index: 1;
   color: white;
 }
+.nav-active {
+  background-color: rgb(128, 0, 128, .5)
+}
 .home-hamburger {
   float: right;
   margin: 30px 40px 0 0;
