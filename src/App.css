@@ -27,7 +27,7 @@ grid-template-areas:
   grid-gap: 0;
 } 
 
-@media screen and (max-width: 956px) {
+@media screen and (max-width: 945px) {
   .grid-container {
     /* display: grid; */
     /* width: 100vw; */

@@ -24,7 +24,6 @@ export default class PointDisplay extends Component {
     }
     render(){
         const { points } = this.state
-        console.log(points);
         const showPoints = points.map((point, key) => {
             return(
                 <div key={key} className="point-box">
