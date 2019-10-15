@@ -1,5 +1,7 @@
 ## Prana Wellness
 **Currently in Development**
-<br />
-<!-- <img src="mobile-prana-preview.gif"> -->
+
 ![Prana Wellness Logo](mobile-prana-preview.gif)
+
+### Developer: Levi Eiko Winans
+[LeviEiko.com](http://LeviEiko.com)
