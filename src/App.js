@@ -18,7 +18,7 @@ export default class App extends Component {
         </div>
         <div className="grid-nav">
           <div className="home-logo">
-            PRANA WELLNESS LOGO PLACEHOLDER
+            LOGO
           </div>
           <div className="home-hamburger">
             <section></section><section></section><section></section>

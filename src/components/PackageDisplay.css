@@ -69,28 +69,28 @@ margin: 30px 5px 20px 5px;
     .price-pack-box section {
         padding-right: 10vw;
         padding-left: 10vw;
-    }v
+    }
     .price-pack-box section:first-of-type {
         /* font-family: 'Merriweather', sans-serif; */
         /* font-weight: bold; */
-        font-size: 8vw;
+        font-size: 7vw;
         /* margin-bottom: 5px; */
     }
     .price-pack-box section:nth-of-type(2) {
         /* font-family: 'Merriweather', sans-serif; */
         /* font-weight: bold; */
-        font-size: 5vw;
+        font-size: 4vw;
         /* margin-bottom: 5px; */
     }
     .price-pack-box section:last-of-type {
         /* font-family: 'Merriweather', sans-serif; */
         /* font-weight: bold; */
-        font-size: 4vw;
+        font-size: 3.5vw;
         /* margin-bottom: 5px; */
         margin: 6vw auto 1vw auto;
     }
     .pack-container button {
         margin-top: 0px;
-        /* position: relative; */
+        position: relative;
     }
 }
