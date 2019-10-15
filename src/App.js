@@ -2,14 +2,16 @@ import React, { Component }         from 'react';
 import { Switch, Route, Redirect }  from 'react-router-dom';
 
 import * as routes    from './constants/routes';
-import Nav            from './components/Nav'
+import Nav            from './components/Nav';
 
-import HomeHeader   from './components/Home/HomeHeader';
-import HomeMain   from './components/Home/HomeMain';
-import AboutHeader   from './components/About/AboutHeader';
-import AboutMain   from './components/About/AboutMain';
+import GlobalNav        from './components/GlobalNav';
+import HomeNav        from './components/Home/HomeNav';
+import HomeHeader     from './components/Home/HomeHeader';
+import HomeMain       from './components/Home/HomeMain';
+import AboutHeader    from './components/About/AboutHeader';
+import AboutMain      from './components/About/AboutMain';
 import PackageDisplay from './components/PackageDisplay';
-import MeetStephanie  from './components/MeetStephanie';
+
 
 import './App.css';
 
@@ -42,16 +44,14 @@ export default class App extends Component {
         </div>
 
         <div className="grid-nav">
+        <Switch>
+          <Route path={routes.HOME} exact render={() => 
+                    <HomeNav /> }/>
+          <Route path={routes.INFO} exact render={() => 
+                    <GlobalNav /> }/>
+        </Switch>
 
-          <div className="home-logo">
-            <div className="logo-box">
-              <img src="icon_white.png" alt="icon-white" />
-            </div>
-          </div>
 
-          <div className="home-hamburger">
-            <section></section><section></section><section></section>
-          </div>
         </div>
 
         <div className="grid-header">
@@ -74,7 +74,7 @@ export default class App extends Component {
         </Switch>
 
           <PackageDisplay />
-          <MeetStephanie />
+
         </div>
 
         <div className="grid-contact">

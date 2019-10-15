@@ -1,8 +1,10 @@
 import React from 'react';
 
- const AboutMain = () => {
-    return(<>
+import MeetStephanie  from '../MeetStephanie';
 
+const AboutMain = () => {
+    return(<>
+          <MeetStephanie />
     </>)
 }
 
