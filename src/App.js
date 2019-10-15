@@ -1,10 +1,16 @@
-import React, { Component } from 'react';
+import React, { Component }         from 'react';
+import { Switch, Route, Redirect }  from 'react-router-dom';
 
-import PointDisplay from './components/PointDisplay';
+import * as routes    from './constants/routes';
+import Nav            from './components/Nav'
+
+import PointDisplay   from './components/PointDisplay';
 import PackageDisplay from './components/PackageDisplay';
-import MeetStephanie from './components/MeetStephanie';
+import MeetStephanie  from './components/MeetStephanie';
 
 import './App.css';
+
+
 
 // import firebase from 'firebase/app'
 
@@ -12,6 +18,7 @@ export default class App extends Component {
   render(){
     return(
       <div className="grid-container">
+      <Nav />
         <div className="grid-contact">
           <img src="instagram-icon.png" alt="IG"/>
           <section>info@pranawellness.life</section>

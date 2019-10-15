@@ -134,7 +134,7 @@ grid-template-areas:
 .home-hamburger > section {
   width: 35px;
   height: 4px;
-  background-color: white;
+  background-color: #FFF;
   margin: 6px 0;
 }
 .home-logo {
