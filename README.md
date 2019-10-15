@@ -4,7 +4,7 @@
 <img src="mobile-prana-preview.gif"> 
 </div>
 <!-- <div size="50%"> -->
-![Prana Wellness Wireframe](wireframe.png)
+<img height="50%" width="50%" src="wireframe.png">
 <!-- </div> -->
 
 ### Developer: Levi Eiko Winans
