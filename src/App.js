@@ -4,13 +4,15 @@ import { Switch, Route, Redirect }  from 'react-router-dom';
 import * as routes    from './constants/routes';
 import Nav            from './components/Nav';
 
+
 import GlobalNav        from './components/GlobalNav';
-import HomeNav        from './components/Home/HomeNav';
-import HomeHeader     from './components/Home/HomeHeader';
-import HomeMain       from './components/Home/HomeMain';
-import AboutHeader    from './components/About/AboutHeader';
-import AboutMain      from './components/About/AboutMain';
-import PackageDisplay from './components/PackageDisplay';
+import HomeNav          from './components/home/HomeNav';
+import HomeHeader       from './components/home/HomeHeader';
+import HomeMain         from './components/home/HomeMain';
+import AboutHeader      from './components/about/AboutHeader';
+import AboutMain        from './components/about/AboutMain';
+import ServicesHeader   from './components/services/ServicesHeader';
+import PackageDisplay   from './components/PackageDisplay';
 
 
 import './App.css';
@@ -61,6 +63,8 @@ export default class App extends Component {
                     <HomeHeader /> }/>
             <Route path={routes.INFO} exact render={() => 
                     <AboutHeader /> }/>
+            <Route path={routes.SERV} exact render={() => 
+                    <ServicesHeader /> }/>
           </Switch>
 
         </div>
