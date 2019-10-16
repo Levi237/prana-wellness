@@ -2,7 +2,7 @@ import React from 'react';
 
  const AboutHeader = () => {
     return(<>
-        <img className="about-header-image" src="about-header.png" alt="about-services-image"/>
+        <img className="services-header-image" src="services-header.png" alt="services-header"/>
             </>)
 }
 

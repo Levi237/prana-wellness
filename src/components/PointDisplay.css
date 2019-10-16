@@ -3,7 +3,7 @@
     height: 20vw;
     width: 20vw;
     display: inline-block;
-    background-color: black;
+    background-color: #000;
     margin: 12px;
 }
 .point-box > img {
@@ -15,8 +15,8 @@
 .point-box > div {
     width: 16vw;
     height: 16vw;
-    color: white;
-    border: 1px solid #FFFFFF;
+    color: #FFF;
+    border: 1px solid #FFF;
     box-sizing: border-box;
     position: absolute;
     z-index: 2;

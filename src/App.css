@@ -122,9 +122,9 @@ grid-template-areas:
   background-color: transparent;
   position: relative;
   z-index: 1;
-  color: white;
+  color: #FFF;
 }
-.nav-active {
+/* .nav-active {
   background-color: rgb(128, 0, 128, .5)
 }
 .nav-container .open {
@@ -133,7 +133,7 @@ grid-template-areas:
   width: 100%;
   height: 100%;
 
-}
+} */
 .nav-container {
   position: absolute;
   right: 0;
@@ -144,8 +144,8 @@ grid-template-areas:
   height: 100%;
   overflow: hidden;
   transition: 3s ease-in-out;
-  color: white !important;
-  background-color: white;
+  /* color: #FFF !important; */
+  background-color: #FFF;
 }
 
 .home-hamburger, .global-hamburger {
@@ -157,12 +157,9 @@ grid-template-areas:
   width: 35px;
   height: 4px;
 }
-.home-hamburger > section {
-  background-color: #FFF;
-}
-.global-hamburger > section {
-  background-color: #965BA5;
-}
+.home-hamburger > section { background-color: #FFF; }
+.global-hamburger > section { background-color: #965BA5; }
+
 .header-logo > div {
   display: inline-block;
 }
@@ -313,7 +310,7 @@ grid-template-areas:
   height: 150px;
   margin: -75px calc(50vw - 473px);
   background: #965BA5;
-  color: white;
+  color: #FFF;
   font-family: Merriweather;
   font-style: italic;
   font-weight: bold;
