@@ -342,6 +342,17 @@ grid-template-areas:
     margin-bottom: 0;
     margin-top: 0;
   }
+  .home-header {
+    /* background: url(/static/media/home-header.385f136a.png); */
+    background-size: cover;
+    /* color: #FFF; */
+    /* text-align: center; */
+    /* margin-bottom: -100px; */
+    margin-top: -72px;
+    height: 400px;
+    padding-top: 100px;
+    position: absolute;
+}
   .home-header > .welcomeText {
     font-size: 5vw;
     /* line-height: 48px; */
@@ -393,8 +404,8 @@ grid-template-areas:
     /* font-size: 16px; */
     /* line-height: 30px; */
   
-    width: 100vw;
-    /* margin: 36px auto 63px auto; */
+    width: 90vw;
+    margin: 36px 5vw;
 
   }
   .main-title {
@@ -448,10 +459,22 @@ grid-template-areas:
   .home-main-top {
     width: 100vw;
     height: 70px;
-    margin: 0;
+    margin: 200px 0 0;
+    position: relative;
     font-size: 10px;
     line-height: 16px;
   }
+  .home-main-header {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 60px auto 50px auto;
+    color: #965BA5;
+}
 }
 /************************************************************************************************************/
 /***************************************         .grid-footer         ***************************************/
