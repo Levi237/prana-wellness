@@ -11,8 +11,8 @@ import HomeHeader       from './components/home/HomeHeader';
 import HomeMain         from './components/home/HomeMain';
 import AboutHeader      from './components/about/AboutHeader';
 import AboutMain        from './components/about/AboutMain';
-import ServicesHeader   from './components/services/ServicesHeader';
-import ServicesMain     from './components/services/ServicesMain';
+import WellnessHeader   from './components/wellness/WellnessHeader';
+import WellnessMain     from './components/wellness/WellnessMain';
 import PackageDisplay   from './components/PackageDisplay';
 
 
@@ -52,7 +52,7 @@ export default class App extends Component {
                     <HomeNav /> }/>
           <Route path={routes.INFO} exact render={() => 
                     <GlobalNav /> }/>
-          <Route path={routes.SERV} exact render={() => 
+          <Route path={routes.WELL} exact render={() => 
                     <GlobalNav /> }/>                    
         </Switch>
 
@@ -66,8 +66,8 @@ export default class App extends Component {
                     <HomeHeader /> }/>
             <Route path={routes.INFO} exact render={() => 
                     <AboutHeader /> }/>
-            <Route path={routes.SERV} exact render={() => 
-                    <ServicesHeader /> }/>
+            <Route path={routes.WELL} exact render={() => 
+                    <WellnessHeader /> }/>
           </Switch>
 
         </div>
@@ -78,8 +78,8 @@ export default class App extends Component {
                     <HomeMain /> }/>
           <Route path={routes.INFO} exact render={() => 
                     <AboutMain /> }/>
-          <Route path={routes.SERV} exact render={() => 
-                  <ServicesMain /> }/>
+          <Route path={routes.WELL} exact render={() => 
+                  <WellnessMain /> }/>
         </Switch>
 
           <PackageDisplay />

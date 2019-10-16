@@ -295,16 +295,16 @@ grid-template-areas:
 
   color: #4D3B5C;
 }
-.services-main-container, .services-header-purple {
+.wellness-main-container, .wellness-header-purple {
   background: rgba(150, 91, 165, 0.6);
 }
-.services-main-container {
+.wellness-main-container {
   padding-bottom: 85px;
 }
-.services-main-container > section {
+.wellness-main-container > section {
   color: #FFF;
 }
-.services-header-purple {
+.wellness-header-purple {
   height: 30px;
   position: relative;
   z-index: 0;

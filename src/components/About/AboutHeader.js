@@ -6,7 +6,7 @@ import React from 'react';
             <section className="top-header-text pranaText">THE TEAM BEHIND</section>
             <section className="bottom-header-text">Prana Wellness</section>
         </div>
-        <img className="header-image" src="about-header.png" alt="about-services-image"/>
+        <img className="header-image" src="about-header.png" alt="team image"/>
             </>)
 }
 
