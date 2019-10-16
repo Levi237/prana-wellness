@@ -470,13 +470,16 @@ grid-template-areas:
   }
   .travel-slay-logo img {
     /* position: relative; */
-    /* width: 250px */
+    width: auto;
+    height: 80px;
+    margin-bottom: -20px;
   }
   .travel-slay-logo section {
     /* font-family: Montserrat; */
     /* text-transform: uppercase; */
     /* color: #FFF; */
-    /* width: 300px; */
+    width: 100vw;
+    font-size: 12px;
     /* position: relative; */
   }
   
