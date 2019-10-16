@@ -374,7 +374,7 @@ grid-template-areas:
     font-size: 9vw;
   }
   .grid-header, .header-container {
-    height: 162;
+    height: 162px;
     text-align: center;
     overflow: hidden;
   }
