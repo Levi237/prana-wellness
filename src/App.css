@@ -52,7 +52,7 @@ grid-template-areas:
     /* display: grid; */
     /* width: 100vw; */
     /* min-height: 100vh; */
-    grid-template-rows: 72px 100vw auto 120px 60px 26px  120px;
+    grid-template-rows: 72px 162px auto 120px 60px 26px  120px;
     grid-template-columns: 100vw;
     /* background-color: #fff; */
     /* grid-gap: 0; */
@@ -203,6 +203,11 @@ grid-template-areas:
     margin-right: 20px;
     margin-top: 20px;
   }
+  .home-logo, .header-logo {
+    float: left;
+    margin-left: 1vw;
+    margin-top: 10px;
+  }
 }
 /************************************************************************************************************/
 /***************************************         .grid-header         ***************************************/
@@ -325,8 +330,8 @@ grid-template-areas:
 }
 @media screen and (max-width: 945px) {
   .grid-header {
-    margin-bottom: -50px;
-    margin-top: -72px;
+    margin-bottom: 0;
+    margin-top: 0;
   }
   .home-header > .welcomeText {
     font-size: 5vw;
@@ -346,6 +351,48 @@ grid-template-areas:
     line-height: 7vw;
     margin-top: 12vw;
   }
+
+  .header-content-container {
+    /* position: absolute; */
+    /* z-index: 11; */
+    /* text-align: center; */
+    width: 80vw;
+    margin: -100px 10vw;
+  }
+  .header-content-container > section:first-of-type {
+    font-size: 7vw;
+  }
+  .header-content-container > section:last-of-type {
+    font-size: 9vw;
+  }
+  .header-image {
+    width: 100vw;
+    margin: 0;
+    /* position: relative; */
+    z-index: 0;
+  }
+  
+  .wellness-header-purple {
+    display: none;
+  }
+  .main-cta {
+
+    /* font-size: 16px; */
+    /* line-height: 30px; */
+  
+    width: 100vw;
+    /* margin: 36px auto 63px auto; */
+
+  }
+  .main-title {
+    margin-top: 0px;
+
+    /* font-size: 36px; */
+    /* line-height: 30px; */
+    /* padding-top: 50px; */
+
+  }
+  
 }
 /**********************************************************************************************************/
 /***************************************         .grid-main         ***************************************/
@@ -484,13 +531,13 @@ grid-template-areas:
   }
   
   .logo-box {
-      /* width: 120px; */
-      height: 120px;
+      width: auto;
+      height: auto;
       text-align: center;
   }
   .logo-box img {
     /* margin: 0; */
-    width: 100px;
+    width: 75px;
   }
   .logo-box .pranaText {
     transform: scale(.8);
