@@ -25,23 +25,29 @@ import './App.css';
 
 export default class App extends Component {
   state = {
-    showNav: false,
+    // showNav: false,
   };
 
-  onClose = (e) => {
-    this.props.onClose && this.props.onClose(e);
-  };
-  showNavBar = (e) => {
-      this.setState({
-        showNav: e.currentTarget.name
-      })
+  // onClose = (e) => {
+  //   this.props.onClose && this.props.onClose(e);
+  // };
+  // showNavBar = (e) => {
+  //     this.setState({
+  //       showNav: e.currentTarget.name
+  //     })
+  // };
+  toggleHamburger = () => {
+    console.log("click")
+    const hamburgerMenu = document.getElementById('menu');
+    hamburgerMenu.classList.toggle('active');
+    hamburgerMenu.classList.toggle('inactive');
   };
   render(){
     // const { showNav } = this.state;
     return(
       <div className="grid-container">
-
-      <Nav show={this.state.showNav} onClose={this.showNavBar} />
+      <Nav toggleHamburger={this.toggleHamburger}/>
+      {/* <Nav show={this.state.showNav} onClose={this.showNavBar} /> */}
         {/* <div className="grid-contact test">
 
           <div>
@@ -54,13 +60,13 @@ export default class App extends Component {
         <div className="grid-nav">
         <Switch>
           <Route path={routes.HOME} exact render={() => 
-                    <HomeNav /> }/>
+                    <HomeNav toggleHamburger={this.toggleHamburger}/> }/>
           <Route path={routes.INFO} exact render={() => 
-                    <GlobalNav /> }/>
+                    <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>
           <Route path={routes.WELL} exact render={() => 
-                    <GlobalNav /> }/>    
+                    <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>    
           <Route path={routes.ROOT} render={() => 
-                    <HomeNav /> }/>                   
+                    <HomeNav toggleHamburger={this.toggleHamburger}/> }/>                   
         </Switch>
 
 

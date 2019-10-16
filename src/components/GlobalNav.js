@@ -1,6 +1,7 @@
 import React from 'react';
 
- const GlobalNav = () => {
+ const GlobalNav = ({ toggleHamburger }) => {
+
     return(<>
           <div className="header-logo">
             <div className="logo-box">
@@ -12,7 +13,7 @@ import React from 'react';
             </div>
           </div>
 
-          <div className="global-hamburger">
+          <div className="global-hamburger" onClick={() => toggleHamburger()}>
             <section></section><section></section><section></section>
           </div>
     </>)

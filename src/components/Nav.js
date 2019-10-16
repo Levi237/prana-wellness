@@ -1,14 +1,31 @@
-import React       from 'react';
+import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
 
 import * as routes from '../constants/routes'
 
-const Nav = () => 
-    <div className="open nav-container">
+export default class Nav extends Component {
 
-        <NavLink activeClassName="nav-active" to={routes.HOME}>HOME</NavLink>
-        <NavLink activeClassName="nav-active" to={routes.INFO}>ABOUT</NavLink>
+    // onClose = (e) => {
+    //     this.props.onClose && this.props.onClose(e);
+    // }
 
-    </div>
+    render(){
+        const { toggleHamburger } = this.props
+        // if (!this.props.showNav){
+        //     return null;
+        // }
+        
+        return(
+            <div id="menu" className="nav-container inactive">
+                <div>
+                    <button className="close xClose" onClick={() => {toggleHamburger()}}>
+                        X
+                    </button>
+                    <NavLink activeClassName="nav-active" to={routes.HOME}>HOME</NavLink>
+                    <NavLink activeClassName="nav-active" to={routes.INFO}>ABOUT</NavLink>
+                </div>
 
-export default Nav
+            </div>
+        )
+    }
+}

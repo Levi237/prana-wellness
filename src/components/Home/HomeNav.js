@@ -1,6 +1,7 @@
 import React from 'react';
 
- const HomeNav = () => {
+ const HomeNav = ({ toggleHamburger }) => {
+
     return(<>
           <div className="home-logo">
             <div className="logo-box">
@@ -8,7 +9,7 @@ import React from 'react';
             </div>
           </div>
 
-          <div className="home-hamburger">
+          <div className="home-hamburger" onClick={() => toggleHamburger()}>
             <section></section><section></section><section></section>
           </div>
     </>)
