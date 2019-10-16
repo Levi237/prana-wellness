@@ -242,18 +242,19 @@ grid-template-areas:
 .header-image {
   width: 80vw;
   margin: 0 10vw;
+  position: relative;
+  z-index: 1;
 }
 .header-content-container {
   position: absolute;
   z-index: 11;
   text-align: center;
   width: 80vw;
-  margin: 70px 10vw;
+  margin: 75px 10vw;
 }
 .top-header-text {
   font-weight: 300;
   font-size: 2.75vw;
-  /* line-height: 3.3vw; */
   text-align: center;
   letter-spacing: .4vw;
 }
@@ -267,21 +268,21 @@ grid-template-areas:
   letter-spacing: 1px;
   color: #FFF;
 }
-.about-title {
+.main-title {
   margin-top: -300px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
   line-height: 30px;
-  /* identical to box height, or 83% */
+  padding-top: 50px;
 
   text-align: center;
   text-transform: uppercase;
 
   color: #965BA5;
 }
-.about-cta {
+.main-cta {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 300;
@@ -293,6 +294,22 @@ grid-template-areas:
   text-align: center;
 
   color: #4D3B5C;
+}
+.services-main-container, .services-header-purple {
+  background: rgba(150, 91, 165, 0.6);
+}
+.services-main-container {
+  padding-bottom: 85px;
+}
+.services-main-container > section {
+  color: #FFF;
+}
+.services-header-purple {
+  height: 30px;
+  position: relative;
+  z-index: 0;
+  margin-top: -150px;
+  height: 210px;
 }
 @media screen and (max-width: 945px) {
   .grid-header {

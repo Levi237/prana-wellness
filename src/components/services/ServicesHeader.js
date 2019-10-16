@@ -7,6 +7,7 @@ import React from 'react';
             <section className="bottom-header-text">Personal Wellness</section>
         </div>
         <img className="header-image" src="services-header.png" alt="services-header"/>
+        <div className="services-header-purple"></div>
             </>)
 }
 
