@@ -1,10 +1,9 @@
-import React, { Component }         from 'react';
-import { Switch, Route }  from 'react-router-dom';
+import React, { Component } from 'react';
+import { Switch, Route }    from 'react-router-dom';
 // import { Switch, Route, Redirect }  from 'react-router-dom';
 
-import * as routes    from './constants/routes';
-import Nav            from './components/Nav';
-
+import * as routes      from './constants/routes';
+import Nav              from './components/Nav';
 
 import GlobalNav        from './components/GlobalNav';
 import HomeNav          from './components/home/HomeNav';
@@ -16,65 +15,37 @@ import WellnessHeader   from './components/wellness/WellnessHeader';
 import WellnessMain     from './components/wellness/WellnessMain';
 import PackageDisplay   from './components/PackageDisplay';
 
-
 import './App.css';
-
-
 
 // import firebase from 'firebase/app'
 
 export default class App extends Component {
-  state = {
-    // showNav: false,
-  };
 
-  // onClose = (e) => {
-  //   this.props.onClose && this.props.onClose(e);
-  // };
-  // showNavBar = (e) => {
-  //     this.setState({
-  //       showNav: e.currentTarget.name
-  //     })
-  // };
   toggleHamburger = () => {
-    console.log("click")
     const hamburgerMenu = document.getElementById('menu');
     hamburgerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('inactive');
   };
   render(){
-    // const { showNav } = this.state;
     return(
       <div className="grid-container">
       <Nav toggleHamburger={this.toggleHamburger}/>
-      {/* <Nav show={this.state.showNav} onClose={this.showNavBar} /> */}
-        {/* <div className="grid-contact test">
-
-          <div>
-              <img src="instagram-icon.png" alt="IG"/>
-              <section>info@pranawellness.life</section>
-          </div>
-
-        </div> */}
 
         <div className="grid-nav">
-        <Switch>
-          <Route path={routes.HOME} exact render={() => 
-                    <HomeNav toggleHamburger={this.toggleHamburger}/> }/>
-          <Route path={routes.INFO} exact render={() => 
-                    <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>
-          <Route path={routes.WELL} exact render={() => 
-                    <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>    
-          <Route path={routes.ROOT} render={() => 
-                    <HomeNav toggleHamburger={this.toggleHamburger}/> }/>                   
-        </Switch>
-
-
+          <Switch>
+            <Route path={routes.HOME} exact render={() => 
+                      <HomeNav toggleHamburger={this.toggleHamburger}/> }/>
+            <Route path={routes.INFO} exact render={() => 
+                      <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>
+            <Route path={routes.WELL} exact render={() => 
+                      <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>    
+            <Route path={routes.ROOT} render={() => 
+                      <HomeNav toggleHamburger={this.toggleHamburger}/> }/>                   
+          </Switch>
         </div>
 
         <div className="grid-header">
-          <Switch>
-          
+          <Switch>         
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader /> }/>
             <Route path={routes.INFO} exact render={() => 
@@ -84,23 +55,21 @@ export default class App extends Component {
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader /> }/>                    
           </Switch>
-
         </div>
 
         <div className="grid-main">
-        <Switch>
-          <Route path={routes.HOME} exact render={() => 
-                    <HomeMain /> }/>
-          <Route path={routes.INFO} exact render={() => 
-                    <AboutMain /> }/>
-          <Route path={routes.WELL} exact render={() => 
-                    <WellnessMain /> }/>          
-          <Route path={routes.ROOT} render={() => 
-                    <HomeMain /> }/>
-        </Switch>
+          <Switch>
+            <Route path={routes.HOME} exact render={() => 
+                      <HomeMain /> }/>
+            <Route path={routes.INFO} exact render={() => 
+                      <AboutMain /> }/>
+            <Route path={routes.WELL} exact render={() => 
+                      <WellnessMain /> }/>          
+            <Route path={routes.ROOT} render={() => 
+                      <HomeMain /> }/>
+          </Switch>
 
           <PackageDisplay />
-
         </div>
 
         <div className="grid-contact">
@@ -109,8 +78,6 @@ export default class App extends Component {
           </div>
         </div>
 
-
-
         <div className="grid-footer-left">
           <div className="logo-box">
             <img src="icon_white.png" alt="icon-white" />
@@ -118,9 +85,11 @@ export default class App extends Component {
             <section className="wellnessText">wellness</section>
           </div>
         </div>
+
         <div className="grid-footer-mid">
             <input placeholder="Email Here"/>
         </div>
+
         <div className="grid-footer-right">
           <div className="travel-slay-logo">
             <img src="travel_slay_white.png" alt="Travel Slay" />
