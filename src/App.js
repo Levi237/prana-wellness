@@ -92,11 +92,19 @@ export default class App extends Component {
 
 
 
-        <div className="grid-footer">
+        <div className="grid-footer-left">
           <div className="logo-box">
             <img src="icon_white.png" alt="icon-white" />
             <section className="pranaText" >PRANA</section>
             <section className="wellnessText">wellness</section>
+          </div>
+        </div>
+        <div className="grid-footer-mid"></div>
+        <div className="grid-footer-right">
+          <div className="travel-slay-logo">
+            <img src="travel_slay_white.png" alt="Travel Slay" />
+            <section>explore fitness + training</section>
+            <section>with Stephanie erazo</section>
           </div>
         </div>
         
