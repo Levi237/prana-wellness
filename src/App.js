@@ -1,5 +1,6 @@
 import React, { Component }         from 'react';
-import { Switch, Route, Redirect }  from 'react-router-dom';
+import { Switch, Route }  from 'react-router-dom';
+// import { Switch, Route, Redirect }  from 'react-router-dom';
 
 import * as routes    from './constants/routes';
 import Nav            from './components/Nav';
@@ -36,15 +37,19 @@ export default class App extends Component {
       })
   };
   render(){
-    const { showNav } = this.state;
+    // const { showNav } = this.state;
     return(
       <div className="grid-container">
 
       <Nav show={this.state.showNav} onClose={this.showNavBar} />
-        <div className="grid-contact">
-          <img src="instagram-icon.png" alt="IG"/>
-          <section>info@pranawellness.life</section>
-        </div>
+        {/* <div className="grid-contact test">
+
+          <div>
+              <img src="instagram-icon.png" alt="IG"/>
+              <section>info@pranawellness.life</section>
+          </div>
+
+        </div> */}
 
         <div className="grid-nav">
         <Switch>
@@ -53,7 +58,9 @@ export default class App extends Component {
           <Route path={routes.INFO} exact render={() => 
                     <GlobalNav /> }/>
           <Route path={routes.WELL} exact render={() => 
-                    <GlobalNav /> }/>                    
+                    <GlobalNav /> }/>    
+          <Route path={routes.ROOT} render={() => 
+                    <HomeNav /> }/>                   
         </Switch>
 
 
@@ -68,6 +75,8 @@ export default class App extends Component {
                     <AboutHeader /> }/>
             <Route path={routes.WELL} exact render={() => 
                     <WellnessHeader /> }/>
+            <Route path={routes.ROOT} render={() => 
+                    <HomeHeader /> }/>                    
           </Switch>
 
         </div>
@@ -79,7 +88,9 @@ export default class App extends Component {
           <Route path={routes.INFO} exact render={() => 
                     <AboutMain /> }/>
           <Route path={routes.WELL} exact render={() => 
-                  <WellnessMain /> }/>
+                    <WellnessMain /> }/>          
+          <Route path={routes.ROOT} render={() => 
+                    <HomeMain /> }/>
         </Switch>
 
           <PackageDisplay />
@@ -87,7 +98,9 @@ export default class App extends Component {
         </div>
 
         <div className="grid-contact">
-          <img src="instagram-icon.png" alt="IG"/><section>info@pranawellness.life</section>
+          <div>
+            <img src="instagram-icon.png" alt="IG"/><section>info@pranawellness.life</section>
+          </div>
         </div>
 
 
@@ -99,7 +112,9 @@ export default class App extends Component {
             <section className="wellnessText">wellness</section>
           </div>
         </div>
-        <div className="grid-footer-mid"></div>
+        <div className="grid-footer-mid">
+            <input placeholder="Email Here"/>
+        </div>
         <div className="grid-footer-right">
           <div className="travel-slay-logo">
             <img src="travel_slay_white.png" alt="Travel Slay" />

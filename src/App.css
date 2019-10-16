@@ -22,23 +22,7 @@
   font-style: italic;
   text-transform: lowercase;
 }
-.logo-box {
-  width: 140px;
-}
-.logo-box img {
-  margin: 0;
-  width: 100%;
-}
-.logo-box .pranaText {
-  font-size: 26px;
-  letter-spacing: 11px;
-  margin-top: -10px;
-  margin-left: 11px;
-}
-.logo-box .wellnessText {
-  font-size: 14px;
-  margin-top: -6px;
-}
+
 /*********************************************************************************************************/
 /***************************************                           ***************************************/
 /***************************************           GRID            ***************************************/
@@ -68,7 +52,7 @@ grid-template-areas:
     /* display: grid; */
     /* width: 100vw; */
     /* min-height: 100vh; */
-    grid-template-rows: 72px 100vw auto 100px 100px 100px  100px;
+    grid-template-rows: 72px 100vw auto 120px 60px 26px  120px;
     grid-template-columns: 100vw;
     /* background-color: #fff; */
     /* grid-gap: 0; */
@@ -92,29 +76,55 @@ grid-template-areas:
   background-color: #965BA5;
   position: relative;
 }
-.grid-contact > img {
+.grid-contact > div {
+  position: relative;
+  width: 380px;
+  margin-left: calc(90vw - 380px);
+}
+.grid-contact > div > img {
   height: 22px;
   width: 22px;
   position: absolute;
-  left: calc(100vw - 460px);
+  left: 0;
   top: 12px;
 }
-.grid-contact > section {
+.grid-contact > div > section {
   position: absolute;
-  width: 268px;
-  height: 24px;
-  left: calc(100vw - 400px);
+  right: 0;
   top: 12px;
+  width: 278px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
-  line-height: 30px;
-  display: flex;
-  align-items: center;
-  text-align: right;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (max-width: 945px){
+  .grid-contact > div {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+  .grid-contact > div > img {
+    height: 22px;
+    width: 22px;
+    position: absolute;
+    /* left: 0; */
+    top: 0;
+  }
+  .grid-contact > div > section {
+    position: absolute;
+    /* right: 0; */
+    top: 2px;
+    width: auto;
+    /* font-family: Montserrat; */
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    font-size: 16px;
+    /* text-transform: uppercase; */
+    /* color: #FFFFFF; */
+  }
 }
 /*********************************************************************************************************/
 /***************************************         .grid-nav         ***************************************/
@@ -394,6 +404,7 @@ grid-template-areas:
 }
 .grid-footer-mid {
   grid-area: footer-mid;
+  text-align: center;
 }
 .grid-footer-right {
   grid-area: footer-right;
@@ -416,4 +427,77 @@ grid-template-areas:
   color: #FFF;
   width: 300px;
   position: relative;
+}
+
+.logo-box {
+  width: 150px;
+}
+.logo-box img {
+  margin: 0;
+  width: 100%;
+}
+.logo-box .pranaText {
+  font-size: 26px;
+  letter-spacing: 11px;
+  margin-top: -10px;
+  margin-left: 11px;
+}
+.logo-box .wellnessText {
+  font-size: 14px;
+  margin-top: -6px;
+}
+@media screen and (max-width: 945px) {
+  .grid-footer-left {
+    /* grid-area: footer-left; */
+    text-align: center;
+  }
+  .grid-footer-left div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .grid-footer-mid {
+    /* grid-area: footer-mid; */
+    /* text-align: center; */
+  }
+  .grid-footer-right {
+    /* grid-area: footer-right; */
+  }
+  .grid-footer-left, .grid-footer-mid, .grid-footer-right {
+    /* background-color: #965BA5; */
+  }
+  .travel-slay-logo {
+    /* text-align: center; */
+  }
+  .travel-slay-logo img {
+    /* position: relative; */
+    /* width: 250px */
+  }
+  .travel-slay-logo section {
+    /* font-family: Montserrat; */
+    /* text-transform: uppercase; */
+    /* color: #FFF; */
+    /* width: 300px; */
+    /* position: relative; */
+  }
+  
+  .logo-box {
+      /* width: 120px; */
+      height: 120px;
+      text-align: center;
+  }
+  .logo-box img {
+    /* margin: 0; */
+    width: 100px;
+  }
+  .logo-box .pranaText {
+    transform: scale(.8);
+    /* font-size: 26px; */
+    /* letter-spacing: 11px; */
+    /* margin-top: -10px; */
+    margin-left: 5px;
+  }
+  .logo-box .wellnessText {
+    /* font-size: 14px; */
+    /* margin-top: -6px; */
+  }
 }

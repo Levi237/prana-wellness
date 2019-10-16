@@ -1,6 +1,5 @@
 import React from 'react';
 
-import MeetStephanie  from '../MeetStephanie';
 
 const WellnessMain = () => {
     return(<>
