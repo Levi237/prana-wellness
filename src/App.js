@@ -12,6 +12,7 @@ import HomeMain         from './components/home/HomeMain';
 import AboutHeader      from './components/about/AboutHeader';
 import AboutMain        from './components/about/AboutMain';
 import ServicesHeader   from './components/services/ServicesHeader';
+import ServicesMain     from './components/services/ServicesMain';
 import PackageDisplay   from './components/PackageDisplay';
 
 
@@ -51,6 +52,8 @@ export default class App extends Component {
                     <HomeNav /> }/>
           <Route path={routes.INFO} exact render={() => 
                     <GlobalNav /> }/>
+          <Route path={routes.SERV} exact render={() => 
+                    <GlobalNav /> }/>                    
         </Switch>
 
 
@@ -75,6 +78,8 @@ export default class App extends Component {
                     <HomeMain /> }/>
           <Route path={routes.INFO} exact render={() => 
                     <AboutMain /> }/>
+          <Route path={routes.SERV} exact render={() => 
+                  <ServicesMain /> }/>
         </Switch>
 
           <PackageDisplay />
