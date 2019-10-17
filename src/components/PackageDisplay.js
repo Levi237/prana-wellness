@@ -9,13 +9,13 @@ export default class PackageDisplay extends Component {
             price: "$300/session",
             duration: ["1 x per month", "(6 month commitment)"],
             details: ["Can be a mix of yoga, meditation, and/or breath work", "*See add ons for additional services"],
-            image: "namaste.png",
+            image: "Namaste.png",
         },{
             title: "Karma",
             price: "$200",
             duration: ["1 x per week", "(3 month commitment)"],
             details: ["Access to online meditations", "1 lunch and learn ", "*See add ons for additional services"],
-            image: "karma.png",
+            image: "Karma.png",
         },{
             title: "Guru",
             price: "$4500",
