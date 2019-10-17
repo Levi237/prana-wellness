@@ -349,6 +349,7 @@ grid-template-areas:
     height: 400px;
     padding-top: 100px;
     position: absolute;
+    width: 100vw;
 }
   .home-header > .welcomeText {
     font-size: 5vw;
