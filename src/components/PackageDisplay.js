@@ -32,7 +32,7 @@ export default class PackageDisplay extends Component {
             })
             return(
                 <div key={key} className="pack-container">
-                    <img className="packBackgroundImage" src={`/public/${pack.image}`} alt="pack-box" />
+                    <img className="packBackgroundImage" src={`${pack.image}`} alt="pack-box" />
                     <div className="price-pack-box">
                         <section>{pack.title}</section>
                         <section>{pack.price}</section>
