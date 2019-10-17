@@ -8,6 +8,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import * as firebase from 'firebase';
 
+import 'firebase/firebase-storage'
+import 'firebase/firebase-database'
+
   firebase.initializeApp({
     apiKey: `${process.env.REACT_APP_FIREBASE_API_KEY}`,
     authDomain: "prana-wellness.firebaseapp.com",
