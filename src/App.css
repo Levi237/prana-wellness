@@ -323,7 +323,7 @@ grid-template-areas:
   color: #4D3B5C;
 }
 .wellness-main-container, .wellness-header-purple {
-  background: rgba(150, 91, 165, 0.6);
+  background: rgb(191, 158, 200);
 }
 .wellness-main-container {
   padding-bottom: 85px;
@@ -349,6 +349,7 @@ grid-template-areas:
     height: 400px;
     padding-top: 100px;
     position: absolute;
+    width: 100vw;
 }
   .home-header > .welcomeText {
     font-size: 5vw;
@@ -364,9 +365,9 @@ grid-template-areas:
   }
   .home-header > .statementText {
     font-weight: 100;
-    font-size: 4vw;
-    line-height: 7vw;
-    margin-top: 12vw;
+    font-size: 3.5vw;
+    line-height: calc(3.5vw + 5px);
+    margin-top: 8vw;
   }
 
   .header-content-container {
@@ -459,7 +460,7 @@ grid-template-areas:
     margin: 200px 0 0;
     padding: 0 5vw 5px;
     position: relative;
-    font-size: 10px;
+    font-size: 9px;
     line-height: 16px;
   }
   .home-main-header {
