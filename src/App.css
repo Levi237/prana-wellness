@@ -323,7 +323,7 @@ grid-template-areas:
   color: #4D3B5C;
 }
 .wellness-main-container, .wellness-header-purple {
-  background: rgba(150, 91, 165, 0.6);
+  background: rgb(191, 158, 200);
 }
 .wellness-main-container {
   padding-bottom: 85px;
