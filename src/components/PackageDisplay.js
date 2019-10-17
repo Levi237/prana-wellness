@@ -44,6 +44,6 @@ export default class PackageDisplay extends Component {
                 </div>
             )
         })
-        return(<></>)
+        return(<>{showPackage}</>)
     }
 }
