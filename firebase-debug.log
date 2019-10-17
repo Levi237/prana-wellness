@@ -1,0 +1,37 @@
+[debug] [2019-10-17T22:33:47.144Z] ----------------------------------------------------------------------
+[debug] [2019-10-17T22:33:47.146Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2019-10-17T22:33:47.147Z] CLI Version:   7.6.0
+[debug] [2019-10-17T22:33:47.147Z] Platform:      darwin
+[debug] [2019-10-17T22:33:47.147Z] Node Version:  v10.15.3
+[debug] [2019-10-17T22:33:47.148Z] Time:          Thu Oct 17 2019 15:33:47 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-10-17T22:33:47.148Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-17T22:33:47.158Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-17T22:33:47.158Z] > authorizing via signed-in user
+[debug] [2019-10-17T22:33:47.158Z] [iam] checking project prana-wellness for permissions ["firebase.projects.get"]
+[debug] [2019-10-17T22:33:47.160Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-10-17T22:33:47.160Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-10-17T22:33:47.405Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-17T22:33:47.426Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/prana-wellness:testIamPermissions  
+
+[debug] [2019-10-17T22:33:48.311Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-17T22:33:48.312Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/prana-wellness  
+ 
+[debug] [2019-10-17T22:33:48.693Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/Levi/GA-Proj/prana-wellness'...
+[info] 
+[debug] [2019-10-17T22:33:48.698Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/prana-wellness/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-10-17T22:33:49.305Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/Levi/GA-Proj/prana-wellness/functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: build
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-10-17T22:33:49.630Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/Levi/GA-Proj/prana-wellness/functions","node_version":"10.15.3"}
+[debug] [2019-10-17T22:33:49.630Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-10-17T22:33:49.634Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.6.1","resolution":"/Users/Levi/GA-Proj/prana-wellness/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-10-17T22:33:49.636Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/Levi/GA-Proj/prana-wellness/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-10-17T22:33:49.637Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/Levi/GA-Proj/prana-wellness/functions/node_modules/firebase-functions/lib/index.js"}

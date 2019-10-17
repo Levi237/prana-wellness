@@ -28,11 +28,11 @@ export default class PackageDisplay extends Component {
         const { pricePack } = this.state
         const showPackage = pricePack.map((pack, key) => {
             const details = pack.details.map((detail, k) => {
-                return <section>{detail}</section>
+                return <section key={k}>{detail}</section>
             })
             return(
                 <div key={key} className="pack-container">
-                    <img className="packBackgroundImage" src={`${pack.image}`} alt="pack-box" />
+                    <img className="packBackgroundImage" src={`/public/${pack.image}`} alt="pack-box" />
                     <div className="price-pack-box">
                         <section>{pack.title}</section>
                         <section>{pack.price}</section>
