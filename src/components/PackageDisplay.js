@@ -21,7 +21,7 @@ export default class PackageDisplay extends Component {
             price: "$4500",
             duration: ["12 week", "intensive program"],
             details: ['“Wellness for the Working Mind”', "Combination of lunch and learns, speakers, wellness classes, and team building exercises Access to various online wellness resources- yoga, stretching, breath work, meditation", "*Customizable, pricing may vary*"],
-            image: "guru.png",
+            image: "Guru.png",
         }]
     }
     render(){
