@@ -1,6 +1,7 @@
 import React from 'react';
 
 import PointDisplay   from './PointDisplay';
+import LotusDisplay   from './LotusDisplay';
 
  const HomeMain = () => {
     return(<>
@@ -13,6 +14,7 @@ import PointDisplay   from './PointDisplay';
         <br /><br /><br/>
         <button>browse services</button>
         <br /><br /><br/>
+        <LotusDisplay />
     </>)
  
 }

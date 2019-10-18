@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './PointDisplay.css'
+import './LotusDisplay.css'
 
 export default class PointDisplay extends Component {
     state = {
@@ -10,24 +10,28 @@ export default class PointDisplay extends Component {
 
             return(
                 <div className="lotus-box">
-
+                    <div></div>
                     <div>
-                       <section></section>
-                       <section></section>
+                       <section>WANT TO SEE WELLNESS IN YOUR WORKPLACE?</section>
+                       <section>With two unique options for incorporating Prana Wellness into your daily routine, we can help you achieve a more healthy and mindful lifestyle.</section>
                     </div>
 
                     <section>
-                        <img className="pointBackgroundImage" src="lotus-half-pink.png" alt="point-box" />
-                        <div></div>
-                        <section></section>
-                        <button></button>
+                        <img className="" src="lotus_half_pink.png" alt="lotus_half_pink" />
+                        <div>Corporate Wellness</div>
+                        <section>
+                            can help your company implement an engaging wellness program for all employees to enjoy.
+                        </section>
+                        <button>explore workplace plans</button>
                     </section>
 
                     <section>
-                        <img className="pointBackgroundImage" src="lotus-half-white.png" alt="point-box" />
-                        <div></div>
-                        <section></section>
-                        <button></button>
+                        <img className="" src="lotus_half_white.png" alt="lotus_half_white" />
+                        <div>Individual Wellness</div>
+                        <section>
+                            can help you identify ways to incorporate the practice outside of work and into all areas of your life.
+                        </section>
+                        <button>explore individual plans</button>
                     </section>
 
                 </div>
