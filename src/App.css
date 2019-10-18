@@ -517,7 +517,8 @@ grid-template-areas:
   background-color: #965BA5;
 }
 .travel-slay-logo {
-  text-align: center;
+  /* text-align: center; */
+  margin-left: 1vw;
 }
 .travel-slay-logo img {
   position: relative;
