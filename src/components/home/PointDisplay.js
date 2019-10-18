@@ -5,8 +5,8 @@ import './PointDisplay.css'
 export default class PointDisplay extends Component {
     state = {
         points: [{ 
-            smallText: "Corporate",
-            largeText: "Wellness",
+            smallText: "Mindful",
+            largeText: "Breathing",
             image: "point-placeholder.png"
         },{
             smallText: "Invigorating",
@@ -17,8 +17,8 @@ export default class PointDisplay extends Component {
             largeText: "Meditation",
             image: "point-placeholder.png"
         },{
-            smallText: "Mindful",
-            largeText: "Breathing",
+            smallText: "Lunch +",
+            largeText: "Learn",
             image: "point-placeholder.png"
         }]
     }

@@ -498,7 +498,8 @@ grid-template-areas:
   color: #A0CD4D;
 }
 .grid-footer-mid > input {
-  width: 428px;
+  width: 90%;
+  max-width: 428px;
   height: 56px;
 
   font-family: Montserrat;

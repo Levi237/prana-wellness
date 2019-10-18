@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PointDisplay   from '../PointDisplay';
+import PointDisplay   from './PointDisplay';
 
  const HomeMain = () => {
     return(<>
