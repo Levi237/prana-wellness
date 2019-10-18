@@ -41,6 +41,8 @@ export default class App extends Component {
                       <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>
             <Route path={routes.WELL} exact render={() => 
                       <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>    
+            <Route path={routes.CORP} exact render={() => 
+                      <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>    
             <Route path={routes.ROOT} render={() => 
                       <HomeNav toggleHamburger={this.toggleHamburger}/> }/>                   
           </Switch>
