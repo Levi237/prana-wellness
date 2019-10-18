@@ -1,10 +1,13 @@
 import React from 'react';
 
+import BenefitsDisplay from './BenefitsDisplay'
 
 const CorporateMain = () => {
     return(<>
-          <div className="corporate-main-container">
-
+          <div className="about-main-container">
+          <div className="main-title">
+            <BenefitsDisplay />
+          </div>
           </div>
     </>)
 }

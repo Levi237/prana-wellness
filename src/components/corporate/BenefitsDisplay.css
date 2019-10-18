@@ -1,5 +1,6 @@
 .benefits-box {
     width: 100vw;
+    margin-top: -10vw;
 }
 .benefits-box > section {
     font-family: Montserrat;
