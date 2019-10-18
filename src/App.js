@@ -87,6 +87,7 @@ export default class App extends Component {
         </div>
 
         <div className="grid-footer-mid">
+        <section>sign up for our WELLNESS NEWSLETTER </section>
             <input placeholder="Email Here"/>
         </div>
 
