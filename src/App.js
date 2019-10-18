@@ -15,7 +15,6 @@ import CorporateHeader  from './components/corporate/CorporateHeader';
 import CorporateMain    from './components/corporate/CorporateMain';
 import WellnessHeader   from './components/wellness/WellnessHeader';
 import WellnessMain     from './components/wellness/WellnessMain';
-import PackageDisplay   from './components/PackageDisplay';
 
 import './App.css';
 
@@ -76,10 +75,6 @@ export default class App extends Component {
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>
-              <br/>
-              <br/>
-              <br/>
-          <PackageDisplay />
         </div>
 
         <div className="grid-contact">
