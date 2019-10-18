@@ -57,18 +57,22 @@
 
 
 .lotus-box > section {
-    width: 50vw;
+    width: 37vw;
     display: inline-block;
-    height: 60vw;
+    height: 65vw;
     max-height: 957px;
     position: relative;
 
 }
 .lotus-box > section:first-of-type {
     background-color: transparent;
+    text-align: right;
+    padding: 0 2.5vw 0 4vw;
 }
 .lotus-box > section:last-of-type {
-    background-color: rgba(150, 91, 165, 0.6);;
+    background-color: rgba(150, 91, 165, 0.6);
+    text-align: left;
+    padding: 0 4vw 0 2.5vw;
 }
 
 .lotus-box img {
@@ -95,7 +99,7 @@
     margin-top: 40vw;
     margin-bottom: 2.2vw;
     color: #744A9E;
-    padding: 0 2.5vw;
+    /* padding: 0 2.5vw; */
 }
 .lotus-box > section:first-of-type > div {
     text-align: right;
@@ -107,12 +111,12 @@
     color: #744A9E;
     text-align: right;
 
-    padding: 0 2.5vw 0 4vw;
+    /* padding: 0 2.5vw 0 4vw; */
 }
 .lotus-box > section:last-of-type > section {
     color: #FFF;
     text-align: left;
-    padding: 0 4vw 0 2.5vw;
+    /* padding: 0 4vw 0 2.5vw; */
 }
 
 .lotus-box button {
