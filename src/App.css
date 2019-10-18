@@ -270,6 +270,11 @@ grid-template-areas:
   margin-top: 67px;
   padding: 0 10px;
 }
+.ctaBtn {
+  background-color: #A0CD4D !important;
+  border-color: #669F35;
+  color: #FFF;
+}
 .header-image {
   width: 80vw;
   margin: 0 10vw;
