@@ -25,6 +25,7 @@ export default class Nav extends Component {
                     <NavLink activeClassName="nav-active" to={routes.HOME} onClick={() => {toggleHamburger()}}>HOME</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.INFO} onClick={() => {toggleHamburger()}}>ABOUT</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.WELL} onClick={() => {toggleHamburger()}}>WELLNESS</NavLink>
+                    <NavLink activeClassName="nav-active" to={routes.CORP} onClick={() => {toggleHamburger()}}>CORPORATE WELLNESS</NavLink>
                 </div>
 
             </div>

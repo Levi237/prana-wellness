@@ -11,6 +11,8 @@ import HomeHeader       from './components/home/HomeHeader';
 import HomeMain         from './components/home/HomeMain';
 import AboutHeader      from './components/about/AboutHeader';
 import AboutMain        from './components/about/AboutMain';
+import CorporateHeader  from './components/corporate/CorporateHeader';
+import CorporateMain    from './components/corporate/CorporateMain';
 import WellnessHeader   from './components/wellness/WellnessHeader';
 import WellnessMain     from './components/wellness/WellnessMain';
 import PackageDisplay   from './components/PackageDisplay';
@@ -52,6 +54,8 @@ export default class App extends Component {
                     <AboutHeader /> }/>
             <Route path={routes.WELL} exact render={() => 
                     <WellnessHeader /> }/>
+            <Route path={routes.CORP} exact render={() => 
+                    <CorporateHeader /> }/>    
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader /> }/>                    
           </Switch>
@@ -64,7 +68,9 @@ export default class App extends Component {
             <Route path={routes.INFO} exact render={() => 
                       <AboutMain /> }/>
             <Route path={routes.WELL} exact render={() => 
-                      <WellnessMain /> }/>          
+                      <WellnessMain /> }/>       
+            <Route path={routes.CORP} exact render={() => 
+                      <CorporateMain /> }/>        
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>
