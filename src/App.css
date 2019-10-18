@@ -103,20 +103,13 @@ grid-template-areas:
     height: 22px;
     width: 22px;
     position: absolute;
-    /* left: 0; */
     top: 0;
   }
   .grid-contact > div > section {
     position: absolute;
-    /* right: 0; */
     top: 2px;
     width: auto;
-    /* font-family: Montserrat; */
-    /* font-style: normal; */
-    /* font-weight: normal; */
     font-size: 16px;
-    /* text-transform: uppercase; */
-    /* color: #FFFFFF; */
   }
 }
 /*********************************************************************************************************/
@@ -254,8 +247,6 @@ grid-template-areas:
   text-align: center;
 }
 
-
-
 .home-header > .welcomeText {
   font-size: 28px;
   line-height: 48px;
@@ -369,8 +360,6 @@ grid-template-areas:
 }
   .home-header > .welcomeText {
     font-size: 5vw;
-    /* line-height: 48px; */
-    /* letter-spacing: 3px; */
   }
   .home-header > .pranaText {
     font-size: 14vw;
@@ -414,21 +403,12 @@ grid-template-areas:
     display: none;
   }
   .main-cta {
-
-    /* font-size: 16px; */
-    /* line-height: 30px; */
-  
     width: 90vw;
     margin: 36px 5vw;
 
   }
   .main-title {
     margin-top: 0px;
-
-    /* font-size: 36px; */
-    /* line-height: 30px; */
-    /* padding-top: 50px; */
-
   }
   
 }
@@ -511,7 +491,6 @@ grid-template-areas:
   font-weight: normal;
   font-size: 18px;
   line-height: 24px;
-  /* identical to box height, or 133% */
 
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -570,67 +549,39 @@ grid-template-areas:
 }
 @media screen and (max-width: 945px) {
   .grid-footer-left {
-    /* grid-area: footer-left; */
     text-align: center;
   }
   .grid-footer-left div {
     margin-left: auto;
     margin-right: auto;
   }
-  .grid-footer-mid {
-    /* grid-area: footer-mid; */
-    /* text-align: center; */
-  }
+  .grid-footer-mid {}
   .grid-footer-mid > section {
     margin: 3vw auto 1vw auto;
-    /* font-family: Montserrat; */
-    /* font-style: normal; */
     font-weight: bold;
     font-size: 3vw;
     line-height: 24px;
-    /* identical to box height, or 133% */
   
     letter-spacing: 3px;
-    /* text-transform: uppercase; */
-  
-    /* color: #A0CD4D; */
   }
   .grid-footer-mid > input {
     width: 90vw;
-    /* margin-left: 3vw; */
     height: 10vw;
   
-    /* font-family: Montserrat; */
-    /* font-style: normal; */
-    /* font-weight: 300; */
     font-size: 5vw;
     line-height: 29px;
-    
-    
-    /* color: rgba(0, 0, 0, 0.24); */
   }
-  .grid-footer-right {
-    /* grid-area: footer-right; */
-  }
-  .grid-footer-left, .grid-footer-mid, .grid-footer-right {
-    /* background-color: #965BA5; */
-  }
-  .travel-slay-logo {
-    /* text-align: center; */
-  }
+  .grid-footer-right {}
+  .grid-footer-left, .grid-footer-mid, .grid-footer-right {}
+  .travel-slay-logo {}
   .travel-slay-logo img {
-    /* position: relative; */
     width: auto;
     height: 80px;
     margin-bottom: -20px;
   }
   .travel-slay-logo section {
-    /* font-family: Montserrat; */
-    /* text-transform: uppercase; */
-    /* color: #FFF; */
     width: 100vw;
     font-size: 12px;
-    /* position: relative; */
   }
   
   .logo-box {
@@ -639,18 +590,11 @@ grid-template-areas:
       text-align: center;
   }
   .logo-box img {
-    /* margin: 0; */
     width: 75px;
   }
   .logo-box .pranaText {
     transform: scale(.8);
-    /* font-size: 26px; */
-    /* letter-spacing: 11px; */
-    /* margin-top: -10px; */
     margin-left: 5px;
   }
-  .logo-box .wellnessText {
-    /* font-size: 14px; */
-    /* margin-top: -6px; */
-  }
+  .logo-box .wellnessText {}
 }

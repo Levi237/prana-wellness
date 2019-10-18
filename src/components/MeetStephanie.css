@@ -40,8 +40,6 @@
     color: #965BA5;
 }
 .meetStephanie-container > div > div > section:nth-of-type(2) {
-    /* font-family: Montserrat; */
-    /* font-style: normal; */
     font-weight: normal;
     font-size: 1.3vw;
     line-height: 1.5vw;
@@ -50,8 +48,6 @@
     color: #FFFFFF;
 }
 .meetStephanie-container > div > div > section:nth-of-type(3) {
-    /* font-family: Montserrat; */
-    /* font-style: normal; */
     font-weight: 300;
     font-size: 1.1vw;
     line-height: 1.5vw;
@@ -59,8 +55,6 @@
     margin: 2vw 0;
 }
 .meetStephanie-container > div > div > section:nth-of-type(4) {
-    /* font-family: Montserrat; */
-    /* font-style: normal; */
     font-weight: bold;
     font-size: 1.2vw;
     line-height: 1.8vw;

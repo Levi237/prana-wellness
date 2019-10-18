@@ -53,12 +53,12 @@
     color: #669F35;
 }
 .price-pack-box section:last-of-type {
-margin: 30px auto 20px auto;
-color: #000;
-position: absolute;
-bottom: 90px;
-font-size: 1vw;
-right: 0
+    margin: 30px auto 20px auto;
+    color: #000;
+    position: absolute;
+    bottom: 90px;
+    font-size: 1vw;
+    right: 0
 }
 
 .pack-container button {
@@ -72,47 +72,27 @@ right: 0
         width: 80vw;
         margin: 0 auto 50px auto;
         display: block;
-        /* color: #965BA5; */
-        /* position: relative; */
     }
     .price-pack-box {
-        /* background: rgba(150, 91, 165, 0.15); */
-        /* height: 470px; */
         height: 90vw;
-        /* margin-top: -70px; */
         padding-top: 80px;
-        /* position: relative; */
         width: 80vw;
-        /* margin-bottom: -70px; */
     }
     .price-pack-box section {
         padding-right: 5vw;
         padding-left: 5vw;
     }
     .price-pack-box section:first-of-type {
-        /* font-family: 'Merriweather', sans-serif; */
-        /* font-weight: bold; */
         font-size: 7vw;
-        /* margin-bottom: 5px; */
     }
     .price-pack-box section {
-        /* font-family: 'Merriweather', sans-serif; */
-        /* font-weight: bold; */
-        /* color: #744A9E; */
         font-size: 4vw;
-        /* margin-bottom: 5px; */
     }
     .price-pack-box section:nth-of-type(3), .price-pack-box section:nth-of-type(4) {
-        /* margin: 2vw 0; */
         font-size: 5vw;
-
-        /* color: #669F35; */
     }
     .price-pack-box section:last-of-type {
-        /* font-family: 'Merriweather', sans-serif; */
-        /* font-weight: bold; */
         font-size: 3.5vw;
-        /* margin-bottom: 5px; */
         margin: 6vw auto 1vw auto;
         color: #000;
         position: absolute;
