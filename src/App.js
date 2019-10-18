@@ -68,7 +68,9 @@ export default class App extends Component {
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>
-
+              <br/>
+              <br/>
+              <br/>
           <PackageDisplay />
         </div>
 
