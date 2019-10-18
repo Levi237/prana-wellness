@@ -22,7 +22,8 @@ export default class PointDisplay extends Component {
                         <section>
                             can help your company implement an engaging wellness program for all employees to enjoy.
                         </section>
-                        <button>explore workplace plans</button>
+                        <button className="lotus-desktop-button">explore workplace plans</button>
+                        <button className="lotus-mobile-button">explore plans</button>
                     </section>
 
                     <section>
@@ -31,7 +32,8 @@ export default class PointDisplay extends Component {
                         <section>
                             can help you identify ways to incorporate the practice outside of work and into all areas of your life.
                         </section>
-                        <button>explore individual plans</button>
+                        <button className="lotus-desktop-button">explore individual plans</button>
+                        <button className="lotus-mobile-button">explore plans</button>
                     </section>
 
                 </div>
