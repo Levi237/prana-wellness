@@ -34,7 +34,7 @@
   width: 100vw;
   min-height: 100vh;
   grid-template-rows: 46px 144px 625px auto 256px;
-  grid-template-columns: 300px calc(100vw - 600px) 300px;
+  grid-template-columns: 300px calc(100vw - 640px) 340px;
   background-color: #fff;
   grid-gap: 0;
   margin: 0;
@@ -518,7 +518,7 @@ grid-template-areas:
 }
 .travel-slay-logo {
   /* text-align: center; */
-  margin-left: 1vw;
+  margin-left: 3vw;
 }
 .travel-slay-logo img {
   position: relative;
