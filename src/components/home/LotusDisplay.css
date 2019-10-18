@@ -13,46 +13,26 @@
     position: absolute;
 
 }
-.lotus-box > div:last-of-type > section:first-of-type {
+.lotus-box > div > section {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 2.2vw;
-    line-height: 30px;
-    width: 60vw;
-    /* identical to box height, or 83% */
-
     text-align: center;
     text-transform: uppercase;
-    /* background-color: #965BA5; */
-    /* width: 60vw; */
-    /* height: 60vw; */
-    /* border-radius: 100%; */
-    margin: 2vw 20vw;
+    width: 60vw;
+    line-height: 30px;
     position: absolute;
     z-index: 171;
     color: #FFF;
 }
+.lotus-box > div:last-of-type > section:first-of-type {
+    font-size: 2.2vw;
+    margin: 2vw 20vw;
+}
 
 .lotus-box > div:last-of-type > section:last-of-type {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
     font-size: 1vw;
-    line-height: 30px;
-    width: 60vw;
-    /* identical to box height, or 83% */
-
-    text-align: center;
-    text-transform: uppercase;
-    /* background-color: #965BA5; */
-    /* width: 60vw; */
-    /* height: 60vw; */
-    /* border-radius: 100%; */
     margin: 6vw 20vw;
-    position: absolute;
-    z-index: 171;
-    color: #FFF;
 }
 
 
@@ -62,7 +42,6 @@
     height: 65vw;
     max-height: 957px;
     position: relative;
-
 }
 .lotus-box > section:first-of-type {
     background-color: transparent;
@@ -95,11 +74,9 @@
     font-weight: normal;
     font-size: 30px;
     line-height: 32px;
-
     margin-top: 40vw;
     margin-bottom: 2.2vw;
     color: #744A9E;
-    /* padding: 0 2.5vw; */
 }
 .lotus-box > section:first-of-type > div {
     text-align: right;
@@ -109,14 +86,11 @@
 }
 .lotus-box > section:first-of-type > section {
     color: #744A9E;
-    text-align: right;
 
-    /* padding: 0 2.5vw 0 4vw; */
 }
 .lotus-box > section:last-of-type > section {
     color: #FFF;
-    text-align: left;
-    /* padding: 0 4vw 0 2.5vw; */
+
 }
 
 .lotus-box button {
