@@ -8,7 +8,7 @@ export default class BenefitsDisplay extends Component {
         return(
             <div className="benefits-box">
                 {/* <section>benefits of wellness in the workplace</section> */}
-                <img width="100%" src="benefits.png"/>
+                <img width="100%" src="benefits.png" alt="benefits"/>
             </div>
         )
     }
