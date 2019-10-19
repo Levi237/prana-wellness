@@ -6,7 +6,8 @@ extend default class EmailForm extends Component {
     }
     render() {
         return(
-            <></>
+            <>
+            </>
         )
     }
 }

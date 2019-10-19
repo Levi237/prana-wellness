@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 const divStyle = {
@@ -7,14 +7,11 @@ const divStyle = {
 };
 
 
-
-export default class BenefitsDisplay extends Component {
-
-    render(){
+const BenefitsDisplay = () => {
         return(
             <div className="benefits-box" style={divStyle}>
                 <img width="100%" src="benefits.png" alt="benefits"/>
             </div>
         )
-    }
-}
+};
+export default BenefitsDisplay;

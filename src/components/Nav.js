@@ -3,11 +3,6 @@ import { NavLink } from 'react-router-dom';
 
 import * as routes from '../constants/routes'
 
-const divStyle = {
-    background: '#744A9E',
-    color: '#FFF',
-};
-
 export default class Nav extends Component {
 
 
@@ -16,7 +11,7 @@ export default class Nav extends Component {
 
         
         return(
-            <div id="menu" className="nav-container inactive" style={divStyle}>
+            <div id="menu" className="nav-container inactive">
                 <div>
                     <button className="close xClose" onClick={() => {toggleHamburger()}}>
                          CLOSE X

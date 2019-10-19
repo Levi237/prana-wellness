@@ -7,6 +7,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 
 import * as firebase from "firebase/app";
+import * as admin from 'firebase-admin';
 
 import 'firebase/firebase-storage'
 import 'firebase/firebase-database'

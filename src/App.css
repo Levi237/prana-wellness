@@ -130,18 +130,19 @@ grid-template-areas:
   display: block;
   height: 44px;
   padding-top: 20px;
-  color: white;
+  color: #FFF;
 }
 .nav-container a:hover {
   color: #A0CD4D;
 }
 .nav-container button {
+  background: #744A9E;
   position: absolute;
   top: 5px;
   right: 5px;
   padding: 5px;
   background: transparent;
-  color: white;
+  color: #FFF;
   border: none;
   font-size: 14px;
 }
@@ -164,7 +165,7 @@ grid-template-areas:
   overflow: hidden;
   transition: .8s ease-in-out;
   background-color: #744A9E;
-  color: white;
+  color: #FFF;
 }
 .inactive {
   max-width: 0;
