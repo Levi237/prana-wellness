@@ -1,4 +1,7 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
+import * as routes from '../../constants/routes'
 
 import PointDisplay   from './PointDisplay';
 import LotusDisplay   from './LotusDisplay';
@@ -12,7 +15,7 @@ import LotusDisplay   from './LotusDisplay';
         <section className="home-main-header">WELLNESS SERVICES</section>
         <PointDisplay />
         <br /><br /><br/>
-        <button>browse services</button>
+        <NavLink to={routes.CORP}><button>browse services</button></NavLink>
         <br /><br /><br/>
         <LotusDisplay />
     </>)
