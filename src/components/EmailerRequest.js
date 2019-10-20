@@ -7,10 +7,8 @@ export default class EmailerRequest extends Component {
         email: null,
     };
 
-// Send a message to the device corresponding to the provided
-// registration token.
-handleSubmit = async (e) => {
-    e.preventDefault();
+    handleSubmit = async (e) => {
+        e.preventDefault();
         const newFromDB = await firebase.firestore()
             .collection('emailers')
             .add({
@@ -19,15 +17,13 @@ handleSubmit = async (e) => {
             })
         return newFromDB
     };
-
-
-
-handleChange = (e) => {
-    e.preventDefault();
-    this.setState({
-        email: e.currentTarget.value
-    })
-}
+    handleChange = (e) => {
+        e.preventDefault();
+        this.setState({
+            email: e.currentTarget.value
+        })
+    }
+    
     render(){
         return(
             <>
