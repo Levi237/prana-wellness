@@ -7,6 +7,7 @@ import * as routes      from './constants/routes';
 import Nav              from './components/Nav';
 
 import GlobalNav        from './components/GlobalNav';
+import EmailerRequest   from './components/EmailerRequest';
 import HomeNav          from './components/home/HomeNav';
 import HomeHeader       from './components/home/HomeHeader';
 import HomeMain         from './components/home/HomeMain';
@@ -18,6 +19,7 @@ import WellnessHeader   from './components/wellness/WellnessHeader';
 import WellnessMain     from './components/wellness/WellnessMain';
 
 import './App.css';
+
 
 // import firebase from 'firebase/app'
 
@@ -76,6 +78,7 @@ export default class App extends Component {
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>
+          
         </div>
 
         <div className="grid-contact">
@@ -94,7 +97,7 @@ export default class App extends Component {
 
         <div className="grid-footer-mid">
         <section>sign up for our WELLNESS NEWSLETTER </section>
-            <input placeholder="Email Here"/>
+        <EmailerRequest />
         </div>
 
         <div className="grid-footer-right">
