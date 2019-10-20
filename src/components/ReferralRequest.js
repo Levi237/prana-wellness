@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './ReferralRequest.css'
 
 import firebase from 'firebase/app'
-import { relative } from 'path';
+// import { relative } from 'path';
 
 const containerStyle = {
     position: 'fixed',
@@ -26,6 +26,7 @@ const formDivStyle = {
     'text-align': 'center',
 }
 
+
 export default class ReferralRequest extends Component {
     state = {
         fromName: null,
@@ -38,13 +39,14 @@ export default class ReferralRequest extends Component {
     };
 
     handleSubmit = async (e) => {
+        const { toggleReferralBtn } = this.props
         e.preventDefault();
         const newFromDB = await firebase.firestore()
             .collection('referrals')
             .add({
                 ...this.state,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            }).then(this.props.toggleReferralBtn);
+            }).then(toggleReferralBtn);
         return newFromDB
     };
     handleChange = (e) => {
@@ -56,8 +58,12 @@ export default class ReferralRequest extends Component {
     
     render(){
         const { fromName, fromEmail, toName, toEmail, businessName, subjectTitle, subjectContent } = this.state
+        const { toggleReferralBtn } = this.props
         return(
             <div id="referral" style={containerStyle} className="inactive">
+                    <button className="close xClose" onClick={() => {toggleReferralBtn()}}>
+                         CLOSE X
+                    </button>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
             <div style={formDivStyle} className="referral-box">
                 <section>FROM:</section>
@@ -67,7 +73,7 @@ export default class ReferralRequest extends Component {
                         type="text" 
                         onChange={e => {this.handleChange(e)}}
                         placeholder="Enter your name here"
-                        // required
+                        required
                         value={fromName}
                     />
                     <input
@@ -76,7 +82,7 @@ export default class ReferralRequest extends Component {
                         type="email" 
                         onChange={this.handleChange}
                         placeholder="Enter your email here"
-                        // required
+                        required
                         value={fromEmail}
                     />
                 <section>TO:</section>
@@ -86,7 +92,7 @@ export default class ReferralRequest extends Component {
                         type="text" 
                         onChange={this.handleChange}
                         placeholder="Enter referral name here"
-                        // required
+                        required
                         value={toName}
                     />
                     <input
@@ -95,7 +101,7 @@ export default class ReferralRequest extends Component {
                         type="email" 
                         onChange={this.handleChange}
                         placeholder="Enter referral email here"
-                        // required
+                        required
                         value={toEmail}
                     />
                     <input
@@ -104,7 +110,7 @@ export default class ReferralRequest extends Component {
                         type="text" 
                         onChange={this.handleChange}
                         placeholder="Enter company name here"
-                        // required
+                        required
                         value={businessName}
                     />
                 <section>SUBJECT:</section>
@@ -114,7 +120,7 @@ export default class ReferralRequest extends Component {
                         type="text" 
                         onChange={this.handleChange}
                         placeholder="Enter subject here"
-                        // required
+                        required
                         value={subjectTitle}
                     />
                     <textarea

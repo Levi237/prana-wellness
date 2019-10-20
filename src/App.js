@@ -85,7 +85,7 @@ export default class App extends Component {
             <Route path={routes.INFO} exact render={() => 
                       <AboutMain /> }/>
             <Route path={routes.WELL} exact render={() => 
-                      <WellnessMain /> }/>       
+                      <WellnessMain toggleReferralBtn={this.toggleReferralBtn}/> }/>       
             <Route path={routes.CORP} exact render={() => 
                       <CorporateMain /> }/>  
             <Route path={routes.SERV} exact render={() => 
