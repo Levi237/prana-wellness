@@ -8,6 +8,8 @@ import Nav              from './components/Nav';
 
 import GlobalNav        from './components/GlobalNav';
 import EmailerRequest   from './components/EmailerRequest';
+import ReferralRequest  from './components/ReferralRequest';
+
 import HomeNav          from './components/home/HomeNav';
 import HomeHeader       from './components/home/HomeHeader';
 import HomeMain         from './components/home/HomeMain';
@@ -32,10 +34,16 @@ export default class App extends Component {
     hamburgerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('inactive');
   };
+  toggleRferralBtn = () => {
+    const referralForm = document.getElementById('referral');
+    referralForm.classList.toggle('active');
+    referralForm.classList.toggle('inactive');
+  };
   render(){
     return(
       <div className="grid-container">
       <Nav toggleHamburger={this.toggleHamburger}/>
+      <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
 
         <div className="grid-nav">
           <Switch>
@@ -115,6 +123,6 @@ export default class App extends Component {
         </div>
         
       </div>
-    )
-  }
-}
+    );
+  };
+};

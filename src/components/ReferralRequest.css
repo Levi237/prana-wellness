@@ -1,0 +1,101 @@
+.referral-box > input {
+    /* max-width: 180px;  */
+        width: 43%;
+    height: 48px;
+    /* margin-left: 5%; */
+    border: solid lightgray 1px;
+    margin: 3px 1.5%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+
+    color: #473E4E;
+}
+.referral-box > input:last-of-type, .referral-box > input:nth-last-of-type(2) {
+    width: 90%;
+}
+
+.referral-box > textarea {
+    /* max-width: 180px;  */
+        width: 90%;
+    border: 1px solid lightgray;
+        height: 150px;
+        margin: 5px 0;
+    font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+    /* or 143% */
+
+
+    color: #473E4E;
+    margin: 5px 0 20px 0;
+    /* margin-left: 5%; */
+}
+
+.referral-box section {
+    text-align: left;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+    color: #744A9E;
+        width: 90%;
+        margin: auto;
+}
+.referral-box > button {
+    margin: 0 auto;
+        /* width: 90%; */
+}
+
+
+@media screen and (max-width: 945px) {
+    .referral-box section {
+        text-align: left;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #744A9E;
+        width: 90%;
+        margin: auto;
+    }
+    .referral-box > textarea {
+        /* max-width: 180px;  */
+        width: 90%;
+        /* border: 1px solid lightgray; */
+        height: 150px;
+        margin: 5px 0;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+    
+    
+        color: #473E4E;
+        /* margin-left: 5%; */
+    }
+    .referral-box > input {
+        /* max-width: 180px;  */
+        width: 90%;
+        height: 48px;
+        /* margin-left: 5%; */
+        /* border: solid lightgray 1px; */
+        margin: 3px 0;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+    
+    
+        /* color: #473E4E; */
+    }
+    .referral-box > button {
+        /* margin: 0 auto; */
+            width: 90%;
+    }
+    
+}
