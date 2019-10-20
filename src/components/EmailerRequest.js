@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import firebase from 'firebase/firestore'
+import firebase from 'firebase/app'
 
 export default class EmailerRequest extends Component {
     state = {
