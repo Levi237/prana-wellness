@@ -34,7 +34,8 @@ export default class App extends Component {
     hamburgerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('inactive');
   };
-  toggleRferralBtn = () => {
+  toggleReferralBtn = () => {
+    console.log("click toggle referral")
     const referralForm = document.getElementById('referral');
     referralForm.classList.toggle('active');
     referralForm.classList.toggle('inactive');
