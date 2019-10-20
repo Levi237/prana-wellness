@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import firebase from 'firebase/app'
+import firebase from 'firebase/firestore'
 
 export default class EmailerRequest extends Component {
     state = {
@@ -9,8 +9,8 @@ export default class EmailerRequest extends Component {
 
 // Send a message to the device corresponding to the provided
 // registration token.
-handleSubmit = async () => {
-
+handleSubmit = async (e) => {
+    e.preventDefault();
         const newFromDB = await firebase.firestore()
             .collection('emailers')
             .add({
@@ -31,7 +31,7 @@ handleChange = (e) => {
     render(){
         return(
             <>
-            <form className="feedback-form" onSubmit={this.handleSubmit}>
+            <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
             <div className="input-group">
                 <input
                     className="emailer-input"
