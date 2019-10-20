@@ -8,12 +8,11 @@ const inputStyle = {
     float: 'left',
     width: '75%',
     'margin-left': '5%',
-    'max-width': 'auto',
+    'max-width': '550px',
     height: '56px',
     'font-size': '24px',
     'line-height': '29px',
-  
-    color: 'rgba(0, 0, 0, 0.24)',
+    color: 'rgba(0, 0, 0, 0.5)',
 }
 
 const btnStyle = {

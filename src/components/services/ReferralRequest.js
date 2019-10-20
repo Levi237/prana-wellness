@@ -4,15 +4,17 @@ import firebase from 'firebase/app'
 
 export default class ReferralRequest extends Component {
     state = {
+        name: null,
         email: null,
     };
 
     handleSubmit = async (e) => {
+
         e.preventDefault();
         const newFromDB = await firebase.firestore()
             .collection('referrals')
             .add({
-                email: this.state.email,
+                ...this.state,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             })
         return newFromDB
@@ -20,11 +22,13 @@ export default class ReferralRequest extends Component {
     handleChange = (e) => {
         e.preventDefault();
         this.setState({
-            email: e.currentTarget.value
+            name: e.target.value,
+            email: e.target.value
         })
     }
     
     render(){
+        const { name, email } = this.state
         return(
             <>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
@@ -36,7 +40,16 @@ export default class ReferralRequest extends Component {
                     onChange={this.handleChange}
                     placeholder="Enter your email here"
                     required
-                    value={this.state.email}
+                    value={name}
+                />
+                <input
+                    className="emailer-input"
+                    name="email"
+                    type="email" 
+                    onChange={this.handleChange}
+                    placeholder="Enter your email here"
+                    required
+                    value={email}
                 />
                 </div>
                 <div className="btn-group">

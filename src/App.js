@@ -17,6 +17,8 @@ import CorporateHeader  from './components/corporate/CorporateHeader';
 import CorporateMain    from './components/corporate/CorporateMain';
 import WellnessHeader   from './components/wellness/WellnessHeader';
 import WellnessMain     from './components/wellness/WellnessMain';
+import ServicesHeader   from './components/services/ServicesHeader';
+import ServicesMain     from './components/services/ServicesMain';
 
 import './App.css';
 
@@ -59,7 +61,9 @@ export default class App extends Component {
             <Route path={routes.WELL} exact render={() => 
                     <WellnessHeader /> }/>
             <Route path={routes.CORP} exact render={() => 
-                    <CorporateHeader /> }/>    
+                    <CorporateHeader /> }/>   
+            <Route path={routes.SERV} exact render={() => 
+                      <ServicesHeader /> }/>   
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader /> }/>                    
           </Switch>
@@ -74,7 +78,9 @@ export default class App extends Component {
             <Route path={routes.WELL} exact render={() => 
                       <WellnessMain /> }/>       
             <Route path={routes.CORP} exact render={() => 
-                      <CorporateMain /> }/>        
+                      <CorporateMain /> }/>  
+            <Route path={routes.SERV} exact render={() => 
+                      <ServicesMain /> }/>           
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>
