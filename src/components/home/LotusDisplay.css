@@ -86,7 +86,8 @@
     text-align: left;
 }
 .lotus-box > section:first-of-type > section {
-    color: #744A9E;
+    /* font-size: 12px !important; */
+    color: #000;
 
 }
 .lotus-box > section:last-of-type > section {
@@ -96,6 +97,7 @@
 
 .lotus-box button {
     margin-top: 4vw;
+
 }
 .lotus-box > section:last-of-type > button {
     border-color: #FFF;

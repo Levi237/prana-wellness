@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './LotusDisplay.css'
+// import { removeTypeDuplicates } from '@babel/types';
+
+import * as routes      from '../../constants/routes';
 
 export default class PointDisplay extends Component {
     state = {
@@ -13,7 +17,7 @@ export default class PointDisplay extends Component {
                     <div></div>
                     <div>
                        <section>WANT TO SEE WELLNESS IN YOUR WORKPLACE?</section>
-                       <section>With two unique options for incorporating Prana Wellness into your daily routine, we can help you achieve a more healthy and mindful lifestyle.</section>
+                       <section>with various options for incorporating Prana Wellness into your work and personal life, we can help you curate a healthy work environment that works for you.</section>
                     </div>
 
                     <section>
@@ -22,8 +26,8 @@ export default class PointDisplay extends Component {
                         <section>
                             can help your company implement an engaging wellness program for all employees to enjoy.
                         </section>
-                        <button className="lotus-desktop-button">explore workplace plans</button>
-                        <button className="lotus-mobile-button">explore plans</button>
+                        <NavLink to={routes.CORP}><button className="lotus-desktop-button">explore workplace plans</button></NavLink>
+                        <NavLink to={routes.CORP}><button className="lotus-mobile-button">explore plans</button></NavLink>
                     </section>
 
                     <section>

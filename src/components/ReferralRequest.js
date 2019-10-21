@@ -10,6 +10,7 @@ const containerStyle = {
     'z-index': '50',
     width: '100vw',
     height: '100vh',
+    padding: '3vw, 0',
     background: 'rgba(255, 255, 255, .5)',
     overflow: 'hidden',
 }
