@@ -17,6 +17,7 @@ const containerStyle = {
 const formDivStyle = {
     position: 'relative',
     background: 'white',
+    'box-shadow': '0px 0px 20px rgba(0,0,0,.5)',
     width: '94vw',
     height: '94vh',
     padding: '3vh 3vw',
