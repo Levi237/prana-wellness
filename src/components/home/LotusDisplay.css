@@ -11,7 +11,6 @@
     border-radius: 100%;
     margin: -25vw 20vw;
     position: absolute;
-
 }
 .lotus-box > div > section {
     font-family: Montserrat;
@@ -34,7 +33,6 @@
     font-size: 1vw;
     margin: 6vw 23vw;
 }
-
 
 .lotus-box > section {
     width: 43.5vw;
@@ -86,19 +84,18 @@
     text-align: left;
 }
 .lotus-box > section > section {
-        font-size: 1.7vw !important;
+        font-size: 1.75vw !important;
+        min-height: 7.5vw;
 }
 .lotus-box > section:first-of-type > section {
     color: #000;
 }
 .lotus-box > section:last-of-type > section {
     color: #FFF;
-
 }
 
 .lotus-box button {
     margin-top: 4vw;
-
 }
 .lotus-box > section:last-of-type > button {
     border-color: #FFF;
@@ -113,54 +110,24 @@
 }
 
 @media screen and (max-width: 945px){
-    .lotus-box {
-        /* position: relative; */
-        /* overflow: hidden; */
-        /* max-height: 957px; */
-    }
-    
-    .lotus-box > div:first-of-type {
-        /* background-color: #965BA5; */
-        /* width: 60vw; */
-        /* height: 60vw; */
-        /* border-radius: 100%; */
-        /* margin: -25vw 20vw; */
-        /* position: absolute; */
-    
-    }
     .lotus-box > div > section {
-        /* font-family: Montserrat; */
-        /* font-style: normal; */
-        /* font-weight: normal; */
-        /* text-align: center; */
-        /* text-transform: uppercase; */
         width: 60vw;
         line-height: 3vw;
-        /* position: absolute; */
-        /* z-index: 171; */
-        /* color: #FFF; */
     }
     .lotus-box > div:last-of-type > section:first-of-type {
         font-size: 2.2vw;
         margin: 2vw 20vw;
     }
-    
     .lotus-box > div:last-of-type > section:last-of-type {
         font-size: 1vw;
         margin: 6vw 20vw;
     }
     
-    
     .lotus-box > section {
-        /* width: 37vw; */
-        /* display: inline-block; */
         height: 75vw;
         max-height: 957px;
-        /* position: relative; */
     }
     .lotus-box > section:first-of-type {
-        /* background-color: transparent; */
-        /* text-align: right; */
         padding: 0 2.5vw 0 4vw;
     }
     .lotus-box > section:last-of-type {
@@ -182,40 +149,17 @@
     .lotus-box > section:last-of-type > img {
         left: 0
     }
-    
-    .lotus-box > section > div {
-        /* font-family: Merriweather; */
-        /* font-style: italic; */
-        /* font-weight: normal; */
-        /* font-size: 30px; */
-        /* line-height: 32px; */
-        /* margin-top: 40vw; */
-        /* margin-bottom: 2.2vw; */
-        /* color: #744A9E; */
-    }
+
     .lotus-box > section:first-of-type > div {
         text-align: right;
     }
     .lotus-box > section:last-of-type > div {
         text-align: left;
     }
-    .lotus-box > section:first-of-type > section {
-        /* color: #744A9E; */
-    
-    }
-    .lotus-box > section:last-of-type > section {
-        /* color: #FFF; */
-    
-    }
     
     .lotus-box button {
         margin-top: 4vw;
         font-size: 2vw;
-    }
-    .lotus-box > section:last-of-type > button {
-        /* border-color: #FFF; */
-        /* color: #FFF; */
-        /* background: transparent; */
     }
     .lotus-desktop-button {
         display: none;
