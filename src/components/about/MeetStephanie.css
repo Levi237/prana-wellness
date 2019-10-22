@@ -1,6 +1,7 @@
 .meetStephanie-container > div {
     width: 50vw;
     height: 50vw;
+    background-color: #E0CEE5;    
 }
 .meetStephanie-container img {
     width: 50vw;
@@ -9,10 +10,11 @@
 
 .meetStephanie-container > div:first-of-type {
     float: left;
-    background-color: #E0CEE5;
+    background-image: url(../meet-background.png);
     text-align: left;
 }
 .meetStephanie-container > div:last-of-type {
+
     float: right;  
 }
 

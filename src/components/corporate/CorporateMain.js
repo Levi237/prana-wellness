@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import BenefitsDisplay from './BenefitsDisplay'
 import PackageDisplay from './PackageDisplay';
+import OurApproach from './OurApproach';
 
 const customQuoteStyle = {
   margin: '-150px 0 0',
@@ -36,6 +37,7 @@ export default class CorporateMain extends Component {
     return(<>
       <div className="about-main-container">
         <div className="main-title">
+        <OurApproach />
             <BenefitsDisplay />
         </div>
         <PackageDisplay pricePack={this.state.corporatePlans}/>

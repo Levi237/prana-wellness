@@ -8,7 +8,7 @@ export default class HomeStephanie extends Component {
             title: "Meet Stephanie",
             subtitle: "founder, prana wellness",
             content: "Stephanie Erazo is a certified yoga and spin instructor and personal trainer. Many people refer to her as their “Motivator in Chief” when it comes to wellness. Stephanie believes that a person’s physical and mental wellbeing can dictate their entire life, so she aims to motivate people to prioritize all-around wellness.",
-            image: "meet-stephanie.png",
+            image: "home-meet.png",
             // skills: "Certified Yoga + Spin Instructor Personal Trainer",
         }
     }
@@ -17,7 +17,6 @@ export default class HomeStephanie extends Component {
 
             return(
                 <div className="homeStephanie-container">
-                    <div><img src={`${homeStephanie.image}`} alt="homeStephanie-box" /></div>
                     <div>
                         <div>
                             <section>{homeStephanie.title}</section>
@@ -27,6 +26,7 @@ export default class HomeStephanie extends Component {
                             <button>Learn More</button>
                         </div>
                     </div>
+                    <div><img src={`${homeStephanie.image}`} alt="homeStephanie-box" /></div>
                 </div>
             )
 

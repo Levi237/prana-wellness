@@ -7,9 +7,8 @@ export default class MeetStephanie extends Component {
         meetStephanie: { 
             title: "Meet Stephanie",
             subtitle: "founder, prana wellness",
-            price: "$10/MONTH",
             content: "Stephanie Erazo is an avid adventure seeker and a self-proclaimed fitness junkie. Many people refer to her as their “Motivator in Chief” on their fitness journey, as she enjoys showing people that they can achieve more. Stephanie believes that a person’s physical and mental wellbeing can dictate their entire life, so she aims to motivate people to prioritize all-around wellness.",
-            image: "meet-stephanie.png",
+            image: "about-meet.png",
             skills: "Certified Yoga + Spin Instructor Personal Trainer",
         }
     }

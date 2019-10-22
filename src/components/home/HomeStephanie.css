@@ -1,6 +1,7 @@
 .homeStephanie-container > div {
     width: 50vw;
     height: 50vw;
+    background-color: #fff;
 }
 .homeStephanie-container img {
     width: 50vw;
@@ -8,12 +9,13 @@
 }
 
 .homeStephanie-container > div:first-of-type {
-    float: left;
-    background-color: #fff;
+    float: right;
+
+    background-image: url(../meet-background.png);
     text-align: left;
 }
 .homeStephanie-container > div:last-of-type {
-    float: right;  
+    float: left;  
 }
 
 .homeStephanie-container > div > div {
@@ -21,7 +23,7 @@
     height: 30vw;
     margin: 5vw;
     border: 1px solid #965BA5;
-    background: #fff;
+    background-color: #fff;
     padding: 5vw;
     text-align: left;
 }
@@ -82,14 +84,11 @@
         width: 70vw;
         height: 70vw;
         margin: 10vw;
-        border: 1px solid #965BA5;
-        background: #E0CEE5;
         padding: 5vw;
     }
     .homeStephanie-container > div > div > section:first-of-type {
         font-size: 7vw;
         letter-spacing: 1px;
-        color: #965BA5;
     }
     .homeStephanie-container > div > div > section:nth-of-type(2) {
         font-size: 3.1vw;
