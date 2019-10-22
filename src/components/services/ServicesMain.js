@@ -48,6 +48,7 @@ export default class ServicesMain extends Component {
         }]
       }
     render(){
+        const { toggleReferralBtn } = this.props
     return(<>
           <div className="wellness-main-container main-title">
             <ServiceDisplay services={this.state.services}/>
@@ -56,7 +57,7 @@ export default class ServicesMain extends Component {
           </div>
           <section className="home-main-header">WELLNESS SERVICES</section>
           <ServiceDisplay services={this.state.otherServices}/>
-          <button>Request Quote</button>
+          <button onClick={toggleReferralBtn}>Request Quote</button>
     </>)
 }
 }

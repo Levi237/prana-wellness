@@ -83,7 +83,7 @@ export default class App extends Component {
             <Route path={routes.CORP} exact render={() => 
                       <CorporateMain /> }/>  
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain /> }/>           
+                      <ServicesMain toggleReferralBtn={this.toggleReferralBtn}/> }/>           
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>
