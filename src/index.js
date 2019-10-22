@@ -9,7 +9,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import * as firebase from "firebase/app";
 // import firebase from 'firebase/app';
 import 'firebase/firestore';
-import * as admin from 'firebase-admin';
+// import * as admin from 'firebase-admin';
 
 import 'firebase/firebase-storage'
 import 'firebase/firebase-database'

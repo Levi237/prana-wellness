@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route }    from 'react-router-dom';
-import * as admin from 'firebase-admin';
+// import * as admin from 'firebase-admin';
 // import { Switch, Route, Redirect }  from 'react-router-dom';
 
 import * as routes      from './constants/routes';
