@@ -1,7 +1,4 @@
 
-
-
-
 .service-box {
     position: relative;
     height: 25vw;
@@ -30,19 +27,25 @@
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 1.6vw;
+    font-size: 1.33vw;
     letter-spacing: .5vw;
     margin-top: 6vw;
 }
 .service-box > div > section:last-of-type {
     font-family: 'Merriweather', sans-serif;
     font-style: italic;
-    font-size: 3.33vw;
+    font-size: 3vw;
 }
 
 @media screen and (max-width: 945px) {
     .service-box {
-        transform: scale(2);
-        margin: 12vw;
+        /* transform: scale(3.3); */
+        /* margin: -3vw; */
+        /* height: 90vw;
+        width: 90vw;
+        display: block;
+        background-color: #000;
+        margin: 5vw;
+        z-index: 555; */
     }
 }
