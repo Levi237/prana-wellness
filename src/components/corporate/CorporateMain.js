@@ -3,6 +3,12 @@ import React, { Component } from 'react';
 import BenefitsDisplay from './BenefitsDisplay'
 import PackageDisplay from './PackageDisplay';
 
+const customQuoteStyle = {
+  margin: '-150px 0 0',
+  height: '40vw',
+  padding: '16vw 0 0',
+}
+
 export default class CorporateMain extends Component {
   state = {
       corporatePlans: [{ 
@@ -33,6 +39,7 @@ export default class CorporateMain extends Component {
             <BenefitsDisplay />
         </div>
         <PackageDisplay pricePack={this.state.corporatePlans}/>
+        <div style={customQuoteStyle} className="custom-quote">DON'T SEE A PACKAGE THAT'S RIGHT?</div>
       </div>
     </>)
   }
