@@ -23,7 +23,7 @@
     margin: 2vw;
 }
 .point-box > div > section:first-of-type {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.2vw;

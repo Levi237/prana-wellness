@@ -25,7 +25,7 @@
     margin: 3vw;
 }
 .service-box > div > section:first-of-type {
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     text-transform: uppercase;
     font-weight: normal;
     font-size: 1.33vw;

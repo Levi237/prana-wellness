@@ -13,7 +13,7 @@
   color: #FFF;
 }
 .pranaText {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   text-transform: uppercase;
   font-weight: 100;
 }
@@ -86,7 +86,7 @@ grid-template-areas:
   right: 0;
   top: 12px;
   width: 278px;
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -247,7 +247,7 @@ grid-template-areas:
 }
 
 .welcomeText, .pranaText, .statementText {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   text-align: center;
 }
 
@@ -311,7 +311,7 @@ grid-template-areas:
 .main-title {
   margin-top: calc(-750px + 36vw);
   /* margin-top: -35vw; */
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -324,7 +324,7 @@ grid-template-areas:
   color: #965BA5;
 }
 .main-cta {
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -450,7 +450,7 @@ grid-template-areas:
 }
 
 .home-main-header {
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -471,7 +471,7 @@ grid-template-areas:
     line-height: 16px;
   }
   .home-main-header {
-    font-family: Montserrat;
+    /* font-family: Montserrat; */
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -497,7 +497,7 @@ grid-template-areas:
 }
 .grid-footer-mid > section {
   margin: 3vw auto 1vw auto;
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -523,7 +523,7 @@ grid-template-areas:
   width: 250px
 }
 .travel-slay-logo section {
-  font-family: Montserrat;
+  /* font-family: Montserrat; */
   text-transform: uppercase;
   color: #FFF;
   width: 300px;
