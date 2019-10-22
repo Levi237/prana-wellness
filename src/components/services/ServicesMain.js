@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
-import ServiceDisplay from './ServiceDisplay'
+import ServiceDisplay from './ServiceDisplay';
+
+import * as routes from '../../constants/routes';
 
 // const  = () => {
 export default class ServicesMain extends Component {
@@ -48,7 +51,8 @@ export default class ServicesMain extends Component {
     return(<>
           <div className="wellness-main-container main-title">
             <ServiceDisplay services={this.state.services}/>
-            <button>Corporate Solutions</button> <button>Individual Solutions</button>
+            <NavLink to={routes.CORP}><button>Corporate Solutions</button></NavLink>
+            <NavLink to={routes.WELL}><button>Individual Solutions</button></NavLink>
           </div>
           <section className="home-main-header">WELLNESS SERVICES</section>
           <ServiceDisplay services={this.state.otherServices}/>
