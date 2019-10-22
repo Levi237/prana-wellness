@@ -26,7 +26,7 @@
 .service-box > div > section:first-of-type {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: normal;
     font-size: 1.33vw;
     letter-spacing: .5vw;
     margin-top: 6vw;
@@ -41,11 +41,33 @@
     .service-box {
         /* transform: scale(3.3); */
         /* margin: -3vw; */
-        /* height: 90vw;
+        height: 90vw;
         width: 90vw;
         display: block;
         background-color: #000;
         margin: 5vw;
-        z-index: 555; */
+        z-index: 555;
+    }
+    .service-box > img {
+        height: 90vw;
+        width: 90vw;
+
+    }
+    .service-box > div {
+        width: 75vw;
+        height: 75vw;
+
+
+        margin: 7.5vw;
+    }
+    .service-box > div > section:first-of-type {
+
+        font-size: 8vw;
+        letter-spacing: .5vw;
+        margin-top: 16vw;
+    }
+    .service-box > div > section:last-of-type {
+
+        font-size: 14vw;
     }
 }
