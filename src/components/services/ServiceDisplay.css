@@ -6,6 +6,7 @@
     display: inline-block;
     background-color: #000;
     margin: 0 1.33vw;
+    z-index: 1;
 }
 .service-box > img {
     height: 25vw;
@@ -39,14 +40,11 @@
 
 @media screen and (max-width: 945px) {
     .service-box {
-        /* transform: scale(3.3); */
-        /* margin: -3vw; */
         height: 90vw;
         width: 90vw;
         display: block;
         background-color: #000;
         margin: 5vw;
-        z-index: 555;
     }
     .service-box > img {
         height: 90vw;
