@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import PackageDisplay from '../corporate/PackageDisplay';
 
+import PackageDisplay from '../corporate/PackageDisplay';
+import ServiceDisplay from '../services/ServiceDisplay';
 
 class IndividualMain extends Component {
   state = {
@@ -22,12 +23,25 @@ class IndividualMain extends Component {
         duration: ["12 week", "intensive program"],
         details: ['“Wellness for the Working Mind”', "Combination of lunch and learns, speakers, wellness classes, and team building exercises Access to various online wellness resources- yoga, stretching, breath work, meditation", "*Customizable, pricing may vary*"],
         image: "guru.png",
+    }],
+    services: [{ 
+        smallText: "Achieve Work-LIfe",
+        largeText: "Balance",
+        image: "yoga-icon.png"
+    },{
+        smallText: "Reduce Stress + find",
+        largeText: "Peace",
+        image: "meditation-icon.png"
+    },{
+        smallText: "Increased Focus +",
+        largeText: "Clarity",
+        image: "breathing-icon.png"
     }]
-}
+  }
   render(){
 
 
-    const {toggleReferralBtn} = this.props;
+    const { toggleReferralBtn } = this.props;
   
     return(<>
           <div className="wellness-main-container">
@@ -35,6 +49,7 @@ class IndividualMain extends Component {
             <section className="main-cta">If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content! </section>
             <button onClick={toggleReferralBtn}>refer to employer</button>
           </div>
+          <ServiceDisplay services={this.state.services}/>
           <PackageDisplay pricePack={this.state.individualPlans}/>
     </>)
   }
