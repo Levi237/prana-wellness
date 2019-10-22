@@ -17,8 +17,8 @@ import AboutHeader      from './components/about/AboutHeader';
 import AboutMain        from './components/about/AboutMain';
 import CorporateHeader  from './components/corporate/CorporateHeader';
 import CorporateMain    from './components/corporate/CorporateMain';
-import WellnessHeader   from './components/individual/WellnessHeader';
-import WellnessMain     from './components/individual/WellnessMain';
+import IndividualHeader   from './components/individual/IndividualHeader';
+import IndividualMain     from './components/individual/IndividualMain';
 import ServicesHeader   from './components/services/ServicesHeader';
 import ServicesMain     from './components/services/ServicesMain';
 
@@ -62,7 +62,7 @@ export default class App extends Component {
             <Route path={routes.INFO} exact render={() => 
                     <AboutHeader /> }/>
             <Route path={routes.WELL} exact render={() => 
-                    <WellnessHeader /> }/>
+                    <IndividualHeader /> }/>
             <Route path={routes.CORP} exact render={() => 
                     <CorporateHeader /> }/>   
             <Route path={routes.SERV} exact render={() => 
@@ -79,7 +79,7 @@ export default class App extends Component {
             <Route path={routes.INFO} exact render={() => 
                       <AboutMain /> }/>
             <Route path={routes.WELL} exact render={() => 
-                      <WellnessMain toggleReferralBtn={this.toggleReferralBtn}/> }/>       
+                      <IndividualMain toggleReferralBtn={this.toggleReferralBtn}/> }/>       
             <Route path={routes.CORP} exact render={() => 
                       <CorporateMain /> }/>  
             <Route path={routes.SERV} exact render={() => 

@@ -1,6 +1,6 @@
 import React from 'react';
 
- const WellnessHeader = () => {
+ const IndividualHeader = () => {
     return(<>
     <div className="header-container">
         <img className="header-image" src="wellness-header.png" alt="wellness-header"/>
@@ -13,4 +13,4 @@ import React from 'react';
             </>)
 }
 
-export default WellnessHeader
+export default IndividualHeader

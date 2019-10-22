@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PackageDisplay from '../corporate/PackageDisplay';
 
 
-class WellnessMain extends Component {
+class IndividualMain extends Component {
   state = {
     individualPlans: [{ 
         title: "Asana",
@@ -40,4 +40,4 @@ class WellnessMain extends Component {
   }
 }
 
-export default WellnessMain
+export default IndividualMain
