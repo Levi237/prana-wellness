@@ -8,7 +8,7 @@ import React from 'react';
             <section className="wellnessText">wellness</section>
             <section className="statementText">Wellness designed to work for you.</section>
             <br/><br/>
-            <button className="ctaBtn">explore wellness options</button>
+            <button className="ctaBtn">explore wellness services</button>
           </div>
     </>)
 }

@@ -4,7 +4,7 @@ import React from 'react';
 
 const ServicesMain = () => {
     return(<>
-          <div className="wellness-main-container">
+          <div className="services-main-container">
 
           </div>
     </>)

@@ -566,14 +566,19 @@ grid-template-areas:
   }
   .grid-footer-right {}
   .grid-footer-left, .grid-footer-mid, .grid-footer-right {}
-  .travel-slay-logo {}
+  .travel-slay-logo {
+    margin: 0 auto;
+    text-align: center;
+}
   .travel-slay-logo img {
     width: auto;
     height: 80px;
     margin-bottom: -20px;
   }
+
   .travel-slay-logo section {
     width: 100vw;
+    text-align: center;
     font-size: 12px;
   }
   

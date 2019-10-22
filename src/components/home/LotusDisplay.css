@@ -32,7 +32,7 @@
 
 .lotus-box > div:last-of-type > section:last-of-type {
     font-size: 1vw;
-    margin: 6vw 20vw;
+    margin: 6vw 23vw;
 }
 
 
@@ -85,10 +85,11 @@
 .lotus-box > section:last-of-type > div {
     text-align: left;
 }
+.lotus-box > section > section {
+        font-size: 1.75vw !important;
+}
 .lotus-box > section:first-of-type > section {
-    /* font-size: 12px !important; */
     color: #000;
-
 }
 .lotus-box > section:last-of-type > section {
     color: #FFF;
@@ -151,7 +152,7 @@
     
     
     .lotus-box > section {
-        width: 37vw;
+        /* width: 37vw; */
         /* display: inline-block; */
         height: 75vw;
         max-height: 957px;
