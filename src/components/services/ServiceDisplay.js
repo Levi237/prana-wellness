@@ -1,25 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-import './ServicesDisplay.css'
+import './ServiceDisplay.css'
 
-export default class ServiceDisplay extends Component {
-    state = {
-        services: [{ 
-            smallText: "Invigorating",
-            largeText: "Yoga",
-            image: "yoga-icon.png"
-        },{
-            smallText: "Relaxing",
-            largeText: "Meditation",
-            image: "meditation-icon.png"
-        },{
-            smallText: "Mindful",
-            largeText: "Breathing",
-            image: "breathing-icon.png"
-        }]
-    }
-    render(){
-        const { services } = this.state
+const ServiceDisplay = ({services}) => {
+
         const showServices = services.map((service, key) => {
             return(
                 <div key={key} className="service-box">
@@ -32,4 +16,4 @@ export default class ServiceDisplay extends Component {
         })
         return(<>{showServices}</>)
     }
-}
+export default ServiceDisplay 

@@ -17,8 +17,8 @@ import AboutHeader      from './components/about/AboutHeader';
 import AboutMain        from './components/about/AboutMain';
 import CorporateHeader  from './components/corporate/CorporateHeader';
 import CorporateMain    from './components/corporate/CorporateMain';
-import WellnessHeader   from './components/wellness/WellnessHeader';
-import WellnessMain     from './components/wellness/WellnessMain';
+import WellnessHeader   from './components/individual/WellnessHeader';
+import WellnessMain     from './components/individual/WellnessMain';
 import ServicesHeader   from './components/services/ServicesHeader';
 import ServicesMain     from './components/services/ServicesMain';
 
