@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import * as routes from '../../constants/routes'
+import * as routes from '../../constants/routes';
 
 import PointDisplay   from './PointDisplay';
 import LotusDisplay   from './LotusDisplay';
+import HomeStephanie  from './HomeStephanie';
 
  const HomeMain = () => {
     return(<>
@@ -18,6 +19,7 @@ import LotusDisplay   from './LotusDisplay';
         <NavLink to={routes.CORP}><button>browse services</button></NavLink>
         <br /><br /><br/>
         <LotusDisplay />
+        <HomeStephanie />
     </>)
  
 }

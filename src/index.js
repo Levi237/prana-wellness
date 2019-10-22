@@ -12,7 +12,7 @@ import 'firebase/firestore';
 // import * as admin from 'firebase-admin';
 
 import 'firebase/firebase-storage'
-import 'firebase/firebase-database'
+// import 'firebase/firebase-database'
 
   firebase.initializeApp({
     apiKey: `${process.env.REACT_APP_FIREBASE_API_KEY}`,
