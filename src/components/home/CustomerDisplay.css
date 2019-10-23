@@ -15,3 +15,11 @@ div.scrollmenu {
   div.scrollmenu section:hover {
     background-color: #777;
   }
+
+  a:visited {
+    color: pink;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
