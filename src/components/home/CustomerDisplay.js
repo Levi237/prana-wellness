@@ -7,31 +7,31 @@ export default class CustomerDisplay extends Component {
         clients: [{
             name: 'Bob',
             logo: 'namaste.png',
-            link: 'www.levieiko.com'
+            link: "https://www.levieiko.com"
         },{
             name: 'Bob2',
             logo: 'namaste.png',
-            link: 'www.levieiko.com'
+            link: "https://www.levieiko.com"
         },{
             name: 'Bob3',
             logo: 'namaste.png',
-            link: 'www.levieiko.com'
+            link: "https://www.levieiko.com"
         },{
             name: 'Bob24',
             logo: 'namaste.png',
-            link: 'www.levieiko.com'
+            link: "https://www.levieiko.com"
         },{
             name: 'Bob2',
             logo: 'namaste.png',
-            link: 'www.levieiko.com'
+            link: "https://www.levieiko.com"
         },{
             name: 'Bob3',
             logo: 'namaste.png',
-            link: 'www.levieiko.com'
+            link: "https://www.levieiko.com"
         },{
             name: 'Bob24',
             logo: 'namaste.png',
-            link: 'www.levieiko.com'
+            link: "https://www.levieiko.com"
         }]
     }
     render(){
@@ -39,7 +39,7 @@ export default class CustomerDisplay extends Component {
 
         const customerList = clients.map((client, key) => {
             return(
-                <section key={key}><a href="https://www.levieiko.com" target="_blank"><img src={client.logo} /><br/><span>{client.name}</span></a></section>
+                <section key={key}><a href={client.link} target="_blank" rel="noopener noreferrer"><img src={client.logo} alt={client.name}/><br/><span>{client.name}</span></a></section>
             )
         })
         return(
