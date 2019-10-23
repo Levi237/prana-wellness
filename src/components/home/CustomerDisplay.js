@@ -39,12 +39,12 @@ export default class CustomerDisplay extends Component {
 
         const customerList = clients.map((client, key) => {
             return(
-                <section key={key}><img src={client.logo} /><br/><span>{client.name}</span></section>
+                <section key={key}><a href="https://www.levieiko.com" target="_blank"><img src={client.logo} /><br/><span>{client.name}</span></a></section>
             )
         })
         return(
             <div className="scrollmenu">
-{customerList}
+                {customerList}
 
             </div>
         )
