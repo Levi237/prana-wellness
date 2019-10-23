@@ -47,7 +47,7 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Wellness",
             largeText: "Retreats",
-            image: "reatreat-other-services.png",
+            image: "retreat-other-services.png",
             content: "Curated and customizable off-site wellness retreats for team building and training, with a fitness and wellness focus",
         },{
             smallText: "Health",
@@ -65,7 +65,7 @@ export default class ServicesMain extends Component {
             <NavLink to={routes.WELL}><button>Individual Solutions</button></NavLink>
           </div>
           <section className="home-main-header">WELLNESS SERVICES</section>
-          <ServiceDisplay services={this.state.otherServices}/>
+            <ServiceDisplay services={this.state.otherServices}/>
           <button onClick={toggleReferralBtn}>Request Quote</button>
     </>)
 }

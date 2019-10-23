@@ -1,5 +1,7 @@
 import React from 'react';
 
+
+
 import './ServiceDisplay.css'
 
 const ServiceDisplay = ({services}) => {
@@ -12,6 +14,7 @@ const ServiceDisplay = ({services}) => {
                             <section>{service.smallText}</section><section>{service.largeText}</section>
                         </div>
                         <img className="serviceBackgroundImage" src={`${service.image}`} alt="service-box" />
+
                     </div>
                     <div className="card-back">
                         <section>{service.content}</section>

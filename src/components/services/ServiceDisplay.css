@@ -7,6 +7,7 @@
     background-color: transparent;
     margin: 0 1.33vw;
     z-index: 1;
+    transition: .3s ease-in-out;
 }
 .card-back {
     margin-top: -25.76vw;
@@ -15,18 +16,22 @@
     color: black;
     height: 25vw;
     width: 25vw;
-    background-color: white;
+    background-color: transparent;
     font-size: 1.8vw;
-}
-.card-front {
-    max-width: 25vw;
     transition: .3s ease-in-out;
 }
 .card-front:hover, .card-front:active {
     max-width: 0;
     overflow: hidden;
+    /* color: black; */
     transition: .3s ease-in-out;
 }
+.card-front {
+    max-width: 25vw;
+    transition: .3s ease-in-out;
+    position: initial;
+}
+
 .card-front > img {
     height: 25vw;
     width: 25vw;
@@ -44,6 +49,7 @@
     z-index: 2;
     margin: 3vw;
 }
+
 .card-front > div > section:first-of-type {
     /* font-family: 'Montserrat', sans-serif; */
     text-transform: uppercase;
