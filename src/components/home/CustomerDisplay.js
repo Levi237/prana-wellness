@@ -5,31 +5,33 @@ import './CustomerDisplay.css'
 export default class CustomerDisplay extends Component {
     state = {
         clients: [{
-            name: 'Bob',
+            name: 'customer',
             logo: 'namaste.png',
             link: "https://www.levieiko.com"
         },{
-            name: 'Bob2',
+            name: 'customer',
             logo: 'namaste.png',
             link: "https://www.levieiko.com"
         },{
-            name: 'Bob3',
+            name: 'customer',
             logo: 'namaste.png',
             link: "https://www.levieiko.com"
         },{
-            name: 'Bob24',
+            name: 'customer',
+
             logo: 'namaste.png',
             link: "https://www.levieiko.com"
         },{
-            name: 'Bob2',
+            name: 'customer',
             logo: 'namaste.png',
             link: "https://www.levieiko.com"
         },{
-            name: 'Bob3',
+            name: 'customer',
             logo: 'namaste.png',
             link: "https://www.levieiko.com"
         },{
-            name: 'Bob24',
+            name: 'customer',
+
             logo: 'namaste.png',
             link: "https://www.levieiko.com"
         }]

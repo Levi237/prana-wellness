@@ -12,11 +12,11 @@ import Carousel       from '../Carousel';
 export default class HomeMain extends Component {
     state = {
         quotes: [{
-            statement: "jane says blah blah blha",
+            statement: "jane says this is great *test",
             person: "Jane",
-        },{
-            statement: "bob says blah blha",
-            person: "Bob",
+        // },{
+        //     statement: "bob says blah blha",
+        //     person: "Bob",
         }]
     }
     render(){
