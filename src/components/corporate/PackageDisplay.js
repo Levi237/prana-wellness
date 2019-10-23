@@ -70,6 +70,7 @@ const PackageDisplay =({pricePack})=> {
                     <section>{pack.price}</section>
                     <section>{pack.duration[0]}</section>
                     <section>{pack.duration[1]}</section>
+                    <section>{pack.secondTitle}</section>
                     {details}
                 </div>
                     <button>BUY NOW</button>

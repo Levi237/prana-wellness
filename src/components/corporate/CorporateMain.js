@@ -16,19 +16,22 @@ export default class CorporateMain extends Component {
         title: "Namaste",
         price: "$300/session",
         duration: ["1 x per month", "(6 month commitment)"],
-        details: ["Can be a mix of yoga, meditation, and/or breath work", "*See add ons for additional services"],
+        secondTitle: null,
+        details: ["Mix of yoga, meditation, and breath work", "Access to online resources", "*See add ons for additional services"],
         image: "namaste.png",
     },{
         title: "Karma",
         price: "$200/session",
         duration: ["1 x per week", "(3 month commitment)"],
-        details: ["Access to online meditations", "1 lunch and learn ", "*See add ons for additional services"],
+        secondTitle: null,
+        details: ["Access to online resources", "1 lunch and learn included", "*See add ons for additional services"],
         image: "karma.png",
     },{
         title: "Guru",
         price: "$4500",
         duration: ["12 week", "intensive program"],
-        details: ['“Wellness for the Working Mind”', "Combination of lunch and learns, speakers, wellness classes, and team building exercises Access to various online wellness resources- yoga, stretching, breath work, meditation", "*Customizable, pricing may vary*"],
+        secondTitle:'“Wellness for the Working Mind”',
+        details: ["Combination of lunch and learns, wellness classes,", "and team building exercises", "*Customizable, pricing may vary*"],
         image: "guru.png",
     }]
   }

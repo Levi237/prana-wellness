@@ -36,8 +36,8 @@ export default class PointDisplay extends Component {
                         <section>
                             can help you identify ways to incorporate the practice outside of work and into all areas of your life.
                         </section>
-                        <button className="lotus-desktop-button">explore individual plans</button>
-                        <button className="lotus-mobile-button">explore plans</button>
+                        <NavLink to={routes.WELL}><button className="lotus-desktop-button">explore individual plans</button></NavLink>
+                        <NavLink to={routes.WELL}><button className="lotus-mobile-button">explore plans</button></NavLink>
                     </section>
 
                 </div>
