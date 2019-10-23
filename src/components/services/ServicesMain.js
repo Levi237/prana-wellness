@@ -11,40 +11,49 @@ export default class ServicesMain extends Component {
         services: [{ 
             smallText: "Invigorating",
             largeText: "Yoga",
-            image: "yoga-icon.png"
+            image: "yoga-icon.png",
+            content: "All levels practice of yoga to energize the body and stretch, and focus on proper alignment ",
         },{
             smallText: "Relaxing",
             largeText: "Meditation",
-            image: "meditation-icon.png"
+            image: "meditation-icon.png",
+            content: "Accessible guided meditations to calm, bring focus, and de-stress",
         },{
             smallText: "Mindful",
             largeText: "Breathing",
-            image: "breathing-icon.png"
+            image: "breathing-icon.png",
+            content: "Breathing practices that can have immediate impact on mind and body health",
         }],
         otherServices: [{ 
-            smallText: "Invigorating",
-            largeText: "Yoga",
-            image: "yoga-icon.png"
+            smallText: "Bootcamp",
+            largeText: "Fitness",
+            image: "yoga-icon.png",
+            content: "Power hour of cardio, Plyometrics, HIIT, resistance bands, and body weight exercises. Modifications for all levels.",
         },{
-            smallText: "Relaxing",
-            largeText: "Meditation",
-            image: "meditation-icon.png"
+            smallText: "Lunch +",
+            largeText: "Learn",
+            image: "meditation-icon.png",
+            content: "Health, fitness, and mindfulness tools and tips for balanced lifestyle and productive work.",
         },{
-            smallText: "Mindful",
-            largeText: "Breathing",
-            image: "breathing-icon.png"
+            smallText: "Corporate",
+            largeText: "Massage",
+            image: "breathing-icon.png",
+            content: "relaxing body break from static postures",
         },{
-            smallText: "Invigorating",
-            largeText: "Yoga",
-            image: "yoga-icon.png"
+            smallText: "Work",
+            largeText: "Play",
+            image: "yoga-icon.png",
+            content: "Take time to play at work! Fun games that focus on leadership and team building",
         },{
-            smallText: "Relaxing",
-            largeText: "Meditation",
-            image: "meditation-icon.png"
+            smallText: "Wellness",
+            largeText: "Retreats",
+            image: "reatreat-other-services.png",
+            content: "Curated and customizable off-site wellness retreats for team building and training, with a fitness and wellness focus",
         },{
-            smallText: "Mindful",
-            largeText: "Breathing",
-            image: "breathing-icon.png"
+            smallText: "Health",
+            largeText: "Fairs",
+            image: "breathing-icon.png",
+            content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
         }]
       }
     render(){
