@@ -32,8 +32,8 @@ export default class HomeMain extends Component {
         <br /><br /><br/>
         <NavLink to={routes.CORP}><button>browse services</button></NavLink>
         <br /><br /><br/>
-
-        {/* <CustomerDisplay /> */}
+        <CustomerDisplay />
+        <br /><br /><br/>
         <LotusDisplay />
         <HomeStephanie />
         <Carousel carouselContent={this.state.quotes}/>

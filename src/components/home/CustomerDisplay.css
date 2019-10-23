@@ -1,5 +1,5 @@
 div.scrollmenu {
-    background-color: #333;
+    background-color: rgba(150, 91, 165, 0.1);;
     overflow: auto;
     white-space: nowrap;
   }
@@ -13,13 +13,13 @@ div.scrollmenu {
   }
   
   div.scrollmenu section:hover {
-    background-color: #777;
+    background-color: transparent;
   }
 
-  a:visited {
-    color: pink;
-  }
-  a {
-    color: white;
+  a, a:visited {
+    color: rgba(71, 62, 78, 0.6);
     text-decoration: none;
+  }
+  a:hover {
+    color: green;
   }

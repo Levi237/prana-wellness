@@ -5,7 +5,7 @@ import MeetStephanie  from './MeetStephanie';
 const AboutMain = () => {
     return(<>
             <section className="main-title">a holistic approach to wellness</section>
-            <section className="main-cta">The professionals at Prana are passionate about bringing wellness solutions to the masses and introducing both individuals and companies to the importance of mindfulness.</section>
+            <section className="main-cta">“Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.”</section>
 
           <MeetStephanie />
     </>)
