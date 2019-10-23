@@ -1,0 +1,43 @@
+.carousel-container {
+    width: 100vw;
+    /* min-height: 40px; */
+    background-color: pink;
+    /* margin: 5vw 0; */
+    position: relative;
+    padding-bottom: 20px;
+}
+.carousel-container > section {
+    padding-top: 20px;
+    height: 40px;
+    background-color: pink;
+}
+.carousel-container > div,  .carousel-container > button {
+    display: inline-block;
+}
+.carousel-container > div {
+    width: calc(100vw - 300px);
+}
+
+.carousel-container > button {
+    height: 100px;
+    width: 42px;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+.arrow-left, .arrow-right {
+    height: 58px;
+    width: 58px;
+    border-color: purple;
+    transform: rotate(45deg)
+}
+.arrow-left {    
+    border-bottom: 1px solid ;
+    border-left: 1px solid ;
+    margin-left: 11px;
+}
+.arrow-right {
+    margin-left: -30px;
+    border-top: 1px solid ;
+    border-right: 1px solid ;
+}

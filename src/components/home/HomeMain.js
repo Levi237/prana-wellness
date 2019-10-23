@@ -6,6 +6,7 @@ import * as routes from '../../constants/routes';
 import PointDisplay   from './PointDisplay';
 import LotusDisplay   from './LotusDisplay';
 import HomeStephanie  from './HomeStephanie';
+import Carousel       from '../Carousel';
 
  const HomeMain = () => {
     return(<>
@@ -20,6 +21,7 @@ import HomeStephanie  from './HomeStephanie';
         <br /><br /><br/>
         <LotusDisplay />
         <HomeStephanie />
+        <Carousel />
     </>)
  
 }

@@ -1,3 +1,7 @@
+.homeStephanie-container {
+    position: relative;
+    height: 50vw;
+}
 .homeStephanie-container > div {
     width: 50vw;
     height: 50vw;
@@ -10,7 +14,6 @@
 
 .homeStephanie-container > div:first-of-type {
     float: right;
-
     background-image: url(../meet-background.png);
     text-align: left;
 }
