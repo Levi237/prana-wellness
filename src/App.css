@@ -320,6 +320,16 @@ grid-template-areas:
 
   color: #965BA5;
 }
+.main-title-two {
+  font-size: 36px;
+  /* line-height: 30px; */
+  padding-top: 60px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #965BA5;
+}
 .main-cta {
   /* font-family: Montserrat; */
   font-style: normal;
