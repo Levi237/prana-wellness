@@ -41,7 +41,13 @@ export default class CorporateMain extends Component {
             <BenefitsDisplay />
         </div>
         <PackageDisplay pricePack={this.state.corporatePlans}/>
-        <div style={customQuoteStyle} className="custom-quote">DON'T SEE A PACKAGE THAT'S RIGHT?</div>
+        <div style={customQuoteStyle} className="custom-quote">
+          <section>DON'T SEE A PACKAGE THAT'S RIGHT?</section>
+          <section>
+            <div>Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.</div>
+            <button>Request Quote</button>
+          </section>
+        </div>
       </div>
     </>)
   }
