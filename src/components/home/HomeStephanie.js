@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import './HomeStephanie.css'
+
+import * as routes from '../../constants/routes';
 
 export default class HomeStephanie extends Component {
     state = {
@@ -23,7 +26,7 @@ export default class HomeStephanie extends Component {
                             <section>{homeStephanie.subtitle}</section>
                             <section>{homeStephanie.content}</section>
                             <section>{homeStephanie.skills}</section>
-                            <button>Learn More</button>
+                            <NavLink to={routes.INFO}><button>Learn More</button></NavLink>
                         </div>
                     </div>
                     <div><img src={`${homeStephanie.image}`} alt="homeStephanie-box" /></div>
