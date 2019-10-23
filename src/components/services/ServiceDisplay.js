@@ -12,9 +12,9 @@ const ServiceDisplay = ({services}) => {
             }
             return(
                 <div key={key} className="service-box">
-                    <div className="card-box" style={backgroundImageStyle}>
+                    <div className={service.content ? "card-box card-hover" : "card-box"} style={backgroundImageStyle}>
                         <div className="card-front">
-                            <div>
+                            <div className={service.content ? "card-front-data card-hover" : "card-front-data pop-hover"}>
                                 {/* <img className="serviceBackgroundImage" src={`${service.image}`} alt="service-box" /> */}
                             <section>{service.smallText}</section><section>{service.largeText}</section>
                                 </div>

@@ -27,7 +27,7 @@ export default class ServicesMain extends Component {
         otherServices: [{ 
             smallText: "Bootcamp",
             largeText: "Fitness",
-            image: "yoga-icon.png",
+            image: "shavasana.png",
             content: "Power hour of cardio, Plyometrics, HIIT, resistance bands, and body weight exercises. Modifications for all levels.",
         },{
             smallText: "Lunch +",
@@ -42,7 +42,7 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Work",
             largeText: "Play",
-            image: "yoga-icon.png",
+            image: "office-yoga.png",
             content: "Take time to play at work! Fun games that focus on leadership and team building.",
         },{
             smallText: "Wellness",

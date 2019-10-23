@@ -15,7 +15,7 @@
     margin-bottom: 2.5vw;
     position: relative;
     z-index: -1;
-    color: purple;
+    color: #744A9E;
     height: 20vw;
     width: 20vw;
     overflow: hidden;
@@ -31,14 +31,21 @@
     position: initial;
     transition-delay: .5s;
 }
-.card-box:hover, .card-box:active {
+.card-box.card-hover:hover, .card-box.card-hover:active {
     max-width: 0;
     overflow: hidden;
     transition: all .3s ease-in-out;
+    transition-delay: .5s;
 }
-.card-front div:hover {
-    border: none!important;
+.card-front-data.card-hover:hover {
+    border: 1px solid transparent!important;
     color: transparent;
+    transition: all .3s ease-in-out;
+    transition-delay: .2s;
+}
+.card-front-data.pop-hover:hover {
+    border: 1px solid #669F35!important;
+    color: #A0CD4D;
     transition: all .3s ease-in-out;
     transition-delay: .2s;
 }
@@ -49,7 +56,7 @@
     z-index: -1;
     transition: all .3s ease-in-out;
 }
-.card-front > div {
+.card-front-data {
     width: 19vw;
     height: 19vw;
     color: #FFF;
@@ -62,7 +69,7 @@
     transition-delay: .5s;
 }
 
-.card-front > div > section:first-of-type {
+.card-front-data > section:first-of-type {
     /* font-family: 'Montserrat', sans-serif; */
     text-transform: uppercase;
     font-weight: normal;
@@ -70,7 +77,7 @@
     letter-spacing: .5vw;
     margin-top: 6vw;
 }
-.card-front > div > section:last-of-type {
+.card-front-data > section:last-of-type {
     font-family: 'Merriweather', sans-serif;
     font-style: italic;
     font-size: 3vw;

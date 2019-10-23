@@ -58,7 +58,7 @@ color: #744A9E;
 .arrow-left, .arrow-right {
     height: 58px;
     width: 58px;
-    border-color: purple;
+    border-color: #744A9E;
     transform: rotate(45deg)
 }
 .arrow-left {    
