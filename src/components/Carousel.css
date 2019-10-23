@@ -1,7 +1,7 @@
 .carousel-container {
     width: 100vw;
     /* min-height: 40px; */
-    background-color: pink;
+    /* background-color: pink; */
     /* margin: 5vw 0; */
     position: relative;
     padding-bottom: 20px;
@@ -9,15 +9,45 @@
 .carousel-container > section {
     padding-top: 20px;
     height: 40px;
-    background-color: pink;
+    /* background-color: pink; */
+    font-size: 36px;
+line-height: 30px;
+/* or 83% */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #965BA5;
 }
+
 .carousel-container > div,  .carousel-container > button {
     display: inline-block;
+
 }
 .carousel-container > div {
     width: calc(100vw - 300px);
-}
 
+}
+.carousel-container > div > section {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 187% */
+    
+    text-align: center;
+    color: #473E4E;
+    height: 70px;
+}
+.carousel-container > div > div {
+    font-weight: 600;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+text-align: center;
+
+color: #744A9E;
+}
 .carousel-container > button {
     height: 100px;
     width: 42px;
@@ -32,12 +62,12 @@
     transform: rotate(45deg)
 }
 .arrow-left {    
-    border-bottom: 1px solid ;
-    border-left: 1px solid ;
-    margin-left: 11px;
+    border-bottom: 1.5px solid ;
+    border-left: 1.5px solid ;
+    margin-left: 11.5px;
 }
 .arrow-right {
     margin-left: -30px;
-    border-top: 1px solid ;
-    border-right: 1px solid ;
+    border-top: 1.5px solid ;
+    border-right: 1.5px solid ;
 }

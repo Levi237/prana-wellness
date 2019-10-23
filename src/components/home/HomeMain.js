@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 
 import * as routes from '../../constants/routes';
@@ -6,9 +6,22 @@ import * as routes from '../../constants/routes';
 import PointDisplay   from './PointDisplay';
 import LotusDisplay   from './LotusDisplay';
 import HomeStephanie  from './HomeStephanie';
+import CustomerDisplay from './CustomerDisplay'
 import Carousel       from '../Carousel';
 
- const HomeMain = () => {
+export default class HomeMain extends Component {
+    state = {
+        quotes: [{
+            statement: "jane says blah blah blha",
+            person: "Jane",
+        },{
+            statement: "bob says blah blha",
+            person: "Bob",
+        }]
+    }
+    render(){
+
+
     return(<>
         <div className="home-main-top"><br />
         “Prana is Sanskrit for breath, considered as a life-giving force. <br/>
@@ -19,11 +32,12 @@ import Carousel       from '../Carousel';
         <br /><br /><br/>
         <NavLink to={routes.CORP}><button>browse services</button></NavLink>
         <br /><br /><br/>
+
+        <CustomerDisplay />
         <LotusDisplay />
         <HomeStephanie />
-        <Carousel />
+        <Carousel carouselContent={this.state.quotes}/>
     </>)
- 
+     }
 }
 
-export default HomeMain

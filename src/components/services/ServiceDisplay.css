@@ -20,24 +20,24 @@
     font-size: 1.8vw;
     transition: .3s ease-in-out;
 }
+
+.card-front {
+    max-width: 25vw;
+    transition: all .3s ease-in-out;
+    position: initial;
+}
 .card-front:hover, .card-front:active {
     max-width: 0;
     overflow: hidden;
     /* color: black; */
-    transition: .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
-.card-front {
-    max-width: 25vw;
-    transition: .3s ease-in-out;
-    position: initial;
-}
-
 .card-front > img {
     height: 25vw;
     width: 25vw;
     position: relative;
     z-index: 1;
-    transition: .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .card-front > div {
     width: 19vw;
