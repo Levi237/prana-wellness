@@ -2,7 +2,7 @@
     width: 24vw;
     margin: 0 2vw 50px 2vw;
     display: inline-block;
-    color: #965BA5;
+    color: #965ba5;
     position: relative;
 }
 
@@ -18,8 +18,8 @@
 }
 
 .price-pack-box {
-    background: rgba(150, 91, 165, 0.15);
-    height: 350px;
+    background: rgb(239, 231, 241);
+    height: 300px;
     margin-top: -70px;
     padding-top: 80px;
     position: relative;

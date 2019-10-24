@@ -4,11 +4,8 @@ import BenefitsDisplay from './BenefitsDisplay'
 import PackageDisplay from './PackageDisplay';
 import OurApproach from './OurApproach';
 
-const customQuoteStyle = {
-  margin: '-150px 0 0',
-  height: '40vw',
-  padding: '16vw 0 0',
-}
+import './CustomQuote.css'
+
 
 export default class CorporateMain extends Component {
   state = {
@@ -37,6 +34,7 @@ export default class CorporateMain extends Component {
   }
 
   render(){
+    const { toggleReferralBtn } = this.props
     return(<>
       <div className="about-main-container">
         <div className="main-title">
@@ -44,8 +42,18 @@ export default class CorporateMain extends Component {
             <BenefitsDisplay />
         </div>
         <PackageDisplay pricePack={this.state.corporatePlans}/>
-        <div style={customQuoteStyle} className="custom-quote">DON'T SEE A PACKAGE THAT'S RIGHT?</div>
+        <div className="custom-quote">
+          <section>DON'T SEE A PACKAGE THAT'S RIGHT?</section>
+          <section>
+            <div>
+              Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.
+            </div>
+            <div><button onClick={() => {toggleReferralBtn()}}>Request Quote</button></div>
+          </section>
+        </div>
+        
       </div>
+      
     </>)
   }
 

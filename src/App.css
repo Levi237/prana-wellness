@@ -363,6 +363,7 @@ grid-template-areas:
   /* margin-top: -150px; */
   height: 24vw;
 }
+
 @media screen and (max-width: 945px) {
   .grid-header {
     margin-bottom: 0;
