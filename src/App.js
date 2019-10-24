@@ -71,18 +71,18 @@ export default class App extends Component {
   };
   toggleReferralBtn = (e) => {
     // e.preventDefault();
+    let openForm = null;
     if(e && e.target.name === 'contactForm'){
-      const openForm = document.getElementById('contact');
-      openForm.classList.toggle('active');
-      openForm.classList.toggle('inactive');
-      console.log("click toggle referral", e.target.name)
+      openForm = document.getElementById('contact');
     }
     if(e && e.target.name === 'referralForm'){
-      const openForm = document.getElementById('referral');
-      openForm.classList.toggle('active');
-      openForm.classList.toggle('inactive');
-      console.log("click toggle referral", e.target.name)
+      openForm = document.getElementById('referral');
     }
+    if(e && e.target.name === 'hamburgerMenu'){
+      openForm = document.getElementById('menu');
+    }
+    openForm.classList.toggle('active');
+    openForm.classList.toggle('inactive');
 
   };
 

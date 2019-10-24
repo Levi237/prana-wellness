@@ -7,11 +7,11 @@ const inputStyle = {
     display: 'inline-block',
     float: 'left',
     width: '75%',
-    'margin-left': '5%',
-    'max-width': '550px',
+    marginLeft: '5%',
+    maxWidth: '550px',
     height: '56px',
-    'font-size': '24px',
-    'line-height': '29px',
+    fontSize: '24px',
+    lineHeight: '29px',
     color: 'rgba(0, 0, 0, 0.5)',
 }
 
@@ -20,23 +20,23 @@ const btnStyle = {
     background: 'transparent',
     border: '1px solid #fff',
     color: 'white',
-    'width': '16px',
-    'min-width': '10%',
+    width: '16px',
+    minWidth: '10%',
     height: '63px',
     display: 'inline-block',
     float: 'right',
-    'margin-right': '5%',
+    marginRight: '5%',
 }
 
 const arrowStyle = {
-    'border-right': '1px solid #FFFFFF',
-    'border-top': '1px solid #FFFFFF',
-    'box-sizing': 'border-box',
+    borderRight: '1px solid #FFFFFF',
+    borderTop: '1px solid #FFFFFF',
+    boxSizing: 'border-box',
     transform: 'rotate(45deg)',
     height: '16px',
     width: '16px',
 
-    'margin-left': '5px',
+    marginLeft: '5px',
 }
 
 export default class EmailerRequest extends Component {
@@ -62,6 +62,7 @@ export default class EmailerRequest extends Component {
     }
 
     render(){
+        const { email } = this.state
         return(
             <>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
@@ -73,7 +74,7 @@ export default class EmailerRequest extends Component {
                     onChange={this.handleChange}
                     placeholder="Enter your email here"
                     required
-                    value={this.state.email}
+                    value={ email ? email : ""}
                     style={inputStyle}
                 />
 

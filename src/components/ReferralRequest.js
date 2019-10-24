@@ -7,7 +7,7 @@ import firebase from 'firebase/app'
 
 const containerStyle = {
     position: 'fixed',
-    'z-index': '50',
+    zIndex: '50',
     width: '100vw',
     height: '100vh',
     padding: '3vw, 0',
@@ -18,14 +18,14 @@ const containerStyle = {
 const formDivStyle = {
     position: 'relative',
     background: 'white',
-    'box-shadow': '0px 0px 20px rgba(0,0,0,.5)',
+    boxShadow: '0px 0px 20px rgba(0,0,0,.5)',
     width: '94vw',
     height: '94vh',
     padding: '3vh 3vw',
-    'max-width': 'calc(600px - 6vw)',
-    'max-height': '800px',
+    maxWidth: 'calc(600px - 6vw)',
+    maxHeight: '800px',
     margin: '0 auto',
-    'text-align': 'center',
+    textAlign: 'center',
 }
 
 
@@ -76,7 +76,7 @@ export default class ReferralRequest extends Component {
                         onChange={e => {this.handleChange(e)}}
                         placeholder="Enter your name here"
                         required
-                        value={fromName}
+                        value={ fromName ? fromName : ''}
                     />
                     <input
                         className="emailer-input"
@@ -85,7 +85,7 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Enter your email here"
                         required
-                        value={fromEmail}
+                        value={ fromEmail ? fromEmail : ''}
                     />
                 <section>TO:</section>
                     <input
@@ -95,7 +95,7 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Enter referral name here"
                         required
-                        value={toName}
+                        value={ toName ? toName : ''}
                     />
                     <input
                         className="emailer-input"
@@ -104,7 +104,7 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Enter referral email here"
                         required
-                        value={toEmail}
+                        value={ toEmail ? toEmail : ''}
                     />
                     <input
                         className="emailer-input"
@@ -113,7 +113,7 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Enter company name here"
                         required
-                        value={businessName}
+                        value={ businessName ? businessName : ''}
                     />
                 <section>SUBJECT:</section>
                     <input
@@ -123,7 +123,7 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Enter subject here"
                         required
-                        value={subjectTitle}
+                        value={ subjectTitle ? subjectTitle : ''}
                     />
                     <textarea
                         className="emailer-input"
@@ -132,7 +132,7 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Share your thoughts"
                         required
-                        value={subjectContent}
+                        value={ subjectContent ? subjectContent : ''}
                     />
                     <button type="submit">SUBMIT</button>
                 </div>
