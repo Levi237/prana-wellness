@@ -88,25 +88,31 @@
         height: 90vw;
         width: 90vw;
         display: block;
-        background-color: #000;
         margin: 5vw;
     }
-    .service-box > div > img {
-        height: 90vw;
-        width: 90vw;
-    }
-    .service-box > div > div {
-        width: 75vw;
-        height: 75vw;
-        margin: 7.5vw;
-    }
-    .service-box > div > div > section:first-of-type {
 
-        font-size: 7vw;
-        letter-spacing: .5vw;
-        margin-top: 16vw;
+    .card-box {
+        height: 90vw;
+        max-width: 90vw;
     }
-    .service-box > div > div > section:last-of-type {
-        font-size: 12vw;
+    .card-front-data {
+        width: 70vw;
+        height: 70vw;
+        margin: 10vw;
+    }
+    .card-back {
+        height: 70vw;
+        width: 70vw;
+        margin-left: 10vw;
+        margin-top: -70vw;
+        font-size: 5vw;
+    }
+    .card-front-data > section:first-of-type {
+        font-size: 7vw;
+        /* letter-spacing: .5vw; */
+        margin-top: 20vw;
+    }
+    .card-front-data > section:last-of-type {
+        font-size: 11vw;
     }
 }

@@ -90,9 +90,10 @@
         width: 80vw;
     }
     .price-pack-box section {
-        padding-right: 5vw;
-        padding-left: 5vw;
+        padding-right: 8vw;
+        padding-left: 8vw;
     }
+    
     .price-pack-box section:first-of-type {
         font-size: 7vw;
     }
