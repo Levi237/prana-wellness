@@ -9,6 +9,7 @@ import Nav              from './components/Nav';
 import GlobalNav        from './components/GlobalNav';
 import EmailerRequest   from './components/EmailerRequest';
 import ReferralRequest  from './components/ReferralRequest';
+import ContactRequest  from './components/ContactRequest';
 
 import HomeNav          from './components/home/HomeNav';
 import HomeHeader       from './components/home/HomeHeader';
@@ -28,24 +29,69 @@ import './App.css';
 // import firebase from 'firebase/app'
 
 export default class App extends Component {
+  state = {
+    otherServices: [{ 
+      smallText: "Bootcamp",
+      largeText: "Fitness",
+      image: "shavasana.png",
+      content: "Power hour of cardio, Plyometrics, HIIT, resistance bands, and body weight exercises. Modifications for all levels.",
+  },{
+      smallText: "Lunch +",
+      largeText: "Learn",
+      image: "meditation-icon.png",
+      content: "Health, fitness, and mindfulness tools and tips for a balanced lifestyle and productive work experience.",
+  },{
+      smallText: "Corporate",
+      largeText: "Massage",
+      image: "breathing-icon.png",
+      content: "Relaxing intuitive massage break from static postures.",
+  },{
+      smallText: "Work",
+      largeText: "Play",
+      image: "office-yoga.png",
+      content: "Take time to play at work! Fun games that focus on leadership and team building.",
+  },{
+      smallText: "Wellness",
+      largeText: "Retreats",
+      image: "retreat-other-services.png",
+      content: "Curated and customizable off-site wellness retreats for team building and training, with a fitness and wellness focus.",
+  },{
+      smallText: "Health",
+      largeText: "Fairs",
+      image: "breathing-icon.png",
+      content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
+  }]
+  }
+//If target matches then:
 
   toggleHamburger = () => {
     const hamburgerMenu = document.getElementById('menu');
     hamburgerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('inactive');
   };
-  toggleReferralBtn = () => {
-    console.log("click toggle referral")
-    const referralForm = document.getElementById('referral');
-    referralForm.classList.toggle('active');
-    referralForm.classList.toggle('inactive');
+  toggleReferralBtn = (e) => {
+    // e.preventDefault();
+    if(e && e.target.name === 'contactForm'){
+      const openForm = document.getElementById('contact');
+      openForm.classList.toggle('active');
+      openForm.classList.toggle('inactive');
+      console.log("click toggle referral", e.target.name)
+    }
+    if(e && e.target.name === 'referralForm'){
+      const openForm = document.getElementById('referral');
+      openForm.classList.toggle('active');
+      openForm.classList.toggle('inactive');
+      console.log("click toggle referral", e.target.name)
+    }
+
   };
+
   render(){
     return(
       <div className="grid-container">
       <Nav toggleHamburger={this.toggleHamburger}/>
       <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
-
+      <ContactRequest toggleReferralBtn={this.toggleReferralBtn} services={this.state.otherServices} />
         <div className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 

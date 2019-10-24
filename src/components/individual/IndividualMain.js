@@ -53,7 +53,7 @@ export default class IndividualMain extends Component {
             <section className="main-content-box">
             <div>If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content! </div>
 
-              <div><button onClick={() => {toggleReferralBtn()}}>refer to employer</button></div>
+              <div><button name="referralForm" onClick={(e) => {toggleReferralBtn(e)}}>refer to employer</button></div>
             </section>
             </div>
             <br/><br/><br/>

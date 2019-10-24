@@ -60,10 +60,16 @@ export default class ReferralRequest extends Component {
     
     render(){
         const { fromName, fromEmail, toName, toEmail, businessName, subjectTitle, subjectContent } = this.state
-        const { toggleReferralBtn } = this.props
+        const { toggleReferralBtn, services } = this.props
+
+        const buttonSelectors = services.map((service, key) => {
+            return(
+                <button key={key}>service</button>
+            )
+        })
         return(
-            <div id="referral" style={containerStyle} className="inactive">
-                    <button name="referralForm" className="close xClose" onClick={(e) => {toggleReferralBtn(e)}}>
+            <div id="contact" style={containerStyle} className="inactive">
+                    <button name="contactForm" className="close xClose" onClick={(e) => {toggleReferralBtn(e)}}>
                          CLOSE X
                     </button>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
@@ -87,25 +93,7 @@ export default class ReferralRequest extends Component {
                         required
                         value={fromEmail}
                     />
-                <section>TO:</section>
-                    <input
-                        className="emailer-input"
-                        name="toName"
-                        type="text" 
-                        onChange={this.handleChange}
-                        placeholder="Enter referral name here"
-                        required
-                        value={toName}
-                    />
-                    <input
-                        className="emailer-input"
-                        name="toEmail"
-                        type="email" 
-                        onChange={this.handleChange}
-                        placeholder="Enter referral email here"
-                        required
-                        value={toEmail}
-                    />
+                <section>Business or Location:</section>
                     <input
                         className="emailer-input"
                         name="businessName"
@@ -115,6 +103,7 @@ export default class ReferralRequest extends Component {
                         required
                         value={businessName}
                     />
+                    {buttonSelectors}
                 <section>SUBJECT:</section>
                     <input
                         className="emailer-input"
