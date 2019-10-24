@@ -61,6 +61,7 @@
 }
 .price-pack-box section:nth-of-type(5) {
     font-weight: bold;
+    margin-bottom: 5px;
 }
 .price-pack-box section:last-of-type {
     margin: 30px auto 20px auto;
