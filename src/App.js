@@ -72,17 +72,17 @@ export default class App extends Component {
   toggleReferralBtn = (e) => {
     // e.preventDefault();
     let openForm = null;
-    if(e && e.target.name === 'contactForm'){
-      openForm = document.getElementById('contact');
-    }
-    if(e && e.target.name === 'referralForm'){
-      openForm = document.getElementById('referral');
-    }
-    if(e && e.target.name === 'hamburgerMenu'){
-      openForm = document.getElementById('menu');
-    }
-    openForm.classList.toggle('active');
-    openForm.classList.toggle('inactive');
+    // if(e && e.currentTarget.name === 'contactForm'){
+    //   openForm = document.getElementById('contact');
+    // }
+    // if(e && e.target.name === 'referralForm'){
+    //   openForm = document.getElementById('referral');
+    // }
+    // if(e && e.target.name === 'hamburgerMenu'){
+    //   openForm = document.getElementById('menu');
+    // }
+    // openForm.classList.toggle('active');
+    // openForm.classList.toggle('inactive');
 
   };
 

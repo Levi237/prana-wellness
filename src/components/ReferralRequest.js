@@ -23,9 +23,10 @@ const formDivStyle = {
     height: '94vh',
     padding: '3vh 3vw',
     maxWidth: 'calc(600px - 6vw)',
-    maxHeight: '800px',
-    margin: '0 auto',
+    height: '80vh',
+    margin: '0 auto 40px auto',
     textAlign: 'center',
+    overflow: 'auto',
 }
 
 
@@ -48,7 +49,7 @@ export default class ReferralRequest extends Component {
             .add({
                 ...this.state,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            }).then(toggleReferralBtn);
+            }).then((e) => {toggleReferralBtn(e)});
         return newFromDB
     };
     handleChange = (e) => {
@@ -66,7 +67,7 @@ export default class ReferralRequest extends Component {
                     <button name="referralForm" className="close xClose" onClick={(e) => {toggleReferralBtn(e)}}>
                          CLOSE X
                     </button>
-            <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
+            <form name="referralForm" className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
             <div style={formDivStyle} className="referral-box">
                 <section>FROM:</section>
                     <input
