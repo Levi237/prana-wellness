@@ -5,7 +5,8 @@ import ServiceDisplay from '../services/ServiceDisplay';
 
 import './ReferralQuote.css'
 
-class IndividualMain extends Component {
+
+export default class IndividualMain extends Component {
   state = {
     individualPlans: [{ 
         title: "Asana",
@@ -48,7 +49,6 @@ class IndividualMain extends Component {
   
     return(<>
           <div className="wellness-main-container">
-          {/* <div className=""> */}
             <section className="main-title white">Want Prana in Your Workplace?</section>
             <section className="main-content-box">
             <div>If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content! </div>
@@ -56,16 +56,10 @@ class IndividualMain extends Component {
               <div><button onClick={() => {toggleReferralBtn()}}>refer to employer</button></div>
             </section>
             </div>
-            {/* <section className="main-title">Want Prana in Your Workplace?</section>
-            <section className="main-cta">If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content! </section>
-            <button onClick={toggleReferralBtn}>refer to employer</button> */}
-          {/* </div> */}
+            <br/><br/><br/>
           <ServiceDisplay services={this.state.services}/>
           <section className="header-two">subscribe to personal wellness</section>
           <PackageDisplay pricePack={this.state.individualPlans}/>
     </>)
   }
 }
-
-export default IndividualMain
-
