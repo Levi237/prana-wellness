@@ -14,8 +14,10 @@ const PackageDisplay =({pricePack})=> {
                 <div className="price-pack-box">
                     <section>{pack.title}</section>
                     <section>{pack.price}</section>
-                    <section>{pack.duration[0]}</section>
-                    <section>{pack.duration[1]}</section>
+                    {/* <section>{pack.duration[0]}</section> */}
+                    {/* <section>{pack.duration[1]}</section> */}
+                    <section>{pack.duration}</section>
+                    <section></section>
                     <section>{pack.secondTitle}</section>
                     {details}
                 </div>

@@ -70,28 +70,23 @@ export default class App extends Component {
     hamburgerMenu.classList.toggle('inactive');
   };
   toggleReferralBtn = (e) => {
-    // e.preventDefault();
-    let openForm = null;
-    // if(e && e.currentTarget.name === 'contactForm'){
-    //   openForm = document.getElementById('contact');
-    // }
-    // if(e && e.target.name === 'referralForm'){
-    //   openForm = document.getElementById('referral');
-    // }
-    // if(e && e.target.name === 'hamburgerMenu'){
-    //   openForm = document.getElementById('menu');
-    // }
-    // openForm.classList.toggle('active');
-    // openForm.classList.toggle('inactive');
-
+    // console.log("click toggle referral", e.target.name)
+    const referralForm = document.getElementById('referral');
+    referralForm.classList.toggle('active');
+    referralForm.classList.toggle('inactive');
   };
-
+  toggleContactBtn = (e) => {
+    console.log("click toggle referral")
+    const referralForm = document.getElementById('contact');
+    referralForm.classList.toggle('active');
+    referralForm.classList.toggle('inactive');
+  };
   render(){
     return(
       <div className="grid-container">
       <Nav toggleHamburger={this.toggleHamburger}/>
       <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
-      <ContactRequest toggleReferralBtn={this.toggleReferralBtn} services={this.state.otherServices} />
+      <ContactRequest toggleContactBtn={this.toggleContactBtn} services={this.state.otherServices} />
         <div className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
@@ -125,11 +120,11 @@ export default class App extends Component {
             <Route path={routes.INFO} exact render={() => 
                       <AboutMain /> }/>
             <Route path={routes.WELL} exact render={() => 
-                      <IndividualMain toggleReferralBtn={this.toggleReferralBtn}/> }/>       
+                      <IndividualMain toggleReferralBtn={this.toggleReferralBtn} toggleContactBtn={this.toggleContactBtn}/> }/>       
             <Route path={routes.CORP} exact render={() => 
-                      <CorporateMain toggleReferralBtn={this.toggleReferralBtn}/> }/>  
+                      <CorporateMain toggleContactBtn={this.toggleContactBtn}/> }/>  
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain toggleReferralBtn={this.toggleReferralBtn}/> }/>           
+                      <ServicesMain toggleReferralBtn={this.toggleReferralBtn} toggleContactBtn={this.toggleContactBtn}/> }/>           
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>

@@ -41,14 +41,14 @@ export default class ReferralRequest extends Component {
     };
 
     handleSubmit = async (e) => {
-        const { toggleReferralBtn } = this.props
+        const { toggleContactBtn } = this.props
         e.preventDefault();
         const newFromDB = await firebase.firestore()
             .collection('referrals')
             .add({
                 ...this.state,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            }).then(toggleReferralBtn);
+            }).then(toggleContactBtn);
         return newFromDB
     };
     handleChange = (e) => {
@@ -60,7 +60,7 @@ export default class ReferralRequest extends Component {
     
     render(){
         const { fromName, fromEmail, toName, toEmail, businessName, subjectTitle, subjectContent } = this.state
-        const { toggleReferralBtn, services } = this.props
+        const { toggleContactBtn, services } = this.props
 
         const buttonSelectors = services.map((service, key) => {
             return(
@@ -69,7 +69,7 @@ export default class ReferralRequest extends Component {
         })
         return(
             <div id="contact" style={containerStyle} className="inactive">
-                    <button name="contactForm" className="close xClose" onClick={(e) => {toggleReferralBtn(e)}}>
+                    <button name="contactForm" className="close xClose" onClick={(e) => {toggleContactBtn(e)}}>
                          CLOSE X
                     </button>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>

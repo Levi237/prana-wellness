@@ -1,6 +1,6 @@
 import React from 'react';
 
- const HomeNav = ({ toggleReferralBtn }) => {
+ const HomeNav = ({ toggleHamburger }) => {
 
     return(<>
           <div className="home-logo">
@@ -9,7 +9,7 @@ import React from 'react';
             </div>
           </div>
 
-          <div name="hamburgerMenu" className="home-hamburger" onClick={(e) => toggleReferralBtn(e)}>
+          <div name="toggleHamburger" className="home-hamburger" onClick={(e) => toggleHamburger(e)}>
             <section></section><section></section><section></section>
           </div>
     </>)
