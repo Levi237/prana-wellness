@@ -15,7 +15,7 @@ export default class IndividualMain extends Component {
         details: ["Can be a mix of yoga, meditation, and/or breath work", "*See add ons for additional services"],
         image: "namaste.png",
     },{
-        title: "Satiya",
+        title: "Satya",
         price: "$20/month",
         duration: ["1 x per week", "(3 month commitment)"],
         details: ["Access to online meditations", "1 lunch and learn ", "*See add ons for additional services"],

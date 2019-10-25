@@ -64,10 +64,10 @@ export default class AdminPortal extends Component {
         })
         return(
             <div style={{width: '100vw', position: 'relative'}}>
-                <div style={{float: 'left', width: '40vw', minHeight: '80vh', padding: '5vw'}}>
+                <div style={{float: 'left', width: '40vw', minHeight: '80vh', padding: '5vw', background: '#fff'}}>
                     {contactList}
                 </div>
-                <div style={{float: 'right', width: '40vw', minHeight: '80vh', padding: '5vw'}}>
+                <div style={{float: 'right', width: '40vw', minHeight: '80vh', padding: '5vw', background: '#fff'}}>
                     {emailerList}
                 </div>
             </div>
