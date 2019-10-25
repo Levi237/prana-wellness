@@ -89,6 +89,9 @@ export default class App extends Component {
   logout = () => {
     firebase.auth().signOut();
   }
+  // onClose = (e) => {
+  //   this.props.onClose && this.props.onClose(e);
+  // };
   toggleHamburger = () => {
     const hamburgerMenu = document.getElementById('menu');
     hamburgerMenu.classList.toggle('active');
@@ -113,11 +116,9 @@ export default class App extends Component {
         <div className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
-                      <HomeNav toggleHamburger={this.toggleHamburger}/> }/> 
-            <Route path={routes.ADMN} exact render={() => 
-                      !this.state.user && <Enter /> }/>                 
+                      <HomeNav toggleHamburger={this.toggleHamburger}/> }/>           
             <Route path={routes.ROOT} render={() => 
-                      <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>    
+                      <GlobalNav logout={this.logout} toggleHamburger={this.toggleHamburger}/> }/>    
           </Switch>
         </div>
 
@@ -125,6 +126,8 @@ export default class App extends Component {
           <Switch>         
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>
+            <Route path={routes.ADMN} exact render={() => 
+                    !this.state.user && <Enter /> }/>       
             <Route path={routes.INFO} exact render={() => 
                     <AboutHeader /> }/>
             <Route path={routes.WELL} exact render={() => 

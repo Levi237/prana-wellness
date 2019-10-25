@@ -5,6 +5,7 @@ import 'firebase/auth';
 
 export default class Enter extends Component {
     state = {
+        admin: 'jane@jane.com',
         email: "",
         password: "",
         fireErrors:"",
@@ -20,31 +21,34 @@ export default class Enter extends Component {
 
     login = e => {
         e.preventDefault();
-        firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
-            .catch((error) => {
-                this.setState({fireErrors: error.message})
-            });
+        if (this.state.email === this.state.admin){
+            firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+                .catch((error) => {
+                    this.setState({fireErrors: error.message})
+                });
+        };
     };
     register = e => {
         e.preventDefault();
+        if (this.state.email === this.state.admin){
         firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
             .catch((error) => {
                 this.setState({fireErrors: error.message})
             });
+        };
     };
 
     getAction = action => {
-        if(action === "reg"){
+        if (action === "reg"){
             this.setState({formTitle: "Register New User", loginBtn: false, fireErrors: ""})
-        }else{
+        } else {
             this.setState({formTitle: "Login", loginBtn: true, fireErrors: ""})
-        }
+        };
     };
 
 
     render(){
         const { fireErrors, loginBtn, formTitle, email, password } = this.state
-        const { newRecipe, onClose } = this.props
 
         let errorNotification = fireErrors ? 
             <div className="Error">{fireErrors}</div> : null;
@@ -58,7 +62,6 @@ export default class Enter extends Component {
         return(
             <div className="enter-container ">
                 <div className="enter-form">
-            { newRecipe && <button className="close xClose" onClick={(e) => {onClose(e)}}>X</button> }
                     <div className="errorNotification">{errorNotification}</div>
                     <div id="title">{formTitle}</div>
                         <div className="body">

@@ -1,6 +1,6 @@
 import React from 'react';
 
- const GlobalNav = ({ toggleHamburger }) => {
+ const GlobalNav = ({ toggleHamburger, logout }) => {
 
     return(<>
           <div className="header-logo">
@@ -13,6 +13,7 @@ import React from 'react';
             </div> */}
           </div>
 
+          <button onClick={logout} style={{color:'green'}}>LOGOUT</button>
           <div className="global-hamburger" onClick={() => toggleHamburger()}>
             <section></section><section></section><section></section>
           </div>
