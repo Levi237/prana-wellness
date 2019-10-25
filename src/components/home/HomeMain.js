@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink }      from 'react-router-dom';
 
-import * as routes from '../../constants/routes';
+import * as routes      from '../../constants/routes';
 
-import PointDisplay   from './PointDisplay';
-import LotusDisplay   from './LotusDisplay';
-import HomeStephanie  from './HomeStephanie';
-import CustomerDisplay from './CustomerDisplay';
-import Carousel       from '../Carousel';
+import PointDisplay     from './PointDisplay';
+import LotusDisplay     from './LotusDisplay';
+import HomeStephanie    from './HomeStephanie';
+import CustomerDisplay  from '../CustomerDisplay';
+import Carousel         from '../Carousel';
 
 export default class HomeMain extends Component {
     state = {
