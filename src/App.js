@@ -5,11 +5,12 @@ import { Switch, Route }    from 'react-router-dom';
 
 import * as routes      from './constants/routes';
 import Nav              from './components/Nav';
+import Enter            from './components/Enter';
 
 import GlobalNav        from './components/GlobalNav';
 import EmailerRequest   from './components/EmailerRequest';
 import ReferralRequest  from './components/ReferralRequest';
-import ContactRequest  from './components/ContactRequest';
+import ContactRequest   from './components/ContactRequest';
 
 import HomeNav          from './components/home/HomeNav';
 import HomeHeader       from './components/home/HomeHeader';
@@ -18,65 +19,87 @@ import AboutHeader      from './components/about/AboutHeader';
 import AboutMain        from './components/about/AboutMain';
 import CorporateHeader  from './components/corporate/CorporateHeader';
 import CorporateMain    from './components/corporate/CorporateMain';
-import IndividualHeader   from './components/individual/IndividualHeader';
-import IndividualMain     from './components/individual/IndividualMain';
+import IndividualHeader from './components/individual/IndividualHeader';
+import IndividualMain   from './components/individual/IndividualMain';
 import ServicesHeader   from './components/services/ServicesHeader';
 import ServicesMain     from './components/services/ServicesMain';
 
 import './App.css';
 
 
-// import firebase from 'firebase/app'
+import firebase from 'firebase/app'
 
 export default class App extends Component {
   state = {
+    user: null,
+    uid: null,
     otherServices: [{ 
       smallText: "Bootcamp",
       largeText: "Fitness",
       image: "shavasana.png",
       content: "Power hour of cardio, Plyometrics, HIIT, resistance bands, and body weight exercises. Modifications for all levels.",
-  },{
+    },{
       smallText: "Lunch +",
       largeText: "Learn",
       image: "meditation-icon.png",
       content: "Health, fitness, and mindfulness tools and tips for a balanced lifestyle and productive work experience.",
-  },{
+    },{
       smallText: "Corporate",
       largeText: "Massage",
       image: "breathing-icon.png",
       content: "Relaxing intuitive massage break from static postures.",
-  },{
+    },{
       smallText: "Work",
       largeText: "Play",
       image: "office-yoga.png",
       content: "Take time to play at work! Fun games that focus on leadership and team building.",
-  },{
+    },{
       smallText: "Wellness",
       largeText: "Retreats",
       image: "retreat-other-services.png",
       content: "Curated and customizable off-site wellness retreats for team building and training, with a fitness and wellness focus.",
-  },{
+    },{
       smallText: "Health",
       largeText: "Fairs",
       image: "breathing-icon.png",
       content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
-  }]
-  }
-//If target matches then:
+    }]
+  };  
+  
+  componentDidMount = () => {
+    this.authListener();
+    // this.loadForm();
+    // this.loadRecipes();
+  };
 
+
+//If target matches then:
+  authListener(){
+    firebase.auth().onAuthStateChanged((user) => {
+      if(user){
+        this.setState({
+          user: user.providerData[0],
+          uid: firebase.auth().currentUser.uid
+        });
+      }else{
+        this.setState({user: null, uid: null});
+      }
+    });
+  };
+  logout = () => {
+    firebase.auth().signOut();
+  }
   toggleHamburger = () => {
     const hamburgerMenu = document.getElementById('menu');
     hamburgerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('inactive');
   };
   toggleReferralBtn = (e) => {
-    // console.log("click toggle referral", e.target.name)
     const referralForm = document.getElementById('referral');
     referralForm.classList.toggle('active');
     referralForm.classList.toggle('inactive');
   };
   toggleContactBtn = (e) => {
-    console.log("click toggle referral")
     const referralForm = document.getElementById('contact');
     referralForm.classList.toggle('active');
     referralForm.classList.toggle('inactive');
@@ -91,8 +114,10 @@ export default class App extends Component {
           <Switch>
             <Route path={routes.HOME} exact render={() => 
                       <HomeNav toggleHamburger={this.toggleHamburger}/> }/> 
+            <Route path={routes.ADMN} exact render={() => 
+                      !this.state.user && <Enter /> }/>                 
             <Route path={routes.ROOT} render={() => 
-                      <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>                   
+                      <GlobalNav toggleHamburger={this.toggleHamburger}/> }/>    
           </Switch>
         </div>
 
