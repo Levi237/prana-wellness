@@ -26,6 +26,15 @@ const formDivStyle = {
     maxHeight: '800px',
     margin: '0 auto',
     textAlign: 'center',
+    overflow: 'auto',
+}
+
+const selectStyle = {
+    width: '150px',
+    fontSize: '20px',
+    padding: '5px 15px',
+    margin: '5px',
+
 }
 
 
@@ -38,6 +47,7 @@ export default class ReferralRequest extends Component {
         businessName: null,
         subjectTitle: null,
         subjectContent: null,
+        addServices: [],
     };
 
     handleSubmit = async (e) => {
@@ -48,25 +58,53 @@ export default class ReferralRequest extends Component {
             .add({
                 ...this.state,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            }).then(toggleContactBtn);
-        return newFromDB
+            }).then(toggleContactBtn)
+        return newFromDB;
     };
     handleChange = (e) => {
         e.preventDefault();
         this.setState({
-            [e.currentTarget.name]: e.currentTarget.value,
+            [e.currentTarget.name]: !e.currentTarget.value,
         })
-    }
+    };
+    handleSelect = (e, value) => {
+        const { addServices } = this.state
+        const selectedService = e.currentTarget.name
+        e.preventDefault();
+        if (addServices.includes(selectedService)){
+            this.setState(prevState => ({     
+                addServices: addServices.filter(x => (
+                    x !== selectedService
+                ))
+            }));
+        } else {
+            this.setState({
+                addServices: [...addServices, selectedService]
+            });
+        }
+    };
     
     render(){
         const { fromName, fromEmail, toName, toEmail, businessName, subjectTitle, subjectContent } = this.state
         const { toggleContactBtn, services } = this.props
 
+
         const buttonSelectors = services.map((service, key) => {
             return(
-                <button key={key}>service</button>
+                <button 
+                    key={key} 
+                    id={service.largeText}
+                    name={service.largeText}
+                    value={service}
+                    style={selectStyle} 
+                    onClick={(e) => {this.handleSelect(e, service)}
+                }>
+                    <section>{service.smallText}</section>
+                    <section>{service.largeText}</section>
+                </button>
             )
-        })
+        });
+
         return(
             <div id="contact" style={containerStyle} className="inactive">
                     <button name="contactForm" className="close xClose" onClick={(e) => {toggleContactBtn(e)}}>
@@ -132,6 +170,6 @@ export default class ReferralRequest extends Component {
 
             </form>
             </div>
-        )
-    }
-}
+        );
+    };
+};

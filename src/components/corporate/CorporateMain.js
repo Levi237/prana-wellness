@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import BenefitsDisplay from './BenefitsDisplay'
+import BenefitsDisplay from './BenefitsDisplay';
 import PackageDisplay from './PackageDisplay';
 import OurApproach from './OurApproach';
 
-import './CustomQuote.css'
+import './CustomQuote.css';
 
 
 export default class CorporateMain extends Component {
@@ -35,7 +35,7 @@ export default class CorporateMain extends Component {
         details: ["Wellness sessions", "Lunch & Learns", "Team building ", "*Customizable, pricing may vary*"],
         image: "guru.png",
     }]
-  }
+  };
 
   render(){
     const { toggleContactBtn } = this.props
@@ -58,8 +58,7 @@ export default class CorporateMain extends Component {
         
       </div>
       
-    </>)
-  }
-
-}
+    </>);
+  };
+};
 
