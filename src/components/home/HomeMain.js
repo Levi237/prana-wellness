@@ -36,7 +36,7 @@ export default class HomeMain extends Component {
             <br /><br /><br/>
             <LotusDisplay />
             <HomeStephanie />
-            <Carousel carouselContent={this.state.quotes}/>
+            {/* <Carousel carouselContent={this.state.quotes}/> */}
         </>);
     };
 };

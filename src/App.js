@@ -99,7 +99,7 @@ export default class App extends Component {
         <div className="grid-header">
           <Switch>         
             <Route path={routes.HOME} exact render={() => 
-                    <HomeHeader /> }/>
+                    <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>
             <Route path={routes.INFO} exact render={() => 
                     <AboutHeader /> }/>
             <Route path={routes.WELL} exact render={() => 
@@ -109,7 +109,7 @@ export default class App extends Component {
             <Route path={routes.SERV} exact render={() => 
                       <ServicesHeader /> }/>   
             <Route path={routes.ROOT} render={() => 
-                    <HomeHeader /> }/>                    
+                    <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
           </Switch>
         </div>
 

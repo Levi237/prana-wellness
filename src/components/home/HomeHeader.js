@@ -1,6 +1,6 @@
 import React from 'react';
 
- const HomeHeader = () => {
+ const HomeHeader = ({toggleContactBtn}) => {
     return(<>
           <div className="home-header">
             <section className="welcomeText">WELCOME TO</section>
@@ -8,7 +8,7 @@ import React from 'react';
             <section className="wellnessText">wellness</section>
             <section className="statementText">Wellness designed to work for you.</section>
             <br/><br/>
-            <button className="ctaBtn">Bring Wellness to Your Workplace</button>
+            <button name="contactForm" className="ctaBtn" onClick={(e) => {toggleContactBtn(e)}}>Bring Wellness to Your Workplace</button>
           </div>
     </>);
 };
