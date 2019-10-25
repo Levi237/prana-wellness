@@ -1,50 +1,16 @@
 import React, { Component } from 'react';
 
-import './ReferralRequest.css'
-import './ContactRequest.css'
+import './RequestForm.css';
+// import './ContactRequest.css'
 
 import firebase from 'firebase/app'
-// import { relative } from 'path';
 
-const containerStyle = {
-    position: 'fixed',
-    zIndex: '50',
-    width: '100vw',
-    height: '100vh',
-    padding: '3vw, 0',
-    background: 'rgba(255, 255, 255, .5)',
-    overflow: 'hidden',
-}
-
-const formDivStyle = {
-    position: 'relative',
-    background: 'white',
-    boxShadow: '0px 0px 20px rgba(0,0,0,.5)',
-    width: '94vw',
-    height: '90vh',
-    padding: '3vh 3vw',
-    maxWidth: 'calc(600px - 6vw)',
-    maxHeight: '800px',
-    margin: '0 auto',
-    textAlign: 'center',
-    overflow: 'auto',
-}
-
-const selectStyle = {
-    width: '150px',
-    fontSize: '20px',
-    padding: '5px 15px',
-    margin: '5px',
-
-}
 
 
 export default class ReferralRequest extends Component {
     state = {
         fromName: null,
         fromEmail: null,
-        toName: null,
-        toEmail: null,
         businessName: null,
         subjectTitle: null,
         subjectContent: null,
@@ -90,7 +56,7 @@ export default class ReferralRequest extends Component {
 
     
     render(){
-        const { fromName, fromEmail, toName, toEmail, businessName, subjectTitle, subjectContent, addServices } = this.state
+        const { fromName, fromEmail, businessName, subjectTitle, subjectContent, addServices } = this.state
         const { toggleContactBtn, services } = this.props  
 
         const buttonSelectors = services.map((service, key) => {
@@ -100,7 +66,7 @@ export default class ReferralRequest extends Component {
                     id={service.largeText}
                     name={service.largeText}
                     value={service}
-                    style={selectStyle} 
+                    className="select-service"
                     onClick={(e) => {this.handleSelect(e, service)}
                 }>
                     <section>{service.smallText}</section>
@@ -110,12 +76,12 @@ export default class ReferralRequest extends Component {
         });
 
         return(
-            <div id="contact" style={containerStyle} className="inactive">
+            <div id="contact" className="inactive contact-container">
                     <button name="contactForm" className="close xClose" onClick={(e) => {toggleContactBtn(e)}}>
                          CLOSE X
                     </button>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
-            <div style={formDivStyle} className="referral-box">
+            <div className="form-container contact-box">
                 <section>FROM:</section>
                     <input
                         className="emailer-input"

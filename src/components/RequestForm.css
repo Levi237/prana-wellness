@@ -1,4 +1,32 @@
-.referral-box > input {
+.contact-container {
+    position: fixed;
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+    padding: 0 0 3vw 0;
+    background: rgba(255, 255, 255, .5);
+    overflow: hidden;
+}
+
+
+.form-container {
+    position: relative;
+    background: white;
+    box-shadow: 0px 0px 20px rgba(0,0,0,.5);
+    /* box-shadow: inset 0px 0px 20px rgba(255,255,255,.5); */
+    width: 94vw;
+    /* height: 90vh; */
+    padding: 3vh 3vw;
+    max-width: calc(600px - 6vw);
+    max-height: 80vh;
+    margin: 0 auto 20px auto;
+    text-align: center;
+    overflow: auto;
+}
+
+
+
+.contact-box > input {
     width: 43%;
     height: 36px;
     border: solid lightgray 1px;
@@ -8,11 +36,11 @@
     line-height: 20px;
     color: #473E4E;
 }
-.referral-box > input:last-of-type, .referral-box > input:nth-last-of-type(2) {
+.contact-box > input:last-of-type, .contact-box > input:nth-last-of-type(2) {
     width: 90%;
 }
 
-.referral-box > textarea {
+.contact-box > textarea {
     width: 90%;
     border: 1px solid lightgray;
     height: 150px;
@@ -24,7 +52,7 @@
     margin: 5px 0 20px 0;
 }
 
-.referral-box section {
+.contact-box section {
     text-align: left;
     font-style: normal;
     font-weight: 600;
@@ -34,16 +62,25 @@
     width: 90%;
     margin: auto;
 }
-.referral-box > button {
+.contact-box > button {
     margin: 0 auto;
 }
+button.select-service {
+    width: 150px;
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 5px;
+}
+button.selectedHighlighted {
+    background-color: rgba(150, 91, 165, 0.6);
+}
 
-#referral .close {
+#referral .close, #contact .close {
     padding: 10px 25px !important;
 }
 
 @media screen and (max-width: 945px) {
-    .referral-box section {
+    .contact-box section {
         text-align: left;
         font-style: normal;
         font-weight: 600;
@@ -53,7 +90,7 @@
         width: 90%;
         margin: auto;
     }
-    .referral-box > textarea {
+    .contact-box > textarea {
         width: 90%;
         height: 150px;
         margin: 5px 0;
@@ -62,7 +99,7 @@
         line-height: 20px;
         color: #473E4E;
     }
-    .referral-box > input {
+    .contact-box > input {
         width: 90%;
         height: 48px;
         margin: 3px 0;
@@ -70,7 +107,7 @@
         font-size: 16px;
         line-height: 20px;
     }
-    .referral-box > button {
+    .contact-box > button {
             width: 90%;
     }  
 };

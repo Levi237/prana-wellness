@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './ReferralRequest.css';
+import './RequestForm.css';
 
 import firebase from 'firebase/app';
 
@@ -14,19 +14,7 @@ const containerStyle = {
     overflow: 'hidden',
 };
 
-const formDivStyle = {
-    position: 'relative',
-    background: 'white',
-    boxShadow: '0px 0px 20px rgba(0,0,0,.5)',
-    width: '94vw',
-    height: '94vh',
-    padding: '3vh 3vw',
-    maxWidth: 'calc(600px - 6vw)',
-    height: '80vh',
-    margin: '0 auto 40px auto',
-    textAlign: 'center',
-    overflow: 'auto',
-};
+
 
 
 export default class ReferralRequest extends Component {
@@ -62,12 +50,12 @@ export default class ReferralRequest extends Component {
         const { fromName, fromEmail, toName, toEmail, businessName, subjectTitle, subjectContent } = this.state
         const { toggleReferralBtn } = this.props
         return(
-            <div id="referral" style={containerStyle} className="inactive">
+            <div id="referral" className="inactive contact-container">
                     <button name="referralForm" className="close xClose" onClick={(e) => {toggleReferralBtn(e)}}>
                          CLOSE X
                     </button>
             <form name="referralForm" className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
-            <div style={formDivStyle} className="referral-box">
+            <div className="form-container contact-box">
                 <section>FROM:</section>
                     <input
                         className="emailer-input"
