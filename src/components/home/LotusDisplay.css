@@ -37,7 +37,7 @@
 .lotus-box > section {
     width: 43.5vw;
     display: inline-block;
-    height: 65vw;
+    height: 75vw;
     max-height: 957px;
     position: relative;
     font-size: 2.4vw;
@@ -85,7 +85,7 @@
 }
 .lotus-box > section > section {
         font-size: 1.75vw !important;
-        min-height: 7.5vw;
+        min-height: 15vw;
 }
 .lotus-box > section:first-of-type > section {
     color: #000;

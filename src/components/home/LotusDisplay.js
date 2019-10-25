@@ -24,7 +24,7 @@ export default class PointDisplay extends Component {
                         <img className="" src="lotus_half_pink.png" alt="lotus_half_pink" />
                         <div>Corporate Wellness</div>
                         <section>
-                            can help your company implement an engaging wellness program for all employees to enjoy.
+                        Let us help you create an engaging and enjoyable wellness program to increase productivity, retention, and employee satisfaction. 
                         </section>
                         <NavLink to={routes.CORP}><button className="lotus-desktop-button">explore workplace plans</button></NavLink>
                         <NavLink to={routes.CORP}><button className="lotus-mobile-button">explore plans</button></NavLink>
@@ -34,7 +34,7 @@ export default class PointDisplay extends Component {
                         <img className="" src="lotus_half_white.png" alt="lotus_half_white" />
                         <div>Individual Wellness</div>
                         <section>
-                            can help you identify ways to incorporate the practice outside of work and into all areas of your life.
+                        We guide you and educate you, and help you identify ways to incorporate wellness practices in all areas of your life.
                         </section>
                         <NavLink to={routes.WELL}><button className="lotus-desktop-button">explore individual plans</button></NavLink>
                         <NavLink to={routes.WELL}><button className="lotus-mobile-button">explore plans</button></NavLink>
