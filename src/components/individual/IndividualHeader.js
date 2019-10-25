@@ -10,7 +10,7 @@ import React from 'react';
         </div>
     </div>
         <div className="wellness-header-purple"></div>
-            </>)
-}
+    </>);
+};
 
-export default IndividualHeader
+export default IndividualHeader;

@@ -12,7 +12,7 @@ const AboutMain = () => {
             <MeetStephanie />
             {/* <StephanieBio /> */}
             {/* <section className="main-title-two">Meet the Team</section> */}
-    </>)
-}
+    </>);
+};
 
-export default AboutMain
+export default AboutMain;

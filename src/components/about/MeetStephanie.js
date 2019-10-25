@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './MeetStephanie.css'
+import './MeetStephanie.css';
 
 export default class MeetStephanie extends Component {
     state = {
@@ -11,9 +11,10 @@ export default class MeetStephanie extends Component {
             image: "about-meet.png",
             skills: "Personal Trainer, Yoga Instructor + Boot Camp",
         }
-    }
+    };
+
     render(){
-        const { meetStephanie } = this.state
+        const { meetStephanie } = this.state;
 
             return(
                 <div className="meetStephanie-container">
@@ -27,7 +28,6 @@ export default class MeetStephanie extends Component {
                     </div>
                     <div><img src={`${meetStephanie.image}`} alt="meetStephanie-box" /></div>
                 </div>
-            )
-
-        }
-}
+            );
+        };
+};

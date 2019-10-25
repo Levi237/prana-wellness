@@ -5,7 +5,6 @@ import ServiceDisplay from './ServiceDisplay';
 
 import * as routes from '../../constants/routes';
 
-// const  = () => {
 export default class ServicesMain extends Component {
     state = {
         services: [{ 
@@ -55,18 +54,20 @@ export default class ServicesMain extends Component {
             image: "breathing-icon.png",
             content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
         }]
-      }
+      };
+
     render(){
-        const { toggleReferralBtn } = this.props
-    return(<>
-          <div className="wellness-main-container main-title">
-            <ServiceDisplay services={this.state.services}/>
-            <NavLink to={routes.CORP}><button>Corporate Solutions</button></NavLink>
-            <NavLink to={routes.WELL}><button>Individual Solutions</button></NavLink>
-          </div>
-          <section className="home-main-header">WELLNESS SERVICES</section>
-            <ServiceDisplay services={this.state.otherServices}/>
-          <button name="contactForm" onClick={(e) => {toggleReferralBtn(e)}}>Request Quote</button>
-    </>)
-}
-}
+        const { toggleReferralBtn } = this.props;
+
+        return(<>
+            <div className="wellness-main-container main-title">
+                <ServiceDisplay services={this.state.services}/>
+                <NavLink to={routes.CORP}><button>Corporate Solutions</button></NavLink>
+                <NavLink to={routes.WELL}><button>Individual Solutions</button></NavLink>
+            </div>
+            <section className="home-main-header">WELLNESS SERVICES</section>
+                <ServiceDisplay services={this.state.otherServices}/>
+            <button name="contactForm" onClick={(e) => {toggleReferralBtn(e)}}>Request Quote</button>
+        </>);
+    };
+};

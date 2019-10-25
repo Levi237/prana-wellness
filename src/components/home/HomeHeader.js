@@ -10,7 +10,7 @@ import React from 'react';
             <br/><br/>
             <button className="ctaBtn">explore wellness services</button>
           </div>
-    </>)
-}
+    </>);
+};
 
-export default HomeHeader
+export default HomeHeader;

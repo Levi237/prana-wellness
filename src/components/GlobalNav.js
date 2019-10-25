@@ -16,7 +16,7 @@ import React from 'react';
           <div className="global-hamburger" onClick={() => toggleHamburger()}>
             <section></section><section></section><section></section>
           </div>
-    </>)
-}
+    </>);
+};
 
-export default GlobalNav
+export default GlobalNav;

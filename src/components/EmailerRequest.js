@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import firebase from 'firebase/app'
+import firebase from 'firebase/app';
 
 
 const inputStyle = {
@@ -13,7 +13,7 @@ const inputStyle = {
     fontSize: '24px',
     lineHeight: '29px',
     color: 'rgba(0, 0, 0, 0.5)',
-}
+};
 
 const btnStyle = {
     padding: '0',
@@ -26,7 +26,7 @@ const btnStyle = {
     display: 'inline-block',
     float: 'right',
     marginRight: '5%',
-}
+};
 
 const arrowStyle = {
     borderRight: '1px solid #FFFFFF',
@@ -35,9 +35,8 @@ const arrowStyle = {
     transform: 'rotate(45deg)',
     height: '16px',
     width: '16px',
-
     marginLeft: '5px',
-}
+};
 
 export default class EmailerRequest extends Component {
     state = {
@@ -59,7 +58,7 @@ export default class EmailerRequest extends Component {
         this.setState({
             email: e.currentTarget.value
         })
-    }
+    };
 
     render(){
         const { email } = this.state
@@ -83,6 +82,6 @@ export default class EmailerRequest extends Component {
 
             </form>
             </>
-        )
-    }
-}
+        );
+    };
+};

@@ -21,7 +21,8 @@ export default class PointDisplay extends Component {
             largeText: "Learn",
             image: "point-placeholder.png"
         }]
-    }
+    };
+
     render(){
         const { points } = this.state
         const showPoints = points.map((point, key) => {
@@ -33,7 +34,7 @@ export default class PointDisplay extends Component {
                     <img className="pointBackgroundImage" src={`${point.image}`} alt="point-box" />
                 </div>
             )
-        })
-        return(<>{showPoints}</>)
-    }
-}
+        });
+        return(<>{showPoints}</>);
+    };
+};

@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
 
-import * as routes from '../constants/routes'
+import * as routes from '../constants/routes';
 
 export default class Nav extends Component {
 
 
     render(){
-        const { toggleHamburger } = this.props
-
+        const { toggleHamburger } = this.props;
         
         return(
             <div id="menu" className="nav-container inactive">
@@ -25,6 +24,6 @@ export default class Nav extends Component {
                 </div>
 
             </div>
-        )
-    }
-}
+        );
+    };
+};

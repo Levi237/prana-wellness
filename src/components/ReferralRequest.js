@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 
-import './ReferralRequest.css'
+import './ReferralRequest.css';
 
-import firebase from 'firebase/app'
-// import { relative } from 'path';
+import firebase from 'firebase/app';
 
 const containerStyle = {
     position: 'fixed',
@@ -13,7 +12,7 @@ const containerStyle = {
     padding: '3vw, 0',
     background: 'rgba(255, 255, 255, .5)',
     overflow: 'hidden',
-}
+};
 
 const formDivStyle = {
     position: 'relative',
@@ -27,7 +26,7 @@ const formDivStyle = {
     margin: '0 auto 40px auto',
     textAlign: 'center',
     overflow: 'auto',
-}
+};
 
 
 export default class ReferralRequest extends Component {
@@ -57,7 +56,7 @@ export default class ReferralRequest extends Component {
         this.setState({
             [e.currentTarget.name]: e.currentTarget.value,
         })
-    }
+    };
     
     render(){
         const { fromName, fromEmail, toName, toEmail, businessName, subjectTitle, subjectContent } = this.state
@@ -140,6 +139,6 @@ export default class ReferralRequest extends Component {
 
             </form>
             </div>
-        )
-    }
-}
+        );
+    };
+};

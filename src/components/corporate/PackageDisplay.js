@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './PackageDisplay.css'
+import './PackageDisplay.css';
 
 const PackageDisplay =({pricePack})=> {
 
@@ -25,6 +25,6 @@ const PackageDisplay =({pricePack})=> {
             </div>
         )
     })
-    return(<>{showPackage}</>)
-}
-export default PackageDisplay 
+    return(<>{showPackage}</>);
+};
+export default PackageDisplay;

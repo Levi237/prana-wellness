@@ -9,7 +9,7 @@ import * as routes      from '../../constants/routes';
 export default class PointDisplay extends Component {
     state = {
 
-    }
+    };
     render(){
 
             return(
@@ -41,8 +41,6 @@ export default class PointDisplay extends Component {
                     </section>
 
                 </div>
-            )
-
-
-    }
-}
+            );
+    };
+};

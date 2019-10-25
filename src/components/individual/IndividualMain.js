@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import PackageDisplay from '../corporate/PackageDisplay';
 import ServiceDisplay from '../services/ServiceDisplay';
 
-import './ReferralQuote.css'
+import './ReferralQuote.css';
 
 
 export default class IndividualMain extends Component {
@@ -41,7 +41,7 @@ export default class IndividualMain extends Component {
         largeText: "Clarity",
         image: "breathing-icon.png"
     }]
-  }
+  };
   render(){
 
 
@@ -60,6 +60,6 @@ export default class IndividualMain extends Component {
           <ServiceDisplay services={this.state.services}/>
           <section className="header-two">subscribe to personal wellness</section>
           <PackageDisplay pricePack={this.state.individualPlans}/>
-    </>)
-  }
-}
+    </>);
+  };
+};

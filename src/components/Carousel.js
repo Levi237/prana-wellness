@@ -10,7 +10,7 @@ const Carousel = ({carouselContent}) => {
                 <div>- {quote.person}</div>
             </>
         )
-    })
+    });
     return(
         <div className="carousel-container">
             <section>see why people love prana</section>
@@ -18,12 +18,12 @@ const Carousel = ({carouselContent}) => {
                 <div className="arrow-left"></div>
             </button>
             <div>
-{showQuotes}
+                {showQuotes}
             </div>
             <button>
                 <div className="arrow-right"></div>
             </button>
         </div>
-    )
-}
-export default Carousel
+    );
+};
+export default Carousel;
