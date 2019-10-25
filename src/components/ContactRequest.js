@@ -21,7 +21,7 @@ const formDivStyle = {
     background: 'white',
     boxShadow: '0px 0px 20px rgba(0,0,0,.5)',
     width: '94vw',
-    height: '94vh',
+    height: '90vh',
     padding: '3vh 3vw',
     maxWidth: 'calc(600px - 6vw)',
     maxHeight: '800px',
@@ -65,7 +65,7 @@ export default class ReferralRequest extends Component {
     handleChange = (e) => {
         e.preventDefault();
         this.setState({
-            [e.currentTarget.name]: !e.currentTarget.value,
+            [e.currentTarget.name]: e.currentTarget.value,
         })
     };
     handleSelect = (e, value) => {
