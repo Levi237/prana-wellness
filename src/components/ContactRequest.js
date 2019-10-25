@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import './ReferralRequest.css'
+import './ContactRequest.css'
 
 import firebase from 'firebase/app'
 // import { relative } from 'path';
@@ -71,23 +72,26 @@ export default class ReferralRequest extends Component {
         const { addServices } = this.state
         const selectedService = e.currentTarget.name
         e.preventDefault();
+
         if (addServices.includes(selectedService)){
+            e.currentTarget.classList.remove('selectedHighlighted')
             this.setState(prevState => ({     
                 addServices: addServices.filter(x => (
                     x !== selectedService
                 ))
             }));
         } else {
+            e.currentTarget.classList.add('selectedHighlighted')
             this.setState({
                 addServices: [...addServices, selectedService]
             });
         }
     };
+
     
     render(){
-        const { fromName, fromEmail, toName, toEmail, businessName, subjectTitle, subjectContent } = this.state
-        const { toggleContactBtn, services } = this.props
-
+        const { fromName, fromEmail, toName, toEmail, businessName, subjectTitle, subjectContent, addServices } = this.state
+        const { toggleContactBtn, services } = this.props  
 
         const buttonSelectors = services.map((service, key) => {
             return(
