@@ -42,16 +42,35 @@ export default class AdminPortal extends Component {
           });
         };
     render(){
-        const { contacts } = this.state;
+        const { contacts, emailers } = this.state;
+        const emailerList = emailers.map((email, key) => {
+            return(
+                <div key={key} style={{border: '1px solid black'}}>
+                    <section>{email.email}</section>
+                </div>
+            )
+        })
         const contactList = contacts.map((contact, key) => {
             return(
-                <div ley={key}>{contact.fromEmail}</div>
+                <div ley={key} style={{border: '1px solid black'}}>
+                    <section>{contact.fromName}</section>
+                    <section>{contact.fromEmail}</section>
+                    <section>{contact.toName}</section>
+                    <section>{contact.toEmail}</section>
+                    <section>{contact.subjectTitle}</section>
+                    <section>{contact.subjectContent}</section>
+                </div>
             )
         })
         return(
-            <>
-            {contactList}
-            </>
+            <div style={{width: '100vw', position: 'relative'}}>
+                <div style={{float: 'left', width: '40vw', minHeight: '80vh', padding: '5vw'}}>
+                    {contactList}
+                </div>
+                <div style={{float: 'right', width: '40vw', minHeight: '80vh', padding: '5vw'}}>
+                    {emailerList}
+                </div>
+            </div>
         );
     };
 };

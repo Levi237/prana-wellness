@@ -146,8 +146,8 @@ export default class App extends Component {
           <Switch>
             <Route path={routes.HOME} exact render={() => 
                       <HomeMain /> }/>
-            {/* <Route path={routes.ADMN} exact render={() => 
-                    this.state.user &&  }/>   */}
+            <Route path={routes.ADMN} exact render={() => 
+                    this.state.user && <></>  }/>  
             <Route path={routes.INFO} exact render={() => 
                       <AboutMain /> }/>
             <Route path={routes.WELL} exact render={() => 
