@@ -6,10 +6,10 @@ import 'firebase/auth';
 export default class Enter extends Component {
     state = {
         admin: 'jane@jane.com',
-        email: "",
-        password: "",
-        fireErrors:"",
-        formTitle: "Login",
+        email: '',
+        password: '',
+        fireErrors:'',
+        formTitle: 'Login',
         loginBtn: true,
     };
 
@@ -20,18 +20,20 @@ export default class Enter extends Component {
     };
 
     login = e => {
+        const { email, admin, password } = this.state
         e.preventDefault();
-        if (this.state.email === this.state.admin){
-            firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password)
+        if (email === admin){
+            firebase.auth().signInWithEmailAndPassword(email, password)
                 .catch((error) => {
                     this.setState({fireErrors: error.message})
                 });
         };
     };
     register = e => {
+        const { email, admin, password } = this.state
         e.preventDefault();
-        if (this.state.email === this.state.admin){
-        firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password)
+        if (email === admin){
+        firebase.auth().createUserWithEmailAndPassword(email, password)
             .catch((error) => {
                 this.setState({fireErrors: error.message})
             });
@@ -39,10 +41,10 @@ export default class Enter extends Component {
     };
 
     getAction = action => {
-        if (action === "reg"){
-            this.setState({formTitle: "Register New User", loginBtn: false, fireErrors: ""})
+        if (action === 'reg'){
+            this.setState({formTitle: 'Register New User', loginBtn: false, fireErrors: ''})
         } else {
-            this.setState({formTitle: "Login", loginBtn: true, fireErrors: ""})
+            this.setState({formTitle: 'Login', loginBtn: true, fireErrors: ''})
         };
     };
 

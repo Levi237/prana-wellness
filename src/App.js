@@ -6,6 +6,7 @@ import { Switch, Route }    from 'react-router-dom';
 import * as routes      from './constants/routes';
 import Nav              from './components/Nav';
 import Enter            from './components/Enter';
+import AdminPortal      from './components/AdminPortal';
 
 import GlobalNav        from './components/GlobalNav';
 import EmailerRequest   from './components/EmailerRequest';
@@ -127,7 +128,7 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>
             <Route path={routes.ADMN} exact render={() => 
-                    !this.state.user && <Enter /> }/>       
+                    !this.state.user ? <Enter /> : <AdminPortal /> }/>       
             <Route path={routes.INFO} exact render={() => 
                     <AboutHeader /> }/>
             <Route path={routes.WELL} exact render={() => 
@@ -145,6 +146,8 @@ export default class App extends Component {
           <Switch>
             <Route path={routes.HOME} exact render={() => 
                       <HomeMain /> }/>
+            {/* <Route path={routes.ADMN} exact render={() => 
+                    this.state.user &&  }/>   */}
             <Route path={routes.INFO} exact render={() => 
                       <AboutMain /> }/>
             <Route path={routes.WELL} exact render={() => 
