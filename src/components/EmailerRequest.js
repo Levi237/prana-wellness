@@ -5,11 +5,11 @@ import firebase from 'firebase/app';
 
 const inputStyle = {
     display: 'inline-block',
-    float: 'left',
+    float: 'right',
     width: '75%',
     marginLeft: '5%',
     maxWidth: '550px',
-    height: '56px',
+    height: '48px',
     fontSize: '24px',
     lineHeight: '29px',
     color: 'rgba(0, 0, 0, 0.5)',
@@ -20,12 +20,12 @@ const btnStyle = {
     background: 'transparent',
     border: '1px solid #fff',
     color: 'white',
-    width: '16px',
-    minWidth: '10%',
-    height: '63px',
+    width: '36px',
+    // minWidth: '10%',
+    height: '54px',
     display: 'inline-block',
     float: 'right',
-    marginRight: '5%',
+    marginLeft: '5px',
 };
 
 const arrowStyle = {
@@ -65,7 +65,8 @@ export default class EmailerRequest extends Component {
         return(
             <>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
-
+                <button type="submit" style={btnStyle}><div style={arrowStyle}></div></button>
+                    {/* <button type="submit"><div></div></button> */}
                 <input
                     className="emailer-input"
                     name="email"
@@ -76,9 +77,6 @@ export default class EmailerRequest extends Component {
                     value={ email ? email : ""}
                     style={inputStyle}
                 />
-
-    
-                    <button type="submit" style={btnStyle}><div style={arrowStyle}></div></button>
 
             </form>
             </>
