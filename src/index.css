@@ -42,18 +42,14 @@ button.purple {
 }
 button.white:hover {
   background-color: rgba(150, 91, 165, .5);
-  /* border: 1px solid #965BA5; */
-  /* color: #965BA5; */
 }
 button.purple:hover {
   background-color: rgba(150, 91, 165, .5);
-  /* border: 1px solid #FFF; */
-  /* color: #FFF; */
 }
 
 input {
-  font-style: normal;
-  font-weight: 300;
+  /* font-style: normal;
+  font-weight: 300; */
 }
 
 

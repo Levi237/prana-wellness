@@ -2,21 +2,22 @@ div.scrollmenu {
   background-color: rgba(150, 91, 165, 0.1);;
   overflow: auto;
   white-space: nowrap;
+  transition: all .3s ease-in-out;
 }
   
 div.scrollmenu section {
-  background-color: #fff;
+  /* background-color: #fff; */
   height: 80px;
   /* width: 80px; */
   display: inline-block;
-  color: #fff;
+  /* color: #fff; */
   text-align: center;
   padding: 14px;
   text-decoration: none;
   margin: 10px;
   position: relative;
   transition: all .3s ease-in-out;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, .5);
+  /* box-shadow: 0px 0px 4px rgba(0, 0, 0, .5); */
 }
 div.scrollmenu img {
   height: 80px;
@@ -25,6 +26,10 @@ div.scrollmenu section:hover {
   transition: all .3s ease-in-out;
   background-color: transparent;
   box-shadow: 0px 4px 4px rgba(255, 255, 255, .1);
+}
+div.scrollmenu:hover {
+  background-color: rgba(150, 91, 165, 0.2);
+  transition: all .3s ease-in-out;
 }
 
 a, a:visited {
