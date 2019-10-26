@@ -12,7 +12,8 @@ import ServiceDisplay   from '../services/ServiceDisplay';
 const fourSquareStyle = {
     transform: 'scale(.75)',
     position: 'relative',
-    margin: '-10px'
+    margin: '-10px',
+    // backgroundColor: 'rgba(0,0,0,.8)'
 }
 
 export default class HomeMain extends Component {
@@ -32,7 +33,7 @@ export default class HomeMain extends Component {
         },{
             smallText: "Lunch +",
             largeText: "Learn",
-            image: "point-placeholder.png"
+            image: "lunch_and_learn.png"
         }]
     };
 

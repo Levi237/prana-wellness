@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 import './ServiceDisplay.css';
 
 const ServiceDisplay = ({services, transformStyle}) => {
@@ -19,8 +17,7 @@ const ServiceDisplay = ({services, transformStyle}) => {
                             <section>{service.largeText}</section>
                         </div>
                     </div>
-                    
-
+                
                 </div>
                 <div className="card-back">
                     <section>{service.content}</section>

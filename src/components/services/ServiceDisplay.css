@@ -11,7 +11,7 @@ transform: scale(.7);
     background-color: transparent;
     margin: 0 1.33vw;
     z-index: 1;
-    transition: .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .card-back {
     margin-top: -20vw;
@@ -34,22 +34,27 @@ transform: scale(.7);
     transition: all .5s ease-in-out;
     position: initial;
     transition-delay: .5s;
+    background-size: cover;
 }
 .card-box.card-hover:hover, .card-box.card-hover:active {
     max-width: 0;
     overflow: hidden;
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
     transition-delay: .5s;
+    background: transparent;
+    background-size: cover;
 }
 .card-front-data.card-hover:hover {
     border: 1px solid transparent!important;
     color: transparent;
     transition: all .3s ease-in-out;
     transition-delay: .2s;
+    background-color: transparent;
 }
 .card-front-data.pop-hover:hover {
     border: 1px solid #669F35!important;
     color: rgb(191, 158, 200);
+    background-color: transparent;
     /* color: #965ba5; */
     transition: all .3s ease-in-out;
     transition-delay: .2s;

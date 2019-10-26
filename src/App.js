@@ -42,12 +42,12 @@ export default class App extends Component {
     },{
       smallText: "Lunch +",
       largeText: "Learn",
-      image: "meditation-icon.png",
+      image: "lunch_and_learn.png",
       content: "Health, fitness, and mindfulness tools and tips for a balanced lifestyle and productive work experience.",
     },{
       smallText: "Corporate",
       largeText: "Massage",
-      image: "breathing-icon.png",
+      image: "corporate_massage.png",
       content: "Relaxing intuitive massage break from static postures.",
     },{
       smallText: "Work",

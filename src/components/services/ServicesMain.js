@@ -10,7 +10,7 @@ export default class ServicesMain extends Component {
         services: [{ 
             smallText: "Invigorating",
             largeText: "Yoga",
-            image: "yoga-icon.png",
+            image: "invigorating_yoga.png",
             content: "All levels practice of yoga to energize the body, stretch, and focus on proper alignment and form.",
         },{
             smallText: "Relaxing",
@@ -26,7 +26,7 @@ export default class ServicesMain extends Component {
         otherServices: [{ 
             smallText: "Bootcamp",
             largeText: "Fitness",
-            image: "shavasana.png",
+            image: "bootcamp_fitness.png",
             content: "Power hour of cardio, Plyometrics, HIIT, resistance bands, and body weight exercises. Modifications for all levels.",
         },{
             smallText: "Lunch +",
@@ -36,7 +36,7 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Corporate",
             largeText: "Massage",
-            image: "breathing-icon.png",
+            image: "corporate_massage.png",
             content: "Relaxing intuitive massage break from static postures.",
         },{
             smallText: "Work",
