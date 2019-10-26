@@ -57,12 +57,12 @@ export default class App extends Component {
     },{
       smallText: "Wellness",
       largeText: "Retreats",
-      image: "retreat-other-services.png",
+      image: "wellness_retreats.png",
       content: "Curated and customizable off-site wellness retreats for team building and training, with a fitness and wellness focus.",
     },{
       smallText: "Health",
       largeText: "Fairs",
-      image: "breathing-icon.png",
+      image: "health_fairs.png",
       content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
     }]
   };  

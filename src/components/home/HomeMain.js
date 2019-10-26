@@ -21,7 +21,7 @@ export default class HomeMain extends Component {
         points: [{ 
             smallText: "Mindful",
             largeText: "Breathing",
-            image: "point-placeholder.png"
+            image: "mindful_breathing.png"
         },{
             smallText: "Invigorating",
             largeText: "Yoga",
@@ -29,7 +29,7 @@ export default class HomeMain extends Component {
         },{
             smallText: "relaxing",
             largeText: "Meditation",
-            image: "point-placeholder.png"
+            image: "relaxing_meditation.png"
         },{
             smallText: "Lunch +",
             largeText: "Learn",

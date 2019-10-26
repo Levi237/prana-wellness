@@ -20,7 +20,7 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Mindful",
             largeText: "Breathing",
-            image: "breathing-icon.png",
+            image: "mindful_breathing.png",
             content: "Breathing practices that can have immediate impact on mind and body health.",
         }],
         otherServices: [{ 
@@ -31,7 +31,7 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Lunch +",
             largeText: "Learn",
-            image: "meditation-icon.png",
+            image: "lunch_and_learn.png",
             content: "Health, fitness, and mindfulness tools and tips for a balanced lifestyle and productive work experience.",
         },{
             smallText: "Corporate",
@@ -46,12 +46,12 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Wellness",
             largeText: "Retreats",
-            image: "retreat-other-services.png",
+            image: "wellness_retreats.png",
             content: "Curated and customizable off-site wellness retreats for team building and training, with a fitness and wellness focus.",
         },{
             smallText: "Health",
             largeText: "Fairs",
-            image: "breathing-icon.png",
+            image: "health_fairs.png",
             content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
         }]
       };
