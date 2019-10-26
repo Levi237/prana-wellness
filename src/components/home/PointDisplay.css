@@ -2,7 +2,7 @@
     position: relative;
     height: 20vw;
     width: 20vw;
-    display: inline-block;
+    display: inline-block!important;
     background-color: #000;
     margin: 12px;
 }
@@ -11,6 +11,8 @@
     width: 20vw;
     position: relative;
     z-index: 1;
+    display: inline-block!important;
+    margin: 12px;
 }
 .point-box > div {
     width: 16vw;
@@ -20,7 +22,8 @@
     box-sizing: border-box;
     position: absolute;
     z-index: 2;
-    margin: 2vw;
+    /* margin: 2vw; */
+    margin: calc(2vw + 12px);
 }
 .point-box > div > section:first-of-type {
     /* font-family: 'Montserrat', sans-serif; */
