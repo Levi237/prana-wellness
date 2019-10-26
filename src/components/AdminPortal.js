@@ -71,10 +71,10 @@ export default class AdminPortal extends Component {
         })
         return(
             <div style={{width: '100vw', position: 'relative'}}>
-                <div style={{float: 'left', width: '40vw', minHeight: '80vh', padding: '5vw', background: '#fff'}}>
+                <div style={{float: 'left', width: '40vw', maxHeight: '80vh', padding: '5vw 2.5vw 5vw 7.5vw', background: '#fff', overflow: 'auto'}}>
                     {contactList}
                 </div>
-                <div style={{float: 'right', width: '40vw', minHeight: '80vh', padding: '5vw', background: '#fff'}}>
+                <div style={{float: 'right', width: '40vw', maxHeight: '80vh', padding: '5vw 7.5vw 5vw 2.5vw', background: '#fff', overflow: 'auto'}}>
                     {emailerList}
                 </div>
             </div>

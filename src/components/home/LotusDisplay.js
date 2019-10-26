@@ -26,8 +26,8 @@ export default class PointDisplay extends Component {
                         <section>
                         Let us help you create an engaging and enjoyable wellness program to increase productivity, retention, and employee satisfaction. 
                         </section>
-                        <NavLink to={routes.CORP}><button className="lotus-desktop-button">explore workplace plans</button></NavLink>
-                        <NavLink to={routes.CORP}><button className="lotus-mobile-button">explore plans</button></NavLink>
+                        <NavLink to={routes.CORP}><button className="white lotus-desktop-button">explore workplace plans</button></NavLink>
+                        <NavLink to={routes.CORP}><button className="white lotus-mobile-button">explore plans</button></NavLink>
                     </section>
 
                     <section>
@@ -36,8 +36,8 @@ export default class PointDisplay extends Component {
                         <section>
                         We guide you and educate you, and help you identify ways to incorporate wellness practices in all areas of your life.
                         </section>
-                        <NavLink to={routes.WELL}><button className="lotus-desktop-button">explore individual plans</button></NavLink>
-                        <NavLink to={routes.WELL}><button className="lotus-mobile-button">explore plans</button></NavLink>
+                        <NavLink to={routes.WELL}><button className="purple lotus-desktop-button">explore individual plans</button></NavLink>
+                        <NavLink to={routes.WELL}><button className="purple lotus-mobile-button">explore plans</button></NavLink>
                     </section>
 
                 </div>

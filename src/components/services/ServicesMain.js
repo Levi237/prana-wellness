@@ -67,7 +67,7 @@ export default class ServicesMain extends Component {
             </div>
             <section className="home-main-header">WELLNESS SERVICES</section>
                 <ServiceDisplay services={this.state.otherServices}/>
-            <button name="contactForm" onClick={(e) => {toggleContactBtn(e)}}>Request Quote</button>
+            <button className="white" name="contactForm" onClick={(e) => {toggleContactBtn(e)}}>Request Quote</button>
         </>);
     };
 };

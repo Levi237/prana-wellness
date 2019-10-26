@@ -30,7 +30,7 @@ export default class HomeMain extends Component {
             <section className="home-main-header">WELLNESS SERVICES</section>
             <PointDisplay />
             <br /><br /><br/>
-            <NavLink to={routes.CORP}><button>browse services</button></NavLink>
+            <NavLink to={routes.CORP}><button className="white">browse services</button></NavLink>
             <br /><br /><br/>
             <CustomerDisplay />
             <br /><br /><br/>

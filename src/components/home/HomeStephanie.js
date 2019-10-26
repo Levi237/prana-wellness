@@ -26,7 +26,7 @@ export default class HomeStephanie extends Component {
                             <section>{homeStephanie.subtitle}</section>
                             <section>{homeStephanie.content}</section>
                             <section>{homeStephanie.skills}</section>
-                            <NavLink to={routes.INFO}><button>Learn More</button></NavLink>
+                            <NavLink to={routes.INFO}><button className="white">Learn More</button></NavLink>
                         </div>
                     </div>
                     <div><img src={`${homeStephanie.image}`} alt="homeStephanie-box" /></div>

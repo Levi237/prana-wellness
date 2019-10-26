@@ -97,11 +97,7 @@
 .lotus-box button {
     margin-top: 4vw;
 }
-.lotus-box > section:last-of-type button {
-    border-color: #FFF;
-    color: #FFF;
-    background: transparent;
-}
+
 .lotus-desktop-button {
     display: inline-block;
 }
