@@ -1,4 +1,8 @@
 
+.home-main-top div.service-box {
+transform: scale(.7);
+}
+
 .service-box {
     position: relative;
     height: 25vw;
@@ -45,7 +49,8 @@
 }
 .card-front-data.pop-hover:hover {
     border: 1px solid #669F35!important;
-    color: #A0CD4D;
+    color: rgb(191, 158, 200);
+    /* color: #965ba5; */
     transition: all .3s ease-in-out;
     transition-delay: .2s;
 }
@@ -70,7 +75,6 @@
 }
 
 .card-front-data > section:first-of-type {
-    /* font-family: 'Montserrat', sans-serif; */
     text-transform: uppercase;
     font-weight: normal;
     font-size: 1.33vw;
@@ -109,7 +113,6 @@
     }
     .card-front-data > section:first-of-type {
         font-size: 7vw;
-        /* letter-spacing: .5vw; */
         margin-top: 20vw;
     }
     .card-front-data > section:last-of-type {

@@ -7,16 +7,32 @@ import PointDisplay     from './PointDisplay';
 import LotusDisplay     from './LotusDisplay';
 import HomeStephanie    from './HomeStephanie';
 import CustomerDisplay  from '../CustomerDisplay';
-import Carousel         from '../Carousel';
+import ServiceDisplay   from '../services/ServiceDisplay';
+
+const fourSquareStyle = {
+    transform: 'scale(.75)',
+    position: 'relative',
+    margin: '-10px'
+}
 
 export default class HomeMain extends Component {
     state = {
-        quotes: [{
-            statement: "jane says this is great *test",
-            person: "Jane",
-        // },{
-        //     statement: "bob says blah blha",
-        //     person: "Bob",
+        points: [{ 
+            smallText: "Mindful",
+            largeText: "Breathing",
+            image: "point-placeholder.png"
+        },{
+            smallText: "Invigorating",
+            largeText: "Yoga",
+            image: "point-placeholder.png"
+        },{
+            smallText: "relaxing",
+            largeText: "Meditation",
+            image: "point-placeholder.png"
+        },{
+            smallText: "Lunch +",
+            largeText: "Learn",
+            image: "point-placeholder.png"
         }]
     };
 
@@ -28,7 +44,8 @@ export default class HomeMain extends Component {
             Prana is seen as a universal energy, which flows in currents in and around the body.”
             </div>
             <section className="home-main-header">WELLNESS SERVICES</section>
-            <PointDisplay />
+            <ServiceDisplay services={this.state.points} transformStyle={fourSquareStyle}/>
+            {/* <PointDisplay /> */}
             <br /><br /><br/>
             <NavLink to={routes.CORP}><button className="white">browse services</button></NavLink>
             <br /><br /><br/>

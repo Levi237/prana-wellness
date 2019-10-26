@@ -4,14 +4,14 @@ import React from 'react';
 
 import './ServiceDisplay.css';
 
-const ServiceDisplay = ({services}) => {
+const ServiceDisplay = ({services, transformStyle}) => {
 
     const showServices = services.map((service, key) => {
         const backgroundImageStyle = {
             'background-image': `url(${service.image})`
         }
         return(
-            <div key={key} className="service-box">
+            <div key={key} className="service-box" style={transformStyle}>
                 <div className={service.content ? "card-box card-hover" : "card-box"} style={backgroundImageStyle}>
                     <div className="card-front">
                         <div className={service.content ? "card-front-data card-hover" : "card-front-data pop-hover"}>
