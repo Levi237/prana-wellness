@@ -9,7 +9,7 @@ import React from 'react';
             <section className="bottom-header-text">Personal Wellness</section>
         </div>
     </div>
-        <div className="wellness-header-purple"></div>
+        <div className="../wellness-header-purple"></div>
     </>);
 };
 

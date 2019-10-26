@@ -165,7 +165,7 @@ export default class App extends Component {
 
         <div className="grid-contact">
           <div>
-            <img src="instagram-icon.png" alt="IG"/>
+            <img src="../instagram-icon.png" alt="IG"/>
             {user ? <section>Welcome Stephanie!</section>: <section>info@pranawellness.life</section> }
             
           </div>
@@ -173,7 +173,7 @@ export default class App extends Component {
 
         <div className="grid-footer-left">
           <div className="logo-box">
-            <img src="icon_white.png" alt="icon-white" />
+            <img src="../icon_white.png" alt="icon-white" />
             <section className="pranaText" >PRANA</section>
             <section className="wellnessText">wellness</section>
           </div>
@@ -186,7 +186,7 @@ export default class App extends Component {
 
         <div className="grid-footer-right">
           <div className="travel-slay-logo">
-            <img src="travel_slay_white.png" alt="Travel Slay" />
+            <img src="../travel_slay_white.png" alt="Travel Slay" />
             <section>explore fitness + training</section>
             <section>with Stephanie erazo</section>
           </div>

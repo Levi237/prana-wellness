@@ -15,7 +15,7 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Relaxing",
             largeText: "Meditation",
-            image: "meditation-icon.png",
+            image: "relaxing_meditation.png",
             content: "Accessible guided meditations to calm, bring focus, and de-stress.",
         },{
             smallText: "Mindful",
@@ -41,7 +41,7 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Work",
             largeText: "Play",
-            image: "office-yoga.png",
+            image: "work_play.png",
             content: "Take time to play at work! Fun games that focus on leadership and team building.",
         },{
             smallText: "Wellness",

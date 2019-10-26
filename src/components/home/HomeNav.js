@@ -5,7 +5,7 @@ import React from 'react';
     return(<>
           <div className="home-logo">
             <div className="logo-box">
-              <img src="icon_white.png" alt="icon-white" />
+              <img src="../icon_white.png" alt="icon-white" />
             </div>
           </div>
 

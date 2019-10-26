@@ -20,7 +20,7 @@ export default class LotusDisplay extends Component {
                     </div>
 
                     <section>
-                        <img className="" src="lotus_half_pink.png" alt="lotus_half_pink" />
+                        <img src="../lotus_half_pink.png" alt="lotus_half_pink" />
                         <div>Corporate Wellness</div>
                         <section>
                         Let us help you create an engaging and enjoyable wellness program to increase productivity, retention, and employee satisfaction. 
@@ -30,7 +30,7 @@ export default class LotusDisplay extends Component {
                     </section>
 
                     <section>
-                        <img className="" src="lotus_half_white.png" alt="lotus_half_white" />
+                        <img src="../lotus_half_white.png" alt="lotus_half_white" />
                         <div>Individual Wellness</div>
                         <section>
                         We guide you and educate you, and help you identify ways to incorporate wellness practices in all areas of your life.

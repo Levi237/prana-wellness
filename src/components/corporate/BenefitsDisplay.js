@@ -10,7 +10,7 @@ const divStyle = {
 const BenefitsDisplay = () => {
         return(
             <div className="benefits-box" style={divStyle}>
-                <img width="100%" src="benefits.png" alt="benefits"/>
+                <img width="100%" src="../benefits.png" alt="benefits"/>
             </div>
         )
 };
