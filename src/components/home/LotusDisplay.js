@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink }          from 'react-router-dom';
 
 import './LotusDisplay.css'
-// import { removeTypeDuplicates } from '@babel/types';
 
-import * as routes      from '../../constants/routes';
+import * as routes          from '../../constants/routes';
 
-export default class PointDisplay extends Component {
+export default class LotusDisplay extends Component {
     state = {
 
     };
