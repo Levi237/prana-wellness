@@ -1,7 +1,56 @@
 import React, { Component } from 'react';
 
 import firebase from 'firebase/app';
+// import admin from 'firebase/admin';
+// import sgMail from '@sendgrid/mail';
 
+const functions = require('firebase-functions');
+// import * as admin from 'firebase-admin';
+
+const admin = require('firebase-admin')
+admin.initializeApp(functions.config().firebase);
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+
+
+
+
+// const firestoreEmail = functions.firestore
+// .document('Users/{userId}/Followers/{followerId}')
+// .onCreate(event => {
+
+//     const userId = "for now exact id";
+
+//     const db = admin.firestore()
+
+//     return db.collection('Users').doc(userId)
+//             .get()
+//             .then(doc => {
+//                 const user = doc.data()
+
+//                 const msg = {
+//                     to: "someEmailAddress@gmail.com",
+//                     from: 'hello@someEmailAddress.com',
+//                     subject: 'New Follower',
+//                 };
+
+//                 return sgMail.send(msg)
+//             })
+//             .then( () => console.log('email sent!') )
+//             .catch( (err) => console.log(err) )
+// }) 
+
+
+
+const msg = {
+to: 'test@example.com',
+from: 'test@example.com',
+subject: 'Sending with Twilio SendGrid is Fun',
+templateId: 'd-baaba9ce96fc4bf89d1b1ea917f6994c',
+text: 'and easy to do anywhere, even with Node.js',
+html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+};
+sgMail.send(msg);
 
 const inputStyle = {
     display: 'inline-block',
@@ -38,13 +87,26 @@ const arrowStyle = {
     marginLeft: '5px',
 };
 
+// const sgMail = require('@sendgrid/mail');
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// const msg = {
+//     to: 'test@example.com',
+//     from: 'test@example.com',
+//     subject: 'Sending with Twilio SendGrid is Fun',
+//     templateId: 'd-baaba9ce96fc4bf89d1b1ea917f6994c',
+//     text: 'and easy to do anywhere, even with Node.js',
+//     html: '<strong>and easy to do anywhere, even with Node.js</strong>',
+//     };
+
 export default class EmailerRequest extends Component {
     state = {
         email: null,
     };
 
+
     handleSubmit = async (e) => {
         e.preventDefault();
+        sgMail.send(msg);
         const newFromDB = await firebase.firestore()
             .collection('emailers')
             .add({
@@ -52,16 +114,20 @@ export default class EmailerRequest extends Component {
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             })
         return newFromDB
+        
     };
     handleChange = (e) => {
         e.preventDefault();
         this.setState({
             email: e.currentTarget.value
-        })
+        });
+
     };
 
     render(){
         const { email } = this.state
+
+
         return(
             <>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>

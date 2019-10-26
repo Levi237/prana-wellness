@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@sendgrid/mail": "^6.4.0",
     "firebase": "^7.2.1",
     "firebase-admin": "^8.6.1",
+    "firebase-functions": "^3.3.0",
+    "firebase-tools": "^7.6.1",
     "http2": "^3.3.7",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
