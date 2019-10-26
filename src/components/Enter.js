@@ -56,9 +56,9 @@ export default class Enter extends Component {
             <div className="Error">{fireErrors}</div> : null;
         let submitBtn = loginBtn ? 
             <button className="loginBtn" type="submit" onClick={this.login}>Enter</button> : 
-            <button className="loginBtn" type="submit" onClick={this.register}>Register</button>;
+            <button className="loginBtn" type="submit" onClick={this.register}>Save New Account</button>;
         let login_register = loginBtn ? 
-            <button className="registerBtn" onClick={() => this.getAction('reg')}>Register</button> : 
+            <button className="registerBtn" onClick={() => this.getAction('reg')}>Register Account</button> : 
             <button className="registerBtn" onClick={() => this.getAction('login')}>Login</button>;
 
         return(

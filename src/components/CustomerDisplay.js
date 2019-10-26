@@ -4,35 +4,15 @@ import './CustomerDisplay.css'
 
 export default class CustomerDisplay extends Component {
     state = {
-        clients: [{
-            name: 'customer',
-            logo: './customer-logo/bpr-logo-landscape-highres.png',
-            link: "https://www.levieiko.com"
-        },{
-            name: 'customer',
-            logo: './customer-logo/centric-logo.png',
-            link: "https://www.levieiko.com"
-        },{
-            name: 'customer',
-            logo: './customer-logo/cross-campus-high-res-logo-stacked.png',
-            link: "https://www.levieiko.com"
-        },{
-            name: 'customer',
-            logo: './customer-logo/DocuSign_logo.png',
-            link: "https://www.levieiko.com"
-        },{
-            name: 'customer',
-            logo: './customer-logo/KAPOW.png',
-            link: "https://www.levieiko.com"
-        },{
-            name: 'customer',
-            logo: './customer-logo/LA-South-Chamber.png',
-            link: "https://www.levieiko.com"
-        },{
-            name: 'customer',
-            logo: './customer-logo/salisian-lee-logo.png',
-            link: "https://www.levieiko.com"
-        }]
+        clients: [
+            'bpr-logo-landscape-highres.png',
+            'centric-logo.png',
+            'cross-campus-high-res-logo-stacked.png',
+            'DocuSign_logo.png',
+            'KAPOW.png',
+            'LA-South-Chamber.png',
+            'salisian-lee-logo.png',
+        ]
     };
     render(){
         const { clients } = this.state;
@@ -40,9 +20,9 @@ export default class CustomerDisplay extends Component {
         const customerList = clients.map((client, key) => {
             return(
                 <section key={key}>
-                    <a href={client.link} target="_blank" rel="noopener noreferrer">
-                        <img src={client.logo} alt={client.name}/>
-                    </a>
+                    {/* <a href={client.link} target="_blank" rel="noopener noreferrer"> */}
+                        <img src={`./customer-logo/${client}`} alt={client}/>
+                    {/* </a> */}
                 </section>
             )
         });

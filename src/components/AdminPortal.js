@@ -54,7 +54,7 @@ export default class AdminPortal extends Component {
             let addedService = contact.addServices
             let addedServices = addedService.map((service, k) => {
                 return(
-                    <span key={k}> {service} </span>
+                    <span key={k}> {service} |</span>
                 )
             })
             return(
