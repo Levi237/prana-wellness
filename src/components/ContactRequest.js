@@ -66,7 +66,7 @@ export default class ReferralRequest extends Component {
                     id={service.largeText}
                     name={service.largeText}
                     value={service}
-                    className="select-service"
+                    className="select-service white"
                     onClick={(e) => {this.handleSelect(e, service)}
                 }>
                     <section>{service.smallText}</section>
@@ -77,7 +77,7 @@ export default class ReferralRequest extends Component {
 
         return(
             <div id="contact" className="inactive contact-container">
-                    <button name="contactForm" className="close xClose" onClick={(e) => {toggleContactBtn(e)}}>
+                    <button name="contactForm" className="close xClose white" onClick={(e) => {toggleContactBtn(e)}}>
                          CLOSE X
                     </button>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
@@ -136,7 +136,7 @@ export default class ReferralRequest extends Component {
                         // value={subjectContent}
                         value={ subjectContent ? subjectContent : ''}
                     />
-                    <button type="submit">SUBMIT</button>
+                    <button className="white" type="submit">SUBMIT</button>
                 </div>
 
             </form>

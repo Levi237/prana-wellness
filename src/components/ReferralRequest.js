@@ -39,7 +39,7 @@ export default class ReferralRequest extends Component {
         const { toggleReferralBtn } = this.props
         return(
             <div id="referral" className="inactive contact-container">
-                    <button name="referralForm" className="close xClose" onClick={(e) => {toggleReferralBtn(e)}}>
+                    <button name="referralForm" className="close xClose white" onClick={(e) => {toggleReferralBtn(e)}}>
                          CLOSE X
                     </button>
             <form name="referralForm" className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>

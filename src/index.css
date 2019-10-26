@@ -34,6 +34,7 @@ button {
 }
 button.white {
   border: 1px solid #965BA5;
+  background-color: #FFF;
   color: #965BA5;
 }
 button.purple {
@@ -46,6 +47,15 @@ button.white:hover {
 button.purple:hover {
   background-color: rgba(150, 91, 165, .5);
 }
+
+
+/* a, a:visited {
+  color: rgba(71, 62, 78, 0.6);
+  text-decoration: none;
+}
+a:hover {
+  color: green;
+} */
 
 input {
   /* font-style: normal;
