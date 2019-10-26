@@ -9,10 +9,10 @@ import React from 'react';
             </div>
           </div>
 
-          {user && <button onClick={logout} style={{color:'green'}}>LOGOUT</button>}
           <div className="global-hamburger" onClick={() => toggleHamburger()}>
             <section></section><section></section><section></section>
           </div>
+          {user && <button onClick={logout} style={{color:'green', float: 'right', margin: '20px'}}>LOGOUT</button>}
     </>);
 };
 

@@ -51,14 +51,14 @@ export default class AdminPortal extends Component {
             )
         })
         const contactList = contacts.map((contact, key) => {
-            let addedService = contact.addServices
-            let addedServices = addedService.map((service, k) => {
+            const addedService = contact.addServices
+            const addedServices = addedService.map((service, k) => {
                 return(
                     <span key={k}> {service} |</span>
                 )
             })
             return(
-                <div ley={key} style={{border: '1px solid black'}}>
+                <div key={key} style={{border: '1px solid black'}}>
                     <section>{contact.fromName}</section>
                     <section>{contact.fromEmail}</section>
                     <section>{contact.toName}</section>
