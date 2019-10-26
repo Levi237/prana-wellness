@@ -9,10 +9,10 @@ import React from 'react';
             </div>
           </div>
 
-          <div className="home-hamburger" onClick={() => toggleHamburger()}>
+          <div name="toggleHamburger" className="home-hamburger" onClick={(e) => toggleHamburger(e)}>
             <section></section><section></section><section></section>
           </div>
-    </>)
-}
+    </>);
+};
 
-export default HomeNav
+export default HomeNav;

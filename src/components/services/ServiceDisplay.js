@@ -1,24 +1,33 @@
 import React from 'react';
 
-import './ServiceDisplay.css'
 
-const ServiceDisplay = ({services}) => {
 
-        const showServices = services.map((service, key) => {
-            return(
-                <div key={key} className="service-box">
+import './ServiceDisplay.css';
+
+const ServiceDisplay = ({services, transformStyle}) => {
+
+    const showServices = services.map((service, key) => {
+        const backgroundImageStyle = {
+            'background-image': `url(${service.image})`
+        }
+        return(
+            <div key={key} className="service-box" style={transformStyle}>
+                <div className={service.content ? "card-box card-hover" : "card-box"} style={backgroundImageStyle}>
                     <div className="card-front">
-                        <div>
-                            <section>{service.smallText}</section><section>{service.largeText}</section>
+                        <div className={service.content ? "card-front-data card-hover" : "card-front-data pop-hover"}>
+                            <section>{service.smallText}</section>
+                            <section>{service.largeText}</section>
                         </div>
-                        <img className="serviceBackgroundImage" src={`${service.image}`} alt="service-box" />
                     </div>
-                    <div className="card-back">
-                        <section>{service.content}</section>
-                    </div>
+                    
+
                 </div>
-            )
-        })
-        return(<>{showServices}</>)
-    }
-export default ServiceDisplay 
+                <div className="card-back">
+                    <section>{service.content}</section>
+                </div>
+            </div>
+        )
+    });
+    return(<>{showServices}</>);
+};
+export default ServiceDisplay;

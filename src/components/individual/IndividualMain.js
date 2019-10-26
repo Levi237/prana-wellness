@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 import PackageDisplay from '../corporate/PackageDisplay';
 import ServiceDisplay from '../services/ServiceDisplay';
 
-class IndividualMain extends Component {
+import './ReferralQuote.css';
+
+
+export default class IndividualMain extends Component {
   state = {
     individualPlans: [{ 
         title: "Asana",
@@ -12,7 +15,7 @@ class IndividualMain extends Component {
         details: ["Can be a mix of yoga, meditation, and/or breath work", "*See add ons for additional services"],
         image: "namaste.png",
     },{
-        title: "Satiya",
+        title: "Satya",
         price: "$20/month",
         duration: ["1 x per week", "(3 month commitment)"],
         details: ["Access to online meditations", "1 lunch and learn ", "*See add ons for additional services"],
@@ -21,7 +24,8 @@ class IndividualMain extends Component {
         title: "Ahimsa",
         price: "$50/month",
         duration: ["12 week", "intensive program"],
-        details: ['“Wellness for the Working Mind”', "Combination of lunch and learns, speakers, wellness classes, and team building exercises Access to various online wellness resources- yoga, stretching, breath work, meditation", "*Customizable, pricing may vary*"],
+        secondTitle:'“Wellness for the Working Mind”',
+        details: ["Combination of lunch and learns, speakers, wellness classes, and team building exercises Access to various online wellness resources- yoga, stretching, breath work, meditation", "*Customizable, pricing may vary*"],
         image: "guru.png",
     }],
     services: [{ 
@@ -37,7 +41,7 @@ class IndividualMain extends Component {
         largeText: "Clarity",
         image: "breathing-icon.png"
     }]
-  }
+  };
   render(){
 
 
@@ -45,14 +49,17 @@ class IndividualMain extends Component {
   
     return(<>
           <div className="wellness-main-container">
-            <section className="main-title">Want Prana in Your Workplace?</section>
-            <section className="main-cta">If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content! </section>
-            <button onClick={toggleReferralBtn}>refer to employer</button>
-          </div>
-          <ServiceDisplay services={this.state.services}/>
-          <PackageDisplay pricePack={this.state.individualPlans}/>
-    </>)
-  }
-}
+            <section className="main-title white">Want Prana in Your Workplace?</section>
+            <section className="main-content-box">
+            <div>If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content! </div>
 
-export default IndividualMain
+              <div><button className="purple" name="referralForm" onClick={(e) => {toggleReferralBtn(e)}}>refer to employer</button></div>
+            </section>
+            </div>
+            <br/><br/><br/>
+          <ServiceDisplay services={this.state.services}/>
+          <section className="header-two">subscribe to personal wellness</section>
+          <PackageDisplay pricePack={this.state.individualPlans}/>
+    </>);
+  };
+};

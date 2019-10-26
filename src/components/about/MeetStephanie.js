@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 
-import './MeetStephanie.css'
+import './MeetStephanie.css';
 
 export default class MeetStephanie extends Component {
     state = {
         meetStephanie: { 
-            title: "Meet Stephanie",
+            title: "Stepahnie Erazo",
             subtitle: "founder, prana wellness",
-            content: "Stephanie Erazo is an avid adventure seeker and a self-proclaimed fitness junkie. Many people refer to her as their “Motivator in Chief” on their fitness journey, as she enjoys showing people that they can achieve more. Stephanie believes that a person’s physical and mental wellbeing can dictate their entire life, so she aims to motivate people to prioritize all-around wellness.",
+            content: "Namaste! I know the problem of work stress all too well. I spent 7 years as a Producer for one of the largest media companies in the world. After a scary panic attack at work, I decided to follow my true passion for health and wellness. 3 days after leaving my job, I journeyed to Rishikesh, India to study yoga, meditation, and breath work. From there I knew there was no turning back. I studied under master yogis, and have a true desire to spread knowledge of those traditional practices.",
             image: "about-meet.png",
-            skills: "Certified Yoga + Spin Instructor Personal Trainer",
+            skills: "Personal Trainer, Yoga Instructor + Boot Camp",
         }
-    }
+    };
+
     render(){
-        const { meetStephanie } = this.state
+        const { meetStephanie } = this.state;
 
             return(
                 <div className="meetStephanie-container">
@@ -27,7 +28,6 @@ export default class MeetStephanie extends Component {
                     </div>
                     <div><img src={`${meetStephanie.image}`} alt="meetStephanie-box" /></div>
                 </div>
-            )
-
-        }
-}
+            );
+        };
+};

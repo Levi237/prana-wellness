@@ -2,7 +2,7 @@
     width: 24vw;
     margin: 0 2vw 50px 2vw;
     display: inline-block;
-    color: #965BA5;
+    color: #965ba5;
     position: relative;
 }
 
@@ -18,8 +18,8 @@
 }
 
 .price-pack-box {
-    background: rgba(150, 91, 165, 0.15);
-    height: 350px;
+    background: rgb(239, 231, 241);
+    height: 280px;
     margin-top: -70px;
     padding-top: 80px;
     position: relative;
@@ -32,6 +32,7 @@
     padding-left: 3vw;
     color: #744A9E;
     font-size: 1.1vw;
+    text-align: left;
 }
 
 .price-pack-box section:first-of-type {
@@ -39,30 +40,40 @@
     font-weight: bold;
     font-size: 2vw;
     margin-bottom: 5px;
+    text-align: center;
+}
+.price-pack-box section:nth-of-type(2) {
+    text-align: center;
 }
 .price-pack-box section:nth-of-type(3) {
     margin: 1vw 0 0;
     font-size: 1.4vw;
     font-weight: bold;
     color: #669F35;
+    text-align: center;
 }
 .price-pack-box section:nth-of-type(4) {
     margin: 0 0 1.5vw 0;
     font-size: 1.4vw;
     font-weight: normal;
     color: #669F35;
+    text-align: center;
+}
+.price-pack-box section:nth-of-type(5) {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 .price-pack-box section:last-of-type {
     margin: 30px auto 20px auto;
     color: #000;
     position: absolute;
-    bottom: 90px;
+    bottom: 10px;
     font-size: 1vw;
-    right: 0
 }
 
 .pack-container button {
-    margin-top: -20px;
+    margin-top: -10px;
+    height: 2px;
     position: relative;
     visibility: hidden!important;
 }
@@ -79,9 +90,10 @@
         width: 80vw;
     }
     .price-pack-box section {
-        padding-right: 5vw;
-        padding-left: 5vw;
+        padding-right: 8vw;
+        padding-left: 8vw;
     }
+    
     .price-pack-box section:first-of-type {
         font-size: 7vw;
     }

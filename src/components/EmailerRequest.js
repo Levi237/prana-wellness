@@ -1,43 +1,42 @@
 import React, { Component } from 'react';
 
-import firebase from 'firebase/app'
+import firebase from 'firebase/app';
 
 
 const inputStyle = {
     display: 'inline-block',
-    float: 'left',
+    float: 'right',
     width: '75%',
-    'margin-left': '5%',
-    'max-width': '550px',
-    height: '56px',
-    'font-size': '24px',
-    'line-height': '29px',
+    marginLeft: '5%',
+    maxWidth: '550px',
+    height: '48px',
+    fontSize: '24px',
+    lineHeight: '29px',
     color: 'rgba(0, 0, 0, 0.5)',
-}
+};
 
 const btnStyle = {
     padding: '0',
     background: 'transparent',
     border: '1px solid #fff',
     color: 'white',
-    'width': '16px',
-    'min-width': '10%',
-    height: '63px',
+    width: '36px',
+    // minWidth: '10%',
+    height: '54px',
     display: 'inline-block',
     float: 'right',
-    'margin-right': '5%',
-}
+    marginLeft: '5px',
+};
 
 const arrowStyle = {
-    'border-right': '1px solid #FFFFFF',
-    'border-top': '1px solid #FFFFFF',
-    'box-sizing': 'border-box',
+    borderRight: '1px solid #FFFFFF',
+    borderTop: '1px solid #FFFFFF',
+    boxSizing: 'border-box',
     transform: 'rotate(45deg)',
     height: '16px',
     width: '16px',
-
-    'margin-left': '5px',
-}
+    marginLeft: '5px',
+};
 
 export default class EmailerRequest extends Component {
     state = {
@@ -59,13 +58,15 @@ export default class EmailerRequest extends Component {
         this.setState({
             email: e.currentTarget.value
         })
-    }
+    };
 
     render(){
+        const { email } = this.state
         return(
             <>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
-
+                <button type="submit" style={btnStyle}><div style={arrowStyle}></div></button>
+                    {/* <button type="submit"><div></div></button> */}
                 <input
                     className="emailer-input"
                     name="email"
@@ -73,15 +74,12 @@ export default class EmailerRequest extends Component {
                     onChange={this.handleChange}
                     placeholder="Enter your email here"
                     required
-                    value={this.state.email}
+                    value={ email ? email : ""}
                     style={inputStyle}
                 />
 
-    
-                    <button type="submit" style={btnStyle}><div style={arrowStyle}></div></button>
-
             </form>
             </>
-        )
-    }
-}
+        );
+    };
+};

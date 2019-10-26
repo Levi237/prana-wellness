@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import './OurApproach.css'
+import './OurApproach.css';
 
 export default class OurApproach extends Component {
     state = {
@@ -11,9 +11,10 @@ export default class OurApproach extends Component {
             image: "our-approach.png",
             skills: ["tailored program for your company ", "All skill levels welcome", "budget friendly packages", "flexible schedules"],
         }
-    }
+    };
+
     render(){
-        const { ourApproach } = this.state
+        const { ourApproach } = this.state;
 
             return(
                 <div className="ourApproach-container">
@@ -32,7 +33,6 @@ export default class OurApproach extends Component {
                     </div>
                         <div><img src={`${ourApproach.image}`} alt="ourApproach-box" /></div>
                 </div>
-            )
-
-        }
-}
+            );
+        };
+};

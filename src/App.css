@@ -34,7 +34,7 @@
   width: 100vw;
   min-height: 100vh;
   grid-template-rows: 46px 144px 625px auto 256px;
-  grid-template-columns: 300px calc(100vw - 640px) 340px;
+  grid-template-columns: 200px calc(100vw - 540px) 340px;
   background-color: #fff;
   grid-gap: 0;
   margin: 0;
@@ -136,12 +136,10 @@ grid-template-areas:
   color: #A0CD4D;
 }
 .nav-container button {
-  background: #744A9E;
   position: absolute;
   top: 5px;
   right: 5px;
   padding: 5px;
-  background: transparent;
   color: #FFF;
   border: none;
   font-size: 14px;
@@ -257,7 +255,7 @@ grid-template-areas:
   text-transform: uppercase;
 }
 .home-header > .pranaText {
-  font-size: 88px;
+  font-size: 140px;
   letter-spacing: 50px;
   font-weight: 100;
 }
@@ -320,6 +318,16 @@ grid-template-areas:
 
   color: #965BA5;
 }
+.main-title-two {
+  font-size: 36px;
+  /* line-height: 30px; */
+  padding-top: 60px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #965BA5;
+}
 .main-cta {
   /* font-family: Montserrat; */
   font-style: normal;
@@ -353,6 +361,7 @@ grid-template-areas:
   /* margin-top: -150px; */
   height: 24vw;
 }
+
 @media screen and (max-width: 945px) {
   .grid-header {
     margin-bottom: 0;
@@ -486,18 +495,18 @@ grid-template-areas:
   grid-area: footer-left;
 }
 .grid-footer-left div {
-  margin-left: 10vw;
+  margin-left: 50px;
 }
 .grid-footer-mid {
   grid-area: footer-mid;
   text-align: center;
 }
 .grid-footer-mid > section {
-  margin: 3vw auto 1vw auto;
+  margin: 6vw auto 1vw auto;
   /* font-family: Montserrat; */
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 1.2vw;
   line-height: 24px;
 
   letter-spacing: 3px;

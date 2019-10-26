@@ -1,4 +1,8 @@
 
+.home-main-top div.service-box {
+transform: scale(.7);
+}
+
 .service-box {
     position: relative;
     height: 25vw;
@@ -7,34 +11,57 @@
     background-color: transparent;
     margin: 0 1.33vw;
     z-index: 1;
+    transition: .3s ease-in-out;
 }
 .card-back {
-    margin-top: -25.76vw;
+    margin-top: -20vw;
+    margin-left: 2.5vw;
+    margin-bottom: 2.5vw;
     position: relative;
-    z-index: 0;
-    color: black;
-    height: 25vw;
-    width: 25vw;
-    background-color: white;
+    z-index: -1;
+    color: #744A9E;
+    height: 20vw;
+    width: 20vw;
+    overflow: hidden;
+    background-color: transparent;
     font-size: 1.8vw;
+    transition: .3s ease;
 }
-.card-front {
+
+.card-box {
+    height: 25vw;
     max-width: 25vw;
-    transition: .3s ease-in-out;
+    transition: all .5s ease-in-out;
+    position: initial;
+    transition-delay: .5s;
 }
-.card-front:hover, .card-front:active {
+.card-box.card-hover:hover, .card-box.card-hover:active {
     max-width: 0;
     overflow: hidden;
-    transition: .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    transition-delay: .5s;
+}
+.card-front-data.card-hover:hover {
+    border: 1px solid transparent!important;
+    color: transparent;
+    transition: all .3s ease-in-out;
+    transition-delay: .2s;
+}
+.card-front-data.pop-hover:hover {
+    border: 1px solid #669F35!important;
+    color: rgb(191, 158, 200);
+    /* color: #965ba5; */
+    transition: all .3s ease-in-out;
+    transition-delay: .2s;
 }
 .card-front > img {
     height: 25vw;
     width: 25vw;
     position: relative;
-    z-index: 1;
-    transition: .3s ease-in-out;
+    z-index: -1;
+    transition: all .3s ease-in-out;
 }
-.card-front > div {
+.card-front-data {
     width: 19vw;
     height: 19vw;
     color: #FFF;
@@ -43,16 +70,18 @@
     position: absolute;
     z-index: 2;
     margin: 3vw;
+    transition: all .3s ease-in-out;
+    transition-delay: .5s;
 }
-.card-front > div > section:first-of-type {
-    /* font-family: 'Montserrat', sans-serif; */
+
+.card-front-data > section:first-of-type {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 1.33vw;
     letter-spacing: .5vw;
     margin-top: 6vw;
 }
-.card-front > div > section:last-of-type {
+.card-front-data > section:last-of-type {
     font-family: 'Merriweather', sans-serif;
     font-style: italic;
     font-size: 3vw;
@@ -63,25 +92,30 @@
         height: 90vw;
         width: 90vw;
         display: block;
-        background-color: #000;
         margin: 5vw;
     }
-    .service-box > div > img {
-        height: 90vw;
-        width: 90vw;
-    }
-    .service-box > div > div {
-        width: 75vw;
-        height: 75vw;
-        margin: 7.5vw;
-    }
-    .service-box > div > div > section:first-of-type {
 
-        font-size: 7vw;
-        letter-spacing: .5vw;
-        margin-top: 16vw;
+    .card-box {
+        height: 90vw;
+        max-width: 90vw;
     }
-    .service-box > div > div > section:last-of-type {
-        font-size: 12vw;
+    .card-front-data {
+        width: 70vw;
+        height: 70vw;
+        margin: 10vw;
+    }
+    .card-back {
+        height: 70vw;
+        width: 70vw;
+        margin-left: 10vw;
+        margin-top: -70vw;
+        font-size: 5vw;
+    }
+    .card-front-data > section:first-of-type {
+        font-size: 7vw;
+        margin-top: 20vw;
+    }
+    .card-front-data > section:last-of-type {
+        font-size: 11vw;
     }
 }

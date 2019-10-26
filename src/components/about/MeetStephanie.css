@@ -36,7 +36,7 @@
     font-family: Merriweather;
     font-style: italic;
     font-weight: 300;
-    font-size: 4vw;
+    font-size: 3.8vw;
     line-height: 5vw;
     letter-spacing: 1px;
     color: #965BA5;
@@ -62,7 +62,7 @@
     line-height: 1.8vw;
     text-transform: uppercase;
     color: #965BA5;
-    margin-top: 8vw;
+    /* margin-top: 8vw; */
 }
 
 @media screen and (max-width: 945px) {
