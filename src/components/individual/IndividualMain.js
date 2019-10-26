@@ -10,22 +10,22 @@ export default class IndividualMain extends Component {
   state = {
     individualPlans: [{ 
         title: "Asana",
-        price: "$10/month",
-        duration: ["1 x per month", "(6 month commitment)"],
-        details: ["Can be a mix of yoga, meditation, and/or breath work", "*See add ons for additional services"],
+        price: "$80/hour",
+        duration: "Private Yoga Instruction",
+        details: ["Learn foundational poses", "Deepen your practice", "Find balance", ""],
         image: "namaste.png",
     },{
         title: "Satya",
-        price: "$20/month",
-        duration: ["1 x per week", "(3 month commitment)"],
-        details: ["Access to online meditations", "1 lunch and learn ", "*See add ons for additional services"],
+        price: "$80/hour",
+        duration: "Meditation and Breathwork ",
+        details: ["Discover mental and physical benefits", "Practice focus and concentration", "Learn techniques to de-stress", ""],
         image: "karma.png",
     },{
         title: "Ahimsa",
-        price: "$50/month",
-        duration: ["12 week", "intensive program"],
+        price: "$150/hour",
+        duration: "Yoga Therapy",
         secondTitle:'“Wellness for the Working Mind”',
-        details: ["Combination of lunch and learns, speakers, wellness classes, and team building exercises Access to various online wellness resources- yoga, stretching, breath work, meditation", "*Customizable, pricing may vary*"],
+        details: ["Rehab an injury", "Increase flexibility", "Relieve pain and mental stress", ""],
         image: "guru.png",
     }],
     services: [{ 

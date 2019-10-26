@@ -24,7 +24,7 @@ export default class HomeMain extends Component {
         },{
             smallText: "Invigorating",
             largeText: "Yoga",
-            image: "point-placeholder.png"
+            image: "invigorating_yoga.png"
         },{
             smallText: "relaxing",
             largeText: "Meditation",

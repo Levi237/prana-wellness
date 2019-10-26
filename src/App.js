@@ -37,7 +37,7 @@ export default class App extends Component {
     otherServices: [{ 
       smallText: "Bootcamp",
       largeText: "Fitness",
-      image: "shavasana.png",
+      image: "bootcamp_fitness.png",
       content: "Power hour of cardio, Plyometrics, HIIT, resistance bands, and body weight exercises. Modifications for all levels.",
     },{
       smallText: "Lunch +",
