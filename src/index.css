@@ -30,6 +30,7 @@ button {
   letter-spacing: 2px;
   text-transform: uppercase;
   background: transparent;
+  transition: all .3s ease-in-out;
 }
 button.white {
   border: 1px solid #965BA5;
@@ -38,6 +39,16 @@ button.white {
 button.purple {
   border: 1px solid #FFF;
   color: #FFF;
+}
+button.white:hover {
+  background-color: rgba(150, 91, 165, .5);
+  /* border: 1px solid #965BA5; */
+  /* color: #965BA5; */
+}
+button.purple:hover {
+  background-color: rgba(150, 91, 165, .5);
+  /* border: 1px solid #FFF; */
+  /* color: #FFF; */
 }
 
 input {
