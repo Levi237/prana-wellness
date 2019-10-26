@@ -20,7 +20,7 @@ export default class ReferralRequest extends Component {
         const { toggleReferralBtn } = this.props
         e.preventDefault();
         const newFromDB = await firebase.firestore()
-            .collection('referrals')
+            .collection('requests')
             .add({
                 ...this.state,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),

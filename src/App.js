@@ -109,6 +109,7 @@ export default class App extends Component {
     referralForm.classList.toggle('inactive');
   };
   render(){
+    const { user } = this.state
     return(
       <div className="grid-container">
       <Nav toggleHamburger={this.toggleHamburger}/>
@@ -119,7 +120,7 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                       <HomeNav toggleHamburger={this.toggleHamburger}/> }/>           
             <Route path={routes.ROOT} render={() => 
-                      <GlobalNav logout={this.logout} toggleHamburger={this.toggleHamburger}/> }/>    
+                      <GlobalNav user={user} logout={this.logout} toggleHamburger={this.toggleHamburger}/> }/>    
           </Switch>
         </div>
 

@@ -16,7 +16,7 @@ export default class AdminPortal extends Component {
       loadContactRequests(){
         firebase
         .firestore()
-        .collection('referrals')
+        .collection('requests')
         .orderBy('timestamp', 'desc')
         .onSnapshot(serverUpdate => {
           const contactsData = serverUpdate.docs.map(_doc => {
@@ -51,12 +51,19 @@ export default class AdminPortal extends Component {
             )
         })
         const contactList = contacts.map((contact, key) => {
+            let addedService = contact.addServices
+            let addedServices = addedService.map((service, k) => {
+                return(
+                    <span key={k}> {service} </span>
+                )
+            })
             return(
                 <div ley={key} style={{border: '1px solid black'}}>
                     <section>{contact.fromName}</section>
                     <section>{contact.fromEmail}</section>
                     <section>{contact.toName}</section>
                     <section>{contact.toEmail}</section>
+                    {addedServices}
                     <section>{contact.subjectTitle}</section>
                     <section>{contact.subjectContent}</section>
                 </div>

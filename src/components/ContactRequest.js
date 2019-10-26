@@ -21,18 +21,18 @@ export default class ReferralRequest extends Component {
         const { toggleContactBtn } = this.props
         e.preventDefault();
         const newFromDB = await firebase.firestore()
-            .collection('referrals')
+            .collection('requests')
             .add({
                 ...this.state,
                 timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-            }).then(toggleContactBtn)
+            }).then(toggleContactBtn);
         return newFromDB;
     };
     handleChange = (e) => {
         e.preventDefault();
         this.setState({
             [e.currentTarget.name]: e.currentTarget.value,
-        })
+        });
     };
     handleSelect = (e, value) => {
         const { addServices } = this.state
@@ -40,7 +40,7 @@ export default class ReferralRequest extends Component {
         e.preventDefault();
 
         if (addServices.includes(selectedService)){
-            e.currentTarget.classList.remove('selectedHighlighted')
+            e.currentTarget.classList.remove('selectedHighlighted');
             this.setState(prevState => ({     
                 addServices: addServices.filter(x => (
                     x !== selectedService
@@ -51,7 +51,7 @@ export default class ReferralRequest extends Component {
             this.setState({
                 addServices: [...addServices, selectedService]
             });
-        }
+        };
     };
 
     
@@ -72,7 +72,7 @@ export default class ReferralRequest extends Component {
                     <section>{service.smallText}</section>
                     <section>{service.largeText}</section>
                 </button>
-            )
+            );
         });
 
         return(
