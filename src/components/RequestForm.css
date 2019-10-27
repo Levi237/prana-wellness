@@ -77,9 +77,14 @@ button.selectedHighlighted {
 
 #referral .close, #contact .close {
     padding: 10px 25px !important;
+    float: right;
 }
 
 @media screen and (max-width: 945px) {
+    .form-container {
+        max-height: 94vh;
+        overflow: auto;
+    }
     .contact-box section {
         text-align: left;
         font-style: normal;
@@ -110,4 +115,10 @@ button.selectedHighlighted {
     .contact-box > button {
             width: 44%;
     }  
+    #referral .close, #contact .close {
+        padding: 5px 12px !important;
+        position: absolute;
+        z-index: 888888;
+        right: 0;
+    }
 };
