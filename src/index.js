@@ -15,7 +15,7 @@ import 'firebase/firebase-storage'
 // import 'firebase/firebase-database'
 
 // const sgMail = require('@sendgrid/mail');
-// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY);
 // const msg = {
 //   to: 'test@example.com',
 //   from: 'test@example.com',

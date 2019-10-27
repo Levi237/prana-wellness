@@ -4,13 +4,13 @@ import firebase from 'firebase/app';
 // import admin from 'firebase/admin';
 // import sgMail from '@sendgrid/mail';
 
-const functions = require('firebase-functions');
+// const functions = require('firebase-functions');
 // import * as admin from 'firebase-admin';
 
-const admin = require('firebase-admin')
-admin.initializeApp(functions.config().firebase);
+// const admin = require('firebase-admin')
+// admin.initializeApp(functions.config().firebase);
 const sgMail = require('@sendgrid/mail');
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY);
 
 
 
@@ -50,7 +50,7 @@ templateId: 'd-baaba9ce96fc4bf89d1b1ea917f6994c',
 text: 'and easy to do anywhere, even with Node.js',
 html: '<strong>and easy to do anywhere, even with Node.js</strong>',
 };
-sgMail.send(msg);
+// sgMail.send(msg);
 
 const inputStyle = {
     display: 'inline-block',
@@ -88,7 +88,7 @@ const arrowStyle = {
 };
 
 // const sgMail = require('@sendgrid/mail');
-// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY);
 // const msg = {
 //     to: 'test@example.com',
 //     from: 'test@example.com',
