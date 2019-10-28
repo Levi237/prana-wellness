@@ -18,8 +18,8 @@
     /* height: 90vh; */
     padding: 3vh 3vw;
     max-width: calc(600px - 6vw);
-    max-height: 80vh;
-    margin: 0 auto 20px auto;
+    max-height: 85vh;
+    margin: 5vh auto 20px;
     text-align: center;
     overflow: auto;
 }
