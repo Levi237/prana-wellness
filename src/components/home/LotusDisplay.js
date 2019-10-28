@@ -5,14 +5,21 @@ import './LotusDisplay.css'
 
 import * as routes          from '../../constants/routes';
 
+
+const lotusStyleOverride = {
+    position: 'relative';
+    overflow: 'hidden';
+    maxHeight: '957px';
+}
+
 export default class LotusDisplay extends Component {
     state = {
 
     };
     render(){
 
-            return(
-                <div className="lotus-box">
+            return(<>
+                <div className="lotus-box" style={lotusStyleOverride}>
                     <div></div>
                     <div>
                        <section>WANT TO SEE WELLNESS IN YOUR WORKPLACE?</section>
@@ -40,6 +47,7 @@ export default class LotusDisplay extends Component {
                     </section>
 
                 </div>
+                </>
             );
     };
 };
