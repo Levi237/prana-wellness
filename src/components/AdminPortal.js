@@ -52,19 +52,20 @@ export default class AdminPortal extends Component {
         })
         const contactList = contacts.map((contact, key) => {
             const addedService = contact.addServices
-            const addedServices = addedService.map((service, k) => {
+            const addedServices = [];
+            if (contact.addServices ) {addedService.map((service, k) => {
                 return(
                     <span key={k}> {service} |</span>
                 )
-            })
+            })}
             return(
                 <div key={key} style={{border: '1px solid black'}}>
                     <section>{contact.fromName}</section>
                     <section>{contact.fromEmail}</section>
                     <section>{contact.toName}</section>
                     <section>{contact.toEmail}</section>
-                    <section>{contact.business}</section>
-                    {contact.addServices && addedServices}
+                    <section>{contact.businessName}</section>
+                    {addedServices}
                     <section>{contact.subjectTitle}</section>
                     <section>{contact.subjectContent}</section>
                 </div>
