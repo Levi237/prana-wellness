@@ -35,6 +35,7 @@ section.main-content-box {
 
 .wellness-main-container button {
     margin: 0 10px;
+    width: 30vw;
 }
 
 
@@ -44,5 +45,13 @@ section.main-content-box {
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
-    color: #965BA5
-;}
+    color: #965BA5;
+}
+@media screen and (max-width: 945px){
+    .wellness-main-container button {
+        margin: 5px;
+        width: 80vw;
+        height: 68px;
+        font-size: 4.5vw;
+    }
+}

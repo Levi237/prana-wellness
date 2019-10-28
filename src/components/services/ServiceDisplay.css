@@ -91,7 +91,6 @@ transform: scale(.7);
     font-style: italic;
     font-size: 3vw;
 }
-
 @media screen and (max-width: 945px) {
     .service-box {
         height: 90vw;
@@ -103,6 +102,7 @@ transform: scale(.7);
     .card-box {
         height: 90vw;
         max-width: 90vw;
+        margin: 15vw 0;
     }
     .card-front-data {
         width: 70vw;
@@ -122,5 +122,14 @@ transform: scale(.7);
     }
     .card-front-data > section:last-of-type {
         font-size: 11vw;
+    }
+    .optionBtn {
+        margin-top: 10vw;
+    }
+    .optionBtn button {
+        margin: 5px;
+        width: 80vw;
+        height: 68px;
+        font-size: 4.5vw;
     }
 }

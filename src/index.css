@@ -63,7 +63,18 @@ input {
 
 @media screen and (max-width: 945px) {
   button {
-    padding: 2.4vw 5.8vw;
-    font-size: 3vw;
+    padding: 3vw 8vw;
+    font-size: 4.2vw;
   }
+  button.mobile-fill {
+    margin: 5px;
+    width: 90vw;
+    min-height: 68px;
+    font-size: 4.5vw;
+    line-height: 6vw;
+  }
+  button.mobile-resize {
+    font-size: 4.5vw;
+  }
+
 }

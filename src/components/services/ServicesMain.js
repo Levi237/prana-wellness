@@ -62,12 +62,16 @@ export default class ServicesMain extends Component {
         return(<>
             <div className="wellness-main-container main-title">
                 <ServiceDisplay services={this.state.services}/>
-                <NavLink to={routes.CORP}><button className="purple">Corporate Solutions</button></NavLink>
-                <NavLink to={routes.WELL}><button className="purple">Individual Solutions</button></NavLink>
+                <div className="optionBtn">
+                    <NavLink to={routes.CORP}><button className="purple">Corporate Solutions</button></NavLink>
+                    <NavLink to={routes.WELL}><button className="purple">Individual Solutions</button></NavLink>
+                </div>
             </div>
             <section className="home-main-header">WELLNESS SERVICES</section>
                 <ServiceDisplay services={this.state.otherServices}/>
+                <div className="optionBtn">
             <button className="white" name="contactForm" onClick={(e) => {toggleContactBtn(e)}}>Request Quote</button>
+            </div>
         </>);
     };
 };

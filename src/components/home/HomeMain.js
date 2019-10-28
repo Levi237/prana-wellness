@@ -48,7 +48,7 @@ export default class HomeMain extends Component {
             <ServiceDisplay services={this.state.points} transformStyle={fourSquareStyle}/>
             {/* <PointDisplay /> */}
             <br /><br /><br/>
-            <NavLink to={routes.CORP}><button className="white">browse services</button></NavLink>
+            <NavLink to={routes.CORP}><button className="white mobile-fill">browse services</button></NavLink>
             <br /><br /><br/>
             <CustomerDisplay />
             <br /><br /><br/>
