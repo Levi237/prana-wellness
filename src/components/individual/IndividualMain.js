@@ -31,15 +31,15 @@ export default class IndividualMain extends Component {
     services: [{ 
         smallText: "Achieve Work-LIfe",
         largeText: "Balance",
-        image: "yoga-icon.png"
+        image: "invigorating_yoga.png"
     },{
         smallText: "Reduce Stress + find",
         largeText: "Peace",
-        image: "meditation-icon.png"
+        image: "relaxing_meditation.png"
     },{
         smallText: "Increased Focus +",
         largeText: "Clarity",
-        image: "breathing-icon.png"
+        image: "mindful_breathing.png"
     }]
   };
   render(){
