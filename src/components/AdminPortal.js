@@ -51,23 +51,27 @@ export default class AdminPortal extends Component {
             )
         })
         const contactList = contacts.map((contact, key) => {
-            const addedService = contact.addServices
-            const addedServices = [];
-            if (contact.addServices ) {addedService.map((service, k) => {
-                return(
-                    <span key={k}> {service} |</span>
-                )
-            })}
+        //     const addedService = contact.addServices
+            
+        //     if (contact.addServices){
+        //     let addedServices = addedService.map((service, k) => {
+        //         return(
+        //             <li key={k}> {service}</li>
+        //         )
+        //     })
+        // } 
+
             return(
                 <div key={key} style={{border: '1px solid black'}}>
-                    <section>{contact.fromName}</section>
-                    <section>{contact.fromEmail}</section>
-                    <section>{contact.toName}</section>
-                    <section>{contact.toEmail}</section>
-                    <section>{contact.businessName}</section>
-                    {addedServices}
-                    <section>{contact.subjectTitle}</section>
-                    <section>{contact.subjectContent}</section>
+                    <section><strong>Contact Name:</strong> {contact.fromName}</section>
+                    <section><strong>Contact Email:</strong> {contact.fromEmail}</section>
+                    <section><strong>Referral Name:</strong> {contact.toName}</section>
+                    <section><strong>Referral Email:</strong> {contact.toEmail}</section>
+                    <section><strong>Business/Location:</strong> {contact.businessName}</section>
+                    {/* <stong>Additional Services:</stong> */}
+                    {/* <ul>{addedServices}</ul> */}
+                    <section><strong>Subject:</strong> {contact.subjectTitle}</section>
+                    <section><strong>Content:</strong> {contact.subjectContent}</section>
                 </div>
             )
         })
