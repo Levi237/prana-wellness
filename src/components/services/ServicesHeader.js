@@ -9,7 +9,7 @@ const ServicesHeader = () => {
                 <section className="bottom-header-text">Wellness Services</section>
             </div>
         </div>
-        <div className="../wellness-header-purple">
+        <div className="wellness-header-purple">
 
         </div>
     </>);
