@@ -9,24 +9,24 @@ export default class AdminPortal extends Component {
         emailers: [],
     }
     componentDidMount = () => {
-        // this.loadContactRequests();
+        this.loadContactRequests();
         this.loadEmailerRequests();
       };
     
-    //   loadContactRequests(){
-    //     firebase
-    //     .firestore()
-    //     .collection('requests')
-    //     .orderBy('timestamp', 'desc')
-    //     .onSnapshot(serverUpdate => {
-    //       const contactsData = serverUpdate.docs.map(_doc => {
-    //         const data = _doc.data();
-    //         data['id'] = _doc.id;
-    //         return data;
-    //       });
-    //       this.setState({ contacts: contactsData });
-    //     });
-    //   };
+      loadContactRequests(){
+        firebase
+        .firestore()
+        .collection('requests')
+        .orderBy('timestamp', 'desc')
+        .onSnapshot(serverUpdate => {
+          const contactsData = serverUpdate.docs.map(_doc => {
+            const data = _doc.data();
+            data['id'] = _doc.id;
+            return data;
+          });
+          this.setState({ contacts: contactsData });
+        });
+      };
       loadEmailerRequests(){
         firebase
         .firestore()
@@ -63,7 +63,8 @@ export default class AdminPortal extends Component {
                     <section>{contact.fromEmail}</section>
                     <section>{contact.toName}</section>
                     <section>{contact.toEmail}</section>
-                    {addedServices}
+                    <section>{contact.business}</section>
+                    {contact.addServices && addedServices}
                     <section>{contact.subjectTitle}</section>
                     <section>{contact.subjectContent}</section>
                 </div>
