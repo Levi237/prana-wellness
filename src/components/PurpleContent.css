@@ -31,7 +31,9 @@
     float: right;
     text-align: center;
 }
-
+.header-two {
+    margin-top: 20vw;
+}
 @media screen and (max-width: 945px){
     .purple-content > h1 {
         padding: 2.5vw;
