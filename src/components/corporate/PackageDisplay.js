@@ -6,7 +6,7 @@ const PackageDisplay =({pricePack})=> {
 
     const showPackage = pricePack.map((pack, key) => {
         const details = pack.details.map((detail, k) => {
-            return <section key={k}>{detail}</section>
+            return <li key={k}>{detail}</li>
         })
         return(
             <div key={key} className="pack-container">
@@ -19,7 +19,7 @@ const PackageDisplay =({pricePack})=> {
                     <section>{pack.duration}</section>
                     <section></section>
                     <section>{pack.secondTitle}</section>
-                    {details}
+                    <ul>{details}</ul>
                 </div>
                     <button>BUY NOW</button>
             </div>

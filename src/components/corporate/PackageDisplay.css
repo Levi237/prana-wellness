@@ -20,14 +20,17 @@
 .price-pack-box {
     background: rgb(239, 231, 241);
     min-height: 280px;
-    height: 30vw;
+    height: 25vw;
     margin-top: -70px;
     padding-top: 80px;
     position: relative;
     width: 24vw;
     margin-bottom: -70px;
 }
-
+.price-pack-box li {
+    text-align: left;
+    font-size: 1.3vw;
+}
 .price-pack-box section {
     padding-right: 3vw;
     padding-left: 3vw;
