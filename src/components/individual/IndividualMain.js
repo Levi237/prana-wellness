@@ -13,20 +13,19 @@ export default class IndividualMain extends Component {
         price: "$80/hour",
         duration: "Private Yoga Instruction",
         details: ["Learn foundational poses", "Deepen your practice", "Find balance"],
-        image: "namaste.png",
+        image: "asana.png",
     },{
         title: "Satya",
         price: "$80/hour",
         duration: "Meditation & Breathwork ",
         details: ["Discover mental & physical benefits", "Practice focus & concentration", "Learn techniques to de-stress"],
-        image: "karma.png",
+        image: "satya.png",
     },{
         title: "Ahimsa",
         price: "$150/hour",
         duration: "Yoga Therapy",
-        // secondTitle:'“Wellness for the Working Mind”',
         details: ["Rehab an injury", "Increase flexibility", "Relieve pain & mental stress"],
-        image: "guru.png",
+        image: "ahimsa.png",
     }],
     services: [{ 
         smallText: "Achieve Work-LIfe",

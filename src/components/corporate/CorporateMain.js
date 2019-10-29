@@ -42,7 +42,7 @@ export default class CorporateMain extends Component {
   render(){
     const { corporatePlans, CorporatePurpleContent } = this.state;
     const { toggleContactBtn } = this.props;
-    
+
     return(<>
       <div className="about-main-container">
         <div className="main-title">
@@ -57,6 +57,7 @@ export default class CorporateMain extends Component {
           <PranaDifference />
           <BenefitsDisplay />
         </div>
+        <h1>Corporate Wellness Sollutions</h1>
         <PackageDisplay pricePack={corporatePlans}/>
 
         <div className="custom-quote purple-content">
