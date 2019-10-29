@@ -1,16 +1,21 @@
+.main-title {
+    margin-bottom: 20px;
+    margin-top: -40vw;
+    position: relative;
+    z-index: 1;
+}
 .custom-quote {
     margin: -150px 0 0;
     height: 20vw;
     padding: 16vw 0 0;
     background-color: rgba(150, 91, 165, 0.6);
 }
-.custom-quote > h1 {
-    color: white;
+
+.purple-content > h1 {
     font-weight: normal;
+    color: #FFFFFF;
 }
-
-
-.custom-quote > section > div:first-of-type {
+.purple-content > section > div:first-of-type {
     display: inline-block;
     width: 50vw;
     margin-left: 10vw;
@@ -19,38 +24,39 @@
     color: #fff;
     text-align: left;
 }
-.custom-quote > section > div:last-of-type {
+.purple-content > section > div:last-of-type {
     display: inline-block;
     width: 27.5vw;
-    /* margin-top: 10px; */
     margin-right: 10vw;
     float: right;
+    text-align: center;
 }
 
-@media screen and (max-width: 945px) {
+@media screen and (max-width: 945px){
+    .purple-content > h1 {
+        padding: 2.5vw;
+    }
+
+    .main-title {
+        margin-top: 0vw;
+    }
     .custom-quote {
         margin: -40vw 0 0;
         height: 68vw;
         padding: 42vw 0 4vw 0;
     }
-    .custom-quote > h1 {
-        padding-bottom: 2vw;
-        margin: 0 2.5vw;
-    }
-    
-    
-    .custom-quote > section > div:first-of-type {
+    .purple-content > section > div:first-of-type {
         display: block;
         width: 80vw;
         margin-left: 10vw;
         margin-right: 2.5vw;
         margin-bottom: 4vw;
         float: none;
-        color: #fff;
         text-align: justify;
     }
-    .custom-quote > section > div:last-of-type {
+    .purple-content > section > div:last-of-type {
         display: block;
         float: none;
+        width: 100%;
     }
 }

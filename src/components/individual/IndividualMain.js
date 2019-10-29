@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import PackageDisplay from '../corporate/PackageDisplay';
-import ServiceDisplay from '../services/ServiceDisplay';
+import PackageDisplay       from '../corporate/PackageDisplay';
+import ServiceDisplay       from '../services/ServiceDisplay';
 
-import './ReferralQuote.css';
-
+import PurpleContent        from '../PurpleContent';
+import '../PurpleContent';
 
 export default class IndividualMain extends Component {
   state = {
@@ -40,22 +40,35 @@ export default class IndividualMain extends Component {
         smallText: "Increased Focus +",
         largeText: "Clarity",
         image: "mindful_breathing.png"
-    }]
+    }],
+    individualPurpleContent: {
+      header: "Want Prana in Your Workplace?",
+      message: 
+        "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!"
+      ,
+      button: "refer to employer",
+    }
   };
   render(){
 
-
+    const { individualPurpleContent } = this.state;
     const { toggleReferralBtn } = this.props;
   
     return(<>
-          <div className="wellness-main-container">
-            <section className="main-title white">Want Prana in Your Workplace?</section>
-            <section className="main-content-box">
-            <div>If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content! </div>
 
-              <div><button className="purple" name="referralForm" onClick={(e) => {toggleReferralBtn(e)}}>refer to employer</button></div>
-            </section>
+
+            <div className="wellness-main-container purple-content">
+
+            <PurpleContent content={individualPurpleContent} toggle={toggleReferralBtn}/>
+
             </div>
+
+
+
+
+
+
+
             <br/><br/><br/>
           <ServiceDisplay services={this.state.services}/>
           <h1 className="header-two">subscribe to personal wellness</h1>

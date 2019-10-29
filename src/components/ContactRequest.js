@@ -1,11 +1,8 @@
 import React, { Component } from 'react';
 
+import firebase             from 'firebase/app'
+
 import './RequestForm.css';
-// import './ContactRequest.css'
-
-import firebase from 'firebase/app'
-
-
 
 export default class ReferralRequest extends Component {
     state = {
@@ -54,10 +51,9 @@ export default class ReferralRequest extends Component {
         };
     };
 
-    
     render(){
-        const { fromName, fromEmail, businessName, subjectTitle, subjectContent, addServices } = this.state
-        const { toggleContactBtn, services } = this.props  
+        const { fromName, fromEmail, businessName, subjectTitle, subjectContent, addServices } = this.state;
+        const { toggleContactBtn, services } = this.props; 
 
         const buttonSelectors = services.map((service, key) => {
             return(
@@ -99,7 +95,6 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Enter your email here"
                         required
-                        // value={fromEmail}
                         value={ fromEmail ? fromEmail : ''}
                     />
                 <section>Business or Location:</section>
@@ -110,7 +105,6 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Enter company name here"
                         required
-                        // value={businessName}
                         value={ businessName ? businessName : ''}
                     />
                 <section>Ask about additional services:</section>
@@ -123,7 +117,6 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Enter subject here"
                         required
-                        // value={subjectTitle}
                         value={ subjectTitle ? subjectTitle : ''}
                     />
                     <textarea
@@ -133,7 +126,6 @@ export default class ReferralRequest extends Component {
                         onChange={this.handleChange}
                         placeholder="Share your thoughts"
                         required
-                        // value={subjectContent}
                         value={ subjectContent ? subjectContent : ''}
                     />
                     <button className="white" type="submit">SUBMIT</button>
