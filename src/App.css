@@ -282,7 +282,6 @@ grid-template-areas:
   margin: -20vw 10vw;
 }
 .top-header-text {
-  font-weight: 300;
   font-size: 2.75vw;
   text-align: center;
   letter-spacing: .4vw;
@@ -290,9 +289,7 @@ grid-template-areas:
 .bottom-header-text {
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
-  font-weight: 300;
-  font-size: 64px;
-  line-height: 80px;
+  line-height: 10vw;
   text-align: center;
   letter-spacing: 1px;
   color: #FFF;

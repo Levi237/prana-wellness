@@ -139,6 +139,10 @@ div.lotus-box {
         height: 30vw;
         width: 30vw;
     }
+    .lotus-box > section > section {
+        font-size: 2.2vw !important;
+        min-height: 15vw;
+    }
     .lotus-box > section:first-of-type > img {
         right: 0;
     }
@@ -156,6 +160,7 @@ div.lotus-box {
     .lotus-box button {
         margin-top: 4vw;
         font-size: 2.7vw;
+        padding: 2vw 4vw;
     }
     .lotus-desktop-button {
         display: none;

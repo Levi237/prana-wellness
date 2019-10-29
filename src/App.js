@@ -186,7 +186,7 @@ export default class App extends Component {
 
         <div className="grid-footer-right">
           <div className="travel-slay-logo">
-            <a href="https://www.travelslay.co/" target="_blank"><img src="../travel_slay_white.png" alt="Travel Slay" /></a>
+            <a href="https://www.travelslay.co/" target="_blank"><img src="../travel_slay_white.png" alt="Travel Slay"/></a>
             <section>explore fitness + training</section>
             <section>with Stephanie erazo</section>
           </div>
