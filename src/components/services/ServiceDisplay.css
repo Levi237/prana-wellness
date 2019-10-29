@@ -1,7 +1,7 @@
 
 .home-main-top div.service-box {
-transform: scale(.7);
-}
+    transform: scale(.7);
+    }
 
 .service-box {
     position: relative;

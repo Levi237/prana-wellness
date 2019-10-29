@@ -45,7 +45,9 @@ button.white:hover {
 button.purple:hover {
   background-color: rgba(150, 91, 165, .5);
 }
-
+.home-main-top div.service-box {
+  transform: scale(.7)!important;
+  }
 
 /* a, a:visited {
   color: rgba(71, 62, 78, 0.6);
