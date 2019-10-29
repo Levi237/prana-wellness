@@ -38,15 +38,6 @@ section.main-content-box {
     width: 32vw;
 }
 
-
-/* .header-two {
-    margin: 20px auto;
-    font-size: 36px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    color: #965BA5;
-} */
 @media screen and (max-width: 945px){
     .wellness-main-container button {
         margin: 5px;
