@@ -27,7 +27,7 @@
 .custom-quote > section:last-of-type > div:last-of-type {
     display: inline-block;
     width: 25vw;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-right: 10vw;
     float: right;
 }
