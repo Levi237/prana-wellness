@@ -125,10 +125,11 @@
         font-size: 11vw;
     }
     .optionBtn {
-        margin-top: 10vw;
+        margin-top: 15vw;
     }
     .optionBtn button {
-        margin: 5px;
+        margin: 2.5vw;
+
         width: 80vw;
         height: 68px;
         font-size: 4.5vw;

@@ -234,10 +234,14 @@ grid-template-areas:
   background-size: cover;
   color: #FFF;
   text-align: center;
-  margin-bottom: -100px;
+  margin-bottom: -10vw;
+  margin-top: -19vw;
+  height: 60vw;
+  padding-top: 20vw;
+  /* margin-bottom: -100px;
   margin-top: -190px;
   height: 638px;
-  padding-top: 200px;
+  padding-top: 200px; */
 }
 
 .welcomeText, .pranaText, .statementText {
@@ -305,7 +309,7 @@ grid-template-areas:
 }
 
 .main-title {
-  margin-top: calc(-750px + 36vw);
+  margin-top: calc(-725px + 36vw);
   /* padding-top: 60px; */
 }
 .main-title-two {
@@ -350,8 +354,15 @@ grid-template-areas:
   /* margin-top: -150px; */
   height: 24vw;
 }
+.wellness-main-container button {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+
 
 @media screen and (max-width: 945px) {
+
   .grid-header {
     margin-bottom: 0;
     margin-top: 0;
