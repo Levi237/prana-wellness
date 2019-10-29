@@ -3,7 +3,6 @@ import { NavLink }      from 'react-router-dom';
 
 import * as routes      from '../../constants/routes';
 
-// import PointDisplay     from './PointDisplay';
 import LotusDisplay     from './LotusDisplay';
 import HomeStephanie    from './HomeStephanie';
 import CustomerDisplay  from '../CustomerDisplay';
@@ -13,7 +12,6 @@ const fourSquareStyle = {
     transform: 'scale(.75)',
     position: 'relative',
     margin: '-10px',
-    // backgroundColor: 'rgba(0,0,0,.8)'
 }
 
 export default class HomeMain extends Component {
@@ -46,15 +44,13 @@ export default class HomeMain extends Component {
             </div>
             <section className="home-main-header">WELLNESS SERVICES</section>
             <ServiceDisplay services={this.state.points} transformStyle={fourSquareStyle}/>
-            {/* <PointDisplay /> */}
             <br /><br /><br/>
-            <NavLink to={routes.CORP}><button className="white mobile-fill">browse services</button></NavLink>
+            <NavLink to={routes.SERV}><button className="white mobile-fill">browse services</button></NavLink>
             <br /><br /><br/>
             <CustomerDisplay />
             <br /><br /><br/>
             <LotusDisplay />
             <HomeStephanie />
-            {/* <Carousel carouselContent={this.state.quotes}/> */}
         </>);
     };
 };

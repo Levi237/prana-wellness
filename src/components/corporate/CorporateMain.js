@@ -15,7 +15,6 @@ export default class CorporateMain extends Component {
         // duration: ["1 x per month", "(6 month commitment)"],
         duration: "1x per month",
         secondTitle: null,
-        // details: ["Mix of yoga, meditation, and breath work", "Access to online resources", "*See add ons for additional services"],
         details: ["Yoga", "Meditation", "Breathwork", "Online Resources", "*6 month commitment"],
         image: "namaste.png",
     },{
@@ -24,7 +23,7 @@ export default class CorporateMain extends Component {
         // duration: ["1 x per week", "(3 month commitment)"],
         duration: "1 x per week",
         secondTitle: "Namaste +",
-        details: ["1 Lunch & Learn included", "*3 month commitment"],
+        details: ["1 Lunch & Learn", "*3 month commitment"],
         image: "karma.png",
     },{
         title: "Guru",

@@ -7,8 +7,8 @@ export default class OurApproach extends Component {
         ourApproach: { 
             title: "the Prana Difference",
             subtitle: "wellness in the workplace",
-            content: "Show your employees you value their well-being and incorporate an on-site program today.",
-            image: "our-approach.png",
+            content: " We work using holistic practices, rooted in Indian tradition, and guide with both mind and body healing in mind. Our wellness services are designed for individuals to learn and implement on their own.",
+            image: "prana_difference.png",
             skills: ["tailored program for your company ", "All skill levels welcome", "budget friendly packages", "flexible schedules"],
         }
     };
