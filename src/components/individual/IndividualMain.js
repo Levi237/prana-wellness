@@ -18,14 +18,14 @@ export default class IndividualMain extends Component {
         title: "Satya",
         price: "$80/hour",
         duration: "Meditation & Breathwork ",
-        details: ["Discover mental and physical benefits", "Practice focus and concentration", "Learn techniques to de-stress"],
+        details: ["Discover mental & physical benefits", "Practice focus & concentration", "Learn techniques to de-stress"],
         image: "karma.png",
     },{
         title: "Ahimsa",
         price: "$150/hour",
         duration: "Yoga Therapy",
         // secondTitle:'“Wellness for the Working Mind”',
-        details: ["Rehab an injury", "Increase flexibility", "Relieve pain and mental stress"],
+        details: ["Rehab an injury", "Increase flexibility", "Relieve pain & mental stress"],
         image: "guru.png",
     }],
     services: [{ 

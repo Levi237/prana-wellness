@@ -289,6 +289,7 @@ grid-template-areas:
 .bottom-header-text {
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
+  font-size: 6vw;
   line-height: 10vw;
   text-align: center;
   letter-spacing: 1px;
@@ -319,6 +320,7 @@ grid-template-areas:
   background: rgb(191, 158, 200);
 }
 .wellness-main-container {
+  margin-top: calc(-15vw - 144px);
   padding-bottom: 85px;
 }
 .wellness-main-container > section {
@@ -398,6 +400,10 @@ grid-template-areas:
   .main-title {
     margin-top: -10vw;
     padding-top: 5vw;
+  }
+  .wellness-main-container {
+    margin-top: 0;
+    padding-bottom: 8vw;
   }
   
 }
