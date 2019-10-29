@@ -44,6 +44,7 @@
     background: transparent;
     background-size: cover;
 }
+
 .card-front-data.card-hover:hover {
     border: 1px solid transparent!important;
     color: transparent;

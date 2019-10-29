@@ -38,17 +38,19 @@ export default class TeamMembers extends Component {
         const { team } = this.state;
         
         const memberInfo = team.map((member, key) => {
-            const backgroundImageStyle = {
-                'backgroundImage': `url(./team/${member.image})`
-            }
+            // const backgroundImageStyle = {
+            //     'backgroundImage': `url(../team/${member.image})`
+            // }
             const skillList = member.skills.map((skill, k) => {
                 return (<><span>{skill}</span><br /></>)
             })
             return (
                 <div key={key} className="team-box">
-                    <div className={member.description ? "member-box member-hover" : "member-box"} style={backgroundImageStyle}>
+                    {/* <div className={member.description ? "member-box member-hover" : "member-box"} style={backgroundImageStyle}></div> */}
+                    <div className={member.description ? "member-box member-hover" : "member-box"}>
                         <div className="member-front">
-                            <div className={member.description ? "member-front-data member-hover" : "member-front-data pop-hover"}>
+                            <div className="member-front-data member-hover">
+                                <img className="member-picture" src={`../team/${member.image}`}/>
                                 <section>{member.name}</section>
                                 <section>{skillList}</section>
                             </div>

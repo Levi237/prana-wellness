@@ -1,5 +1,6 @@
 .team-member-container {
  margin-top: 60vw;
+ position: relative;
 }
 .team-box {
         position: relative;
@@ -11,6 +12,17 @@
         z-index: 1;
         transition: all .3s ease-in-out;
     }
+.member-picture {
+    max-height: 36.67vw;
+    max-width: 30vw;
+    height: 36.67vw;
+    width: 30vw;
+    background-size: cover;
+}
+
+
+
+
     .member-back {
         margin-top: -32vw;
         margin-left: 2.5vw;
@@ -35,6 +47,13 @@
         transition-delay: .5s;
         background-size: cover;
     }
+    .member-box img {
+        transition: all .5s ease-in-out;
+        transition-delay: .5s;
+        float: left;
+
+        border: 0px solid purple;
+    }
     .member-box.member-hover:hover, .member-box.member-hover:active {
         max-width: 0;
         overflow: hidden;
@@ -43,17 +62,36 @@
         background: transparent;
         background-size: cover;
     }
-    .member-front-data.member-hover:hover, .member-front-data.member-hover:hover > section {
+    .member-box.member-hover:hover img, .member-box.member-hover:active img{
+        max-width: 5vw;
+        max-height: 5vw;
+        margin: -1vw;
+        border-radius: 100%;
+        border: 6px solid purple;
+        /* overflow: hidden; */
+        transition: all .5s ease-in-out;
+        transition-delay: .5s;
+        /* background: transparent; */
+        /* background-size: auto auto; */
+        float: left;
+    }
+    .member-front-data.member-hover:hover {
         color: transparent;
         transition: all .3s ease-in-out;
         transition-delay: .2s;
         background-color: transparent;
     }
+    .member-front-data.member-hover:hover > section {
+        color: transparent;
+        transition: all .5s ease-in-out;
+        transition-delay: .5s;
+        background-color: transparent;
+        font-size: 0;
+    }
     .member-front-data.pop-hover:hover {
         border: 1px solid #669F35!important;
         color: rgb(191, 158, 200);
         background-color: transparent;
-        /* color: #965ba5; */
         transition: all .3s ease-in-out;
         transition-delay: .2s;
     }
@@ -68,20 +106,19 @@
         width: 28vw;
         height: 34.67vw;
         color: #FFF;
-        /* background-color: rgba(0,0,0,.6); */
         border: 0px;
         box-sizing: border-box;
         position: absolute;
         z-index: 2;
         margin: 0;
-        /* padding: 1vw; */
         transition: all .3s ease-in-out;
         transition-delay: .5s;
     }
     
-    .member-front-data > section {
-        transition: all .3s ease-in-out;
-        transition-delay: .2s;
+    .member-front-data.member-hover > section {
+        transition: all .5s ease-in-out;
+        transition-delay: .5s;
+        max-width: 30vw;
     }
     .member-front-data > section:first-of-type {
         font-family: 'Merriweather', sans-serif;
@@ -90,7 +127,10 @@
         width: 30vw;
         background-color: rgba(0,0,0,.6);
         margin-top: 2vw;
-        position: relative;
+        position: absolute;
+        top: 1vw;
+                /* transition: all .4s ease-in-out;
+                transition-delay: 4s; */
     }
 
     .member-front-data > section:last-of-type {
@@ -106,7 +146,7 @@
         position: absolute;
         bottom: 0;
     }
-    @media screen and (max-width: 945px) {
+    /* @media screen and (max-width: 945px) {
         .team-box {
             height: 90vw;
             width: 90vw;
@@ -147,4 +187,4 @@
             height: 68px;
             font-size: 4.5vw;
         }
-    }
+    } */
