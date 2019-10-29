@@ -6,10 +6,10 @@ const ServiceDisplay = ({services, transformStyle}) => {
 
     const showServices = services.map((service, key) => {
         const backgroundImageStyle = {
-            'background-image': `url(../service_image/${service.image})`
+            'backgroundImage': `url(../service_image/${service.image})`
         }
         return(
-            <div key={key} className="service-box" style={transformStyle}>
+            <div key={key} className="service-box">
                 <div className={service.content ? "card-box card-hover" : "card-box"} style={backgroundImageStyle}>
                     <div className="card-front">
                         <div className={service.content ? "card-front-data card-hover" : "card-front-data pop-hover"}>

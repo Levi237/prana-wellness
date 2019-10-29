@@ -1,0 +1,150 @@
+.team-member-container {
+ margin-top: 60vw;
+}
+.team-box {
+        position: relative;
+        height: 36.67vw;
+        width: 30vw;
+        display: inline-block;
+        background-color: transparent;
+        margin: 0 1.33vw;
+        z-index: 1;
+        transition: all .3s ease-in-out;
+    }
+    .member-back {
+        margin-top: -32vw;
+        margin-left: 2.5vw;
+        margin-bottom: 2.5vw;
+        position: relative;
+        z-index: -1;
+        color: #744A9E;
+        /* height: 20vw; */
+        width: 25vw;
+        overflow: auto;
+        background-color: transparent;
+        font-size: 1.5vw;
+        transition: .3s ease;
+        height: 32vw;
+    }
+    
+    .member-box {
+        height: 36.67vw;
+        max-width: 30vw;
+        transition: all .5s ease-in-out;
+        position: initial;
+        transition-delay: .5s;
+        background-size: cover;
+    }
+    .member-box.member-hover:hover, .member-box.member-hover:active {
+        max-width: 0;
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+        transition-delay: .5s;
+        background: transparent;
+        background-size: cover;
+    }
+    .member-front-data.member-hover:hover, .member-front-data.member-hover:hover > section {
+        color: transparent;
+        transition: all .3s ease-in-out;
+        transition-delay: .2s;
+        background-color: transparent;
+    }
+    .member-front-data.pop-hover:hover {
+        border: 1px solid #669F35!important;
+        color: rgb(191, 158, 200);
+        background-color: transparent;
+        /* color: #965ba5; */
+        transition: all .3s ease-in-out;
+        transition-delay: .2s;
+    }
+    .member-front > img {
+        height: 36.67vw;
+        width: 30vw;
+        position: relative;
+        z-index: -1;
+        transition: all .3s ease-in-out;
+    }
+    .member-front-data {
+        width: 28vw;
+        height: 34.67vw;
+        color: #FFF;
+        /* background-color: rgba(0,0,0,.6); */
+        border: 0px;
+        box-sizing: border-box;
+        position: absolute;
+        z-index: 2;
+        margin: 0;
+        /* padding: 1vw; */
+        transition: all .3s ease-in-out;
+        transition-delay: .5s;
+    }
+    
+    .member-front-data > section {
+        transition: all .3s ease-in-out;
+        transition-delay: .2s;
+    }
+    .member-front-data > section:first-of-type {
+        font-family: 'Merriweather', sans-serif;
+        font-style: italic;
+        font-size: 3vw;
+        width: 30vw;
+        background-color: rgba(0,0,0,.6);
+        margin-top: 2vw;
+        position: relative;
+    }
+
+    .member-front-data > section:last-of-type {
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 1.33vw;
+        letter-spacing: .1vw;
+        margin-top: 0vw;
+        text-align: left;
+        background-color: rgba(0,0,0,.6);
+        width: 28vw;
+        padding: 1vw;
+        position: absolute;
+        bottom: 0;
+    }
+    @media screen and (max-width: 945px) {
+        .team-box {
+            height: 90vw;
+            width: 90vw;
+            display: block;
+            margin: -5vw 5vw !important;
+        }
+    
+        .member-box {
+            height: 90vw;
+            max-width: 90vw;
+            margin: 15vw 0;
+        }
+        .member-front-data {
+            width: 70vw;
+            height: 70vw;
+            margin: 10vw;
+        }
+        .member-back {
+            height: 70vw;
+            width: 70vw;
+            margin-left: 10vw;
+            margin-top: -70vw;
+            font-size: 5vw;
+        }
+        .member-front-data > section:first-of-type {
+            font-size: 7vw;
+            margin-top: 20vw;
+        }
+        .member-front-data > section:last-of-type {
+            font-size: 11vw;
+        }
+        .optionBtn {
+            margin-top: 10vw;
+        }
+        .optionBtn button {
+            margin: 5px;
+            width: 80vw;
+            height: 68px;
+            font-size: 4.5vw;
+        }
+    }

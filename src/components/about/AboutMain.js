@@ -1,7 +1,7 @@
 import React from 'react';
 
 import MeetStephanie  from './MeetStephanie';
-import StephanieBio  from './StephanieBio';
+import TeamMembers  from './TeamMembers';
 
 const AboutMain = () => {
     return(<>
@@ -10,7 +10,7 @@ const AboutMain = () => {
               We make wellness work for you. We educate and guide you into a happier, healthier workplace. Rooted in India, at the source, our team brings experienced wellness professionals with varying backgrounds in the corporate space. Tailored programs are developed to increase employee productivity and retention, and decrease overall healthcare costs overtime. 
             </section>
             <MeetStephanie />
-            {/* <StephanieBio /> */}
+            <TeamMembers />
             {/* <section className="main-title-two">Meet the Team</section> */}
     </>);
 };
