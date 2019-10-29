@@ -8,7 +8,7 @@ import React from 'react';
             <section className="wellnessText">wellness</section>
             <section className="statementText">Wellness designed to work for you.</section>
             <br/><br/>
-            <button name="contactForm" className="ctaBtn mobile-fill" onClick={(e) => {toggleContactBtn(e)}}>Bring Wellness to Your Workplace</button>
+            <button name="contactForm" className="ctaBtn mobile-fill" onClick={(e) => {toggleContactBtn(e)}}>Bring Prana to Your Workplace</button>
           </div>
     </>);
 };

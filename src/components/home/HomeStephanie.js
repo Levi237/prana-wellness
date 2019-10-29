@@ -29,7 +29,7 @@ export default class HomeStephanie extends Component {
                             <NavLink to={routes.INFO}><button className="white">Learn More</button></NavLink>
                         </div>
                     </div>
-                    <div><img src={`${homeStephanie.image}`} alt="homeStephanie-box" /></div>
+                    <div><img src={`${homeStephanie.image}`} alt="meet Stephanie home page"/></div>
                 </div>
             );
         };

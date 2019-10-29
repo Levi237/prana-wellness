@@ -51,7 +51,7 @@ export default class CorporateMain extends Component {
             <div>
               Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.
             </div>
-            <div><button className="purple mobile-fill" name="contactForm" onClick={(e) => {toggleContactBtn(e)}}>Bring Wellness to Your Workplace</button></div>
+            <div><button className="purple mobile-fill" name="contactForm" onClick={(e) => {toggleContactBtn(e)}}>Bring Prana to Your Workplace</button></div>
           </section>
         </div>
         

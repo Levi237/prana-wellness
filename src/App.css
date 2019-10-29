@@ -273,6 +273,7 @@ grid-template-areas:
   background-color: #A0CD4D !important;
   border-color: #669F35;
   color: #FFF;
+  font-size: 2vw;
 }
 .header-image {
   width: 80vw;
