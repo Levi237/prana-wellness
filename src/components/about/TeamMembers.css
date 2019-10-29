@@ -52,7 +52,7 @@
         transition-delay: .5s;
         float: left;
 
-        border: 0px solid purple;
+        border: 0px solid #965ba5;
     }
     .member-box.member-hover:hover, .member-box.member-hover:active {
         max-width: 0;
@@ -67,7 +67,7 @@
         max-height: 5vw;
         margin: -1vw;
         border-radius: 100%;
-        border: 6px solid purple;
+        border: 6px solid #965ba5;
         /* overflow: hidden; */
         transition: all .5s ease-in-out;
         transition-delay: .5s;
