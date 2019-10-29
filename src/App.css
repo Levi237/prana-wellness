@@ -49,7 +49,7 @@ grid-template-areas:
 
 @media screen and (max-width: 945px) {
   .grid-container {
-    grid-template-rows: 72px 162px auto 120px 120px 26px  120px;
+    grid-template-rows: 72px 40vw auto 120px 120px 26px  120px;
     grid-template-columns: 100vw;
   grid-template-areas:
     ' nav '
@@ -86,7 +86,6 @@ grid-template-areas:
   right: 0;
   top: 12px;
   width: 278px;
-  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -320,7 +319,6 @@ grid-template-areas:
   color: #965BA5;
 }
 .main-cta {
-  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
@@ -396,15 +394,17 @@ grid-template-areas:
     font-size: 9vw;
   }
   .grid-header, .header-container {
-    height: 162px;
+    height: 44vw;
     text-align: center;
     overflow: hidden;
   }
   .header-image {
-    width: auto;
+    width: 100vw;
     margin: 0;
     z-index: 1;
-    height: 162px;
+    /* height: 162px; */
+    height: auto;
+    position: relative;
 }
   
   .wellness-header-purple {
@@ -463,7 +463,6 @@ grid-template-areas:
     line-height: 16px;
   }
   .home-main-header {
-    /* font-family: Montserrat; */
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -472,7 +471,7 @@ grid-template-areas:
     text-transform: uppercase;
     margin: 60px auto 50px auto;
     color: #965BA5;
-}
+  }
 }
 /************************************************************************************************************/
 /***************************************         .grid-footer         ***************************************/
@@ -489,7 +488,6 @@ grid-template-areas:
 }
 .grid-footer-mid > section {
   margin: 6vw auto 1vw auto;
-  /* font-family: Montserrat; */
   font-style: normal;
   font-weight: normal;
   font-size: 1.2vw;
@@ -515,7 +513,6 @@ grid-template-areas:
   width: 250px
 }
 .travel-slay-logo section {
-  /* font-family: Montserrat; */
   text-transform: uppercase;
   color: #FFF;
   width: 300px;
@@ -591,5 +588,4 @@ grid-template-areas:
     transform: scale(.8);
     margin-left: 5px;
   }
-  .logo-box .wellnessText {}
 }
