@@ -24,7 +24,7 @@
     margin: 5vw;
     border: 1px solid #965BA5;
     background: #E0CEE5;
-    padding: 5vw;
+    padding: 3vw 5vw 7vw 5vw;
 }
 
 .meetStephanie-container section {
@@ -54,11 +54,13 @@
     font-size: 1.1vw;
     line-height: 1.5vw;
     color: #965BA5;
-    margin: 2vw 0;
+    margin: 1vw 0;
+    height: 30vw;
+    overflow: auto;
 }
 .meetStephanie-container > div > div > section:nth-of-type(4) {
     font-weight: bold;
-    font-size: 1.2vw;
+    font-size: 1vw;
     line-height: 1.8vw;
     text-transform: uppercase;
     color: #965BA5;
