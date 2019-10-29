@@ -9,7 +9,7 @@ const ServiceDisplay = ({services, transformStyle}) => {
             'backgroundImage': `url(../service_image/${service.image})`
         }
         return(
-            <div key={key} className="service-box">
+            <div key={key} className="service-box" style={transformStyle}>
                 <div className={service.content ? "card-box card-hover" : "card-box"} style={backgroundImageStyle}>
                     <div className="card-front">
                         <div className={service.content ? "card-front-data card-hover" : "card-front-data pop-hover"}>
