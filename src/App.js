@@ -165,7 +165,7 @@ export default class App extends Component {
 
         <div className="grid-contact">
           <div>
-            <img src="../instagram-icon.png" alt="IG"/>
+            <a href="https://www.instagram.com/travelslayfitness/" target="_blank" alt="IG"><img src="../instagram-icon.png" alt="IG"/></a>
             {user ? <section>Welcome Stephanie!</section>: <section>info@pranawellness.life</section> }
             
           </div>

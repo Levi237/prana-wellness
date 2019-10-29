@@ -69,7 +69,7 @@ grid-template-areas:
   width: 380px;
   margin-left: calc(90vw - 380px);
 }
-.grid-contact > div > img {
+.grid-contact > div > a > img {
   height: 22px;
   width: 22px;
   position: absolute;
@@ -93,7 +93,7 @@ grid-template-areas:
     width: 300px;
     margin: 0 auto;
   }
-  .grid-contact > div > img {
+  .grid-contact > div > a > img {
     height: 22px;
     width: 22px;
     position: absolute;
@@ -299,7 +299,7 @@ grid-template-areas:
 }
 
 .main-title {
-  margin-top: calc(-725px + 36vw);
+  margin-top: calc(-20vw - 144px);
 }
 .main-title-two {
   font-size: 36px;
