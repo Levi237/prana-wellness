@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather:300i|Montserrat:300,400&display=swap');
 
-
-
 body {
   margin: 0;
 
@@ -11,39 +9,44 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
 h1 {
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
+  color: #965BA5;
 
   margin-block-start: 0em;
   margin-block-end: 2vw;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+
   text-align: center;
   text-transform: uppercase;
-
-  color: #965BA5;
 
   position: relative;
   z-index: 1;
 }
+
 button {
   box-sizing: border-box;
   padding: 20px 50px;
+
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
+
   line-height: 17px;
-  text-align: center;
   letter-spacing: 2px;
+
+  text-align: center;
   text-transform: uppercase;
+
   background: transparent;
+
   transition: all .3s ease-in-out;
 }
 button.white {
@@ -63,22 +66,7 @@ button.purple:hover {
 }
 .home-main-top div.service-box {
   transform: scale(.7)!important;
-  }
-
-/* a, a:visited {
-  color: rgba(71, 62, 78, 0.6);
-  text-decoration: none;
 }
-a:hover {
-  color: green;
-} */
-
-input {
-  /* font-style: normal;
-  font-weight: 300; */
-}
-
-
 
 @media screen and (max-width: 945px) {
   button {
