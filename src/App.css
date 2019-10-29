@@ -1,7 +1,3 @@
-/* CREATE GRID */
-/* Grid is basic, blog styl, need nav header main footer, the rest can be inline-block */
-/* Mobile shall be scalable to screen size */
-/* Tablet to DeskTop shall be fixed content with scalable margins */
 /*********************************************************************************************************/
 /***************************************                           ***************************************/
 /***************************************           LOGO            ***************************************/
@@ -13,7 +9,6 @@
   color: #FFF;
 }
 .pranaText {
-  /* font-family: 'Montserrat', sans-serif; */
   text-transform: uppercase;
   font-weight: 100;
 }
@@ -238,14 +233,9 @@ grid-template-areas:
   margin-top: -19vw;
   height: 60vw;
   padding-top: 20vw;
-  /* margin-bottom: -100px;
-  margin-top: -190px;
-  height: 638px;
-  padding-top: 200px; */
 }
 
 .welcomeText, .pranaText, .statementText {
-  /* font-family: 'Montserrat', sans-serif; */
   text-align: center;
 }
 
@@ -310,16 +300,12 @@ grid-template-areas:
 
 .main-title {
   margin-top: calc(-725px + 36vw);
-  /* padding-top: 60px; */
 }
 .main-title-two {
   font-size: 36px;
-  /* line-height: 30px; */
   padding-top: 60px;
-
   text-align: center;
   text-transform: uppercase;
-
   color: #965BA5;
 }
 .main-cta {
@@ -327,11 +313,9 @@ grid-template-areas:
   font-weight: 300;
   font-size: 16px;
   line-height: 30px;
-
   width: 752px;
   margin: 36px auto 63px auto;
   text-align: center;
-
   color: #4D3B5C;
 }
 .wellness-main-container, .wellness-header-purple {
@@ -339,7 +323,6 @@ grid-template-areas:
 }
 .wellness-main-container {
   padding-bottom: 85px;
-
 }
 .wellness-main-container > section {
   color: #FFF;
@@ -347,11 +330,10 @@ grid-template-areas:
   z-index: 1;
 }
 .wellness-header-purple {
-  height: 30px;
+  /* height: 30px; */
   position: relative;
   z-index: 0;
   margin-top: -15vw;
-  /* margin-top: -150px; */
   height: 24vw;
 }
 .wellness-main-container button {
@@ -362,7 +344,6 @@ grid-template-areas:
 
 
 @media screen and (max-width: 945px) {
-
   .grid-header {
     margin-bottom: 0;
     margin-top: 0;
@@ -392,10 +373,8 @@ grid-template-areas:
   }
 
   .header-content-container {
-
       width: 100vw;
       margin: -25vw 0;
-  
   }
   .header-content-container > section:first-of-type {
     font-size: 5vw;
@@ -412,18 +391,12 @@ grid-template-areas:
     width: 100vw;
     margin: 0;
     z-index: 1;
-    /* height: 162px; */
     height: auto;
     position: relative;
-}
-  
-  .wellness-header-purple {
-    display: none;
   }
   .main-cta {
     width: 90vw;
     margin: 36px 5vw;
-
   }
   .main-title {
     margin-top: -10vw;

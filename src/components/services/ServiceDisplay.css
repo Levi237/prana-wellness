@@ -92,7 +92,13 @@
     font-style: italic;
     font-size: 3vw;
 }
+
+
+
 @media screen and (max-width: 945px) {
+    .home-container > div.service-box > div.card-box {
+        margin: -12vw 0;
+    }
     .service-box {
         height: 90vw;
         width: 90vw;

@@ -11,7 +11,7 @@ import ServiceDisplay   from '../services/ServiceDisplay';
 const fourSquareStyle = {
     transform: 'scale(.75)',
     position: 'relative',
-    margin: '-10px',
+    margin: '-1vw',
 }
 
 export default class HomeMain extends Component {
@@ -37,10 +37,10 @@ export default class HomeMain extends Component {
 
     render(){
 
-        return(<>
+        return(<div className="home-container">
             <div className="home-main-top"><br />
-            “Prana is Sanskrit for breath, considered as a life-giving force. <br/>
-            Prana is seen as a universal energy, which flows in currents in and around the body.”
+                “Prana is Sanskrit for breath, considered as a life-giving force. <br/>
+                Prana is seen as a universal energy, which flows in currents in and around the body.”
             </div>
             <h1 className="home-main-header">WELLNESS SERVICES</h1>
             <ServiceDisplay services={this.state.points} transformStyle={fourSquareStyle}/>
@@ -50,6 +50,6 @@ export default class HomeMain extends Component {
             <br /><br /><br/>
             <LotusDisplay />
             <HomeStephanie />
-        </>);
+        </div>);
     };
 };

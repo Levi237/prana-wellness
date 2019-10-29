@@ -29,6 +29,9 @@ h1 {
   text-transform: uppercase;
 
   color: #965BA5;
+
+  position: relative;
+  z-index: 1;
 }
 button {
   box-sizing: border-box;
