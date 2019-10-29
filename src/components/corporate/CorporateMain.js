@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import BenefitsDisplay from './BenefitsDisplay';
 import PackageDisplay from './PackageDisplay';
-import OurApproach from './OurApproach';
+import PranaDifference from './PranaDifference';
 
 import './CustomQuote.css';
 
@@ -41,7 +41,7 @@ export default class CorporateMain extends Component {
     return(<>
       <div className="about-main-container">
         <div className="main-title">
-        <OurApproach />
+        <PranaDifference />
             <BenefitsDisplay />
         </div>
         <PackageDisplay pricePack={this.state.corporatePlans}/>
