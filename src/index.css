@@ -16,7 +16,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
 
+  margin-block-start: 0em;
+  margin-block-end: 2vw;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #965BA5;
+}
 button {
   box-sizing: border-box;
   padding: 20px 50px;
@@ -63,6 +76,7 @@ input {
 }
 
 
+
 @media screen and (max-width: 945px) {
   button {
     padding: 3vw 8vw;
@@ -84,7 +98,7 @@ input {
 
 
 
-
+/* 
 @media screen and (max-width: 945px) {
   .team-member-container {
       margin-top: 220vw;
@@ -94,7 +108,6 @@ input {
   .team-box {
       height: 110vw;
       width: 90vw;
-      /* display: block; */
       margin: -5vw 5vw !important;
   }
 
@@ -106,7 +119,6 @@ input {
   .member-front-data {
       width: 90vw;
       height: 110vw;
-      /* margin: 10vw; */
   }
   .member-back {
       height: 100vw;
@@ -143,4 +155,4 @@ input {
       transition-delay: .5s;
       float: left;
   }
-} 
+}  */

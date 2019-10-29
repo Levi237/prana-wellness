@@ -66,6 +66,7 @@ export default class TeamMembers extends Component {
 
         return(<>
             <div className="team-member-container">
+            <h1>Meet the Team</h1>
                 {memberInfo}
             </div>
         </>)

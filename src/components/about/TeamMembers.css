@@ -34,7 +34,7 @@
         width: 25vw;
         overflow: auto;
         background-color: transparent;
-        font-size: 1.33vw;
+        font-size: 1.25vw;
         transition: .3s ease;
         height: 33vw;
     }
@@ -109,7 +109,7 @@
         z-index: 2;
         margin: 0;
         transition: all .3s ease-in-out;
-        transition-delay: .5s;
+        transition-delay: .1s;
     }
     
     .member-front-data.member-hover > section {

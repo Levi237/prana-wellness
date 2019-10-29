@@ -42,7 +42,7 @@ export default class HomeMain extends Component {
             “Prana is Sanskrit for breath, considered as a life-giving force. <br/>
             Prana is seen as a universal energy, which flows in currents in and around the body.”
             </div>
-            <section className="home-main-header">WELLNESS SERVICES</section>
+            <h1 className="home-main-header">WELLNESS SERVICES</h1>
             <ServiceDisplay services={this.state.points} transformStyle={fourSquareStyle}/>
             <NavLink to={routes.SERV}><button className="white mobile-fill">browse services</button></NavLink>
             <br /><br /><br/><br/><br/>

@@ -4,8 +4,11 @@
     padding: 16vw 0 0;
     background-color: rgba(150, 91, 165, 0.6);
 }
-
-.custom-quote > section:first-of-type {
+.custom-quote > h1 {
+    color: white;
+    font-weight: normal;
+}
+/* .custom-quote > section:first-of-type {
     font-size: 36px;
     line-height: 30px;
     text-align: center;
@@ -13,20 +16,20 @@
     color: #FFFFFF;
     margin-bottom: 20px;
     margin-top: 20px;
-}
+} */
 
-.custom-quote > section:last-of-type > div:first-of-type {
+.custom-quote > section > div:first-of-type {
     display: inline-block;
     width: 50vw;
     margin-left: 10vw;
-    margin-right: 5vw;
+    margin-right: 2.5vw;
     float: left;
     color: #fff;
     text-align: left;
 }
-.custom-quote > section:last-of-type > div:last-of-type {
+.custom-quote > section > div:last-of-type {
     display: inline-block;
-    width: 25vw;
+    width: 27.5vw;
     /* margin-top: 10px; */
     margin-right: 10vw;
     float: right;

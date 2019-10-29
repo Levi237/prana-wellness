@@ -41,12 +41,20 @@ export default class CorporateMain extends Component {
     return(<>
       <div className="about-main-container">
         <div className="main-title">
+
+        <h1>the power of prana</h1>
+            <section className="main-cta">
+              <i>
+                “Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.”
+              </i>            
+            </section>
+
         <PranaDifference />
             <BenefitsDisplay />
         </div>
         <PackageDisplay pricePack={this.state.corporatePlans}/>
         <div className="custom-quote">
-          <section>DON'T SEE A PACKAGE THAT'S RIGHT?</section>
+          <h1>DON'T SEE A PACKAGE THAT'S RIGHT?</h1>
           <section>
             <div>
               Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.

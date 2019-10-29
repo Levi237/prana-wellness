@@ -67,7 +67,7 @@ export default class ServicesMain extends Component {
                     <NavLink to={routes.WELL}><button className="purple">Individual Solutions</button></NavLink>
                 </div>
             </div>
-            <section className="home-main-header">WELLNESS SERVICES</section>
+            <h1 className="services-main-header">WELLNESS SERVICES</h1>
                 <ServiceDisplay services={this.state.otherServices}/>
                 <div className="optionBtn">
             <button className="white" name="contactForm" onClick={(e) => {toggleContactBtn(e)}}>Request Quote</button>

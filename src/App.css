@@ -273,7 +273,7 @@ grid-template-areas:
   background-color: #A0CD4D !important;
   border-color: #669F35;
   color: #FFF;
-  font-size: 2vw;
+  font-size: 1.8vw;
 }
 .header-image {
   width: 80vw;
@@ -304,20 +304,10 @@ grid-template-areas:
   letter-spacing: 1px;
   color: #FFF;
 }
+
 .main-title {
   margin-top: calc(-750px + 36vw);
-  /* margin-top: -35vw; */
-  /* font-family: Montserrat; */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  /* line-height: 30px; */
   padding-top: 60px;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #965BA5;
 }
 .main-title-two {
   font-size: 36px;
@@ -457,15 +447,10 @@ grid-template-areas:
 }
 
 .home-main-header {
-  /* font-family: Montserrat; */
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 30px;
-  text-align: center;
-  text-transform: uppercase;
   margin: 128px auto 50px auto; 
-  color: #965BA5;
+}
+.services-main-header {
+  margin: 50px auto; 
 }
 @media screen and (max-width: 945px) {
   .home-main-top {

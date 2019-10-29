@@ -53,12 +53,24 @@ div.meetStephanie-container {
 }
 .meetStephanie-container > div > div > section:nth-of-type(3) {
     font-weight: 300;
-    font-size: 1.1vw;
+    font-size: 1.25vw;
     line-height: 1.5vw;
     color: #965BA5;
     margin: 1vw 0;
     height: 19vw;
     overflow: auto;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+    transition-delay: .5s!important;
+}
+.meetStephanie-container:hover > div > div > section:nth-of-type(3) {
+    background-color: rgba(255,255,255,.3);
+    margin-right: -4vw;
+    margin-left: -4vw;
+    padding: 0 4vw;
+    transition: all .3s ease-in-out;
+    box-shadow: inset 0px 0px 6px 4px #E0CEE5;
+    /* transition-delay: .5s!important; */
 }
 .meetStephanie-container > div > div > section:nth-of-type(4) {
     font-weight: bold;
@@ -66,6 +78,7 @@ div.meetStephanie-container {
     line-height: 1.8vw;
     text-transform: uppercase;
     color: #965BA5;
+    transition: all .3s ease-in-out;
 }
 
 @media screen and (max-width: 945px) {
