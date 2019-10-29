@@ -31,7 +31,8 @@ div.lotus-box {
 
 .lotus-box > div:last-of-type > section:last-of-type {
     font-size: 1vw;
-    margin: 6vw 20vw;
+    margin: 6vw 22vw;
+    width: 56vw;
 }
 
 .lotus-box > section {

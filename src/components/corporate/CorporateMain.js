@@ -28,7 +28,7 @@ export default class CorporateMain extends Component {
     },{
         title: "Guru",
         price: "$4500",
-        duration: "12 week intensive program",
+        duration: "12 week intensive",
         // duration: ["12 week", "intensive program"],
         secondTitle:'“Wellness for the Working Mind”',
         details: ["Wellness sessions", "Lunch & Learns", "Team building ", "*Customizable, pricing may vary*"],

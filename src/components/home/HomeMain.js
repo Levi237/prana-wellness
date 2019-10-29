@@ -44,9 +44,8 @@ export default class HomeMain extends Component {
             </div>
             <section className="home-main-header">WELLNESS SERVICES</section>
             <ServiceDisplay services={this.state.points} transformStyle={fourSquareStyle}/>
-            <br /><br /><br/>
             <NavLink to={routes.SERV}><button className="white mobile-fill">browse services</button></NavLink>
-            <br /><br /><br/>
+            <br /><br /><br/><br/><br/>
             <CustomerDisplay />
             <br /><br /><br/>
             <LotusDisplay />
