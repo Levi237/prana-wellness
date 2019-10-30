@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink }          from 'react-router-dom';
 
-import './LotusDisplay.css'
+import './LotusDisplay.css';
 
 import * as routes          from '../../constants/routes';
 
