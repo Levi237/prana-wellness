@@ -5,7 +5,7 @@ import 'firebase/auth';
 
 export default class Enter extends Component {
     state = {
-        admin: 'admin@prana-wellness.life',
+        admin: 'admin@pranawellness.life',
         email: '',
         password: '',
         fireErrors:'',

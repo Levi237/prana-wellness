@@ -248,10 +248,11 @@ grid-template-areas:
 .home-header {
   background: url(home-header2.png);
   background-size: cover;
+  background-position: center;
   color: #FFF;
   text-align: center;
   margin-bottom: -10vw;
-  margin-top: -19vw;
+  margin-top: -17vw;
   height: 60vw;
   padding-top: 20vw;
 }
@@ -278,13 +279,15 @@ grid-template-areas:
 }
 .home-header > .wellnessText {
   font-size: 5vw;
+  margin-top: -2vw;
 }
 .home-header > .statementText {
   font-weight: 100;
   font-size: 2vw;
   line-height: 4vw;
-  margin-top: 5vw;
+  margin-top: 12vw;
   padding: 0 1vw;
+  margin-bottom: 2vw;
 }
 .ctaBtn {
   background-color: #A0CD4D !important;
