@@ -246,7 +246,7 @@ grid-template-areas:
   grid-area: header;
 }
 .home-header {
-  background: url(home-header.png);
+  background: url(home-header2.png);
   background-size: cover;
   color: #FFF;
   text-align: center;
