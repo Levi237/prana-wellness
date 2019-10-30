@@ -70,7 +70,7 @@ export default class IndividualMain extends Component {
 
             <br/><br/><br/>
           <ServiceDisplay services={this.state.services}/>
-          <h1 className="header-two">subscribe to personal wellness</h1>
+          <h1>subscribe to personal wellness</h1>
           <PackageDisplay pricePack={this.state.individualPlans}/>
     </>);
   };

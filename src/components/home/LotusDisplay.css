@@ -1,7 +1,6 @@
 div.lotus-box {
     position: relative;
     overflow: hidden;
-    /* max-height: 957px; */
 }
 
 .lotus-box > div:first-of-type {
@@ -38,7 +37,6 @@ div.lotus-box {
     width: 43.5vw;
     display: inline-block;
     height: 75vw;
-    /* max-height: 957px; */
     position: relative;
     font-size: 2.4vw;
 }
@@ -121,7 +119,7 @@ div.lotus-box {
     
     .lotus-box > section {
         height: 75vw;
-        /* max-height: 957px; */
+
     }
     .lotus-box > section:first-of-type {
         padding: 0 2.5vw 0 4vw;
