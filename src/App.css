@@ -44,7 +44,7 @@ grid-template-areas:
 
 @media screen and (max-width: 945px) {
   .grid-container {
-    grid-template-rows: 72px 40vw auto 40vw 120px 26px  120px;
+    grid-template-rows: 72px 40vw auto 40vw 120px calc(3vw + 26px)  120px;
     grid-template-columns: 100vw;
   grid-template-areas:
     ' nav '
@@ -233,6 +233,7 @@ grid-template-areas:
   }
   .grid-nav .logo-box img {
     margin-left: 5vw;
+    width: 20vw;
   }
   .active {
     max-width: 100vw;
@@ -557,7 +558,7 @@ grid-template-areas:
   .grid-footer-mid > section {
     margin: 3vw auto 1vw auto;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2.8vw;
     line-height: 24px;
     letter-spacing: 3px;
     text-align: center;
@@ -599,6 +600,7 @@ grid-template-areas:
   }
   .logo-box .pranaText {
     font-size: 5vw;
+    margin-top: -2vw;
     /* transform: scale(.8); */
     padding-left: .5vw;
   }

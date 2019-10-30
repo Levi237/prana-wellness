@@ -105,20 +105,29 @@ div.lotus-box {
 
 @media screen and (max-width: 945px){
     .lotus-box > div > section {
-        width: 60vw;
+        width: 80vw;
         line-height: 3vw;
     }
+    .lotus-box > div:first-of-type {
+        /* background-color: #965BA5; */
+        width: 80vw;
+        height: 80vw;
+        border-radius: 100%;
+        margin: -30vw 10vw;
+        /* position: absolute; */
+    }
     .lotus-box > div:last-of-type > section:first-of-type {
-        font-size: 2.2vw;
-        margin: 2vw 20vw;
+        font-size: 2.8vw;
+        margin: 2vw 10vw;
     }
     .lotus-box > div:last-of-type > section:last-of-type {
-        font-size: 1vw;
-        margin: 6vw 20vw;
+        font-size: 1.4vw;
+        margin: 6vw 12vw;
+        width: 76vw;
     }
     
     .lotus-box > section {
-        height: 75vw;
+        height: 90vw;
 
     }
     .lotus-box > section:first-of-type {
@@ -133,9 +142,10 @@ div.lotus-box {
     .lotus-box img {
         position: absolute;
         z-index: 11;
-        margin-top: 10vw;
-        height: 30vw;
-        width: 30vw;
+        margin-top: 12vw;
+        /* margin-top: 10vw; */
+        height: 40vw;
+        width: auto;
     }
     .lotus-box > section > section {
         font-size: 2.2vw !important;
@@ -150,9 +160,13 @@ div.lotus-box {
 
     .lotus-box > section:first-of-type > div {
         text-align: right;
+        margin-top: 52vw;
+
     }
     .lotus-box > section:last-of-type > div {
         text-align: left;
+        margin-top: 52vw;
+
     }
     
     .lotus-box button {
