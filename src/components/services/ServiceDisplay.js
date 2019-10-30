@@ -19,7 +19,7 @@ const ServiceDisplay = ({services, transformStyle}) => {
                     </div>
                 
                 </div>
-                <div className="card-back">.price-pack-box
+                <div className="card-back">
                     <section>{service.content}</section>
                 </div>
             </div>
