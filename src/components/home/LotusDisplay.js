@@ -8,7 +8,7 @@ import * as routes          from '../../constants/routes';
 
 const lotusStyleOverride = {
     position: 'relative',
-    // overflow: 'hidden',
+    overflow: 'hidden',
     // maxHeight: '957px'
 }
 
