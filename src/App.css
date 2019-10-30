@@ -170,7 +170,8 @@ grid-template-areas:
 }
 #menu.inactive {
   max-height: 100vh;
-  letter-spacing: -2vw;
+  /* letter-spacing: -2vw; */
+  font-size: 1px;
   /* color: transparent; */
 }
 #contact.inactive, #referral.inactive {
@@ -319,7 +320,7 @@ grid-template-areas:
   font-size: 6vw;
   line-height: 10vw;
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: .3vw;
   color: #FFF;
 }
 
@@ -338,7 +339,7 @@ grid-template-areas:
   font-weight: 300;
   font-size: 16px;
   line-height: 30px;
-  width: 752px;
+  /* width: 752px; */
   margin: 36px auto 63px auto;
   text-align: center;
   color: #4D3B5C;
@@ -469,12 +470,12 @@ grid-template-areas:
 @media screen and (max-width: 945px) {
   .home-main-top {
     width: 90vw;
-    height: 70px;
+    height: 16vw;
     margin: 50vw 0 0;
-    padding: 0 5vw 5px;
+    padding: 0 5vw 3vw;
     position: relative;
-    font-size: 9px;
-    line-height: 16px;
+    font-size: 2vw;
+    line-height: 4.6vw;
   }
   .home-main-header {
     font-style: normal;
