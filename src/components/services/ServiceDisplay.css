@@ -100,25 +100,25 @@
         margin: -12vw 0;
     }
     .service-box {
-        height: 90vw;
-        width: 90vw;
+        height: 80vw;
+        width: 80vw;
         display: block;
-        margin: -5vw 5vw !important;
+        margin: -5vw 10vw !important;
     }
 
     .card-box {
-        height: 90vw;
-        max-width: 90vw;
+        height: 80vw;
+        max-width: 80vw;
         margin: 15vw 0;
     }
     .card-front-data {
-        width: 70vw;
-        height: 70vw;
+        width: 60vw;
+        height: 60vw;
         margin: 10vw;
     }
     .card-back {
-        height: 70vw;
-        width: 70vw;
+        height: 60vw;
+        width: 60vw;
         margin-left: 10vw;
         margin-top: -70vw;
         font-size: 5vw;

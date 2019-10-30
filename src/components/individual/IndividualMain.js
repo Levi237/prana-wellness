@@ -54,24 +54,13 @@ export default class IndividualMain extends Component {
     const { toggleReferralBtn } = this.props;
   
     return(<>
-
-
-            <div className="wellness-main-container purple-content">
-
-            <PurpleContent content={individualPurpleContent} toggle={toggleReferralBtn}/>
-
-            </div>
-
-
-
-
-
-
-
-            <br/><br/><br/>
-          <ServiceDisplay services={this.state.services}/>
-          <h1>subscribe to personal wellness</h1>
-          <PackageDisplay pricePack={this.state.individualPlans}/>
+      <div className="wellness-main-container purple-content">
+        <PurpleContent content={individualPurpleContent} toggle={toggleReferralBtn}/>
+      </div>
+      <br/><br/><br/>
+      <ServiceDisplay services={this.state.services}/>
+      <h1>subscribe to personal wellness</h1>
+      <PackageDisplay pricePack={this.state.individualPlans}/>
     </>);
   };
 };

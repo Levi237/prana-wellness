@@ -269,7 +269,7 @@ grid-template-areas:
   background-color: #A0CD4D !important;
   border-color: #669F35;
   color: #FFF;
-  font-size: 1.8vw;
+  font-size: 1.33vw;
 }
 .header-image {
   width: 80vw;
@@ -405,7 +405,7 @@ grid-template-areas:
     padding-top: 5vw;
   }
   .wellness-main-container {
-    margin-top: 0;
+    margin-top: -6vw;
     padding-bottom: 8vw;
   }
   
