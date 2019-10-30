@@ -99,6 +99,9 @@
 }
 
 @media screen and (max-width: 945px){
+    .price-pack-box li {
+        font-size: 3vw;
+    }
     .pack-container {
         width: 80vw;
         margin: 0 auto 50px auto;

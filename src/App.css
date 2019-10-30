@@ -44,7 +44,7 @@ grid-template-areas:
 
 @media screen and (max-width: 945px) {
   .grid-container {
-    grid-template-rows: 72px 40vw auto 40vw 120px calc(3vw + 26px)  120px;
+    grid-template-rows: 18vw 40vw auto 40vw 120px calc(3vw + 26px)  120px;
     grid-template-columns: 100vw;
   grid-template-areas:
     ' nav '
@@ -170,9 +170,8 @@ grid-template-areas:
 }
 #menu.inactive {
   max-height: 100vh;
-  /* letter-spacing: -2vw; */
   font-size: 1px;
-  /* color: transparent; */
+  color: transparent!important;
 }
 #contact.inactive, #referral.inactive {
   max-height: 0px;
@@ -337,10 +336,10 @@ grid-template-areas:
 .main-cta {
   font-style: normal;
   font-weight: 300;
-  font-size: 16px;
-  line-height: 30px;
-  /* width: 752px; */
-  margin: 36px auto 63px auto;
+  font-size: 1.6vw;
+  line-height: 3vw;
+  width: 80vw;
+  margin: 3vw 10vw 6vw;
   text-align: center;
   color: #4D3B5C;
 }
@@ -376,7 +375,7 @@ grid-template-areas:
     margin-top: 0;
   }
   .home-header {
-    margin-top: -72px;
+    margin-top: -20vw;
     height: 90vw;
     padding-top: 20vw;
     position: absolute;
@@ -384,6 +383,7 @@ grid-template-areas:
 }
   .home-header > .welcomeText {
     font-size: 5vw;
+    margin: 3vw;
   }
   .home-header > .pranaText {
     font-size: 14vw;
