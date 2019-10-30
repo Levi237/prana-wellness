@@ -10,7 +10,9 @@ export default class HomeStephanie extends Component {
         homeStephanie: { 
             title: "Meet Stephanie",
             subtitle: "founder, prana wellness",
-            content: "Stephanie Erazo is a certified yoga and spin instructor and personal trainer. Many people refer to her as their “Motivator in Chief” when it comes to wellness. Stephanie believes that a person’s physical and mental wellbeing can dictate their entire life, so she aims to motivate people to prioritize all-around wellness.",
+            content: 
+                "Determined to learn from the source, I traveled to Rishikesh, India to study yoga, meditation, and breathwork under master yogis. India challenged me both mentally and physically, and the knowledge that I gained was far beyond yoga poses. It gave me a new perspective on wellness."
+            ,
             image: "home-meet.png",
         }
     };

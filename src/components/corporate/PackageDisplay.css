@@ -19,7 +19,7 @@
 
 .price-pack-box {
     background: rgb(239, 231, 241);
-    min-height: 280px;
+    /* min-height: 280px; */
     height: 25vw;
     margin-top: -70px;
     padding-top: 80px;
@@ -67,7 +67,7 @@
 .price-pack-box section:nth-of-type(4) {
     font-family: 'Merriweather', sans-serif;
     font-weight: bold;
-    margin: 1vw auto 0 auto;
+    margin: 1.4vw auto 0;
     font-size: 1.5vw;
     height: 2vw;
 }
