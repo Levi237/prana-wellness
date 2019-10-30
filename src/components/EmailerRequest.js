@@ -17,40 +17,40 @@ import firebase from 'firebase/app';
 // };
 
 
-// const inputStyle = {
-//     display: 'inline-block',
-//     float: 'right',
-//     width: '75%',
-//     marginLeft: '5%',
-//     maxWidth: '550px',
-//     height: '48px',
-//     fontSize: '24px',
-//     lineHeight: '29px',
-//     color: 'rgba(0, 0, 0, 0.5)',
-// };
+const inputStyle = {
+    display: 'inline-block',
+    float: 'right',
+    width: '75%',
+    marginLeft: '5%',
+    maxWidth: '550px',
+    height: '48px',
+    fontSize: '24px',
+    lineHeight: '29px',
+    color: 'rgba(0, 0, 0, 0.5)',
+};
 
-// const btnStyle = {
-//     padding: '0',
-//     background: 'transparent',
-//     border: '1px solid #fff',
-//     color: 'white',
-//     width: '36px',
-//     // minWidth: '10%',
-//     height: '54px',
-//     display: 'inline-block',
-//     float: 'right',
-//     marginLeft: '5px',
-// };
+const btnStyle = {
+    padding: '0',
+    background: 'transparent',
+    border: '1px solid #fff',
+    color: 'white',
+    width: '36px',
+    // minWidth: '10%',
+    height: '54px',
+    display: 'inline-block',
+    float: 'right',
+    marginLeft: '5px',
+};
 
-// const arrowStyle = {
-//     borderRight: '1px solid #FFFFFF',
-//     borderTop: '1px solid #FFFFFF',
-//     boxSizing: 'border-box',
-//     transform: 'rotate(45deg)',
-//     height: '16px',
-//     width: '16px',
-//     marginLeft: '5px',
-// };
+const arrowStyle = {
+    borderRight: '1px solid #FFFFFF',
+    borderTop: '1px solid #FFFFFF',
+    boxSizing: 'border-box',
+    transform: 'rotate(45deg)',
+    height: '16px',
+    width: '16px',
+    marginLeft: '5px',
+};
 
 export default class EmailerRequest extends Component {
     state = {
@@ -85,16 +85,17 @@ export default class EmailerRequest extends Component {
         return(
             <>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
-                <button type="submit" className="btnStyle"><div className="email-arrow"></div></button>
+                <button type="submit" style={btnStyle}><div style={arrowStyle}></div></button>
                     {/* <button type="submit"><div></div></button> */}
                 <input
-                    className="emailer-input inputStyle"
+                    className="emailer-input"
                     name="email"
                     type="email" 
                     onChange={this.handleChange}
                     placeholder="Enter your email here"
                     required
                     value={ email ? email : ""}
+                    style={inputStyle}
                 />
 
             </form>

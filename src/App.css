@@ -91,7 +91,7 @@ grid-template-areas:
   .grid-contact > div {
     position: relative;
     width: 300px;
-    margin: 0 auto;
+    margin: 2vw auto;
   }
   .grid-contact > div > a > img {
     height: 22px;
