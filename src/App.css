@@ -44,7 +44,7 @@ grid-template-areas:
 
 @media screen and (max-width: 945px) {
   .grid-container {
-    grid-template-rows: 72px 40vw auto 120px 120px 26px  120px;
+    grid-template-rows: 72px 40vw auto 40vw 120px 26px  120px;
     grid-template-columns: 100vw;
   grid-template-areas:
     ' nav '
@@ -594,10 +594,16 @@ grid-template-areas:
     text-align: center;
   }
   .logo-box img {
-    width: 75px;
+    /* width: 75px; */
+    width: 33vw;
   }
   .logo-box .pranaText {
-    transform: scale(.8);
-    margin-left: 5px;
+    font-size: 5vw;
+    /* transform: scale(.8); */
+    padding-left: .5vw;
   }
+  .logo-box .wellnessText {
+    font-size: 3.5vw;
+    margin-top: -6px;
+}
 }
