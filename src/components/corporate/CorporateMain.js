@@ -30,7 +30,7 @@ export default class CorporateMain extends Component {
         title: "Guru",
         price: "$4500",
         duration: "12 week intensive",
-        secondTitle: "Karmic + Namaste",
+        secondTitle: "Karma + Namaste",
         details: ["Wellness sessions", "Team building "],
         star: "*Customizable, pricing may vary*",
         image: "guru.png",
