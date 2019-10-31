@@ -165,7 +165,7 @@ export default class App extends Component {
 
         <div className="grid-contact">
           <div>
-            <a href="https://www.instagram.com/travelslayfitness/" target="_blank" alt="IG"><img src="../instagram-icon.png" alt="IG"/></a>
+            <a href="https://www.instagram.com/travelslayfitness/" target="_blank" rel="noopener noreferrer" alt="IG"><img src="../instagram-icon.png" alt="IG"/></a>
             {user ? <section>Welcome Stephanie!</section>: <section>info@pranawellness.life</section> }
             
           </div>
@@ -186,7 +186,7 @@ export default class App extends Component {
 
         <div className="grid-footer-right">
           <div className="travel-slay-logo">
-            <a href="https://www.travelslay.co/" target="_blank"><img src="../travel_slay_white.png" alt="Travel Slay"/></a>
+            <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer"><img src="../travel_slay_white.png" alt="Travel Slay"/></a>
             <section>explore fitness + training</section>
             <section>with Stephanie erazo</section>
           </div>
