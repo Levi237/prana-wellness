@@ -18,6 +18,7 @@
 .purple-content > section > div:first-of-type {
     display: inline-block;
     width: 50vw;
+    font-size: 1.5vw;
     margin-left: 10vw;
     margin-right: 2.5vw;
     float: left;
@@ -44,6 +45,7 @@
     .purple-content > section > div:first-of-type {
         display: block;
         width: 80vw;
+        font-size: 3vw;
         margin-left: 10vw;
         margin-right: 2.5vw;
         margin-bottom: 4vw;

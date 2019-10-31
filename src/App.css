@@ -347,7 +347,7 @@ grid-template-areas:
   background: rgb(191, 158, 200);
 }
 .wellness-main-container {
-  margin-top: calc(-19vw - 144px);
+  margin-top: calc(-16vw - 144px);
   padding-bottom: 8vw;
 }
 .wellness-main-container > section {
@@ -420,7 +420,8 @@ grid-template-areas:
   }
   .main-cta {
     width: 90vw;
-    margin: 36px 5vw;
+    margin: 5vw;
+    font-size: 2vw;
   }
   .main-title {
     margin-top: -10vw;
