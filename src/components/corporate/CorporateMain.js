@@ -60,7 +60,7 @@ export default class CorporateMain extends Component {
           <PranaDifference />
           <BenefitsDisplay />
         </div>
-        <h1>Corporate Wellness Sollutions</h1>
+        <h1>Corporate Wellness Solutions</h1>
         <PackageDisplay pricePack={corporatePlans}/>
 
         <div className="custom-quote purple-content">

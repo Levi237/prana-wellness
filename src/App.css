@@ -366,8 +366,6 @@ grid-template-areas:
   margin-right: 2vw;
 }
 
-
-
 @media screen and (max-width: 945px) {
   .grid-header {
     margin-bottom: 0;
@@ -379,7 +377,7 @@ grid-template-areas:
     padding-top: 20vw;
     position: absolute;
     width: 100vw;
-}
+  }
   .home-header > .welcomeText {
     font-size: 5vw;
     margin: 3vw;
@@ -432,7 +430,6 @@ grid-template-areas:
     margin-top: -6vw;
     padding-bottom: 8vw;
   }
-  
 }
 /**********************************************************************************************************/
 /***************************************         .grid-main         ***************************************/
@@ -529,8 +526,7 @@ grid-template-areas:
 .travel-slay-logo section {
   text-transform: uppercase;
   color: #FFF;
-  text-align: center;
-  /* width: 300px; */
+  text-align: center; 
   position: relative;
 }
 
@@ -580,7 +576,7 @@ grid-template-areas:
   .travel-slay-logo {
     margin: 0 auto;
     text-align: center;
-}
+  }
   .travel-slay-logo img {
     width: auto;
     height: 80px;
@@ -598,17 +594,15 @@ grid-template-areas:
     text-align: center;
   }
   .logo-box img {
-    /* width: 75px; */
     width: 33vw;
   }
   .logo-box .pranaText {
     font-size: 5vw;
     margin-top: -2vw;
-    /* transform: scale(.8); */
     padding-left: .5vw;
   }
   .logo-box .wellnessText {
     font-size: 3.5vw;
     margin-top: -6px;
-}
+  }
 }
