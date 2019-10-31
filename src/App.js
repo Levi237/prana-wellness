@@ -69,12 +69,9 @@ export default class App extends Component {
   
   componentDidMount = () => {
     this.authListener();
-    // this.loadForm();
-    // this.loadRecipes();
   };
 
 
-//If target matches then:
   authListener(){
     firebase.auth().onAuthStateChanged((user) => {
       if(user){
@@ -90,9 +87,7 @@ export default class App extends Component {
   logout = () => {
     firebase.auth().signOut();
   }
-  // onClose = (e) => {
-  //   this.props.onClose && this.props.onClose(e);
-  // };
+
   toggleHamburger = () => {
     const hamburgerMenu = document.getElementById('menu');
     hamburgerMenu.classList.toggle('active');
@@ -187,8 +182,8 @@ export default class App extends Component {
         <div className="grid-footer-right">
           <div className="travel-slay-logo">
             <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer"><img src="../travel_slay_white.png" alt="Travel Slay"/></a>
-            <section>explore fitness + training</section>
-            <section>with Stephanie erazo</section>
+            <section>explore fitness and travel</section>
+            {/* <section>with Stephanie erazo</section> */}
           </div>
         </div>
         
