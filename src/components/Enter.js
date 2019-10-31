@@ -6,6 +6,7 @@ import 'firebase/auth';
 export default class Enter extends Component {
     state = {
         admin: 'admin@pranawellness.life',
+        developer: 'admin@prana-wellness.life',
         email: '',
         password: '',
         fireErrors:'',
@@ -20,9 +21,9 @@ export default class Enter extends Component {
     };
 
     login = e => {
-        const { email, admin, password } = this.state
+        const { email, admin, developer, password } = this.state
         e.preventDefault();
-        if (email === admin){
+        if (email === admin || email === developer){
             firebase.auth().signInWithEmailAndPassword(email, password)
                 .catch((error) => {
                     this.setState({fireErrors: error.message})
@@ -30,9 +31,9 @@ export default class Enter extends Component {
         };
     };
     register = e => {
-        const { email, admin, password } = this.state
+        const { email, admin, developer, password } = this.state
         e.preventDefault();
-        if (email === admin){
+        if (email === admin || email === developer){
         firebase.auth().createUserWithEmailAndPassword(email, password)
             .catch((error) => {
                 this.setState({fireErrors: error.message})

@@ -30,15 +30,15 @@ export default class IndividualMain extends Component {
     services: [{ 
         smallText: "Achieve Work-LIfe",
         largeText: "Balance",
-        image: "invigorating_yoga.png"
+        image: "balance.png"
     },{
         smallText: "Reduce Stress + find",
         largeText: "Peace",
-        image: "relaxing_meditation.png"
+        image: "peace.png"
     },{
         smallText: "Increased Focus +",
         largeText: "Clarity",
-        image: "mindful_breathing.png"
+        image: "clarity.png"
     }],
     individualPurpleContent: {
       header: "Want Prana in Your Workplace?",
