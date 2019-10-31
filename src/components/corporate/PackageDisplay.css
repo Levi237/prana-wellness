@@ -57,13 +57,7 @@
     text-align: center;
     
 }
-/* .price-pack-box section:nth-of-type(4) {
-    margin: 0 0 1.5vw 0;
-    font-size: 1.4vw;
-    font-weight: normal;
-    color: #669F35;
-    text-align: center;
-} */
+
 .price-pack-box section:nth-of-type(4) {
     font-family: 'Merriweather', sans-serif;
     font-weight: bold;
@@ -136,4 +130,4 @@
         margin-top: 0px;
         position: relative;
     }
-}
+};

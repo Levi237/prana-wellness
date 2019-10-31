@@ -2,16 +2,20 @@
     position: relative;
     height: 50vw;
 }
+
+.homeStephanie-container section {
+    font-style: normal;
+}
+
+.homeStephanie-container img {
+    width: 50vw;
+    height: 50vw;
+}
 .homeStephanie-container > div {
     width: 50vw;
     height: 50vw;
     background-color: #fff;
 }
-.homeStephanie-container img {
-    width: 50vw;
-    height: 50vw;
-}
-
 .homeStephanie-container > div:first-of-type {
     float: right;
     background-image: url(../meet-background.png);
@@ -29,11 +33,6 @@
     background-color: #fff;
     padding: 5vw;
     text-align: left;
-}
-
-.homeStephanie-container section {
-    /* font-family: Montserrat; */
-    font-style: normal;
 }
 
 .homeStephanie-container > div > div > section:first-of-type {
@@ -107,4 +106,4 @@
         line-height: 5vw;
         margin-top: 18vw;
     }
-}
+};

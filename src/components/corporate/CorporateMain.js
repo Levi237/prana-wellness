@@ -23,7 +23,7 @@ export default class CorporateMain extends Component {
         price: "$200/session",
         duration: "1 x per week",
         secondTitle: "Namaste +",
-        details: ["1 Lunch & Learn"],
+        details: ["1 Lunch & Learn", "Access to special events"],
         star:  "*3 month commitment",
         image: "karma.png",
     },{

@@ -1,14 +1,17 @@
-.pranaDifference-container > div {
-    width: 50vw;
-    height: 50vw;
-    background-color: #965BA5;
 
-}
 .pranaDifference-container img {
     width: 50vw;
     height: 50vw;
 }
+.pranaDifference-container section {
+    font-style: normal;
+}
 
+.pranaDifference-container > div {
+    width: 50vw;
+    height: 50vw;
+    background-color: #965BA5;
+}
 .pranaDifference-container > div:first-of-type {
     float: right;
     background-image: url(./meet-background-white.png);
@@ -28,13 +31,7 @@
     background: #965BA5;
     padding: 4vw;
     text-align: left;
-
 }
-
-.pranaDifference-container section {
-    font-style: normal;
-}
-
 .pranaDifference-container > div > div > section:first-of-type {
     font-family: Merriweather;
     font-style: italic;
@@ -69,15 +66,15 @@
 }
 
 @media screen and (max-width: 945px) {
-    .pranaDifference-container > div {
-        width: 100vw;
-        height: 100vw;
-    }
     .pranaDifference-container img {
         width: 100vw;
         height: 100vw;
     }
     
+    .pranaDifference-container > div {
+        width: 100vw;
+        height: 100vw;
+    }
     .pranaDifference-container > div:first-of-type, .pranaDifference-container > div:last-of-type {
         float: off;
     }
@@ -105,4 +102,4 @@
         font-size: 2vw;
         line-height: 5vw;
     }
-}
+};
