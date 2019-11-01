@@ -248,12 +248,12 @@ grid-template-areas:
 .home-header {
   background: url(home-header2.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom center;
   color: #FFF;
   text-align: center;
   margin-bottom: -10vw;
   margin-top: -17vw;
-  height: 60vw;
+  height: 67vw;
   padding-top: 20vw;
 }
 
@@ -270,30 +270,35 @@ grid-template-areas:
   letter-spacing: .5vw;
   font-weight: bold;
   color: #A0CD4D;
+  margin-top: 1vw;
   text-transform: uppercase;
 }
 .home-header > .pranaText {
   font-size: 10vw;
   letter-spacing: 2.5vw;
   font-weight: 100;
+  margin-top: 2vw;
 }
 .home-header > .wellnessText {
   font-size: 5vw;
-  margin-top: -2vw;
+  /* margin-top: -2vw; */
 }
 .home-header > .statementText {
   font-weight: 100;
   font-size: 2vw;
   line-height: 4vw;
-  margin-top: 12vw;
-  padding: 0 1vw;
-  margin-bottom: 2vw;
+  margin-top: 7vw;
 }
 .ctaBtn {
   background-color: #A0CD4D !important;
   border-color: #669F35;
   color: #FFF;
   font-size: 1.33vw;
+  transition: all .3s ease-in-out;
+}
+.ctaBtn:hover {
+  background-color: #669F35 !important;
+  transition: all .3s ease-in-out;
 }
 .header-image {
   width: 80vw;
