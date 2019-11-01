@@ -113,7 +113,9 @@ export default class App extends Component {
         <div className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
-                      <HomeNav toggleHamburger={this.toggleHamburger}/> }/>           
+                      <HomeNav toggleHamburger={this.toggleHamburger}/> }/>          
+            <Route path={routes.ROOT} exact render={() => 
+                      <HomeNav toggleHamburger={this.toggleHamburger}/> }/>    
             <Route path={routes.ROOT} render={() => 
                       <GlobalNav user={user} logout={this.logout} toggleHamburger={this.toggleHamburger}/> }/>    
           </Switch>
