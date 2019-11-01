@@ -67,7 +67,7 @@ export default class HomeMain extends Component {
             <HomeStephanie />
             <br /><br /><br/>            
             <br /><br /><br/>
-            <br /><br /><br/>
+            <h1>As featured In</h1>
             <LogoDisplay logos={this.state.features}/>
         </div>);
     };
