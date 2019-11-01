@@ -1,5 +1,5 @@
 div.scrollmenu {
-  background-color: rgba(150, 91, 165, 0.1);;
+  background-color: rgba(150, 91, 165, 0.2);;
   overflow: auto;
   white-space: nowrap;
   transition: all .3s ease-in-out;
@@ -17,6 +17,6 @@ div.scrollmenu img {
 }
 
 div.scrollmenu:hover {
-  background-color: rgba(150, 91, 165, 0.2);
+  background-color: rgba(150, 91, 165, 0.3);
   transition: all .3s ease-in-out;
 }
