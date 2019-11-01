@@ -5,7 +5,7 @@ import * as routes      from '../../constants/routes';
 
 import LotusDisplay     from './LotusDisplay';
 import HomeStephanie    from './HomeStephanie';
-import CustomerDisplay  from '../CustomerDisplay';
+import LogoDisplay      from '../LogoDisplay';
 import ServiceDisplay   from '../services/ServiceDisplay';
 
 const fourSquareStyle = {
@@ -32,7 +32,16 @@ export default class HomeMain extends Component {
             smallText: "Lunch +",
             largeText: "Learn",
             image: "lunch_and_learn.png"
-        }]
+        }],
+        clients: [
+            'bpr-logo-landscape-highres.png',
+            'centric-logo.png',
+            'cross-campus-high-res-logo-stacked.png',
+            'DocuSign_logo.png',
+            'KAPOW.png',
+            'LA-South-Chamber.png',
+            'salisian-lee-logo.png',
+        ]
     };
 
     render(){
@@ -47,7 +56,7 @@ export default class HomeMain extends Component {
             <NavLink to={routes.SERV}><button className="white mobile-fill">browse services</button></NavLink>
             <br /><br /><br/><br/><br/>
             <h1>Our Clients</h1>
-            <CustomerDisplay />
+            <LogoDisplay logos={this.state.clients}/>
             <br /><br /><br/>
             <LotusDisplay />
             <HomeStephanie />

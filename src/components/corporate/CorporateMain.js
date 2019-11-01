@@ -14,8 +14,11 @@ export default class CorporateMain extends Component {
         title: "Namaste",
         price: "$300/session",
         duration: "1x per month",
-        // secondTitle: " ",
-        details: ["Yoga", "Meditation", "Breathwork", "Online Resources"],
+        details: ["Yoga", 
+          "Meditation", 
+          "Breathwork", 
+          "Online Resources"
+        ],
         star: "*6 month commitment",
         image: "namaste.png",
     },{
@@ -23,7 +26,10 @@ export default class CorporateMain extends Component {
         price: "$200/session",
         duration: "1 x per week",
         secondTitle: "Namaste +",
-        details: ["1 Lunch & Learn", "Access to special events"],
+        details: [
+          "1 Lunch & Learn", 
+          "Access to special events"
+        ],
         star:  "*3 month commitment",
         image: "karma.png",
     },{
@@ -31,7 +37,11 @@ export default class CorporateMain extends Component {
         price: "$4500",
         duration: "12 week intensive",
         secondTitle: "Karma + Namaste",
-        details: ["Wellness sessions", "Team building "],
+        details: [
+          "Structured program for workplace refresh", 
+          "Team Building",
+          "Wellness Coaching",
+        ],
         star: "*Customizable, pricing may vary*",
         image: "guru.png",
     }],
