@@ -41,6 +41,11 @@ export default class HomeMain extends Component {
             'KAPOW.png',
             'LA-South-Chamber.png',
             'salisian-lee-logo.png',
+        ],
+        features: [
+            'voyage_la.png',
+            'essence.png',
+            'airbnb.png',
         ]
     };
 
@@ -60,6 +65,10 @@ export default class HomeMain extends Component {
             <br /><br /><br/>
             <LotusDisplay />
             <HomeStephanie />
+            <br /><br /><br/>            
+            <br /><br /><br/>
+            <br /><br /><br/>
+            <LogoDisplay logos={this.state.features}/>
         </div>);
     };
 };
