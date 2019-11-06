@@ -162,7 +162,7 @@ export default class App extends Component {
 
         <div className="grid-contact">
           <div>
-            <a href="https://www.instagram.com/pranawellness.life/" target="_blank" rel="noopener noreferrer" alt="IG"><img src="../instagram-icon.png" alt="IG"/></a>
+            <a href="https://www.instagram.com/pranawellness.life/" target="_blank" rel="noopener noreferrer" alt="instagram link pranawellness.life"><img src="../instagram-icon.png" alt="IG"/></a>
             {user ? <section>Welcome Stephanie!</section>: <section>info@pranawellness.life</section> }
             
           </div>
