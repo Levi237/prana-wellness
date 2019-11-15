@@ -19,19 +19,23 @@ export default class HomeMain extends Component {
         points: [{ 
             smallText: "Mindful",
             largeText: "Breathing",
-            image: "mindful_breathing.png"
+            image: "mindful_breathing.png",
+            content: "Breathing practices that can have immediate impact on mind and body health.",
         },{
             smallText: "Invigorating",
             largeText: "Yoga",
-            image: "invigorating_yoga.png"
+            image: "invigorating_yoga.png",
+            content: "All levels practice of yoga to energize the body, stretch, and focus on proper alignment and form.",
         },{
             smallText: "relaxing",
             largeText: "Meditation",
-            image: "relaxing_meditation.png"
+            image: "relaxing_meditation.png",
+            content: "Accessible guided meditations to calm, bring focus, and de-stress.",
         },{
             smallText: "Lunch +",
             largeText: "Learn",
-            image: "lunch_and_learn.png"
+            image: "lunch_and_learn.png",
+            content: "Health, fitness, and mindfulness tools and tips for a balanced lifestyle and productive work experience.",
         }],
         clients: [{
             name: 'bpr-logo-landscape-highres.png',
