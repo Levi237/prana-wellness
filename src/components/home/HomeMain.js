@@ -33,20 +33,37 @@ export default class HomeMain extends Component {
             largeText: "Learn",
             image: "lunch_and_learn.png"
         }],
-        clients: [
-            'bpr-logo-landscape-highres.png',
-            'centric-logo.png',
-            'cross-campus-high-res-logo-stacked.png',
-            'DocuSign_logo.png',
-            'KAPOW.png',
-            'LA-South-Chamber.png',
-            'salisian-lee-logo.png',
-        ],
-        features: [
-            'voyage_la.png',
-            'essence.png',
-            'airbnb.png',
-        ]
+        clients: [{
+            name: 'bpr-logo-landscape-highres.png',
+            link: null
+        },{
+            name: 'centric-logo.png',
+            link: null
+        },{    
+            name: 'cross-campus-high-res-logo-stacked.png',
+            link: null
+        },{
+            name: 'DocuSign_logo.png',
+            link: null
+        },{
+            name: 'KAPOW.png',
+            link: null
+        },{
+            name: 'LA-South-Chamber.png',
+            link: null
+        },{
+            name: 'salisian-lee-logo.png',
+        }],
+        features: [{
+            name: 'voyage_la.png',
+            link: 'http://voyagela.com/interview/meet-stephanie-erazo-travel-slay-fitness-mid-wilshiregrove/'
+        },{
+            name: 'essence.png',
+            link: 'https://www.essence.com/lifestyle/travel/this-fitness-guru-takes-travelers-on-international-voyages-to-pull-them-out-of-their-comfort-zones/'
+        },{
+            name: 'airbnb.png',
+            link: 'https://www.airbnb.com/experiences/799124'   
+        }]
     };
 
     render(){

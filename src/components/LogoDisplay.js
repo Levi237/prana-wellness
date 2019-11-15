@@ -20,9 +20,12 @@ export default class CustomerDisplay extends Component {
         const logoList = logos.map((logo, key) => {
             return(
                 <section key={key}>
-                    {/* <a href={logo.link} target="_blank" rel="noopener noreferrer"> */}
-                        <img src={`./customer-logo/${logo}`} alt={logo}/>
-                    {/* </a> */}
+                {logo.link 
+                ?   <a href={logo.link} target="_blank" rel="noopener noreferrer">
+                        <img src={`./customer-logo/${logo.name}`} alt={logo.name}/>
+                    </a>
+                : <img src={`./customer-logo/${logo.name}`} alt={logo.name}/>
+                }
                 </section>
             )
         });
