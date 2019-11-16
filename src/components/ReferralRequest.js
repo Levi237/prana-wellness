@@ -109,8 +109,8 @@ export default class ReferralRequest extends Component {
                         required
                         value={ subjectContent ? subjectContent : ''}
                     />
-                    <button type="submit">SUBMIT</button>
-                </div>
+                <button type="submit">SUBMIT</button>
+            </div>
 
             </form>
             </div>

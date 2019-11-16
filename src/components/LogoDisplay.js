@@ -8,8 +8,8 @@ const CustomerDisplay = ({ logos, clients }) => {
     const carouselTimerOff = () => document.getElementById("scroll").classList.remove("carousel");
     const carouselTimerOn = () => document.getElementById("scroll").classList.add("carousel");
     const timerStart = setTimeout(carouselStart, 1000);
-    const timerOff = setInterval(carouselTimerOff, 60000);
-    const timerOn = setInterval(carouselTimerOn, 120000);
+    const timerOff = setInterval(carouselTimerOff, 50000);
+    const timerOn = setInterval(carouselTimerOn, 100000);
 
     const logoList = logos.map((logo, key) => {
         return(
