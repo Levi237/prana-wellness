@@ -4,7 +4,6 @@ import './RequestForm.css';
 
 import firebase from 'firebase/app';
 
-
 export default class ReferralRequest extends Component {
     state = {
         fromName: null,
