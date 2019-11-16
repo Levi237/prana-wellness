@@ -104,7 +104,7 @@ export default class HomeMain extends Component {
             <NavLink to={routes.SERV}><button className="white mobile-fill">browse services</button></NavLink>
             <br /><br /><br/><br/><br/>
             <h1>Our Clients</h1>
-            <LogoDisplay logos={this.state.clients}/>
+            <LogoDisplay logos={this.state.clients} clients={this.state.clients}/>
             <br /><br /><br/>
             <LotusDisplay />
             <HomeStephanie />

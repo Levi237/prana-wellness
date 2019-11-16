@@ -1,0 +1,100 @@
+[debug] [2019-11-16T18:05:50.563Z] ----------------------------------------------------------------------
+[debug] [2019-11-16T18:05:50.565Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-11-16T18:05:50.565Z] CLI Version:   7.6.2
+[debug] [2019-11-16T18:05:50.565Z] Platform:      darwin
+[debug] [2019-11-16T18:05:50.565Z] Node Version:  v10.15.3
+[debug] [2019-11-16T18:05:50.566Z] Time:          Sat Nov 16 2019 10:05:50 GMT-0800 (Pacific Standard Time)
+[debug] [2019-11-16T18:05:50.566Z] ----------------------------------------------------------------------
+[debug] [2019-11-16T18:05:50.566Z] 
+[debug] [2019-11-16T18:05:50.574Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-16T18:05:50.575Z] > authorizing via signed-in user
+[debug] [2019-11-16T18:05:50.575Z] [iam] checking project prana-wellness for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2019-11-16T18:05:50.576Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/prana-wellness:testIamPermissions  
+
+[debug] [2019-11-16T18:05:50.837Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-16T18:05:50.840Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/prana-wellness  
+ 
+[debug] [2019-11-16T18:05:51.126Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'prana-wellness'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[info] i  database: checking rules syntax...
+[debug] [2019-11-16T18:05:55.021Z] >>> HTTP REQUEST PUT https://prana-wellness.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": true,
+    ".write": "auth != null"
+  }
+}
+[debug] [2019-11-16T18:05:55.353Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database prana-wellness is valid
+[debug] [2019-11-16T18:05:55.355Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/prana-wellness  
+ 
+[debug] [2019-11-16T18:05:56.046Z] <<< HTTP RESPONSE 200
+[info] i  storage: checking storage.rules for compilation errors...
+[debug] [2019-11-16T18:05:56.050Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/prana-wellness:test  
+
+[debug] [2019-11-16T18:05:56.505Z] <<< HTTP RESPONSE 200
+[info] ✔  storage: rules file storage.rules compiled successfully
+[info] i  firestore: checking firestore.rules for compilation errors...
+[info] i  firestore: reading indexes from firestore.indexes.json...
+[debug] [2019-11-16T18:05:56.511Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/prana-wellness:test  
+
+[debug] [2019-11-16T18:05:56.856Z] <<< HTTP RESPONSE 200
+[info] ✔  firestore: rules file firestore.rules compiled successfully
+[debug] [2019-11-16T18:05:56.859Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2019-11-16T18:05:56.860Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/prana-wellness/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2019-11-16T18:05:56.861Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/prana-wellness/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2019-11-16T18:05:57.362Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-16T18:05:57.375Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2019-11-16T18:05:57.376Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/prana-wellness/adminSdkConfig  
+ 
+[debug] [2019-11-16T18:05:57.555Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-16T18:05:57.558Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/prana-wellness/versions  
+
+[debug] [2019-11-16T18:05:58.630Z] <<< HTTP RESPONSE 200
+[info] i  storage: uploading rules storage.rules...
+[debug] [2019-11-16T18:05:58.631Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/prana-wellness/rulesets  
+
+[debug] [2019-11-16T18:05:59.079Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-16T18:05:59.079Z] [rules] created ruleset projects/prana-wellness/rulesets/e4f2615a-b1fd-493a-b573-186e22775c77
+[info] i  firestore: uploading rules firestore.rules...
+[debug] [2019-11-16T18:05:59.082Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/prana-wellness/rulesets  
+
+[debug] [2019-11-16T18:05:59.082Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1beta2/projects/prana-wellness/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2019-11-16T18:05:59.245Z] Error: getaddrinfo ENOTFOUND firebaserules.googleapis.com firebaserules.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebaserules.googleapis.com firebaserules.googleapis.com:443

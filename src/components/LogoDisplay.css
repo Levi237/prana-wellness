@@ -3,16 +3,22 @@ div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
   transition: all .3s ease-in-out;
-
 }
 div.scrollmenu div {
-  transition: all 5s ease;
+  /* transition: all 5s ease; */
+  transition: all 60s ease-in-out;
+}
+div.scrollmenu.carousel > div {
+  transform: translateX(-200%);
+  transition: all 60s ease-in-out;
+  /* transition-delay: 2s; */
+}
+div.scrollmenu.carousel2 div {
+  transform: translateX(-200%);
+  transition: all 60s ease-in-out;
+  /* transition-delay: 2s; */
 }
 
-div.scrollmenu.carousel div:hover {
-  transform: translateX(-100%);
-  transition: all 5s ease-in;
-}
 div.scrollmenu section {
   height: 80px;
   display: inline-block;
