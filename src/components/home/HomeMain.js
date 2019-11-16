@@ -57,6 +57,28 @@ export default class HomeMain extends Component {
             link: null
         },{
             name: 'salisian-lee-logo.png',
+            link: null
+        },{
+            name: 'bpr-logo-landscape-highres.png',
+            link: null
+        },{
+            name: 'centric-logo.png',
+            link: null
+        },{    
+            name: 'cross-campus-high-res-logo-stacked.png',
+            link: null
+        },{
+            name: 'DocuSign_logo.png',
+            link: null
+        },{
+            name: 'KAPOW.png',
+            link: null
+        },{
+            name: 'LA-South-Chamber.png',
+            link: null
+        },{
+            name: 'salisian-lee-logo.png',
+            link: null
         }],
         features: [{
             name: 'voyage_la.png',

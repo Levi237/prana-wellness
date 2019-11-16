@@ -19,7 +19,7 @@ const CustomerDisplay = ({ logos }) => {
 
     return(
         <div className="scrollmenu">
-            <div>{logoList}{logoList}</div>
+            <div>{logoList}</div>
         </div>
     );
 };
