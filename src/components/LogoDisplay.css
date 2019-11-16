@@ -9,7 +9,7 @@ div.scrollmenu div {
   transition: all 5s ease;
 }
 
-div.scrollmenu div:hover {
+div.scrollmenu.carousel div:hover {
   transform: translateX(-100%);
   transition: all 5s ease-in;
 }

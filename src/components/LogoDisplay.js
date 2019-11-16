@@ -18,7 +18,7 @@ const CustomerDisplay = ({ logos }) => {
     });
 
     return(
-        <div className="scrollmenu">
+        <div className={logos[0].link ? "scrollmenu" : "scrollmenu carousel"}>
             <div>{logoList}</div>
         </div>
     );
