@@ -3,8 +3,16 @@ div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
   transition: all .3s ease-in-out;
+
 }
-  
+div.scrollmenu div {
+  transition: all 5s ease;
+}
+
+div.scrollmenu div:hover {
+  transform: translateX(-100%);
+  transition: all 5s ease-in;
+}
 div.scrollmenu section {
   height: 80px;
   display: inline-block;
@@ -18,5 +26,7 @@ div.scrollmenu img {
 
 div.scrollmenu:hover {
   background-color: rgba(150, 91, 165, 0.3);
-  transition: all .3s ease-in-out;
+  transition: all 5s ease-in-out;
 }
+
+

@@ -32,7 +32,7 @@ export default class CustomerDisplay extends Component {
 
         return(
             <div className="scrollmenu">
-                {logoList}
+                <div>{logoList}{logoList}</div>
             </div>
         );
     };
