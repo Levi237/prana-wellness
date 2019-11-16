@@ -4,12 +4,12 @@ import './LogoDisplay.css';
 
 const CustomerDisplay = ({ logos, clients }) => {
 
-    const timerStart  = () => document.getElementById("scroll").classList.add("carousel");
-    const timerOff = () => document.getElementById("scroll").classList.remove("carousel");
-    const timerOn = () => document.getElementById("scroll").classList.add("carousel");
-    const carouselStart = setTimeout(timerStart, 1000);
-    const carouselTimerOff = setInterval(timerOff, 60000);
-    const carouselTimerOn = setInterval(timerOn, 120000);
+    const carouselStart  = () => document.getElementById("scroll").classList.add("carousel");
+    const carouselTimerOff = () => document.getElementById("scroll").classList.remove("carousel");
+    const carouselTimerOn = () => document.getElementById("scroll").classList.add("carousel");
+    const timerStart = setTimeout(carouselStart, 1000);
+    const timerOff = setInterval(carouselTimerOff, 60000);
+    const timerOn = setInterval(carouselTimerOn, 120000);
 
     const logoList = logos.map((logo, key) => {
         return(
