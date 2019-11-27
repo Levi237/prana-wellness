@@ -5,11 +5,11 @@ div.scrollmenu {
   transition: all .3s ease-in-out;
 }
 div.scrollmenu div {
-  transition: all 60s ease-in-out;
+  transition: all 80s ease-in-out;
 }
 div.scrollmenu.carousel > div {
   transform: translateX(-200%);
-  transition: all 60s ease-in-out;
+  transition: all 80s ease-in-out;
 }
 
 div.scrollmenu section {
