@@ -4,14 +4,14 @@ import { Switch, Route }    from 'react-router-dom';
 // import { Switch, Route, Redirect }  from 'react-router-dom';
 
 import * as routes      from './constants/routes';
-import Nav              from './components/Nav';
-import Enter            from './components/Enter';
-import AdminPortal      from './components/AdminPortal';
-
 import GlobalNav        from './components/GlobalNav';
-import EmailerRequest   from './components/EmailerRequest';
-import ReferralRequest  from './components/ReferralRequest';
-import ContactRequest   from './components/ContactRequest';
+import Nav              from './components/Nav';
+
+import Enter            from './components/admin/Enter';
+import AdminPortal      from './components/admin/AdminPortal';
+import EmailerRequest   from './components/admin/EmailerRequest';
+import ReferralRequest  from './components/admin/ReferralRequest';
+import ContactRequest   from './components/admin/ContactRequest';
 
 import HomeNav          from './components/home/HomeNav';
 import HomeHeader       from './components/home/HomeHeader';
