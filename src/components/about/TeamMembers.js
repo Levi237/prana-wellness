@@ -37,6 +37,26 @@ export default class TeamMembers extends Component {
             ,
             image: "melanie.png",
 
+        },{
+            name: "Keren",
+            skills: [
+                "200RYS Yoga Instructor", 
+                "Yoga Therapist in training",
+                ],
+            description: 
+                "Keren’s Yoga journey began after years of struggling with her body image. She found a way to connect and love herself through Yoga. After becoming a lawyer in Israel and completing an MBA, she followed her heart and dedicated herself to the practice and study of Yoga. Keren is passionate about passing on the gift of Yoga as a tool for self-transformation and is currently on the path to becoming a Yoga Therapist. Her classes are a balance between a strong and safe physical practice and a tranquil state of mind. In her classes, she weaves in elements of philosophy, pranayama, and meditation."            ,
+            image: "keren.png",
+
+        },{
+            name: "Nadirah",
+            skills: [
+                "200 hour RYT Yoga Instructor",
+                "50 hour RYT Continued Education",
+                ],
+            description: 
+                "Nadirah bases her yoga practice as the mind, body, and spirit connecting, through breath and movement. As an entertainer, she is well aware of the many benefits yoga and meditation has to offer in real life situations. The Chicago native wholeheartedly believes that yoga is a journey to everlasting inner peace and oneness with self. This in turn, teaches us to self-love through listening, learning, and laughing, in order to shine our light and inspire others to do the same.",
+            image: "nadirah.png",
+
         }]
     };
 
@@ -44,7 +64,7 @@ export default class TeamMembers extends Component {
         const { team } = this.state;
         
         const memberInfo = team.map((member, key) => {
-            const skillList = member.skills.map((skill, k) => {
+            const skillList = member.skills.map((skill) => {
                 return (<><span>{skill}</span><br /></>)
             })
             return (
