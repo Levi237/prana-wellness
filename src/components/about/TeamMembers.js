@@ -51,7 +51,7 @@ export default class TeamMembers extends Component {
             name: "Nadirah",
             skills: [
                 "200 hour RYT Yoga Instructor",
-                "50 hour RYT Continued Education",
+                "50 hour RYT Continued Ed",
                 ],
             description: 
                 "Nadirah bases her yoga practice as the mind, body, and spirit connecting, through breath and movement. As an entertainer, she is well aware of the many benefits yoga and meditation has to offer in real life situations. The Chicago native wholeheartedly believes that yoga is a journey to everlasting inner peace and oneness with self. This in turn, teaches us to self-love through listening, learning, and laughing, in order to shine our light and inspire others to do the same.",

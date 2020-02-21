@@ -1,0 +1,87 @@
+[debug] [2020-02-21T17:24:45.920Z] ----------------------------------------------------------------------
+[debug] [2020-02-21T17:24:45.922Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-02-21T17:24:45.922Z] CLI Version:   7.13.1
+[debug] [2020-02-21T17:24:45.922Z] Platform:      darwin
+[debug] [2020-02-21T17:24:45.922Z] Node Version:  v10.15.3
+[debug] [2020-02-21T17:24:45.923Z] Time:          Fri Feb 21 2020 09:24:45 GMT-0800 (Pacific Standard Time)
+[debug] [2020-02-21T17:24:45.923Z] ----------------------------------------------------------------------
+[debug] [2020-02-21T17:24:45.923Z] 
+[debug] [2020-02-21T17:24:45.933Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-02-21T17:24:45.933Z] > authorizing via signed-in user
+[debug] [2020-02-21T17:24:45.933Z] [iam] checking project prana-wellness for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2020-02-21T17:24:45.935Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-02-21T17:24:45.935Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-02-21T17:24:46.164Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-21T17:24:46.209Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/prana-wellness:testIamPermissions  
+
+[debug] [2020-02-21T17:24:46.595Z] <<< HTTP RESPONSE 200
+[debug] [2020-02-21T17:24:46.597Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/prana-wellness  
+ 
+[debug] [2020-02-21T17:24:46.899Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'prana-wellness'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script.
+[info] i  database: checking rules syntax...
+[debug] [2020-02-21T17:24:51.667Z] >>> HTTP REQUEST PUT https://prana-wellness.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": true,
+    ".write": "auth != null"
+  }
+}
+[debug] [2020-02-21T17:24:52.102Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database prana-wellness is valid
+[debug] [2020-02-21T17:24:52.104Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/prana-wellness  
+ 
+[debug] [2020-02-21T17:24:52.812Z] <<< HTTP RESPONSE 200
+[info] i  firebase.storage: checking storage.rules for compilation errors...
+[debug] [2020-02-21T17:24:52.817Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/prana-wellness:test  
+
+[debug] [2020-02-21T17:24:53.259Z] <<< HTTP RESPONSE 200
+[info] ✔  firebase.storage: rules file storage.rules compiled successfully
+[info] i  firestore: reading indexes from firestore.indexes.json...
+[info] i  cloud.firestore: checking firestore.rules for compilation errors...
+[debug] [2020-02-21T17:24:53.263Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/prana-wellness:test  
+
+[debug] [2020-02-21T17:24:53.418Z] <<< HTTP RESPONSE 200
+[info] ✔  cloud.firestore: rules file firestore.rules compiled successfully
+[debug] [2020-02-21T17:24:53.421Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.0.0",
+    "firebase-functions": "^3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2020-02-21T17:24:53.423Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/prana-wellness/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2020-02-21T17:24:53.424Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/prana-wellness/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2020-02-21T17:24:53.972Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2020-02-21T17:26:08.866Z] Error: connect ETIMEDOUT 172.217.11.74:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1097:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 172.217.11.74:443
