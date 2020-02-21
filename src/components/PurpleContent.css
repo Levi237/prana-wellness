@@ -17,6 +17,7 @@
 }
 .purple-content > section > div:first-of-type {
     display: inline-block;
+    vertical-align: top;
     width: 50vw;
     font-size: 1.5vw;
     margin-left: 10vw;
@@ -27,6 +28,7 @@
 }
 .purple-content > section > div:last-of-type {
     display: inline-block;
+    vertical-align: top;
     width: 27.5vw;
     margin-right: 10vw;
     float: right;

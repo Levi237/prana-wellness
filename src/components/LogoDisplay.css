@@ -15,6 +15,7 @@ div.scrollmenu.carousel > div {
 div.scrollmenu section {
   height: 80px;
   display: inline-block;
+  vertical-align: top;
   padding: 14px;
   margin: 10px;
   position: relative;

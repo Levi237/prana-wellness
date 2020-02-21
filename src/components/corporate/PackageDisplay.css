@@ -2,6 +2,7 @@
     width: 24vw;
     margin: 0 2vw 50px 2vw;
     display: inline-block;
+    vertical-align: top;
     color: #965ba5;
     position: relative;
 }
