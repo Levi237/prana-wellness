@@ -7,8 +7,9 @@
         height: 36.67vw;
         width: 30vw;
         display: inline-block;
+        vertical-align: top;
         background-color: transparent;
-        margin: 0 1.33vw;
+        margin: 10px 1.33vw;
         z-index: 1;
         transition: all .3s ease-in-out;
     }
@@ -158,7 +159,7 @@
             height: 110vw;
             width: 90vw;
             /* display: block; */
-            margin: -5vw 5vw !important;
+            margin: 10px 5vw !important;
         }
     
         .member-box, .member-front > img {
