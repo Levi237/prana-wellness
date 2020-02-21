@@ -8,6 +8,7 @@
     height: 25vw;
     width: 25vw;
     display: inline-block;
+    vertical-align: top;
     background-color: transparent;
     margin: 0 1.33vw;
     z-index: 1;
