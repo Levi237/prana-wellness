@@ -1,18 +1,59 @@
-video {
-    position: fixed;
-    z-index: 900;
+div.video-container {
+    position: absolute;
+    /* top: 0; */
+    overflow: hidden;
+    /* margin-bottom: -12vw; */
+    width: 100vw;
+    height: calc(100vh - 46px);
+
+
 }
+video {    
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media (max-aspect-ratio: 16/9) and (min-width: 946px) {
+    video {
+        height: calc(100vh - 46px);
+        width: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) and (max-width: 945px) {
+    video {
+        height: 100%;
+        width: auto;
+    }
+    div.video-container {
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        /* margin-bottom: -12vw; */
+        width: 100vw;
+        height: 100%;
+    
+    
+    }
+  }
+@media (min-aspect-ratio: 16/9) {
+    video {
+        width: 100vw;
+        height: 56.25vw;
+    }
+  }
 .home-header {
-    /* background: url(home-header2.png); */
-    background-size: cover;
-    background-color: transparent;
-    background-position: bottom center;
+    /* background-color: transparent; */
     color: #FFF;
     text-align: center;
-    margin-bottom: -10vw;
-    margin-top: -17vw;
-    height: 67vw;
-    padding-top: 20vw;
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    z-index: 1;
+    background-image: linear-gradient(180deg, black, transparent, transparent 80%);
+    overflow: hidden;
+    
   }
 
 .homeStephanie-container {
@@ -86,6 +127,13 @@ video {
 }
 
 @media screen and (max-width: 945px) {
+    .home-header {
+        margin-top: -20vw;
+        height: 90vw;
+        padding-top: 20vw;
+        position: absolute;
+        width: 100vw;
+      }
     .homeStephanie-container > div {
         width: 100vw;
         height: 100vw;
