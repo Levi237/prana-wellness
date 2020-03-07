@@ -245,17 +245,7 @@ grid-template-areas:
 .grid-header {
   grid-area: header;
 }
-.home-header {
-  background: url(home-header2.png);
-  background-size: cover;
-  background-position: bottom center;
-  color: #FFF;
-  text-align: center;
-  margin-bottom: -10vw;
-  margin-top: -17vw;
-  height: 67vw;
-  padding-top: 20vw;
-}
+
 
 .welcomeText, .pranaText, .statementText {
   text-align: center;

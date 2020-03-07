@@ -1,3 +1,20 @@
+video {
+    position: fixed;
+    z-index: 900;
+}
+.home-header {
+    /* background: url(home-header2.png); */
+    background-size: cover;
+    background-color: transparent;
+    background-position: bottom center;
+    color: #FFF;
+    text-align: center;
+    margin-bottom: -10vw;
+    margin-top: -17vw;
+    height: 67vw;
+    padding-top: 20vw;
+  }
+
 .homeStephanie-container {
     position: relative;
     height: 50vw;
