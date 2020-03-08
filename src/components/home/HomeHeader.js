@@ -6,8 +6,8 @@ const HomeHeader = ({toggleContactBtn}) => {
   
   return(
     <>
-      <div className="video-container">
-        <video
+      <VideoContainer className="video-container">
+        <VideoFrame
           playsInline
           autoPlay
           muted
@@ -24,8 +24,8 @@ const HomeHeader = ({toggleContactBtn}) => {
             // src="https://player.vimeo.com/external/395830932.hd.mp4?s=d355e4cba477d5307c66b116a78ba687d56f5b7e&profile_id=174"
             type="video/mp4"
         />
-        </video>
-      </div>
+        </VideoFrame>
+      </VideoContainer>
 
       <WelcomeContainer>
         <WelcomeTo>WELCOME TO</WelcomeTo>
@@ -46,6 +46,44 @@ const HomeHeader = ({toggleContactBtn}) => {
     </>)
     ;
 };
+
+const VideoContainer = styled.div`
+  width: 100vw;
+  height: calc(100vh - 46px);
+  overflow: hidden;
+
+  position: absolute;
+
+  @media (max-aspect-ratio: 16/9) and (max-width: 945px) {
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+
+    height: 50vh;
+  }
+`;
+
+const VideoFrame = styled.video`
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @media (max-aspect-ratio: 16/9) and (max-width: 945px) {
+      height: 100%;
+      width: auto;
+  }
+  @media (max-aspect-ratio: 16/9) and (max-width: 945px) {
+      width: auto;
+      height: 100%;
+  }
+  @media (min-aspect-ratio: 16/9) {
+      width: 100vw;
+      height: 56.25vw;
+    }
+  }
+`;
 
 const WelcomeContainer = styled.div`
   color: #FFF;
@@ -116,8 +154,8 @@ width: 100vw;
 @media screen and (max-width: 945px) {
   font-weight: 100;
   font-size: 3.5vw;
+  bottom: calc(3vh + 40px);
 
-  margin-top: 8vw;
 }
 `;
 
@@ -129,7 +167,7 @@ text-align: center;
 width: 100vw;
 
 @media screen and (max-width: 945px) {
-
+  top: 40vh;
 }
 `;
 const ButtonCTA = styled.button`
@@ -145,7 +183,9 @@ const ButtonCTA = styled.button`
     transition: all .3s ease-in-out;
   }
 @media screen and (max-width: 945px) {
-
+  font-size: 3vw!important;
+  padding: 1vh auto;
+  bottom: off;
 }
   `;
 
