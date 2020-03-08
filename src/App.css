@@ -220,15 +220,10 @@ grid-template-areas:
   margin-top: 30px;
 }
 @media screen and (max-width: 945px) {
-  .grid-nav {
-    /* grid-area: nav;
-    background-color: transparent;
-    position: absolute;
-    z-index: 10;
-    color: #FFF;
-    width: 100vw; */
+  /* .grid-nav {
+
     margin-top: 0;
-  }
+  } */
   .home-hamburger {
     float: right;
     margin-right: 20px;
@@ -264,11 +259,8 @@ grid-template-areas:
 }
 
 .home-header > .welcomeText {
-  /* font-size: 28px;
-  line-height: 48px;
-  letter-spacing: 3px; */
+
   font-size: 2.5vw;
-  /* line-height: 4vw; */
   letter-spacing: .5vw;
   font-weight: bold;
   color: #A0CD4D;
@@ -289,7 +281,7 @@ grid-template-areas:
 .home-header > .statementText {
   font-weight: 100;
   font-size: 2vw;
-  /* line-height: 4vw; */
+
   margin-top: calc(44vh - 4vw);
   text-shadow: 2px 2px 10px #000;
 }
@@ -327,7 +319,7 @@ grid-template-areas:
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
   font-size: 6vw;
-  /* line-height: 10vw; */
+
   text-align: center;
   letter-spacing: .3vw;
   color: #FFF;
@@ -347,7 +339,6 @@ grid-template-areas:
   font-style: normal;
   font-weight: 300;
   font-size: 1.6vw;
-  /* line-height: 3vw; */
   width: 80vw;
   margin: 3vw 10vw 6vw;
   text-align: center;

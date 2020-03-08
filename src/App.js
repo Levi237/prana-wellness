@@ -241,6 +241,10 @@ const NavGrid = styled.div`
   color: #FFF;
   width: 100vw;
   margin-top: 20px;
+  @media screen and (max-width: 945px) {
+
+      margin-top: 0;
+    }
 `;
 const MainGrid = styled.div`
   grid-area: main;
