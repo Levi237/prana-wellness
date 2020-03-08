@@ -19,6 +19,7 @@ const LogoBox = styled.div`
   img {
     margin: 0;
     width: 100%;
+    
   }
 
   @media screen and (max-width: 945px) {
@@ -30,7 +31,9 @@ const LogoBox = styled.div`
     text-align: center;
     
     img {
-      width: 33vw;  
+
+      margin-left: 5vw;
+      width: 20vw; 
     }
 
   }

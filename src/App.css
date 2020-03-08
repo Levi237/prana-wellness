@@ -192,7 +192,8 @@ grid-template-areas:
 
 
 
-.home-hamburger, .global-hamburger {
+/* .home-hamburger,  */
+.global-hamburger {
   float: right;
   margin: 90px 10vw 0 0;
 }
@@ -201,7 +202,7 @@ grid-template-areas:
   width: 35px;
   height: 4px;
 }
-.home-hamburger > section { background-color: #FFF; }
+/* .home-hamburger > section { background-color: #FFF; } */
 .global-hamburger > section { background-color: #965BA5; }
 
 .header-logo > div {
@@ -222,7 +223,8 @@ grid-template-areas:
   margin-top: -10px;
   margin-left: 5px;
 }
-.home-logo, .header-logo {
+/* .home-logo,  */
+.header-logo {
   float: left;
   margin-left: 10vw;
   margin-top: 30px;
@@ -232,23 +234,21 @@ grid-template-areas:
 
     margin-top: 0;
   } */
-  .home-hamburger {
-    float: right;
-    margin-right: 20px;
-    margin-top: 20px;
-  }
-  .home-logo, .header-logo {
+
+  /* .home-logo,  */
+  .header-logo {
     margin-left: 0;
     margin-top: 12px;
   }
   
-  .home-hamburger, .global-hamburger {
+  /* .home-hamburger,  */
+  .global-hamburger {
     margin: 25px 5vw 0 0;
   }
-  .grid-nav .logo-box img {
+  /* .grid-nav .logo-box img {
     margin-left: 5vw;
     width: 20vw;
-  }
+  } */
   .active {
     max-width: 100vw;
     

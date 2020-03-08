@@ -118,7 +118,7 @@ export default class App extends Component {
         <Nav toggleHamburger={this.toggleHamburger}/>
 
         <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
-        
+
         <ContactRequest 
           toggleContactBtn={this.toggleContactBtn} 
           services={this.state.otherServices} 
@@ -260,6 +260,8 @@ const NavGrid = styled.div`
   width: 100vw;
   margin-top: 20px;
   @media screen and (max-width: 945px) {
+    margin-left: 5vw;
+    width: 20vw;
 
       margin-top: 0;
     }
