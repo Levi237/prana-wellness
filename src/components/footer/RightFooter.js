@@ -9,35 +9,35 @@ const RightFooter = () => {
     </>);
 };
 
-export default RightFooter;
-
 const Logo = styled.div`
     margin-left: 3vw;
   
-img {
-    position: relative;
-    width: 250px
-  }
-section {
-    text-transform: uppercase;
-    color: #FFF;
-    text-align: center; 
-    position: relative;
-  }
+    img {
+        position: relative;
+        width: 250px
+    }
+    section {
+        text-transform: uppercase;
+        color: #FFF;
+        text-align: center; 
+        position: relative;
+    }
 
   @media screen and (max-width: 945px) {
-
     margin: 0 auto;
     text-align: center;
- img {
-    width: auto;
-    height: 80px;
-    margin-bottom: -20px;
-  }
-section {
-    width: 100vw;
-    text-align: center;
-    font-size: 12px;
-  }
+
+    img {
+        width: auto;
+        height: 80px;
+        margin-bottom: -20px;
+    }
+    section {
+        width: 100vw;
+        text-align: center;
+        font-size: 12px;
+    }
 }
-  `;
+`;
+
+export default RightFooter;

@@ -11,20 +11,17 @@ import styled from 'styled-components';
     </>);
 };
 
-export default LeftFooter;
-
 const LogoBox = styled.div`
   width: 150px;
   text-align: center;
   color: #FFF;
-  
+
   img {
     margin: 0;
     width: 100%;
   }
 
   @media screen and (max-width: 945px) {
-
     padding-left: .5vw;
     font-size: 3.5vw;
     margin-top: -6px;
@@ -60,3 +57,5 @@ const Wellness = styled.section`
     margin-top: -6px;
   }
 `;
+
+export default LeftFooter;
