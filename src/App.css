@@ -442,7 +442,7 @@ grid-template-areas:
   padding-bottom: 108px;
   text-align: center; */
 
-.home-main-top {
+/* .home-main-top {
   font-family: 'Merriweather', sans-serif;
   position: relative;
   margin: auto;
@@ -456,11 +456,11 @@ grid-template-areas:
   font-weight: bold;
   font-size: 1.6vw;
   text-align: center;
-}
+} */
 
-.home-main-header {
+/* .home-main-header {
   margin: 128px auto 50px auto; 
-}
+} */
 .services-main-header {
   margin: 50px auto; 
 }
@@ -474,7 +474,7 @@ grid-template-areas:
     font-size: 2vw;
     background: rgba(150, 91, 165, .6);
   }
-  .home-main-header {
+  /* .home-main-header {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -482,7 +482,7 @@ grid-template-areas:
     text-transform: uppercase;
     margin: 60px auto 50px auto;
     color: #965ba5;
-  }
+  } */
 }
 /************************************************************************************************************/
 /***************************************         .grid-footer         ***************************************/

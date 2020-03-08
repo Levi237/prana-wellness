@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import { NavLink }      from 'react-router-dom';
+import styled               from 'styled-components';
+import { NavLink }          from 'react-router-dom';
 
-import * as routes      from '../../constants/routes';
+import * as routes          from '../../constants/routes';
 
-import LotusDisplay     from './LotusDisplay';
-import HomeStephanie    from './HomeStephanie';
-import LogoDisplay      from '../LogoDisplay';
-import ServiceDisplay   from '../services/ServiceDisplay';
+import LotusDisplay         from './LotusDisplay';
+import HomeStephanie        from './HomeStephanie';
+
+import LogoDisplay          from '../LogoDisplay';
+import ServiceDisplay       from '../services/ServiceDisplay';
 
 const fourSquareStyle = {
     transform: 'scale(.75)',
@@ -93,25 +95,71 @@ export default class HomeMain extends Component {
     };
 
     render(){
+        const { points, clients, features} = this.state
 
-        return(<div className="home-container">
-            <div className="home-main-top"><br />
-                “Prana is Sanskrit for breath, considered as a life-giving force. <br/>
-                Prana is seen as a universal energy, which flows in currents in and around the body.”
-            </div>
-            <h1 className="home-main-header">WELLNESS SERVICES</h1>
-            <ServiceDisplay services={this.state.points} transformStyle={fourSquareStyle}/>
-            <NavLink to={routes.SERV}><button className="white mobile-fill">browse services</button></NavLink>
-            <br /><br /><br/><br/><br/>
-            <h1>Our Clients</h1>
-            <LogoDisplay logos={this.state.clients} clients={this.state.clients}/>
-            <br /><br /><br/>
-            <LotusDisplay />
-            <HomeStephanie />
-            <br /><br /><br/>            
-            <br /><br /><br/>
-            <h1>As featured In</h1>
-            <LogoDisplay logos={this.state.features}/>
-        </div>);
+        return(
+            <HomeContainer>
+                <Quote>
+                    <Center>
+                        “Prana is Sanskrit for breath, considered as a life-giving force.
+                            <br/>
+                        Prana is seen as a universal energy, which flows in currents in and around the body.”
+                    </Center>
+                </Quote>
+                <Header className="home-main-header">WELLNESS SERVICES</Header>
+                <ServiceDisplay services={points} transformStyle={fourSquareStyle}/>
+                <NavLink to={routes.SERV}><button className="white mobile-fill">browse services</button></NavLink>
+            
+                <h1>Our Clients</h1>
+                <LogoDisplay logos={clients} clients={clients}/>         
+                <LotusDisplay />
+                <HomeStephanie />          
+                <h1>As featured In</h1>
+                <LogoDisplay logos={features}/>
+            </HomeContainer>
+        );
     };
 };
+
+const Break = styled.br`
+    @media (max-width: 945px){
+        display: none
+    }
+`;
+const HomeContainer = styled.div`
+
+`;
+const Quote = styled.div`
+    font-family: 'Merriweather', sans-serif;
+    position: relative;
+    margin: -6vw auto;
+    width: 90vw;
+    height: 12vw;
+    background: #965BA5;
+    color: #FFF;
+    font-style: italic;
+    font-size: 1.6vw;
+    text-align: center;
+    display: flex;
+`;
+
+const Header = styled.h1`
+margin: 128px auto 50px auto; 
+    @media screen and (max-width: 945px) {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      text-align: center;
+      text-transform: uppercase;
+      margin: 60px auto 50px auto;
+      color: #965ba5;
+    }
+`;
+const Center = styled.span`
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+`;

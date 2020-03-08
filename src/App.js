@@ -215,8 +215,8 @@ export default class App extends Component {
 const GridContainer = styled.div`
   display: grid;
   width: 100vw;
-  min-height: 100vh;
-  grid-template-rows: 46px 0 100vh auto 256px;
+  min-height: 100%;
+  grid-template-rows: 46px 0 calc(100vh - 46px) auto 256px;
   grid-template-columns: 200px calc(100vw - 540px) 340px;
   background-color: #fff;
   grid-gap: 0;

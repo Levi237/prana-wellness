@@ -39,7 +39,7 @@ button {
   font-weight: normal;
   font-size: 14px;
 
-  line-height: 17px;
+  line-height: auto;
   letter-spacing: 2px;
 
   text-align: center;
