@@ -4,7 +4,7 @@
 /***************************************          STYLING          ***************************************/
 /***************************************                           ***************************************/
 /*********************************************************************************************************/
-.pranaText, .wellnessText {
+/* .pranaText, .wellnessText {
   text-align: center;
   color: #FFF;
 }
@@ -16,7 +16,7 @@
   font-family: 'Merriweather', sans-serif;
   font-style: italic;
   text-transform: lowercase;
-}
+} */
 
 /*********************************************************************************************************/
 /***************************************                           ***************************************/
@@ -109,7 +109,7 @@ grid-template-areas:
 /*********************************************************************************************************/
 /***************************************         .grid-nav         ***************************************/
 /*********************************************************************************************************/
-.grid-nav {
+/* .grid-nav {
   grid-area: nav;
   background-color: transparent;
   position: absolute;
@@ -117,7 +117,7 @@ grid-template-areas:
   color: #FFF;
   width: 100vw;
   margin-top: 20px;
-}
+} */
 .nav-active {
   color:#965BA5 !important;
 }
@@ -518,7 +518,7 @@ grid-template-areas:
   background-color: #965BA5;
   padding-top: 2vw;
 } */
-.travel-slay-logo {
+/* .travel-slay-logo {
   margin-left: 3vw;
 }
 .travel-slay-logo img {
@@ -530,16 +530,16 @@ grid-template-areas:
   color: #FFF;
   text-align: center; 
   position: relative;
-}
+} */
 
-.logo-box {
+/* .logo-box {
   width: 150px;
 }
 .logo-box img {
   margin: 0;
   width: 100%;
-}
-.logo-box .pranaText {
+} */
+/* .logo-box .pranaText {
   font-size: 26px;
   letter-spacing: 11px;
   margin-top: -10px 0 0 11px;
@@ -547,7 +547,7 @@ grid-template-areas:
 .logo-box .wellnessText {
   font-size: 14px;
   margin-top: -6px;
-}
+} */
 @media screen and (max-width: 945px) {
   /* .grid-footer-left {
     text-align: center;
@@ -574,7 +574,7 @@ grid-template-areas:
   } */
 
 
-  .travel-slay-logo {
+  /* .travel-slay-logo {
     margin: 0 auto;
     text-align: center;
   }
@@ -587,8 +587,8 @@ grid-template-areas:
     width: 100vw;
     text-align: center;
     font-size: 12px;
-  }
-  
+  } */
+/*   
   .logo-box {
     width: auto;
     height: auto;
@@ -596,14 +596,16 @@ grid-template-areas:
   }
   .logo-box img {
     width: 33vw;
-  }
-  .logo-box .pranaText {
+  } */
+  /* .logo-box  */
+  /* .pranaText {
     font-size: 5vw;
     margin-top: -2vw;
     padding-left: .5vw;
-  }
-  .logo-box .wellnessText {
+  } */
+  /* .logo-box  */
+  /* .wellnessText {
     font-size: 3.5vw;
     margin-top: -6px;
-  }
+  } */
 }

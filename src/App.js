@@ -8,7 +8,7 @@ import Nav              from './components/Nav';
 
 import Enter            from './components/admin/Enter';
 import AdminPortal      from './components/admin/AdminPortal';
-import EmailerRequest   from './components/admin/EmailerRequest';
+
 import ReferralRequest  from './components/admin/ReferralRequest';
 import ContactRequest   from './components/admin/ContactRequest';
 
@@ -23,6 +23,10 @@ import IndividualHeader from './components/individual/IndividualHeader';
 import IndividualMain   from './components/individual/IndividualMain';
 import ServicesHeader   from './components/services/ServicesHeader';
 import ServicesMain     from './components/services/ServicesMain';
+
+import RightFooter      from './components/footer/RightFooter';
+import MidFooter        from './components/footer/MidFooter';
+import LeftFooter       from './components/footer/LeftFooter';
 
 import './App.css';
 
@@ -168,23 +172,15 @@ export default class App extends Component {
         </ContactGrid>
 
         <LeftFooterGrid className="grid-footer-left">
-          <div className="logo-box">
-            <img src="../icon_white.png" alt="icon-white" />
-            <section className="pranaText" >PRANA</section>
-            <section className="wellnessText">wellness</section>
-          </div>
+              <LeftFooter/>
         </LeftFooterGrid>
 
         <MidFooterGrid className="grid-footer-mid">
-        <section>sign up for our WELLNESS NEWSLETTER </section>
-        <EmailerRequest />
+<MidFooter/>
         </MidFooterGrid>
 
         <RightFooterGrid className="grid-footer-right">
-          <div className="travel-slay-logo">
-            <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer"><img src="../travel_slay_white.png" alt="Travel Slay"/></a>
-            <section>explore fitness and travel</section>
-          </div>
+              <RightFooter/>
         </RightFooterGrid>
         
       </GridContainer>
