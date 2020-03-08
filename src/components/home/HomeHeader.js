@@ -1,12 +1,8 @@
 import React from 'react';
+import styled from 'styled-components';
 
 
 const HomeHeader = ({toggleContactBtn}) => {
-
-  window.addEventListener('resize', () => {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  });
   
   return(
     <>
@@ -31,15 +27,62 @@ const HomeHeader = ({toggleContactBtn}) => {
       </div>
 
       <div className="home-header">
-        <section className="welcomeText">WELCOME TO</section>
-        <section className="pranaText">PRANA</section>
-        <section className="wellnessText">wellness</section>
-        <section className="statementText">Wellness designed to work for you.</section>
-        <button name="contactForm" className="ctaBtn mobile-fill" onClick={(e) => {toggleContactBtn(e)}}>Bring Prana to Your Workplace</button>
+        <WelcomeTo className="welcomeText">WELCOME TO</WelcomeTo>
+        <Prana className="pranaText">PRANA</Prana>
+        <Wellness className="wellnessText">wellness</Wellness>
+        <Statement className="statementText">Wellness designed to work for you.</Statement>
+        <ButtonCTA name="contactForm" className="ctaBtn mobile-fill" onClick={(e) => {toggleContactBtn(e)}}>Bring Prana to Your Workplace</ButtonCTA>
       </div>
       
     </>)
     ;
 };
+
+const WelcomeTo = styled.section`
+  font-size: 2.5vw;
+  font-weight: bold;
+  letter-spacing: .5vw;
+
+  text-transform: uppercase;
+  color: #A0CD4D;
+
+  margin-top: 60px;
+  margin-bottom: calc(18vh - 2.5vw - 60px);
+`;
+const Prana = styled.section`
+  font-size: 10vw;
+  font-weight: 100;
+  letter-spacing: 2.5vw;
+
+  margin-top: calc(8vh - 10vw);
+`;
+const Wellness = styled.section`
+  font-family: 'Merriweather',sans-serif;
+  font-size: 5vw;
+  
+  margin-top: calc(2vh - 5vw);
+`;
+const Statement = styled.section`
+  font-weight: 100;
+  font-size: 2vw;
+  text-shadow: 2px 2px 10px #000;
+
+  margin-top: calc(44vh - 4vw);
+`;
+const ButtonCTA = styled.button`
+  font-size: 1.33vw;
+
+  color: #FFF;
+  background-color: #A0CD4D !important;
+  border-color: #669F35;
+  transition: all .3s ease-in-out;
+
+  margin-top: calc(2vh - 1.33vw);
+
+  :hover {
+    background-color: #669F35 !important;
+    transition: all .3s ease-in-out;
+  }
+`;
 
 export default HomeHeader;

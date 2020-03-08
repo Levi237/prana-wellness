@@ -37,7 +37,12 @@ import './App.css';
 
 
 import firebase from 'firebase/app'
+// check to see if this helps contain the video?
 
+window.addEventListener('resize', () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
 export default class App extends Component {
   state = {
     user: null,
@@ -110,6 +115,7 @@ export default class App extends Component {
     referralForm.classList.toggle('active');
     referralForm.classList.toggle('inactive');
   };
+  
   render(){
     const { user } = this.state
     return(
@@ -224,7 +230,6 @@ grid-template-areas:
   grid-gap: 0;
 
 @media screen and (max-width: 945px) {
-  .grid-container {
     grid-template-rows: 18vw 40vw auto 40vw 120px calc(3vw + 26px)  120px;
     grid-template-columns: 100vw;
   grid-template-areas:

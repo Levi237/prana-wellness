@@ -251,7 +251,6 @@ grid-template-areas:
   } */
   .active {
     max-width: 100vw;
-    
   }
 }
 /************************************************************************************************************/
@@ -262,12 +261,11 @@ grid-template-areas:
 } */
 
 
-.welcomeText, .pranaText, .statementText {
+/* .welcomeText, .pranaText, .statementText {
   
-}
+} */
 
-.home-header > .welcomeText {
-
+/* .home-header > .welcomeText {
   font-size: 2.5vw;
   letter-spacing: .5vw;
   font-weight: bold;
@@ -275,25 +273,25 @@ grid-template-areas:
   margin-top: 50px;
   text-transform: uppercase;
   margin-bottom: calc(8vh - 7vw - 50px);
-}
-.home-header > .pranaText {
+} */
+/* .home-header > .pranaText {
   font-size: 10vw;
   letter-spacing: 2.5vw;
   font-weight: 100;
   margin-top: calc(8vh - 2.5vw);
-}
-.home-header > .wellnessText {
+} */
+/* .home-header > .wellnessText {
   font-size: 5vw;
   margin-top: calc(2vh - 5vw);
-}
-.home-header > .statementText {
+} */
+/* .home-header > .statementText {
   font-weight: 100;
   font-size: 2vw;
 
   margin-top: calc(44vh - 4vw);
   text-shadow: 2px 2px 10px #000;
-}
-.ctaBtn {
+} */
+/* .ctaBtn {
   background-color: #A0CD4D !important;
   border-color: #669F35;
   color: #FFF;
@@ -304,7 +302,7 @@ grid-template-areas:
 .ctaBtn:hover {
   background-color: #669F35 !important;
   transition: all .3s ease-in-out;
-}
+} */
 .header-image {
   width: 80vw;
   margin: 0 10vw;
@@ -446,17 +444,17 @@ grid-template-areas:
 
 .home-main-top {
   font-family: 'Merriweather', sans-serif;
-  position: absolute;
+  position: relative;
+  margin: auto;
+  top: calc(-6vw - 46px);
   width: 90vw;
   height: 12vw;
-  margin: calc(-14vh - 6vw) 5vw;
   background: #965BA5;
   color: #FFF;
   font-family: Merriweather;
   font-style: italic;
   font-weight: bold;
   font-size: 1.6vw;
-  /* line-height: 3vw; */
   text-align: center;
 }
 
