@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route }    from 'react-router-dom';
-// import * as admin from 'firebase-admin';
-// import { Switch, Route, Redirect }  from 'react-router-dom';
+import { styled }           from 'styled-components'
 
 import * as routes      from './constants/routes';
 import GlobalNav        from './components/GlobalNav';
@@ -106,7 +105,7 @@ export default class App extends Component {
   render(){
     const { user } = this.state
     return(
-      <div className="grid-container">
+      <GridContainer className="grid-container">
       <Nav toggleHamburger={this.toggleHamburger}/>
       <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
       <ContactRequest toggleContactBtn={this.toggleContactBtn} services={this.state.otherServices} />
@@ -188,7 +187,11 @@ export default class App extends Component {
           </div>
         </div>
         
-      </div>
+      </GridContainer>
     );
   };
 };
+
+const GridContainer = styled.div`
+
+`;
