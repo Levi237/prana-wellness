@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Switch, Route }    from 'react-router-dom';
-import { styled }           from 'styled-components'
+import styled               from 'styled-components';
 
 import * as routes      from './constants/routes';
 import GlobalNav        from './components/GlobalNav';
@@ -109,7 +109,7 @@ export default class App extends Component {
       <Nav toggleHamburger={this.toggleHamburger}/>
       <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
       <ContactRequest toggleContactBtn={this.toggleContactBtn} services={this.state.otherServices} />
-        <div className="grid-nav">
+        <NavGrid className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
                       <HomeNav toggleHamburger={this.toggleHamburger}/> }/>          
@@ -118,9 +118,9 @@ export default class App extends Component {
             <Route path={routes.ROOT} render={() => 
                       <GlobalNav user={user} logout={this.logout} toggleHamburger={this.toggleHamburger}/> }/>    
           </Switch>
-        </div>
+        </NavGrid>
 
-        <div className="grid-header">
+        <GridHeader className="grid-header">
           <Switch>         
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>
@@ -137,9 +137,9 @@ export default class App extends Component {
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
           </Switch>
-        </div>
+        </GridHeader>
 
-        <div className="grid-main">
+        <MainGrid className="grid-main">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
                       <HomeMain /> }/>
@@ -157,35 +157,35 @@ export default class App extends Component {
                       <HomeMain /> }/>
           </Switch>
           
-        </div>
+        </MainGrid>
 
-        <div className="grid-contact">
+        <ContactGrid className="grid-contact">
           <div>
             <a href="https://www.instagram.com/pranawellness_life/" target="_blank" rel="noopener noreferrer" alt="instagram link pranawellness.life"><img src="../instagram-icon.png" alt="IG"/></a>
             {user ? <section>Welcome Stephanie!</section>: <section>info@pranawellness.life</section> }
             
           </div>
-        </div>
+        </ContactGrid>
 
-        <div className="grid-footer-left">
+        <LeftFooterGrid className="grid-footer-left">
           <div className="logo-box">
             <img src="../icon_white.png" alt="icon-white" />
             <section className="pranaText" >PRANA</section>
             <section className="wellnessText">wellness</section>
           </div>
-        </div>
+        </LeftFooterGrid>
 
-        <div className="grid-footer-mid">
+        <MidFooterGrid className="grid-footer-mid">
         <section>sign up for our WELLNESS NEWSLETTER </section>
         <EmailerRequest />
-        </div>
+        </MidFooterGrid>
 
-        <div className="grid-footer-right">
+        <RightFooterGrid className="grid-footer-right">
           <div className="travel-slay-logo">
             <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer"><img src="../travel_slay_white.png" alt="Travel Slay"/></a>
             <section>explore fitness and travel</section>
           </div>
-        </div>
+        </RightFooterGrid>
         
       </GridContainer>
     );
@@ -193,5 +193,122 @@ export default class App extends Component {
 };
 
 const GridContainer = styled.div`
+  display: grid;
+  width: 100vw;
+  min-height: 100vh;
+  grid-template-rows: 46px 0 100vh auto 256px;
+  grid-template-columns: 200px calc(100vw - 540px) 340px;
+  background-color: #fff;
+  grid-gap: 0;
+  margin: 0;
+grid-template-areas:
+  ' contact contact contact '
+  ' nav nav nav '
+  ' header header header '
+  ' main main main '
+  ' footer-left footer-mid footer-right ';
+  grid-gap: 0;
 
+@media screen and (max-width: 945px) {
+  .grid-container {
+    grid-template-rows: 18vw 40vw auto 40vw 120px calc(3vw + 26px)  120px;
+    grid-template-columns: 100vw;
+  grid-template-areas:
+    ' nav '
+    ' header '
+    ' main '
+    ' footer-left '
+    ' footer-mid '
+    ' contact '
+    ' footer-right ';
+  }
+`;
+
+const GridHeader = styled.div`
+  grid-area: header;
+  text-align: center;
+
+  @media screen and (max-width: 945px) {
+      margin-bottom: 0;
+      margin-top: 0;
+      text-align: center;
+      height: 44vw;
+      overflow: hidden;
+    }
+`;
+
+const NavGrid = styled.div`
+  grid-area: nav;
+  background-color: transparent;
+  position: absolute;
+  z-index: 10;
+  color: #FFF;
+  width: 100vw;
+  margin-top: 20px;
+`;
+const MainGrid = styled.div`
+  grid-area: main;
+  background-color: #FFF;
+  padding-bottom: 108px;
+  text-align: center;
+`;
+
+const ContactGrid = styled.div`
+  grid-area: contact;
+  background-color: #965BA5;
+  position: relative;
+`;
+
+const FooterGrid = styled.div`
+background-color: #965BA5;
+padding-top: 2vw;
+`;
+
+const LeftFooterGrid = styled(FooterGrid)`
+grid-area: footer-left;
+div {
+  margin-left: 50px;
+}
+@media screen and (max-width: 945px) {
+
+    text-align: center;
+div {
+    margin-left: auto;
+    margin-right: auto;
+  }
+`;
+
+const MidFooterGrid = styled(FooterGrid)`
+grid-area: footer-mid;
+text-align: center;
+section {
+  margin: 3vw auto 1vw auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2vw;
+  letter-spacing: .3vw;
+  text-transform: uppercase;
+  color: #A0CD4D;
+  text-align: right;
+}
+@media screen and (max-width: 945px) {
+  section {
+    margin: 3vw auto 1vw auto;
+    font-weight: bold;
+    font-size: 2.8vw;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  input {
+    width: 90vw;
+    height: 10vw;
+    font-size: 5vw;
+  }
+}
+`;
+
+const RightFooterGrid = styled(FooterGrid)`
+grid-area: footer-right;
+@media screen and (max-width: 945px) {
+}
 `;

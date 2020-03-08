@@ -24,7 +24,7 @@
 /***************************************         CONTAINER         ***************************************/
 /***************************************                           ***************************************/
 /*********************************************************************************************************/
-.grid-container {
+/* .grid-container {
   display: grid;
   width: 100vw;
   min-height: 100vh;
@@ -55,15 +55,15 @@ grid-template-areas:
     ' contact '
     ' footer-right ';
   }
-}
+} */
 /*************************************************************************************************************/
 /***************************************         .grid-contact         ***************************************/
 /*************************************************************************************************************/
-.grid-contact {
+/* .grid-contact {
   grid-area: contact;
   background-color: #965BA5;
   position: relative;
-}
+} */
 .grid-contact > div {
   position: relative;
   width: 380px;
@@ -254,13 +254,13 @@ grid-template-areas:
 /************************************************************************************************************/
 /***************************************         .grid-header         ***************************************/
 /************************************************************************************************************/
-.grid-header {
+/* .grid-header {
   grid-area: header;
-}
+} */
 
 
 .welcomeText, .pranaText, .statementText {
-  text-align: center;
+  
 }
 
 .home-header > .welcomeText {
@@ -377,10 +377,10 @@ grid-template-areas:
 }
 
 @media screen and (max-width: 945px) {
-  .grid-header {
+  /* .grid-header {
     margin-bottom: 0;
     margin-top: 0;
-  }
+  } */
 
   .home-header > .welcomeText {
     font-size: 5vw;
@@ -410,7 +410,8 @@ grid-template-areas:
   .header-content-container > section:last-of-type {
     font-size: 9vw;
   }
-  .grid-header, .header-container {
+  /* .grid-header,  */
+  .header-container {
     height: 44vw;
     text-align: center;
     overflow: hidden;
@@ -439,12 +440,10 @@ grid-template-areas:
 /**********************************************************************************************************/
 /***************************************         .grid-main         ***************************************/
 /**********************************************************************************************************/
-.grid-main {
-  grid-area: main;
+/*   grid-area: main;
   background-color: #FFF;
   padding-bottom: 108px;
-  text-align: center;
-}
+  text-align: center; */
 
 .home-main-top {
   font-family: 'Merriweather', sans-serif;
@@ -477,13 +476,11 @@ grid-template-areas:
     position: relative;
     font-size: 2vw;
     background: rgba(150, 91, 165, .6);
-    /* line-height: 4.6vw; */
   }
   .home-main-header {
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
-    /* line-height: 30px; */
     text-align: center;
     text-transform: uppercase;
     margin: 60px auto 50px auto;
@@ -493,35 +490,34 @@ grid-template-areas:
 /************************************************************************************************************/
 /***************************************         .grid-footer         ***************************************/
 /************************************************************************************************************/
-.grid-footer-left {
+/* .grid-footer-left {
   grid-area: footer-left;
-}
-.grid-footer-left div {
+} */
+/* .grid-footer-left div {
   margin-left: 50px;
-}
-.grid-footer-mid {
+} */
+/* .grid-footer-mid {
   grid-area: footer-mid;
   text-align: center;
-}
-.grid-footer-mid > section {
+} */
+/* .grid-footer-mid > section {
   margin: 3vw auto 1vw auto;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2vw;
-  /* line-height: 2vw; */
   letter-spacing: .3vw;
   text-transform: uppercase;
   color: #A0CD4D;
   text-align: right;
-}
+} */
 
-.grid-footer-right {
+/* .grid-footer-right {
   grid-area: footer-right;
 }
 .grid-footer-left, .grid-footer-mid, .grid-footer-right {
   background-color: #965BA5;
   padding-top: 2vw;
-}
+} */
 .travel-slay-logo {
   margin-left: 3vw;
 }
@@ -553,30 +549,29 @@ grid-template-areas:
   margin-top: -6px;
 }
 @media screen and (max-width: 945px) {
-  .grid-footer-left {
+  /* .grid-footer-left {
     text-align: center;
   }
   .grid-footer-left div {
     margin-left: auto;
     margin-right: auto;
-  }
-  .grid-footer-mid > section {
+  } */
+  /* .grid-footer-mid > section {
     margin: 3vw auto 1vw auto;
     font-weight: bold;
     font-size: 2.8vw;
-    /* line-height: 24px; */
+
     letter-spacing: 3px;
     text-align: center;
   }
   .grid-footer-mid {
     text-align: center;
-  }
-  .grid-footer-mid > input {
+  } */
+  /* .grid-footer-mid > input {
     width: 90vw;
     height: 10vw;
     font-size: 5vw;
-    /* line-height: 29px; */
-  }
+  } */
 
 
   .travel-slay-logo {
