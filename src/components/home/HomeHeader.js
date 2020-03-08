@@ -58,7 +58,7 @@ const WelcomeContainer = styled.div`
   overflow: hidden;
   @media screen and (max-width: 945px) {
       margin-top: -20vw;
-      height: 90vw;
+      // height: 90vw;
       padding-top: 20vw;
       position: absolute;
       width: 100vw;

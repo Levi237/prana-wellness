@@ -266,7 +266,7 @@ const NavGrid = styled.div`
   margin-top: 20px;
   @media screen and (max-width: 945px) {
     margin-left: 5vw;
-    width: 20vw;
+    width: 90vw;
 
       margin-top: 0;
     }

@@ -379,7 +379,7 @@ grid-template-areas:
     margin-top: 0;
   } */
 
-  .home-header > .welcomeText {
+  /* .home-header > .welcomeText {
     font-size: 5vw;
     margin: 3vw;
   }
@@ -393,9 +393,9 @@ grid-template-areas:
   .home-header > .statementText {
     font-weight: 100;
     font-size: 3.5vw;
-    /* line-height: calc(3.5vw + 5px); */
+
     margin-top: 8vw;
-  }
+  } */
 
   .header-content-container {
       width: 100vw;
