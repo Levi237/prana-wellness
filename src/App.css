@@ -64,19 +64,19 @@ grid-template-areas:
   background-color: #965BA5;
   position: relative;
 } */
-.grid-contact > div {
+/* .grid-contact > div {
   position: relative;
   width: 380px;
   margin-left: calc(90vw - 380px);
-}
-.grid-contact > div > a > img {
+} */
+/* .grid-contact > div > a > img {
   height: 22px;
   width: 22px;
   position: absolute;
   left: 0;
   top: 12px;
-}
-.grid-contact > div > section {
+} */
+/* .grid-contact > div > section {
   position: absolute;
   right: 0;
   top: 12px;
@@ -86,8 +86,8 @@ grid-template-areas:
   font-size: 18px;
   text-transform: uppercase;
   color: #FFFFFF;
-}
-@media screen and (max-width: 945px){
+} */
+/* @media screen and (max-width: 945px){
   .grid-contact > div {
     position: relative;
     width: 300px;
@@ -105,7 +105,7 @@ grid-template-areas:
     width: auto;
     font-size: 16px;
   }
-}
+} */
 /*********************************************************************************************************/
 /***************************************         .grid-nav         ***************************************/
 /*********************************************************************************************************/

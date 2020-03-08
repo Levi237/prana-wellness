@@ -28,6 +28,8 @@ import RightFooter      from './components/footer/RightFooter';
 import MidFooter        from './components/footer/MidFooter';
 import LeftFooter       from './components/footer/LeftFooter';
 
+import ContactBox       from './components/contact/ContactBox'; 
+
 import './App.css';
 
 
@@ -164,11 +166,11 @@ export default class App extends Component {
         </MainGrid>
 
         <ContactGrid className="grid-contact">
-          <div>
+          <ContactBox>
             <a href="https://www.instagram.com/pranawellness_life/" target="_blank" rel="noopener noreferrer" alt="instagram link pranawellness.life"><img src="../instagram-icon.png" alt="IG"/></a>
             {user ? <section>Welcome Stephanie!</section>: <section>info@pranawellness.life</section> }
             
-          </div>
+          </ContactBox>
         </ContactGrid>
 
         <LeftFooterGrid className="grid-footer-left">
