@@ -8,19 +8,22 @@ import Nav              from './components/Nav';
 
 import Enter            from './components/admin/Enter';
 import AdminPortal      from './components/admin/AdminPortal';
-
 import ReferralRequest  from './components/admin/ReferralRequest';
 import ContactRequest   from './components/admin/ContactRequest';
 
 import HomeNav          from './components/home/HomeNav';
 import HomeHeader       from './components/home/HomeHeader';
 import HomeMain         from './components/home/HomeMain';
+
 import AboutHeader      from './components/about/AboutHeader';
 import AboutMain        from './components/about/AboutMain';
+
 import CorporateHeader  from './components/corporate/CorporateHeader';
 import CorporateMain    from './components/corporate/CorporateMain';
+
 import IndividualHeader from './components/individual/IndividualHeader';
 import IndividualMain   from './components/individual/IndividualMain';
+
 import ServicesHeader   from './components/services/ServicesHeader';
 import ServicesMain     from './components/services/ServicesMain';
 
@@ -76,7 +79,6 @@ export default class App extends Component {
     this.authListener();
   };
 
-
   authListener(){
     firebase.auth().onAuthStateChanged((user) => {
       if(user){
@@ -112,9 +114,16 @@ export default class App extends Component {
     const { user } = this.state
     return(
       <GridContainer className="grid-container">
-      <Nav toggleHamburger={this.toggleHamburger}/>
-      <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
-      <ContactRequest toggleContactBtn={this.toggleContactBtn} services={this.state.otherServices} />
+
+        <Nav toggleHamburger={this.toggleHamburger}/>
+
+        <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
+        
+        <ContactRequest 
+          toggleContactBtn={this.toggleContactBtn} 
+          services={this.state.otherServices} 
+        />
+        
         <NavGrid className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
@@ -122,7 +131,12 @@ export default class App extends Component {
             <Route path={routes.ROOT} exact render={() => 
                       <HomeNav toggleHamburger={this.toggleHamburger}/> }/>    
             <Route path={routes.ROOT} render={() => 
-                      <GlobalNav user={user} logout={this.logout} toggleHamburger={this.toggleHamburger}/> }/>    
+                      <GlobalNav 
+                        user={user} 
+                        logout={this.logout} 
+                        toggleHamburger={this.toggleHamburger}
+                      /> 
+            }/>    
           </Switch>
         </NavGrid>
 
@@ -154,11 +168,19 @@ export default class App extends Component {
             <Route path={routes.INFO} exact render={() => 
                       <AboutMain /> }/>
             <Route path={routes.WELL} exact render={() => 
-                      <IndividualMain toggleReferralBtn={this.toggleReferralBtn} toggleContactBtn={this.toggleContactBtn}/> }/>       
+                      <IndividualMain 
+                        toggleReferralBtn={this.toggleReferralBtn} 
+                        toggleContactBtn={this.toggleContactBtn}
+                      /> 
+            }/>       
             <Route path={routes.CORP} exact render={() => 
                       <CorporateMain toggleContactBtn={this.toggleContactBtn}/> }/>  
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain toggleReferralBtn={this.toggleReferralBtn} toggleContactBtn={this.toggleContactBtn}/> }/>           
+                      <ServicesMain 
+                        toggleReferralBtn={this.toggleReferralBtn} 
+                        toggleContactBtn={this.toggleContactBtn}
+                      /> 
+            }/>           
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>
@@ -166,23 +188,17 @@ export default class App extends Component {
         </MainGrid>
 
         <ContactGrid className="grid-contact">
-          <ContactBox>
-            <a href="https://www.instagram.com/pranawellness_life/" target="_blank" rel="noopener noreferrer" alt="instagram link pranawellness.life"><img src="../instagram-icon.png" alt="IG"/></a>
-            {user ? <section>Welcome Stephanie!</section>: <section>info@pranawellness.life</section> }
-            
-          </ContactBox>
+          <ContactBox/>
         </ContactGrid>
 
         <LeftFooterGrid className="grid-footer-left">
-              <LeftFooter/>
+          <LeftFooter/>
         </LeftFooterGrid>
-
         <MidFooterGrid className="grid-footer-mid">
-<MidFooter/>
+          <MidFooter/>
         </MidFooterGrid>
-
         <RightFooterGrid className="grid-footer-right">
-              <RightFooter/>
+            <RightFooter/>
         </RightFooterGrid>
         
       </GridContainer>
