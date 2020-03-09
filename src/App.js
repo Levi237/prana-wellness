@@ -3,15 +3,14 @@ import { Switch, Route }    from 'react-router-dom';
 import styled               from 'styled-components';
 
 import * as routes      from './constants/routes';
-import GlobalNav        from './components/GlobalNav';
 import Nav              from './components/Nav';
+import NavBar           from './components/NavBar';
 
 import Enter            from './components/admin/Enter';
 import AdminPortal      from './components/admin/AdminPortal';
 import ReferralRequest  from './components/admin/ReferralRequest';
 import ContactRequest   from './components/admin/ContactRequest';
 
-import HomeNav          from './components/home/HomeNav';
 import HomeHeader       from './components/home/HomeHeader';
 import HomeMain         from './components/home/HomeMain';
 
@@ -133,11 +132,12 @@ export default class App extends Component {
         <NavGrid className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
-                      <HomeNav toggleHamburger={this.toggleHamburger}/> }/>          
+                      <NavBar page={"home"} toggleHamburger={this.toggleHamburger}/> }/>          
             <Route path={routes.ROOT} exact render={() => 
-                      <HomeNav toggleHamburger={this.toggleHamburger}/> }/>    
+                      <NavBar page={"home"} toggleHamburger={this.toggleHamburger}/> }/>    
             <Route path={routes.ROOT} render={() => 
-                      <GlobalNav 
+                      <NavBar 
+                        page={"global"} 
                         user={user} 
                         logout={this.logout} 
                         toggleHamburger={this.toggleHamburger}
