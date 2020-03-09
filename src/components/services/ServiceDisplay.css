@@ -1,16 +1,16 @@
-
+/* 
 .home-main-top div.service-box {
     transform: scale(.7);
-    }
-    .service-container {
+    } */
+    /* .service-container {
 
 
 position: relative;
 
 
-    }
+    } */
 
-.service-box {
+/* .service-box {
     position: relative;
     height: 25vw;
     width: 25vw;
@@ -20,8 +20,8 @@ position: relative;
     margin: 0 1.33vw;
     z-index: 1;
     transition: all .3s ease-in-out;
-}
-.card-back {
+} */
+/* .card-back {
     margin-top: -20vw;
     margin-left: 2.5vw;
     margin-bottom: 2.5vw;
@@ -34,16 +34,16 @@ position: relative;
     background-color: transparent;
     font-size: 1.8vw;
     transition: .3s ease;
-}
+} */
 
-.card-box {
+/* .card-box {
     height: 25vw;
     max-width: 25vw;
     transition: all .5s ease-in-out;
     position: initial;
     transition-delay: .5s;
     background-size: cover;
-}
+} */
 .card-box.card-hover:hover, .card-box.card-hover:active {
     max-width: 0;
     overflow: hidden;
@@ -68,14 +68,14 @@ position: relative;
     transition: all .3s ease-in-out;
     transition-delay: .2s;
 }
-.card-front > img {
+/* .card-front > img {
     height: 25vw;
     width: 25vw;
     position: relative;
     z-index: -1;
     transition: all .3s ease-in-out;
-}
-.card-front-data {
+} */
+/* .card-front-data {
     width: 19vw;
     height: 19vw;
     color: #FFF;
@@ -86,9 +86,9 @@ position: relative;
     margin: 3vw;
     transition: all .3s ease-in-out;
     transition-delay: .5s;
-}
+} */
 
-.card-front-data > section:first-of-type {
+/* .card-front-data > section:first-of-type {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 1.33vw;
@@ -99,49 +99,49 @@ position: relative;
     font-family: 'Merriweather', sans-serif;
     font-style: italic;
     font-size: 3vw;
-}
+} */
 
-.optionBtn {
+/* .optionBtn {
     margin-top: 5vw;
-}
+} */
 
 
-@media screen and (max-width: 945px) {
-    .home-container > div.service-box > div.card-box {
+/* @media screen and (max-width: 945px) { */
+    /* .home-container > div.service-box > div.card-box {
         margin: -12vw 0;
-    }
-    .service-box {
+    } */
+    /* .service-box {
         height: 80vw;
         width: 80vw;
         display: block;
         margin: -5vw 10vw !important;
-    }
+    } */
 
-    .card-box {
+    /* .card-box {
         height: 80vw;
         max-width: 80vw;
         margin: 15vw 0;
-    }
-    .card-front-data {
+    } */
+    /* .card-front-data {
         width: 60vw;
         height: 60vw;
         margin: 10vw;
-    }
-    .card-back {
+    } */
+    /* .card-back {
         height: 60vw;
         width: 60vw;
         margin-left: 10vw;
         margin-top: -70vw;
         font-size: 5vw;
-    }
-    .card-front-data > section:first-of-type {
+    } */
+    /* .card-front-data > section:first-of-type {
         font-size: 6vw;
         margin-top: 16vw;
     }
     .card-front-data > section:last-of-type {
         font-size: 11vw;
-    }
-    .optionBtn {
+    } */
+    /* .optionBtn {
         margin-top: 15vw;
     }
     .optionBtn button {
@@ -150,5 +150,5 @@ position: relative;
         width: 80vw;
         height: 68px;
         font-size: 4.5vw;
-    }
-}
+    } */
+/* } */

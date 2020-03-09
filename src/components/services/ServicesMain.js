@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-
+import styled from 'styled-components';
 import ServiceDisplay from './ServiceDisplay';
 
 import * as routes from '../../constants/routes';
@@ -60,18 +60,52 @@ export default class ServicesMain extends Component {
         const { toggleContactBtn } = this.props;
 
         return(<>
-            <div className="wellness-main-container main-title">
+            <Container className="wellness-main-container main-title">
                 <ServiceDisplay services={this.state.services}/>
-                <div className="optionBtn">
+                <ButtonContainer className="optionBtn">
                     <NavLink to={routes.CORP}><button className="purple">Corporate Solutions</button></NavLink>
                     <NavLink to={routes.WELL}><button className="purple">Individual Solutions</button></NavLink>
-                </div>
-            </div>
-            <h1 className="services-main-header">WELLNESS SERVICES</h1>
+                </ButtonContainer>
+            </Container>
+            <Header className="services-main-header">WELLNESS SERVICES</Header>
                 <ServiceDisplay services={this.state.otherServices}/>
-                <div className="optionBtn">
+                <ButtonContainer>
             <button className="white" name="contactForm" onClick={(e) => {toggleContactBtn(e)}}>Request Quote</button>
-            </div>
+            </ButtonContainer>
         </>);
     };
 };
+const Container = styled.div`
+// margin-top: calc(-16vw - 144px);
+margin-top: calc(-20vw - 144px);
+padding-bottom: 8vw;
+background: rgb(191, 158, 200);
+button {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  @media screen and (max-width: 945px) {
+    // margin-top: -6vw;
+    // padding-bottom: 8vw;
+    margin-top: -10vw;
+    padding-top: 5vw;
+  }
+`;
+const Header = styled.h1`
+    margin: 50px auto; 
+`;
+
+const ButtonContainer = styled.div`
+    margin-top: 5vw;
+
+    @media screen and (max-width: 945px) {
+        margin-top: 15vw;
+
+        button {
+            margin: 2.5vw;
+            width: 80vw;
+            height: 68px;
+            font-size: 4.5vw;
+        }
+    }
+`;
