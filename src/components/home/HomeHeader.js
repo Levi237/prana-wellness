@@ -59,7 +59,7 @@ const VideoContainer = styled.div`
     top: 0;
     overflow: hidden;
 
-    height: 50vh;
+    height: 90vh;
   }
 `;
 
@@ -70,10 +70,6 @@ const VideoFrame = styled.video`
   left: 50%;
   transform: translate(-50%, -50%);
 
-  @media (max-aspect-ratio: 16/9) and (max-width: 945px) {
-      height: 100%;
-      width: auto;
-  }
   @media (max-aspect-ratio: 16/9) and (max-width: 945px) {
       width: auto;
       height: 100%;
@@ -96,7 +92,6 @@ const WelcomeContainer = styled.div`
   overflow: hidden;
   @media screen and (max-width: 945px) {
       margin-top: -20vw;
-      // height: 90vw;
       padding-top: 20vw;
       position: absolute;
       width: 100vw;
@@ -146,16 +141,14 @@ font-size: 2vw;
 
 position: absolute;
 bottom: calc(3vh + 11.33vw + 40px);
-text-shadow: 2px 2px 10px #000;
+text-shadow: 4px 4px 10px #000;
 
 margin: 0 auto;
 width: 100vw;
 
 @media screen and (max-width: 945px) {
-  font-weight: 100;
-  font-size: 3.5vw;
-  bottom: calc(3vh + 40px);
-
+  font-size: 5vw;
+  bottom: 55vw;
 }
 `;
 
@@ -167,7 +160,7 @@ text-align: center;
 width: 100vw;
 
 @media screen and (max-width: 945px) {
-  top: 40vh;
+  bottom: 40vw;
 }
 `;
 const ButtonCTA = styled.button`

@@ -25,6 +25,6 @@ const ServiceDisplay = ({services, transformStyle}) => {
             </div>
         )
     });
-    return(<>{showServices}</>);
+    return(<div className="service-container">{showServices}</div>);
 };
 export default ServiceDisplay;

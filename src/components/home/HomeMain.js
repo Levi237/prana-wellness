@@ -141,6 +141,16 @@ const Quote = styled.div`
     font-size: 1.6vw;
     text-align: center;
     display: flex;
+    @media (max-width: 945px){
+        position: absolute;
+        width: 100vw;
+        bottom: 0;;
+        // margin-top: calc(50vh - 20vw);
+        font-size: 2.25vw;
+        // width: 100vw;
+        height: 20vw;
+        margin: 0 auto;
+    }
 `;
 
 const Header = styled.h1`

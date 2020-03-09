@@ -2,6 +2,13 @@
 .home-main-top div.service-box {
     transform: scale(.7);
     }
+    .service-container {
+
+
+position: relative;
+
+
+    }
 
 .service-box {
     position: relative;

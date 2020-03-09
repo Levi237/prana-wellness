@@ -230,7 +230,7 @@ grid-template-areas:
   grid-gap: 0;
 
 @media screen and (max-width: 945px) {
-    grid-template-rows: 18vw 40vw auto 40vw 120px calc(3vw + 26px)  120px;
+    grid-template-rows: 18vw 90vh auto 40vw 120px calc(3vw + 26px)  120px;
     grid-template-columns: 100vw;
   grid-template-areas:
     ' nav '
