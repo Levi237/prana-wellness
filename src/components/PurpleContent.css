@@ -10,7 +10,7 @@
     padding: 16vw 0 0;
     background-color: rgba(150, 91, 165, 0.6);
 }
-
+/* 
 .purple-content > h1 {
     font-weight: normal;
     color: #FFFFFF;
@@ -33,18 +33,18 @@
     margin-right: 10vw;
     float: right;
     text-align: center;
-}
+} */
 @media screen and (max-width: 945px){
-    .purple-content > h1 {
+    /* .purple-content > h1 {
         padding: 2.5vw;
-    }
+    } */
 
     .custom-quote {
         margin: -40vw 0 0;
         height: 68vw;
         padding: 42vw 0 4vw 0;
     }
-    .purple-content > section > div:first-of-type {
+    /* .purple-content > section > div:first-of-type {
         display: block;
         width: 80vw;
         font-size: 3vw;
@@ -58,5 +58,5 @@
         display: block;
         float: none;
         width: 100%;
-    }
+    } */
 }
