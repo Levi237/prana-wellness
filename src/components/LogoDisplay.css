@@ -1,4 +1,4 @@
-div.scrollmenu {
+/* div.scrollmenu {
   background-color: rgba(150, 91, 165, 0.2);;
   overflow: auto;
   white-space: nowrap;
@@ -6,13 +6,13 @@ div.scrollmenu {
 }
 div.scrollmenu div {
   transition: all 80s ease-in-out;
-}
+} */
 div.scrollmenu.carousel > div {
   transform: translateX(-200%);
   transition: all 80s ease-in-out;
 }
 
-div.scrollmenu section {
+/* div.scrollmenu section {
   height: 80px;
   display: inline-block;
   vertical-align: top;
@@ -27,4 +27,4 @@ div.scrollmenu img {
 div.scrollmenu:hover {
   background-color: rgba(150, 91, 165, 0.3);
   transition: all 5s ease-in-out;
-}
+} */
