@@ -20,7 +20,7 @@ import AboutMain        from './components/about/AboutMain';
 import CorporateHeader  from './components/corporate/CorporateHeader';
 import CorporateMain    from './components/corporate/CorporateMain';
 
-import IndividualHeader from './components/individual/IndividualHeader';
+import HeaderComponent  from './components/HeaderComponent';
 import IndividualMain   from './components/individual/IndividualMain';
 
 import ServicesHeader   from './components/services/ServicesHeader';
@@ -36,12 +36,7 @@ import './App.css';
 
 
 import firebase from 'firebase/app'
-// check to see if this helps contain the video?
 
-window.addEventListener('resize', () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-});
 export default class App extends Component {
   state = {
     user: null,
@@ -153,13 +148,13 @@ export default class App extends Component {
             <Route path={routes.ADMN} exact render={() => 
                     !this.state.user ? <Enter /> : <AdminPortal /> }/>       
             <Route path={routes.INFO} exact render={() => 
-                    <AboutHeader /> }/>
+                    <HeaderComponent purpleBox={(false)} title="THE TEAM BEHIND" subtitle="Personal Wellness" image="about-header.png"/> }/>
             <Route path={routes.WELL} exact render={() => 
-                    <IndividualHeader /> }/>
+                    <HeaderComponent purpleBox={(true)} title="REDISCOVER" subtitle="Prana Wellness" image="wellness-header.png"/> }/>
             <Route path={routes.CORP} exact render={() => 
-                    <CorporateHeader /> }/>   
+                    <HeaderComponent purpleBox={(false)} title="CONSIDER" subtitle="Corporate Wellness" image="corporate-header.png"/> }/>   
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesHeader /> }/>   
+                      <HeaderComponent purpleBox={(true)} title="EXPLORE OUR WIDE-RANGING" subtitle="Wellness Services" image="service-header.png"/> }/> 
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
           </Switch>

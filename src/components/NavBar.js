@@ -60,15 +60,15 @@ const Logo = styled.img`
 const Hamburger = styled.div`
   float: right;
   margin: 90px 10vw 0 0;
-
+  section {
+    margin: 6px 0;
+    width: 35px;
+    height: 4px;
+  }
   @media screen and (max-width: 945px) {
 
     margin: 25px 5vw 0 0;
-    section {
-      margin: 6px 0;
-      width: 35px;
-      height: 4px;
-    }
+
   }
 `;
 const HomePatties = styled.section`
