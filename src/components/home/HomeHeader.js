@@ -120,6 +120,7 @@ const Prana = styled.section`
   font-size: 10vw;
   font-weight: 100;
   letter-spacing: 2.5vw;
+  margin-top: 20px;
 
 @media screen and (max-width: 945px) {
   font-size: 14vw;
@@ -140,7 +141,7 @@ font-weight: 100;
 font-size: 2vw;
 
 position: absolute;
-bottom: calc(3vh + 11.33vw + 40px);
+bottom: calc(3vh + 12.33vw + 40px);
 text-shadow: 4px 4px 10px #000;
 
 margin: 0 auto;
