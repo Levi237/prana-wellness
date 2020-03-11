@@ -12,18 +12,12 @@ import ReferralRequest  from './components/admin/ReferralRequest';
 import ContactRequest   from './components/admin/ContactRequest';
 
 import HomeHeader       from './components/home/HomeHeader';
-import HomeMain         from './components/home/HomeMain';
-
-import AboutHeader      from './components/about/AboutHeader';
-import AboutMain        from './components/about/AboutMain';
-
-import CorporateHeader  from './components/corporate/CorporateHeader';
-import CorporateMain    from './components/corporate/CorporateMain';
-
 import HeaderComponent  from './components/HeaderComponent';
-import IndividualMain   from './components/individual/IndividualMain';
 
-import ServicesHeader   from './components/services/ServicesHeader';
+import HomeMain         from './components/home/HomeMain';
+import AboutMain        from './components/about/AboutMain';
+import CorporateMain    from './components/corporate/CorporateMain';
+import IndividualMain   from './components/individual/IndividualMain';
 import ServicesMain     from './components/services/ServicesMain';
 
 import RightFooter      from './components/footer/RightFooter';
