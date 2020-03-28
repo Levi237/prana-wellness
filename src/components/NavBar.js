@@ -75,7 +75,7 @@ const HomePatties = styled.section`
 background-color: #fff;
 `;
 const GlobalPatties = styled.section`
-background-color: purple;
+background-color: #965BA5;
 `;
 
 
