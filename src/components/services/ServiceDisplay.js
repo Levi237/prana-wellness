@@ -88,11 +88,15 @@ z-index: 2;
 margin: 3vw;
 transition: all .3s ease-in-out;
 transition-delay: .5s;
-
+section:first-of-type {
+    font-size: 2vw;
+    margin-top: 7vw;
+}
 section:last-of-type {
     font-family: 'Merriweather', sans-serif;
     font-style: italic;
     font-size: 3vw;
+
 }
 @media screen and (max-width: 945px) {
     width: 60vw;
