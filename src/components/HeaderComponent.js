@@ -22,13 +22,14 @@ position: relative;
 `;
 const Container = styled.div`
 color: white;
-padding-top: 120px;
+// padding-top: 120px;
 background-color: transparent;
 
 @media screen and (max-width: 945px) {
       height: 44vw;
       text-align: center;
       overflow: hidden;
+        padding-top: 0;
     }
 `;
 const Image = styled.img`

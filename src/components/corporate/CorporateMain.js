@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import BenefitsDisplay      from './BenefitsDisplay';
 import PackageDisplay       from './PackageDisplay';
@@ -57,7 +58,7 @@ export default class CorporateMain extends Component {
     const { toggleContactBtn } = this.props;
 
     return(<>
-      <div className="about-main-container">
+      <Container className="about-main-container">
         <div className="main-title">
 
         <h1>the power of prana</h1>
@@ -77,9 +78,28 @@ export default class CorporateMain extends Component {
           <PurpleContent content={CorporatePurpleContent} toggle={toggleContactBtn}/>
         </div>
         
-      </div>
+      </Container>
       
     </>);
   };
 };
 
+const Container = styled.div`
+
+margin-bottom: 5vw;
+margin-top: calc(34vw - 90vh);
+position: relative;
+z-index: 1;
+padding-bottom: 8vw;
+// background: rgb(191, 158, 200);
+button {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  @media screen and (max-width: 945px) {
+    // margin-top: -6vw;
+    // padding-bottom: 8vw;
+    // margin-top: -10vw;
+    padding-top: 5vw;
+  }
+`;

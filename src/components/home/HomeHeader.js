@@ -53,6 +53,7 @@ const VideoContainer = styled.div`
   overflow: hidden;
 
   position: absolute;
+  top: 46px;
 
   @media (max-aspect-ratio: 16/9) and (max-width: 945px) {
     position: absolute;
@@ -85,6 +86,7 @@ const WelcomeContainer = styled.div`
   color: #FFF;
   text-align: center;
   position: absolute;
+  top: 46px;
   height: 100%;
   width: 100vw;
   z-index: 1;
@@ -93,8 +95,7 @@ const WelcomeContainer = styled.div`
   @media screen and (max-width: 945px) {
       margin-top: -20vw;
       padding-top: 20vw;
-      position: absolute;
-      width: 100vw;
+      top: 0;
     }
 @media screen and (max-width: 945px) {
 

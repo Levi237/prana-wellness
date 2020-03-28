@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
 import PackageDisplay       from '../corporate/PackageDisplay';
 import ServiceDisplay       from '../services/ServiceDisplay';
@@ -54,14 +55,32 @@ export default class IndividualMain extends Component {
     const { toggleReferralBtn } = this.props;
   
     return(<>
-      <div className="wellness-main-container purple-content">
+      <Container className="wellness-main-container purple-content">
         <PurpleContent content={individualPurpleContent} toggle={toggleReferralBtn}/>
-      </div>
+      </Container>
       <br/><br/><br/>
+      <div>
       <ServiceDisplay services={this.state.services}/>
+      </div>
       <br/>
       <h1>subscribe to personal wellness</h1>
       <PackageDisplay pricePack={this.state.individualPlans}/>
     </>);
   };
 };
+const Container = styled.div`
+
+margin-bottom: 5vw;
+margin-top: calc(34vw - 90vh);
+position: relative;
+z-index: 1;
+padding-bottom: 8vw;
+background: rgb(191, 158, 200);
+button {
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+  @media screen and (max-width: 945px) {
+    padding-top: 5vw;
+  }
+`;

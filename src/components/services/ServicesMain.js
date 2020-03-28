@@ -76,8 +76,11 @@ export default class ServicesMain extends Component {
     };
 };
 const Container = styled.div`
-// margin-top: calc(-16vw - 144px);
-margin-top: calc(-20vw - 144px);
+
+margin-bottom: 5vw;
+margin-top: calc(34vw - 90vh);
+position: relative;
+z-index: 1;
 padding-bottom: 8vw;
 background: rgb(191, 158, 200);
 button {
@@ -85,9 +88,6 @@ button {
     margin-right: 2vw;
   }
   @media screen and (max-width: 945px) {
-    // margin-top: -6vw;
-    // padding-bottom: 8vw;
-    margin-top: -10vw;
     padding-top: 5vw;
   }
 `;

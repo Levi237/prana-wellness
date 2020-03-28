@@ -42,7 +42,7 @@ width: 25vw;
 display: inline-block;
 vertical-align: top;
 background-color: transparent;
-margin: 0 1.33vw;
+margin: 1.33vw;
 z-index: 1;
 transition: all .3s ease-in-out;
 @media screen and (max-width: 945px) {
