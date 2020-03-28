@@ -48,18 +48,13 @@ const HomeHeader = ({toggleContactBtn}) => {
 };
 
 const VideoContainer = styled.div`
-  width: 100vw;
-  height: calc(100vh - 46px);
-  overflow: hidden;
-
-  position: absolute;
-  top: 46px;
+width: 100vw;
+height: calc(100vh);
+overflow: hidden;
+position: absolute;
+top: 0px;
 
   @media (max-aspect-ratio: 16/9) and (max-width: 945px) {
-    position: absolute;
-    top: 0;
-    overflow: hidden;
-
     height: 90vh;
   }
 `;
