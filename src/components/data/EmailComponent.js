@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Mailchimp from 'react-mailchimp-form';
  
-class EmailApp extends Component {
+class EmailComponent extends Component {
   render() {
     return (
         <Mailchimp
@@ -43,4 +43,4 @@ class EmailApp extends Component {
   }
 }
  
-export default EmailApp;
+export default EmailComponent;

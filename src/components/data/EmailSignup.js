@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 
-import EmailApp from './EmailComponent';
+import EmailComponent from './EmailComponent';
 // "https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&amp;id=fe06177933"
-
-
-// import firebase from 'firebase/app';
 
 export default class EmailSignup extends Component {
     
@@ -18,7 +15,7 @@ export default class EmailSignup extends Component {
                         CLOSE X
                 </button>
 
-                <EmailApp/>
+                <EmailComponent/>
 
             </div>
         );
