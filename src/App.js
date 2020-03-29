@@ -160,7 +160,7 @@ export default class App extends Component {
             <Route path={routes.ADMN} exact render={() => 
                     !this.state.user ? <Enter /> : <AdminPortal /> }/>       
             <Route path={routes.INFO} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="THE TEAM BEHIND" subtitle="Personal Wellness" image="about-header.png"/> }/>
+                    <HeaderComponent purpleBox={(false)} title="THE TEAM BEHIND" subtitle="Personal Wellness" image="about-header2.png"/> }/>
             <Route path={routes.WELL} exact render={() => 
                     <HeaderComponent purpleBox={(true)} title="REDISCOVER" subtitle="Prana Wellness" image="wellness-header.png"/> }/>
             <Route path={routes.CORP} exact render={() => 
