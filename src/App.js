@@ -10,6 +10,7 @@ import Enter            from './components/admin/Enter';
 import AdminPortal      from './components/admin/AdminPortal';
 import ReferralRequest  from './components/admin/ReferralRequest';
 import ContactRequest   from './components/admin/ContactRequest';
+import EmailSignup      from './components/data/EmailSignup';
 
 import HomeHeader       from './components/home/HomeHeader';
 import HeaderComponent  from './components/HeaderComponent';
@@ -103,6 +104,11 @@ export default class App extends Component {
     referralForm.classList.toggle('active');
     referralForm.classList.toggle('inactive');
   };
+  toggleEmailSignup = (e) => {
+    const emailForm = document.getElementById('email');
+    emailForm.classList.toggle('active');
+    emailForm.classList.toggle('inactive');
+  };
   
   render(){
     const { user } = this.state
@@ -112,6 +118,7 @@ export default class App extends Component {
         <Nav toggleHamburger={this.toggleHamburger}/>
 
         <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
+        <EmailSignup toggleEmailSignup={this.toggleEmailSignup}/>
 
         <ContactRequest 
           toggleContactBtn={this.toggleContactBtn} 
@@ -121,15 +128,26 @@ export default class App extends Component {
         <NavGrid className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
-                      <NavBar page={"home"} toggleHamburger={this.toggleHamburger}/> }/>          
+                      <NavBar 
+                        page={"home"} 
+                        toggleHamburger={this.toggleHamburger}
+                        toggleEmailSignup={this.toggleEmailSignup}
+                        /> 
+            }/>          
             <Route path={routes.ROOT} exact render={() => 
-                      <NavBar page={"home"} toggleHamburger={this.toggleHamburger}/> }/>    
+                      <NavBar 
+                        page={"home"} 
+                        toggleHamburger={this.toggleHamburger}
+                        toggleEmailSignup={this.toggleEmailSignup}
+                        /> 
+            }/>    
             <Route path={routes.ROOT} render={() => 
                       <NavBar 
                         page={"global"} 
                         user={user} 
                         logout={this.logout} 
                         toggleHamburger={this.toggleHamburger}
+                        toggleEmailSignup={this.toggleEmailSignup}
                       /> 
             }/>    
           </Switch>
