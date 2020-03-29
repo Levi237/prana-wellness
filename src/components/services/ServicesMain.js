@@ -78,7 +78,7 @@ export default class ServicesMain extends Component {
 const Container = styled.div`
 
 margin-bottom: 5vw;
-margin-top: calc(34vw - 90vh);
+margin-top: calc(25.86vw - 100vh + 196px);
 position: relative;
 z-index: 1;
 padding-bottom: 8vw;
@@ -88,6 +88,7 @@ button {
     margin-right: 2vw;
   }
   @media screen and (max-width: 945px) {
+    margin-top: calc(32.3vw - 100vh + 58px);
     padding-top: 5vw;
   }
 `;

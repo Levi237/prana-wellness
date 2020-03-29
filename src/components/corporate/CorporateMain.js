@@ -87,19 +87,17 @@ export default class CorporateMain extends Component {
 const Container = styled.div`
 
 margin-bottom: 5vw;
-margin-top: calc(34vw - 90vh);
+margin-top: calc(25.86vw - 100vh + 196px);
 position: relative;
 z-index: 1;
 padding-bottom: 8vw;
-// background: rgb(191, 158, 200);
+
 button {
     margin-left: 2vw;
     margin-right: 2vw;
   }
   @media screen and (max-width: 945px) {
-    // margin-top: -6vw;
-    // padding-bottom: 8vw;
-    // margin-top: -10vw;
+    margin-top: calc(32.3vw - 100vh + 58px);
     padding-top: 5vw;
   }
 `;
