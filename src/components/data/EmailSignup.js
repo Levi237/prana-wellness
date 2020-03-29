@@ -31,10 +31,23 @@ export default class EmailSignup extends Component {
 const Container = styled.div`
     text-align: right;
     background-color: #fff;
+    position: relative;
+    z-index: 99;
     p {
         text-align: center;
         padding: 2% 20%;
 
+    }
+    form {
+        text-align: center;
+    }
+    form input {
+        height: 40px;
+        width: 300px;
+        display: block;
+        margin: 10px auto;
+        font-size: 18px;
+        padding: 4px 15px;
     }
     form p {
         position: absolute;
@@ -42,23 +55,12 @@ const Container = styled.div`
         width: 100vw;
         padding: 2% 0;
     }
-        form {
-            text-align: center;
-        }
-        input {
-            height: 40px;
-            width: 300px;
-            display: block;
-            margin: 10px auto;
-            font-size: 18px;
-            padding: 4px 15px;
-        }
-        button {
-            background-color: white;
-            color: purple;
-            border: purple solid 1px;
-            font-size: 18px;
-            position: relative;
-            z-index: 900;
-        }
+    button {
+        background-color: white;
+        color: purple;
+        border: purple solid 1px;
+        font-size: 18px;
+        position: relative;
+        z-index: 900;
+    }
 `;
