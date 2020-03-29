@@ -9,7 +9,7 @@ export default class EmailSignup extends Component {
     render(){
 
         const { toggleEmailSignup } = this.props
-        return(<>
+        return(
             <Container id="email" className="inactive contact-container">
                 <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>
                         CLOSE X
@@ -23,16 +23,18 @@ export default class EmailSignup extends Component {
 
             </Container>
 
-            </>
+            
         );
     };
 };
 
 const Container = styled.div`
+height: 100vh;
+width: 100vw;
     text-align: right;
     background-color: #fff;
     position: relative;
-    z-index: 99;
+    z-index: 90;
     p {
         text-align: center;
         padding: 2% 20%;
