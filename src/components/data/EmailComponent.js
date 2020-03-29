@@ -16,14 +16,14 @@ class EmailComponent extends Component {
                 },
                 {
                     name: 'FNAME',
-                    placeholder: 'first name',
+                    placeholder: 'First Name',
                     type: 'text',
                     required: true
                 }
                 ,
                 {
                     name: 'LNAME',
-                    placeholder: 'last name',
+                    placeholder: 'Last Name',
                     type: 'text',
                     required: false
                 }

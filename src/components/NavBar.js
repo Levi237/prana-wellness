@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import * as routes from '../constants/routes'
 
-const NavBar = ({ page, user, logout, toggleHamburger, toggleEmailSignup }) => {
+const NavBar = ({ page, user, logout, toggleHamburger }) => {
   return(
     <NavContainer>
       <LogoIcon>
@@ -13,7 +13,6 @@ const NavBar = ({ page, user, logout, toggleHamburger, toggleEmailSignup }) => {
           </LogoBox>
         </Link>
       </LogoIcon>
-      <button onClick={(e) => {toggleEmailSignup(e)}}>TEST BUTTON</button>
       <Hamburger 
         name="toggleHamburger" 
         onClick={(e) => toggleHamburger(e)}

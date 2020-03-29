@@ -201,7 +201,8 @@ export default class App extends Component {
         </MainGrid>
 
         <ContactGrid className="grid-contact">
-          <ContactBox/>
+          <ContactBox 
+            toggleEmailSignup={this.toggleEmailSignup}/>
         </ContactGrid>
 
         <LeftFooterGrid className="grid-footer-left">
@@ -237,15 +238,15 @@ grid-template-areas:
   grid-gap: 0;
 
 @media screen and (max-width: 945px) {
-    grid-template-rows: 18vw 90vh auto 40vw 120px calc(3vw + 26px)  120px;
+    grid-template-rows: 40px 18vw 90vh auto 40vw calc(3vw + 26px)  120px;
     grid-template-columns: 100vw;
   grid-template-areas:
+    ' contact '
     ' nav '
     ' header '
     ' main '
     ' footer-left '
     ' footer-mid '
-    ' contact '
     ' footer-right ';
   }
 `;
@@ -271,11 +272,11 @@ const NavGrid = styled.div`
   color: #FFF;
   width: 100vw;
   margin-top: 20px;
-  @media screen and (max-width: 945px) {
-    margin-left: 5vw;
-    width: 90vw;
+    @media screen and (max-width: 945px) {
+      margin-left: 5vw;
+      width: 90vw;
 
-      margin-top: 0;
+      margin-top: 40px;
     }
 `;
 const MainGrid = styled.div`
