@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const ContactBox = ({user,toggleEmailSignup}) => {
     return(
         <Contact>
-            Experience Virtual Wellness Packages{"  "} <button onClick={(e) => {toggleEmailSignup(e)}}>Free Meditation</button>
+            <span>Experience Virtual Wellness Packages{"  "}</span><button onClick={(e) => {toggleEmailSignup(e)}}>Free Meditation</button>
             {/* <a href="https://www.instagram.com/pranawellness_life/" target="_blank" rel="noopener noreferrer" alt="instagram link pranawellness.life">
                 <img src="../instagram-icon.png" alt="IG"/>
             </a> */}
@@ -40,6 +40,9 @@ const Contact = styled.div`
     @media screen and (max-width: 945px){
         button {
             margin-top: 5px;
+        }
+        span {
+            display: none;
         }
     }
 `;
