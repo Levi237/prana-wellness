@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 
+import EmailApp from './EmailComponent';
+// "https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&amp;id=fe06177933"
 
-
-// import './EmailSignup.css';
 
 // import firebase from 'firebase/app';
 
@@ -14,11 +14,11 @@ export default class EmailSignup extends Component {
         const { toggleEmailSignup } = this.props
         return(
             <div id="email" className="inactive contact-container">
-                    <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>
-                         CLOSE X
-                    </button>
+                <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>
+                        CLOSE X
+                </button>
 
-Hello World
+                <EmailApp/>
 
             </div>
         );
