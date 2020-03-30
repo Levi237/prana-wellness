@@ -1,12 +1,21 @@
 import React from 'react';
 
-// import EmailerRequest   from '../admin/EmailerRequest';
+import styled from 'styled-components';
+
 
  const MidFooter = () => {
-    return(<>
-        {/* <section>sign up for our WELLNESS NEWSLETTER </section> */}
-        {/* <EmailerRequest /> */}
-    </>);
+    return(
+    <Container>
+        <section>Have Questions?</section>
+        <section>info@pranawellness.life</section> 
+            {/* <section>sign up for our WELLNESS NEWSLETTER </section> */}
+            {/* <EmailerRequest /> */}
+    </Container>);
 };
 
 export default MidFooter;
+
+const Container = styled.div`
+    text-align: center;
+    width: 100%;
+`;

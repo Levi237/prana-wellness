@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 const RightFooter = () => {
     return(<>
+    <br/>
           <Logo className="travel-slay-logo">
             <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer"><img src="../travel_slay_white.png" alt="Travel Slay"/></a>
             <section>explore fitness and travel</section>
@@ -10,15 +11,16 @@ const RightFooter = () => {
 };
 
 const Logo = styled.div`
-    margin-left: 3vw;
+
   
     img {
         position: relative;
-        width: 250px
+        width: 180px
     }
     section {
         text-transform: uppercase;
         color: #FFF;
+        font-size: 10px;
         text-align: center; 
         position: relative;
     }

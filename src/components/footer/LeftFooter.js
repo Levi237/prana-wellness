@@ -12,12 +12,12 @@ import styled from 'styled-components';
 };
 
 const LogoBox = styled.div`
-  width: 150px;
+  width: 180px;
   text-align: center;
   color: #FFF;
 
   img {
-    margin: 0;
+    margin: 0 auto -20px;
     width: 100%;
     
   }
@@ -32,11 +32,9 @@ const LogoBox = styled.div`
     
     img {
 
-      margin-left: 5vw;
+      margin: auto;
       width: 20vw; 
-      @media screen and (max-width: 945px) {
-        margin: auto;
-      }
+
     }
 
   }

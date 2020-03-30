@@ -226,7 +226,7 @@ const GridContainer = styled.div`
   width: 100vw;
   min-height: 100%;
   grid-template-rows: 46px 150px calc(100vh - 196px) auto 256px;
-  grid-template-columns: 200px calc(100vw - 540px) 340px;
+  grid-template-columns: 200px calc(100vw - 400px) 200px;
   background-color: #fff;
   grid-gap: 0;
   margin: 0;
@@ -239,7 +239,7 @@ grid-template-areas:
   grid-gap: 0;
 
 @media screen and (max-width: 945px) {
-    grid-template-rows: 40px 18vw 90vh auto 40vw 0 120px;
+    grid-template-rows: 40px 18vw 90vh auto 40vw 100px 120px;
     grid-template-columns: 100vw;
   grid-template-areas:
     ' contact '
@@ -300,9 +300,7 @@ padding-top: 2vw;
 
 const LeftFooterGrid = styled(FooterGrid)`
 grid-area: footer-left;
-div {
-  margin-left: 50px;
-}
+
 @media screen and (max-width: 945px) {
 
     text-align: center;
@@ -323,7 +321,7 @@ section {
   letter-spacing: .3vw;
   text-transform: uppercase;
   color: #A0CD4D;
-  text-align: right;
+  text-align: center;
 }
 @media screen and (max-width: 945px) {
   section {
@@ -331,7 +329,7 @@ section {
     font-weight: bold;
     font-size: 2.8vw;
     letter-spacing: 3px;
-    text-align: center;
+
   }
   input {
     width: 90vw;
