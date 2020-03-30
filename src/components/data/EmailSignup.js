@@ -11,9 +11,7 @@ export default class EmailSignup extends Component {
         const { toggleEmailSignup } = this.props
         return(
             <Container id="email" className="inactive contact-container">
-                <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>
-                        CLOSE X
-                </button>
+                <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</button>
                 <p>
                     No matter your schedule, or location, experience wellness{" "}
                     for the working mind with our signature virtual packages{" "}
@@ -29,12 +27,30 @@ export default class EmailSignup extends Component {
 };
 
 const Container = styled.div`
-height: 100vh;
-width: 100vw;
+    height: 100vh;
+    width: 100vw;
+
     text-align: right;
+
     background-color: #fff;
-    position: relative;
-    z-index: 90;
+
+    position: absolute;
+    z-index: 91;
+
+    > button {
+        background-color: transparent;
+        border-radius: 100px;
+        margin: 10px;
+        font-size: 14px;
+        max-height: 30px;
+        max-width: 30px;
+        min-height: 30px;
+        min-width: 30px;
+        padding: 0;
+        text-align: center;
+        position: relative;
+        z-index: 99999;
+    }
     p {
         text-align: center;
         padding: 2% 20%;
@@ -57,7 +73,7 @@ width: 100vw;
         width: 100vw;
         padding: 2% 0;
     }
-    button {
+    form button {
         background-color: white;
         color: purple;
         border: purple solid 1px;

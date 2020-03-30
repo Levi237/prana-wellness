@@ -19,8 +19,7 @@ class EmailComponent extends Component {
                     placeholder: 'First Name',
                     type: 'text',
                     required: true
-                }
-                ,
+                },
                 {
                     name: 'LNAME',
                     placeholder: 'Last Name',
