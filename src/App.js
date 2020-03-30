@@ -2,30 +2,30 @@ import React, { Component } from 'react';
 import { Switch, Route }    from 'react-router-dom';
 import styled               from 'styled-components';
 
-import * as routes      from './constants/routes';
-import Nav              from './components/Nav';
-import NavBar           from './components/NavBar';
+import * as routes          from './constants/routes';
+import Nav                  from './components/Nav';
+import NavBar               from './components/NavBar';
 
-import Enter            from './components/admin/Enter';
-import AdminPortal      from './components/admin/AdminPortal';
-import ReferralRequest  from './components/admin/ReferralRequest';
-import ContactRequest   from './components/admin/ContactRequest';
+import Enter                from './components/admin/Enter';
+import AdminPortal          from './components/admin/AdminPortal';
+import ReferralRequest      from './components/admin/ReferralRequest';
+import ContactRequest       from './components/admin/ContactRequest';
 
-import EmailSignup      from './components/data/EmailSignup';
-import ContactBox       from './components/contact/ContactBox'; 
+import EmailSignup          from './components/data/EmailSignup';
+import ContactBox           from './components/contact/ContactBox'; 
 
-import HomeHeader       from './components/home/HomeHeader';
-import HeaderComponent  from './components/HeaderComponent';
+import HomeHeader           from './components/home/HomeHeader';
+import HeaderComponent      from './components/HeaderComponent';
 
-import HomeMain         from './components/home/HomeMain';
-import AboutMain        from './components/about/AboutMain';
-import CorporateMain    from './components/corporate/CorporateMain';
-import IndividualMain   from './components/individual/IndividualMain';
-import ServicesMain     from './components/services/ServicesMain';
+import HomeMain             from './components/home/HomeMain';
+import AboutMain            from './components/about/AboutMain';
+import CorporateMain        from './components/corporate/CorporateMain';
+import IndividualMain       from './components/individual/IndividualMain';
+import ServicesMain         from './components/services/ServicesMain';
 
-import RightFooter      from './components/footer/RightFooter';
-import MidFooter        from './components/footer/MidFooter';
-import LeftFooter       from './components/footer/LeftFooter';
+import RightFooter          from './components/footer/RightFooter';
+import MidFooter            from './components/footer/MidFooter';
+import LeftFooter           from './components/footer/LeftFooter';
 
 import './App.css';
 
