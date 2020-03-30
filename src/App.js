@@ -10,7 +10,9 @@ import Enter            from './components/admin/Enter';
 import AdminPortal      from './components/admin/AdminPortal';
 import ReferralRequest  from './components/admin/ReferralRequest';
 import ContactRequest   from './components/admin/ContactRequest';
+
 import EmailSignup      from './components/data/EmailSignup';
+import ContactBox       from './components/contact/ContactBox'; 
 
 import HomeHeader       from './components/home/HomeHeader';
 import HeaderComponent  from './components/HeaderComponent';
@@ -25,13 +27,9 @@ import RightFooter      from './components/footer/RightFooter';
 import MidFooter        from './components/footer/MidFooter';
 import LeftFooter       from './components/footer/LeftFooter';
 
-import ContactBox       from './components/contact/ContactBox'; 
-
 import './App.css';
 
-
 import firebase from 'firebase/app'
-
 
 export default class App extends Component {
   state = {
@@ -117,7 +115,6 @@ export default class App extends Component {
       <GridContainer className="grid-container">
 
         <Nav toggleHamburger={this.toggleHamburger}/>
-
         <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
         <EmailSignup toggleEmailSignup={this.toggleEmailSignup}/>
 
@@ -197,8 +194,7 @@ export default class App extends Component {
             }/>           
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
-          </Switch>
-          
+          </Switch>          
         </MainGrid>
 
         <ContactGrid className="grid-contact">

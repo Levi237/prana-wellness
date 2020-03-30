@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 const RightFooter = () => {
-    return(<>
-    <br/>
-          <Logo className="travel-slay-logo">
-            <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer"><img src="../travel_slay_white.png" alt="Travel Slay"/></a>
-            <section>explore fitness and travel</section>
-          </Logo>
-    </>);
+    return(
+        <>
+            <br/>
+            <Logo className="travel-slay-logo">
+                <a href="https://www.travelslay.co/" target="_blank" rel="noopener noreferrer"><img src="../travel_slay_white.png" alt="Travel Slay"/></a>
+                <section>explore fitness and travel</section>
+            </Logo>
+        </>
+    );
 };
 
 const Logo = styled.div`
-
-  
     img {
         position: relative;
         width: 180px
