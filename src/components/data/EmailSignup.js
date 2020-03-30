@@ -17,7 +17,7 @@ export default class EmailSignup extends Component {
                     for the working mind with our signature virtual packages{" "}
                     including yoga, meditation, and breathwork.
                     <br/><br/>
-                    Sign up now to receive access to one my Meditation video!
+                    Sign up now for a free guided meditation.
                 </p>
 
                 <EmailComponent/>
