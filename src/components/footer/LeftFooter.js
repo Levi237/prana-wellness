@@ -14,12 +14,12 @@ const LeftFooter = () => {
 };
 
 const LogoBox = styled.div`
-  width: 180px;
+  width: 200px;
   text-align: center;
   color: #FFF;
   img {
     margin: 0 auto -20px;
-    width: 100%; 
+    width: 150px; 
   }
   @media screen and (max-width: 945px) {
     padding-left: .5vw;

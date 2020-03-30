@@ -221,7 +221,7 @@ const GridContainer = styled.div`
   display: grid;
   width: 100vw;
   min-height: 100%;
-  grid-template-rows: 46px 150px calc(100vh - 196px) auto 256px;
+  grid-template-rows: 46px 150px calc(100vh - 196px) auto 220px;
   grid-template-columns: 200px calc(100vw - 400px) 200px;
   background-color: #fff;
   grid-gap: 0;
