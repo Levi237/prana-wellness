@@ -16,7 +16,10 @@ export default class EmailSignup extends Component {
                     No matter your schedule, or location, experience wellness{" "}
                     for the working mind with our signature virtual packages{" "}
                     including yoga, meditation, and breathwork.
+                    <br/><br/>
+                    Sign up now to receive access to one my Meditation video!
                 </p>
+
                 <EmailComponent/>
 
             </Container>
