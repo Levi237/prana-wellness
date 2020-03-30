@@ -1,11 +1,11 @@
 import React from 'react';
 
-import EmailerRequest   from '../admin/EmailerRequest';
+// import EmailerRequest   from '../admin/EmailerRequest';
 
  const MidFooter = () => {
     return(<>
-        <section>sign up for our WELLNESS NEWSLETTER </section>
-        <EmailerRequest />
+        {/* <section>sign up for our WELLNESS NEWSLETTER </section> */}
+        {/* <EmailerRequest /> */}
     </>);
 };
 

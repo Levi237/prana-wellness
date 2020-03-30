@@ -5,7 +5,7 @@ import styled from 'styled-components';
     return(<>
           <LogoBox className="logo-box">
             <img src="../icon_white.png" alt="icon-white" />
-            <Prana className="pranaText" >PRANA</Prana>
+            <Prana className="pranaText">PRANA</Prana>
             <Wellness className="wellnessText">wellness</Wellness>
           </LogoBox>
     </>);
@@ -34,6 +34,9 @@ const LogoBox = styled.div`
 
       margin-left: 5vw;
       width: 20vw; 
+      @media screen and (max-width: 945px) {
+        margin: auto;
+      }
     }
 
   }
