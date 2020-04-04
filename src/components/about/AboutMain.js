@@ -38,7 +38,9 @@ const Container = styled.div`
 
 const VideoBox = styled.embed`
     width: 80vw;
-    height: 45vw;
+    height: 33vw;
+    max-width: 800px;
+    max-height: 330px;
     margin: 0 auto 40px;
     @media screen and (max-width: 945px) {
       width: 100vw;
