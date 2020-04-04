@@ -55,7 +55,7 @@ position: absolute;
 top: 0px;
 
   @media (max-aspect-ratio: 16/9) and (max-width: 945px) {
-    height: 90vh;
+
   }
 `;
 
@@ -109,7 +109,7 @@ const WelcomeTo = styled.section`
   margin-bottom: calc(7vh - 2.5vw - 60px);
 @media screen and (max-width: 945px) {
   font-size: 5vw;
-  margin: 3vw;
+  margin-top: calc(40px + 10vw);
 }
   `;
 const Prana = styled.section`
@@ -145,7 +145,7 @@ width: 100vw;
 
 @media screen and (max-width: 945px) {
   font-size: 5vw;
-  bottom: 55vw;
+  bottom: 20vh;
 }
 `;
 
@@ -157,7 +157,7 @@ text-align: center;
 width: 100vw;
 
 @media screen and (max-width: 945px) {
-  bottom: 40vw;
+  bottom: 12vh;
 }
 `;
 const ButtonCTA = styled.button`
