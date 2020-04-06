@@ -10,6 +10,8 @@ import HomeStephanie        from './HomeStephanie';
 import LogoDisplay          from '../LogoDisplay';
 import ServiceDisplay       from '../services/ServiceDisplay';
 
+import Reviews from '../Reviews';
+
 const fourSquareStyle = {
     transform: 'scale(.75)',
     position: 'relative',
@@ -115,12 +117,28 @@ export default class HomeMain extends Component {
                 <br/><br/>       
                 <LotusDisplay />
                 <HomeStephanie />          
-                <h1>As featured In</h1>
+                <LogoHeader>As featured In</LogoHeader>
                 <LogoDisplay logos={features}/>
+                <br/><br/><br/>
+                <ReviewsHeader>
+                    see why people love prana
+                </ReviewsHeader>
+      <Reviews/>
+      <br/><br/><br/>
             </HomeContainer>
         );
     };
 };
+
+const ReviewsHeader = styled.h1`
+
+`;
+
+const LogoHeader = styled.h1`
+background-color: rgba(150,91,165,0.2);
+margin-bottom: 0;
+padding 2vw;
+`;
 
 const Break = styled.br`
     @media (max-width: 945px){

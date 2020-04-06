@@ -85,9 +85,7 @@ const LocalWrapper = styled.div`
     img {
         width: calc(50vw - 150px);
         vertical-align: middle;
-        @media (min-width: ${desktopBreak}) {
-            width: 30px;
-        }
+        max-width: 30px;
     }
     img.left{  
         transform: rotate(-180deg);

@@ -49,7 +49,7 @@ const LogoList = styled.div`
 `;
 
 const Logo = styled.section`
-    height: 80px;
+    height: 60px;
     display: inline-block;
     vertical-align: top;
     padding: 14px;
@@ -57,6 +57,6 @@ const Logo = styled.section`
     position: relative;
     `;
 const Image = styled.img`
-    height: 80px;
+    height: 60px;
 `;
 export default CustomerDisplay

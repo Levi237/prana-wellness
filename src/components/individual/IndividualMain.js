@@ -4,8 +4,6 @@ import styled from 'styled-components';
 import PackageDisplay       from '../corporate/PackageDisplay';
 import ServiceDisplay       from '../services/ServiceDisplay';
 
-import Reviews from '../Reviews';
-
 import PurpleContent        from '../PurpleContent';
 import '../PurpleContent';
 
@@ -60,13 +58,10 @@ export default class IndividualMain extends Component {
       <Container className="wellness-main-container purple-content">
         <PurpleContent content={individualPurpleContent} toggle={toggleReferralBtn}/>
       </Container>
-      <br/><br/><br/>
-      <Reviews/>
-      <br/><br/><br/>
       <div>
       <ServiceDisplay services={this.state.services}/>
       </div>
-      <br/>
+      <br/>      <br/>      <br/>
       <h1>subscribe to personal wellness</h1>
       <PackageDisplay pricePack={this.state.individualPlans}/>
     </>);

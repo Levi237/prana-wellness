@@ -279,7 +279,7 @@ const NavGrid = styled.div`
 const MainGrid = styled.div`
   grid-area: main;
   background-color: #FFF;
-  padding-bottom: 108px;
+  padding-bottom: 60px;
   text-align: center;
 `;
 
