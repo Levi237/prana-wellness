@@ -1,10 +1,17 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-
-const winWidth = "400px";
-const winHeight = "150px";
 const desktopBreak = "620px";
+
+const desktopWidth = 400
+const desktopWinWidth = desktopWidth + "px";
+const desktopWinHeight = "150px";
+
+const mobileWidth = 250;
+const mobileWinWidth =  mobileWidth + "px";
+const mobileWinHeight = "120px";
+
+const reviewsLength = 5;
 export default class Reviews extends Component { 
     state = {
         reviews: [{
@@ -26,10 +33,12 @@ export default class Reviews extends Component {
     }
 
     scrollRight = () => {
-        document.getElementById('reviews').scrollLeft += 400;
+        document.getElementById('desktop').scrollLeft += desktopWidth;
+        document.getElementById('mobile').scrollLeft += mobileWidth;
     }
     scrollLeft = () => {
-        document.getElementById('reviews').scrollLeft -= 400;
+        document.getElementById('desktop').scrollLeft -= desktopWidth;
+        document.getElementById('mobile').scrollLeft -= mobileWidth;
     }
 
     render(){
@@ -47,17 +56,22 @@ export default class Reviews extends Component {
         return(
             <LocalWrapper>
                 <button onClick={this.scrollLeft}>
-                <i className="arrow left"></i>
+                <ArrowLeft className="left"></ArrowLeft>
                 </button>
                 <img className="left" src="quote.png"/>
-                <WindowContainer id='reviews'>
+                <WindowContainerDesktop className='desktop' id='desktop'>
                     <ReviewContainer>
                         {ReviewList}
                     </ReviewContainer>
-                </WindowContainer>
+                </WindowContainerDesktop>
+                <WindowContainerMobile id='mobile'>
+                    <ReviewContainer>
+                        {ReviewList}
+                    </ReviewContainer>
+                </WindowContainerMobile>
                 <img className="right" src="quote.png"/>
                 <button onClick={this.scrollRight}>
-                    <i className="arrow right"></i>
+                    <ArrowRight className="right"></ArrowRight>
                 </button>
             </LocalWrapper> 
         );
@@ -66,58 +80,91 @@ export default class Reviews extends Component {
 
 const LocalWrapper = styled.div`
     width: 100vw;
-    height: ${winHeight};
+    height: ${mobileWinHeight};
+
     img {
-        width: 30px;
+        width: calc(50vw - 150px);
         vertical-align: middle;
+        @media (min-width: ${desktopBreak}) {
+            width: 30px;
+        }
     }
-    img.left{
-        margin-right: 20px;
+    img.left{  
         transform: rotate(-180deg);
         -webkit-transform: rotate(-180deg);
+        
+        margin-right: 1vw;
+        @media (min-width: ${desktopBreak}) {
+            margin-right: 20px;
+        }
     }
     img.right{
-        margin-left: 20px;
+        margin-left: 1vw;
+        @media (min-width: ${desktopBreak}) {
+            margin-left: 20px;
+        }
     }
-    button {
-        padding: 0;
-        height: calc(${winHeight});
-        width: 70px;
-        overflow: hidden;
-        display: inline-block;
-        font-size:20px;
-        border: 0;
-        color: purple;
-        vertical-align: top;
-        text-align: center;
-    }
-    button:focus { outline:none }
-    i {
-        border: solid #744A9E;
-        border-width: 0 1px 1px 0;
-        display: inline-block;
-        padding: 20px;
 
-      }
-      i.right {
-        transform: rotate(-45deg);
-        -webkit-transform: rotate(-45deg);
-      }
-      i.left {
-        transform: rotate(135deg);
-        -webkit-transform: rotate(135deg);
-      }
+    button {
+        text-align: center;
+        color: purple;
+
+        width: 20px;
+        height: calc(${mobileWinHeight});
+
+        padding: 0;
+
+        border: 0;
+        overflow: hidden;
+        vertical-align: top;
+        display: inline-block;
+
+        &:focus { 
+            outline: none 
+        }
+        @media (min-width: ${desktopBreak}) {
+            height: ${desktopWinHeight};
+            width: 70px;
+        }
+    }
+
+
 `;
 
+const Arrow = styled.i`
+    border: solid #744A9E;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 1vw;
+
+    &:hover {
+        border:solid pink;
+        border-width: 0 1px 1px 0;
+    }
+    @media (min-width: ${desktopBreak}) {
+        padding: 20px;
+    }
+
+  `;
+const ArrowRight = styled(Arrow)`
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+`;
+const ArrowLeft = styled(Arrow)`
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+`;
 const WindowContainer = styled.div`
-    height: ${winHeight};
-    width: ${winWidth};
+    height: ${mobileWinHeight};
+    width: ${mobileWinWidth};
+    margin: 0 auto;
+
     overflow-x: scroll;
     overflow-y: hidden;
-    margin: 0 auto;
-    display: inline-block;
+
     vertical-align: middle;
-    
+    display: inline-block;
+
     ::-webkit-scrollbar {
         -webkit-appearance: none;
     }
@@ -129,35 +176,71 @@ const WindowContainer = styled.div`
         border: 2px solid white; /* should match background, can't be transparent */
         background-color: rgba(191,158,200,.5);
     }
+    @media (min-width: ${desktopBreak}) {
+        height: ${desktopWinHeight};
+        width: ${desktopWinWidth};
+
+    }
+
+`;
+
+const WindowContainerDesktop = styled(WindowContainer)`
+@media (max-width: ${desktopBreak}) {
+display: none;
+
+}
+`;
+const WindowContainerMobile = styled(WindowContainer)`
+    display: none;
+    @media (max-width: ${desktopBreak}) {
+        display: inline-block;
+    }
 `;
 
 const ReviewContainer = styled.div`
-    height: ${winHeight};
-    width: 2000px;
+    height: ${mobileWinHeight};
+    width: calc(${mobileWinWidth}*${reviewsLength});
     background-color: transparent;
     display: flex;
+    @media (min-width: ${desktopBreak}) {
+        height: ${desktopWinHeight};
+        width: calc(${desktopWinWidth}*${reviewsLength});
+    }
 `;
 
 const Review = styled.div`
-    width: ${winWidth};
-    height: ${winHeight};
+    width: ${mobileWinWidth};
+    height: ${mobileWinHeight};
     display: inline-block;
+    @media (min-width: ${desktopBreak}) {
+        width: ${desktopWinWidth};
+        height: ${desktopWinHeight};
+    }
 `;
 
 const Text = styled.div`
     vertical-align: middle;
-    height: 120px;
+    height: calc(${mobileWinHeight} - 30px);
     overflow: hidden;
     vertical-align: middle;
-    font-size: 13px;
-    line-height: 23px;
+    font-size: 10px;
+    line-height: 18px;
     display: flex;
     align-items: center;
+    @media (min-width: ${desktopBreak}) {
+        height: calc(${desktopWinHeight} - 30px);
+        font-size: ${desktopBreak};
+        font-size: 13px;
+        line-height: 23px;
+    }
 `;
 
 const Reviewer = styled.h1`
-    font-size: 14px;
+    font-size: 11px;
     margin: 0 auto;
     display: inline-block;
     height: 30px;
+    @media (min-width: ${desktopBreak}) {
+        font-size: 14px;
+    }
 `;
