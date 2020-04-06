@@ -83,7 +83,7 @@ const LocalWrapper = styled.div`
     height: ${mobileWinHeight};
 
     img {
-        width: calc(50vw - 150px);
+        width: calc(49.5vw - 150px);
         vertical-align: middle;
         max-width: 30px;
     }
@@ -133,7 +133,7 @@ const Arrow = styled.i`
     border: solid #744A9E;
     border-width: 0 1px 1px 0;
     display: inline-block;
-    padding: 1vw;
+    padding: 1.5vw;
 
     &:hover {
         border:solid pink;
