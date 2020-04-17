@@ -138,6 +138,10 @@ const LogoHeader = styled.h1`
 background-color: rgba(150,91,165,0.2);
 margin-bottom: 0;
 padding 2vw;
+position: static;
+@media and (max-width: 945px){
+    position: relative;
+}
 `;
 
 const Break = styled.br`
