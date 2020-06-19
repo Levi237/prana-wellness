@@ -11,8 +11,7 @@ export default class HomeStephanie extends Component {
             title: "Meet Stephanie",
             subtitle: "founder, prana wellness",
             content: 
-                "Determined to learn from the source, I traveled to Rishikesh, India to study yoga, meditation, and breathwork under master yogis. India challenged me both mentally and physically, and the knowledge that I gained was far beyond yoga poses. It gave me a new perspective on wellness."
-            ,
+                "Determined to learn from the source, I traveled to Rishikesh, India to study yoga, meditation, and breathwork under master yogis. India challenged me both mentally and physically, and the knowledge that I gained was far beyond yoga poses. It gave me a new perspective on wellness.",
             image: "home-meet.png",
         }
     };

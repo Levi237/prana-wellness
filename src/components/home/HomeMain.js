@@ -170,7 +170,7 @@ const Quote = styled.div`
         bottom: 0;;
         // margin-top: calc(50vh - 20vw);
         font-size: 2.25vw;
-        // width: 100vw;
+ 
         height: 20vw;
         margin: 0 auto;
     }
