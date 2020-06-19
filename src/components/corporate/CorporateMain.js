@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import BenefitsDisplay      from './BenefitsDisplay';
-import PackageDisplay       from './PackageDisplay';
+// import PackageDisplay       from './PackageDisplay';
+import NewPackageDisplay   from './NewPackageDisplay';
 import PranaDifference      from './PranaDifference';
 
 import PurpleContent        from '../PurpleContent';
@@ -14,36 +15,45 @@ export default class CorporateMain extends Component {
       corporatePlans: [{ 
         title: "Namaste",
         price: "$300/session",
-        duration: "1x per month",
-        details: ["Yoga", 
-          "Meditation", 
-          "Breathwork", 
-          "Online Resources"
+        duration: "1/month",
+        details: [
+          "Mix and match classes", 
+          "New, hands-on guided class each session"
         ],
-        star: "*6 month commitment",
+        // star: "*6 month commitment",
         image: "namaste.png",
     },{
         title: "Karma",
-        price: "$200/session",
-        duration: "1 x per week",
+        price: "$250/session",
+        duration: "4/month",
         secondTitle: "Namaste +",
         details: [
-          "1 Lunch & Learn", 
-          "Access to special events"
+          "Monthly online freebie", 
         ],
-        star:  "*3 month commitment",
+        // star:  "*3 month commitment",
         image: "karma.png",
     },{
         title: "Guru",
-        price: "$4500",
-        duration: "12 week intensive",
-        secondTitle: "Karma + Namaste",
+        price: "$200/session",
+        duration: "8/month",
+        secondTitle: "Karma + Namaste +",
         details: [
-          "Structured program for workplace refresh", 
-          "Team Building",
-          "Wellness Coaching",
+          "Free access to popup wellness events", 
+          "20% off Online Wellness Courses",
+          "Monthly Lunch and Learn",
         ],
-        star: "*Customizable, pricing may vary*",
+        // star: "*Customizable, pricing may vary*",
+        image: "guru.png",
+    },{
+        title: "Samadhi",
+        price: "$100/session",
+        duration: "20/month",
+        secondTitle: "Karma + Namaste + Guru +",
+        details: [
+          "IN-OFFICE WELLNESS COACH 5 DAYS PER WEEK!", 
+          "Monthly Team building wellness day",
+        ],
+        // star: "*Customizable, pricing may vary*",
         image: "guru.png",
     }],
     CorporatePurpleContent: {
@@ -72,7 +82,8 @@ export default class CorporateMain extends Component {
           <BenefitsDisplay />
         </div>
         <h1>Corporate Wellness Solutions</h1>
-        <PackageDisplay pricePack={corporatePlans}/>
+        {/* <PackageDisplay pricePack={corporatePlans}/> */}
+        <NewPackageDisplay pricePack={corporatePlans}/>
 
         <div className="custom-quote purple-content">
           <PurpleContent content={CorporatePurpleContent} toggle={toggleContactBtn}/>
