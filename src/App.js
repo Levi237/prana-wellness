@@ -164,7 +164,7 @@ export default class App extends Component {
             <Route path={routes.CORP} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="CONSIDER" subtitle="Corporate Wellness" image="corporate-header2.png"/> }/>   
             <Route path={routes.SERV} exact render={() => 
-                      <HeaderComponent purpleBox={(true)} title="EXPLORE OUR WIDE-RANGING" subtitle="Wellness Services" image="service-header.png"/> }/> 
+                    <HeaderComponent purpleBox={(true)} title="EXPLORE OUR WIDE-RANGING" subtitle="Wellness Services" image="service-header.png"/> }/> 
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
           </Switch>
