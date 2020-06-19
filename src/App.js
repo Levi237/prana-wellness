@@ -99,9 +99,9 @@ export default class App extends Component {
     referralForm.classList.toggle('inactive');
   };
   toggleContactBtn = (e) => {
-    const referralForm = document.getElementById('contact');
-    referralForm.classList.toggle('active');
-    referralForm.classList.toggle('inactive');
+    const contactBtn = document.getElementById('contact');
+    contactBtn.classList.toggle('active');
+    contactBtn.classList.toggle('inactive');
   };
   toggleEmailSignup = (e) => {
     const emailForm = document.getElementById('email');
