@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import BenefitsDisplay      from './BenefitsDisplay';
 // import PackageDisplay       from './PackageDisplay';
-import NewPackageDisplay   from './NewPackageDisplay';
+import NewPackageDisplay   from './'
 import PranaDifference      from './PranaDifference';
 
 import PurpleContent        from '../PurpleContent';
