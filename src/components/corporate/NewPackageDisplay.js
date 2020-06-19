@@ -1,30 +1,43 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import './PackageDisplay.css';
+// import './PackageDisplay.css';
 
 const NewPackageDisplay =({pricePack})=> {
 
     const showPackage = pricePack.map((pack, key) => {
         const details = pack.details.map((detail, k) => {
-            return <li key={k}>{detail}</li>
+            return <tr key={k}><td>{detail.product}</td><td>{detail.included[0]}</td><td>{detail.included[1]}</td><td>{detail.included[2]}</td><td>{detail.included[3]}</td></tr>
+        })
+        const titles = pack.title.map((title,k) => {
+            return <td key={k}>{title}</td>
+        })
+        const prices = pack.price.map((price,k) => {
+            return <td key={k}>{price}</td>
+        })
+        const durations = pack.duration.map((duration,k) => {
+            return <td key={k}>{duration}</td>
         })
         return(
-            <div key={key} className="pack-container">
-                <img className="packBackgroundImage" src={`${pack.image}`} alt="pack-box" />
-                <div className="price-pack-box">
-                    <section>{pack.title}</section>
-                    <section>{pack.price}</section>
-                    <section>{pack.duration}</section>
-                    <section>{pack.secondTitle}</section>
-                    {/* <section>{pack.secondTitle}</section> */}
-                    <section></section>
-                    <section>{pack.star}</section>
-                    <ul>{details}</ul>
+            <Container key={key} className="pack-container">
+                <div className="">
+                <table>
+                    <tr><td>Package</td>{titles}</tr>
+                    <tr><td>Price</td>{prices}</tr>
+                    <tr><td>Duration</td>{durations}</tr>
+                    {details}
+                </table>
+ 
+
                 </div>
-                    <button>BUY NOW</button>
-            </div>
+            </Container>
         )
     })
     return(<>{showPackage}</>);
 };
+const Container = styled.div`
+    section {
+        display: inline-block;
+    }
+`;
 export default NewPackageDisplay;
