@@ -42,7 +42,6 @@ export default class Reviews extends Component {
     }
 
     render(){
-
         const { reviews } = this.state
             const ReviewList = reviews.map((review, key) => {
                 return (
@@ -109,7 +108,6 @@ const LocalWrapper = styled.div`
 
         width: 20px;
         height: calc(${mobileWinHeight});
-
         padding: 0;
 
         border: 0;
@@ -125,8 +123,6 @@ const LocalWrapper = styled.div`
             width: 70px;
         }
     }
-
-
 `;
 
 const Arrow = styled.i`
@@ -142,8 +138,7 @@ const Arrow = styled.i`
     @media (min-width: ${desktopBreak}) {
         padding: 20px;
     }
-
-  `;
+`;
 const ArrowRight = styled(Arrow)`
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
@@ -179,14 +174,12 @@ const WindowContainer = styled.div`
         width: ${desktopWinWidth};
 
     }
-
 `;
 
 const WindowContainerDesktop = styled(WindowContainer)`
-@media (max-width: ${desktopBreak}) {
-display: none;
-
-}
+    @media (max-width: ${desktopBreak}) {
+        display: none;
+    }
 `;
 const WindowContainerMobile = styled(WindowContainer)`
     display: none;
