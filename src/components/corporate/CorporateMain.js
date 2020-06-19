@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import BenefitsDisplay      from './BenefitsDisplay';
 // import PackageDisplay       from './PackageDisplay';
-import NewPackageDisplay   from './'
+import NewPackageDisplay   from './NewPackageDisplay';
 import PranaDifference      from './PranaDifference';
 
 import PurpleContent        from '../PurpleContent';
@@ -12,50 +12,80 @@ import '../PurpleContent.css';
 
 export default class CorporateMain extends Component {
   state = {
-      corporatePlans: [{ 
-        title: "Namaste",
-        price: "$300/session",
-        duration: "1/month",
-        details: [
-          "Mix and match classes", 
-          "New, hands-on guided class each session"
-        ],
-        // star: "*6 month commitment",
-        image: "namaste.png",
-    },{
-        title: "Karma",
-        price: "$250/session",
-        duration: "4/month",
-        secondTitle: "Namaste +",
-        details: [
-          "Monthly online freebie", 
-        ],
-        // star:  "*3 month commitment",
-        image: "karma.png",
-    },{
-        title: "Guru",
-        price: "$200/session",
-        duration: "8/month",
-        secondTitle: "Karma + Namaste +",
-        details: [
-          "Free access to popup wellness events", 
-          "20% off Online Wellness Courses",
-          "Monthly Lunch and Learn",
-        ],
-        // star: "*Customizable, pricing may vary*",
-        image: "guru.png",
-    },{
-        title: "Samadhi",
-        price: "$100/session",
-        duration: "20/month",
-        secondTitle: "Karma + Namaste + Guru +",
-        details: [
-          "IN-OFFICE WELLNESS COACH 5 DAYS PER WEEK!", 
-          "Monthly Team building wellness day",
-        ],
-        // star: "*Customizable, pricing may vary*",
-        image: "guru.png",
+    corporateChart: [{
+      title: [
+        "Namaste",
+        "Karma",
+        "Guru",
+        "Samadhi"
+      ],
+      price: [
+        "300",
+        "250",
+        "200",
+        "100"
+      ],
+      duration: [
+        "1",
+        "4",
+        "8",
+        "20"
+      ],
+      details: [
+        "Mix and match classes", 
+        "New, hands-on guided class each session",
+        "Monthly online freebie", 
+        "Free access to popup wellness events", 
+        "20% off Online Wellness Courses",
+        "Monthly Lunch and Learn",
+        "IN-OFFICE WELLNESS COACH 5 DAYS PER WEEK!", 
+        "Monthly Team building wellness day",
+      ]
     }],
+    //   corporatePlans: [{ 
+    //     title: "Namaste",
+    //     price: "$300/session",
+    //     duration: "1/month",
+    //     details: [
+    //       "Mix and match classes", 
+    //       "New, hands-on guided class each session"
+    //     ],
+    //     // star: "*6 month commitment",
+    //     image: "namaste.png",
+    // },{
+    //     title: "Karma",
+    //     price: "$250/session",
+    //     duration: "4/month",
+    //     secondTitle: "Namaste +",
+    //     details: [
+    //       "Monthly online freebie", 
+    //     ],
+    //     // star:  "*3 month commitment",
+    //     image: "karma.png",
+    // },{
+    //     title: "Guru",
+    //     price: "$200/session",
+    //     duration: "8/month",
+    //     secondTitle: "Karma + Namaste +",
+    //     details: [
+    //       "Free access to popup wellness events", 
+    //       "20% off Online Wellness Courses",
+    //       "Monthly Lunch and Learn",
+    //     ],
+    //     // star: "*Customizable, pricing may vary*",
+    //     image: "guru.png",
+    // },{
+    //     title: "Samadhi",
+    //     price: "$100/session",
+    //     duration: "20/month",
+    //     secondTitle: "Karma + Namaste + Guru +",
+    //     details: [
+    //       "IN-OFFICE WELLNESS COACH 5 DAYS PER WEEK!", 
+    //       "Monthly Team building wellness day",
+    //     ],
+    //     // star: "*Customizable, pricing may vary*",
+    //     image: "guru.png",
+    // }],
     CorporatePurpleContent: {
       header: "DON'T SEE A PACKAGE THAT'S RIGHT?",
       message: "Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.",
@@ -64,7 +94,7 @@ export default class CorporateMain extends Component {
   };
 
   render(){
-    const { corporatePlans, CorporatePurpleContent } = this.state;
+    const { corporateChart, CorporatePurpleContent } = this.state;
     const { toggleContactBtn } = this.props;
 
     return(<>
@@ -83,7 +113,7 @@ export default class CorporateMain extends Component {
         </div>
         <h1>Corporate Wellness Solutions</h1>
         {/* <PackageDisplay pricePack={corporatePlans}/> */}
-        <NewPackageDisplay pricePack={corporatePlans}/>
+        <NewPackageDisplay pricePack={corporateChart}/>
 
         <div className="custom-quote purple-content">
           <PurpleContent content={CorporatePurpleContent} toggle={toggleContactBtn}/>
