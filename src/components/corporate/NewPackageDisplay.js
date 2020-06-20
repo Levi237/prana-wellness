@@ -65,13 +65,13 @@ const Table = styled.table`
     background-color: #fff!important;
     z-index: 1;
     position: relative;
-    box-shadow 0 14px 12px -12px rgba(0,0,0.6);
+    box-shadow 0 14px 12px -12px rgba(0,0,0,.5);
 
     tr {
         border-spacing: 1px;
         padding: 10px;
     }
-    tr:first-of-type, tr:nth-of-type(2) td, tr:nth-of-type(3) td  {
+    tr:first-of-type, tr:nth-of-type(2) td, tr:nth-of-type(3) td, tr:last-of-type td {
         border-bottom:none;
     }
     td {
