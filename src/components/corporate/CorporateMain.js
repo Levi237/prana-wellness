@@ -12,19 +12,19 @@ import '../PurpleContent.css';
 
 export default class CorporateMain extends Component {
   state = {
-    corporateChart: [{
-      title: [
-        "Namaste",
-        "Karma",
-        "Guru",
-        "Samadhi"
-      ],
-      price: [
-        "300",
-        "250",
-        "200",
-        "100"
-      ],
+      deals: [{
+        name: "Namaste",
+        price: "300"
+      },{
+        name: "Karma",
+        price: "250"
+      },{
+        name: "Guru",
+        price: "200"
+      },{
+        name: "Samadhi",
+        price: "100"
+      }],
       duration: [
         "1",
         "4",
@@ -34,31 +34,30 @@ export default class CorporateMain extends Component {
       details: [
         {
           product: "Mix and match classes",
-          included: ["x","x","x","x"],
+          included: ["/checkmark/check-green.png","/checkmark/check-green.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
-          product: "New, hands-on guided class each session",
-          included: ["x","x","x","x"],
+          product: "Hands-on guided classes",
+          included: ["/checkmark/check-green.png","/checkmark/check-green.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
-          product: "Monthly online freebie", 
-          included: ["x","x","x","x"],
+          product: "Monthly freebie", 
+          included: ["checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
-          product: "Free access to popup wellness events", 
-          included: ["x","x","x","x"],
+          product: "Wellness events access", 
+          included: ["checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
-          product: "20% off Online Wellness Courses",
-          included: ["x","x","x","x"],
+          product: "20% off Online Courses",
+          included: ["checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
-          product: "Monthly Lunch and Learn",
-          included: ["x","x","x","x"],
+          product: "Monthly Lunch & Learn",
+          included: ["checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-green.png","/checkmark/check-purple.png"],
         },{
-          product: "IN-OFFICE WELLNESS COACH 5 DAYS PER WEEK!",
-          included: ["x","x","x","x"],
+          product: "In-office Coaching",
+          included: ["checkmark/check-blank.png","checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-purple.png"],
         },{
-          product: "Monthly Team building wellness day",
-          included: ["x","x","x","x"],
+          product: "Team building day",
+          included: ["checkmark/check-blank.png","checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-purple.png"],
         } 
-      ]
-    }],
+      ],
     CorporatePurpleContent: {
       header: "DON'T SEE A PACKAGE THAT'S RIGHT?",
       message: "Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.",
@@ -67,7 +66,7 @@ export default class CorporateMain extends Component {
   };
 
   render(){
-    const { corporateChart, CorporatePurpleContent } = this.state;
+    const { details, duration, deals, CorporatePurpleContent } = this.state;
     const { toggleContactBtn } = this.props;
 
     return(<>
@@ -83,8 +82,7 @@ export default class CorporateMain extends Component {
           <BenefitsDisplay />
         </div>
         <h1>Corporate Wellness Solutions</h1>
-        {/* <PackageDisplay pricePack={corporatePlans}/> */}
-        <NewPackageDisplay pricePack={corporateChart}/>
+        <NewPackageDisplay deals={deals} details={details} duration={duration} duration={duration}/>
         <div className="custom-quote purple-content">
           <PurpleContent content={CorporatePurpleContent} toggle={toggleContactBtn}/>
         </div>  
