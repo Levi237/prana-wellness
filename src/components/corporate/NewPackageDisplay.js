@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const mobileMax = "800px";
+const mobileMax = "650px";
 const lightGreen = "rgba(150, 198, 68)";
 const namasteArrow = "rgba(220,199,225)";
 const samadhiArrow = "rgb(91, 148, 46)";
@@ -30,6 +30,8 @@ const NewPackageDisplay =({deals, details, duration})=> {
     return(
         <Container>
             <div>
+
+
             <Table>
                 <TitleTR>
                     <td></td><td></td><td></td><td></td><td></td>
@@ -44,7 +46,15 @@ const NewPackageDisplay =({deals, details, duration})=> {
                     <td>Monthly Sessions</td>{durations}
                 </tr>
                 {detail}
-            </Table>
+
+
+</Table>
+
+<RulesDiv>
+                    *Class types include: Yoga, Meditation/Breathwork, Bootcamp<br/>
+                    **More than 30 employees + $50/session<br/>
+                    ***All packages require 6 month commitment
+</RulesDiv>
             </div>
         </Container>
     )
@@ -62,21 +72,21 @@ const Table = styled.table`
     max-with: 800px;
     border-spacing: 0;
     margin: 0 auto;
-    background-color: #fff!important;
+    background-color: #fff;
     z-index: 1;
     position: relative;
-    box-shadow 0 14px 12px -12px rgba(0,0,0,.5);
+
 
     tr {
         border-spacing: 1px;
         padding: 10px;
     }
-    tr:first-of-type, tr:nth-of-type(2) td, tr:nth-of-type(3) td, tr:last-of-type td {
+    tr:first-of-type, tr:nth-of-type(2) td, tr:nth-of-type(3) td {
         border-bottom:none;
     }
     td {
         width: 0px;
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid rgba(0,0,0,.1);
     }
     td:last-of-type {
         background-color: ${lightGreen};
@@ -117,7 +127,7 @@ const TitleTR = styled.tr`
 const DetailTD = styled.td`
 
         span {
-            font-size: 1.2em!important;
+            font-size: 1em!important;
         }
         @media screen and (max-width: ${mobileMax}) {
             span {
@@ -198,5 +208,14 @@ const ArrowTR = styled.tr`
         }
     }
 `;
-
+const RulesDiv = styled.div`
+    background-color: #fff!important;
+    position: relative;
+    z-index: 1;
+    max-width: ${mobileMax};
+    margin: 0 auto;
+        box-shadow 0 14px 12px -12px rgba(0,0,0,.5);
+        font-size: .5em;
+        padding: 10px 0;
+`;
 export default NewPackageDisplay;
