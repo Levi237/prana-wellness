@@ -86,7 +86,7 @@ export default class HomeMain extends Component {
         }],
         features: [{
             name: 'voyage_la.png',
-            link: 'http://voyagela.com/interview/meet-stephanie-erazo-travel-slay-fitness-mid-wilshiregrove/'
+            link: 'https://shoutoutla.com/stephanie-erazo-motivator-in-chief-prana-wellness-ryt/'
         },{
             name: 'essence.png',
             link: 'https://www.essence.com/lifestyle/travel/this-fitness-guru-takes-travelers-on-international-voyages-to-pull-them-out-of-their-comfort-zones/'
@@ -123,8 +123,8 @@ export default class HomeMain extends Component {
                 <ReviewsHeader>
                     see why people love prana
                 </ReviewsHeader>
-      <Reviews/>
-      <br/><br/><br/>
+                <Reviews/>
+                <br/><br/><br/>
             </HomeContainer>
         );
     };
