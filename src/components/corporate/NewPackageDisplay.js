@@ -214,8 +214,9 @@ const RulesDiv = styled.div`
     z-index: 1;
     max-width: ${mobileMax};
     margin: 0 auto;
-        box-shadow 0 14px 12px -12px rgba(0,0,0,.5);
-        font-size: .5em;
-        padding: 10px 0;
+    box-shadow 0 14px 12px -12px rgba(0,0,0,.5);
+    font-size: .5em;
+    padding: 10px 0;
+    border-radius: 0 0 5px 5px;
 `;
 export default NewPackageDisplay;

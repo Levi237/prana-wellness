@@ -20,8 +20,7 @@ const HomeHeader = ({toggleContactBtn}) => {
           }}
         >
         <source
-            src="https://fitplan-marketing.s3-us-west-2.amazonaws.com/psd/tester.mov"
-            // src="https://player.vimeo.com/external/395830932.hd.mp4?s=d355e4cba477d5307c66b116a78ba687d56f5b7e&profile_id=174"
+            src="https://player.vimeo.com/external/432921265.hd.mp4?s=8aebeb5818eac88d46085763ac93b372951e79f4&profile_id=175"
             type="video/mp4"
         />
         </VideoFrame>
