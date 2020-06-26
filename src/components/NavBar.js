@@ -1,6 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React       from 'react';
+import styled      from 'styled-components';
+import { Link }    from 'react-router-dom';
 import * as routes from '../constants/routes'
 
 const NavBar = ({ page, user, logout, toggleHamburger }) => {
@@ -9,7 +9,7 @@ const NavBar = ({ page, user, logout, toggleHamburger }) => {
       <LogoIcon>
         <Link to={routes.HOME}>
           <LogoBox>
-            <Logo src={page === "home" ? "icon_white.png" : "icon_fullcolor.png"} alt="icon-white" />
+            <Logo src={page === "home" ? "icon_white.png" : "icon_fullcolor_light.png"} alt="icon" />
           </LogoBox>
         </Link>
       </LogoIcon>
