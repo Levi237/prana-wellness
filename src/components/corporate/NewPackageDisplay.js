@@ -40,7 +40,7 @@ const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
                 <ColorBlockTR>
                     <td>PRICING TABLE
                         <br/>
-                        <small>/session</small>
+                        <small>per session:</small>
                     </td>{header}
                 </ColorBlockTR>
                 <ArrowTR>
@@ -79,8 +79,6 @@ const Table = styled.table`
     background-color: #fff;
     z-index: 1;
     position: relative;
-
-
     tr {
         border-spacing: 1px;
         padding: 10px;
