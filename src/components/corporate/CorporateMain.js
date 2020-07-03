@@ -25,12 +25,8 @@ export default class CorporateMain extends Component {
         name: "Samadhi",
         price: "100"
       }],
-      duration: [
-        "1",
-        "4",
-        "8",
-        "20"
-      ],
+      duration: ["1","4","8","20"],
+      totalMonthly: ["300", "1000", "1600", "2000"],
       details: [
         {
           product: "Mix and match classes",
@@ -66,7 +62,7 @@ export default class CorporateMain extends Component {
   };
 
   render(){
-    const { details, duration, deals, CorporatePurpleContent } = this.state;
+    const { details, duration, deals, totalMonthly, CorporatePurpleContent } = this.state;
     const { toggleContactBtn } = this.props;
 
     return(<>
@@ -82,7 +78,7 @@ export default class CorporateMain extends Component {
           <BenefitsDisplay />
         </div>
         <h1>Corporate Wellness Solutions</h1>
-        <NewPackageDisplay deals={deals} details={details} duration={duration} duration={duration}/>
+        <NewPackageDisplay deals={deals} details={details} totalMonthly={totalMonthly} duration={duration}/>
         <div className="custom-quote purple-content">
           <PurpleContent content={CorporatePurpleContent} toggle={toggleContactBtn}/>
         </div>  

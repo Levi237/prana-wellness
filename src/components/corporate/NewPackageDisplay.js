@@ -9,7 +9,7 @@ const karmaArrow = "rgba(150, 91, 165, 0.6)";
 const guruArrow = "#965BA5";
 const priceArrow = "rgba(150, 91, 165, 0.2)";
 
-const NewPackageDisplay =({deals, details, duration})=> {
+const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
     const header = deals.map((deal, k) => {
         return <DetailTD key={k}><span>{deal.name}</span><br/>${deal.price}</DetailTD>
     });
@@ -27,34 +27,38 @@ const NewPackageDisplay =({deals, details, duration})=> {
     const durations = duration.map((duration,k) => {
         return <td key={k}>{duration}</td>
     });
+    const totalMonthlys = totalMonthly.map((totalMonthly,k) => {
+        return <td key={k}>${totalMonthly}</td>
+    });
     return(
         <Container>
             <div>
-
-
             <Table>
                 <TitleTR>
                     <td></td><td></td><td></td><td></td><td></td>
                 </TitleTR>
                 <ColorBlockTR>
-                    <td>PRICING TABLE</td>{header}
+                    <td>PRICING TABLE
+                        <br/>
+                        <small>/session</small>
+                    </td>{header}
                 </ColorBlockTR>
                 <ArrowTR>
                     <td></td><td></td><td></td><td></td><td></td>
                 </ArrowTR>
                 <tr>
+                    <td>Monthly Price</td>{totalMonthlys}
+                </tr>
+                <tr>
                     <td>Monthly Sessions</td>{durations}
                 </tr>
                 {detail}
-
-
-</Table>
-
-<RulesDiv>
-                    *Class types include: Yoga, Meditation/Breathwork, Bootcamp<br/>
-                    **More than 30 employees + $50/session<br/>
-                    ***All packages require 6 month commitment
-</RulesDiv>
+            </Table>
+            <RulesDiv>
+                *Class types include: Yoga, Meditation/Breathwork, Bootcamp<br/>
+                **More than 30 employees + $50/session<br/>
+                ***All packages require 6 month commitment
+            </RulesDiv>
             </div>
         </Container>
     )
