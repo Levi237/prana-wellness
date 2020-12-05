@@ -33,7 +33,7 @@ export default class HomeMain extends Component {
         },{
             smallText: "relaxing",
             largeText: "Meditation",
-            image: "relaxing_meditation.png",
+            image: "meditate.png",
             content: "Accessible guided meditations to calm, bring focus, and de-stress.",
         },{
             smallText: "Lunch +",
