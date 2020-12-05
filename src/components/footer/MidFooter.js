@@ -7,7 +7,7 @@ import styled from 'styled-components';
     return(
     <Container>
         <section>Have Questions?</section>
-        <section>info@pranawellness.life</section> 
+        <section>Stephanie@pranawellnessworks.com</section> 
             {/* <section>sign up for our WELLNESS NEWSLETTER </section> */}
             {/* <EmailerRequest /> */}
     </Container>);
