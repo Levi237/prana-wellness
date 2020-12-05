@@ -39,12 +39,21 @@ const Contact = styled.div`
             background-color: rgba(255,255,255,.5);
         }
     }
-
+    img {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+    }
     @media screen and (max-width: 945px){
         button {
             margin-top: 5px;
         }
-
+        img {
+            right: 5px;
+            top: 5px;
+        }
     }
 `;
 
