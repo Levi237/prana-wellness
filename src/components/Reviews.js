@@ -11,12 +11,15 @@ const mobileWidth = 250;
 const mobileWinWidth =  mobileWidth + "px";
 const mobileWinHeight = "120px";
 
-const reviewsLength = 5;
+const reviewsLength = 6;
 export default class Reviews extends Component { 
     state = {
         reviews: [{
+            name: "Terri Hartman",
+            quote: "I have been doing yoga therapy with Stephanie, and it's not an exaggeration to say that she has changed my life."
+        },{
             name: "KAPOW, Chicago",
-            quote: "Prana Wellness came to our office to host a 1 hour yoga and meditation class and it was absolutely wonderful! Stephanie was so knowledgeable in her craft and has such a calming presence that makes you feel immediately at ease..."
+            quote: "Prana Wellness came to our office to host a 1 hour yoga and meditation class and it was absolutely wonderful! Stephanie was so knowledgeable in her craft and has such a calming presence that makes you feel immediately at ease."
         },{
             name: "Aaron, LAPD Captain",
             quote: "Stephanie was amazing! Lots of great feedback from the class participants and an excellent workout experience. Go Yoga!"
