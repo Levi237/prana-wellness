@@ -37,7 +37,7 @@ const HomeHeader = ({toggleContactBtn}) => {
             className="ctaBtn mobile-fill" 
             onClick={(e) => {toggleContactBtn(e)}}
           >
-            Bring Prana to Your Workplace
+            Bring Prana to You
           </ButtonCTA>
         </ButtonWrapper>
       </WelcomeContainer>
