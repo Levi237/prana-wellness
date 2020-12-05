@@ -5,9 +5,9 @@ const ContactBox = ({user,toggleEmailSignup}) => {
     return(
         <Contact>
             <span>Experience Virtual Wellness Packages{"  "}</span><button onClick={(e) => {toggleEmailSignup(e)}}>Free Meditation Offer</button>
-            {/* <a href="https://www.instagram.com/pranawellness_life/" target="_blank" rel="noopener noreferrer" alt="instagram link pranawellness.life">
+            <a href="https://www.instagram.com/pranawellnessworks/" target="_blank" rel="noopener noreferrer" alt="instagram @pranawellnessworks">
                 <img src="../instagram-icon.png" alt="IG"/>
-            </a> */}
+            </a>
             {user 
                 ? <section>Welcome Stephanie!</section>
                 // : <section>info@pranawellness.life</section> 
