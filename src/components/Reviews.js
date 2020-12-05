@@ -19,7 +19,7 @@ export default class Reviews extends Component {
             quote: "I have been doing yoga therapy with Stephanie, and it's not an exaggeration to say that she has changed my life."
         },{
             name: "KAPOW, Chicago",
-            quote: "Prana Wellness came to our office to host a 1 hour yoga and meditation class and it was absolutely wonderful! Stephanie was so knowledgeable in her craft and has such a calming presence that makes you feel immediately at ease."
+            quote: "Prana Wellness came to our office to host a 1 hour yoga and meditation class and it was absolutely wonderful! Stephanie was so knowledgeable in her craft and has such a calming presence that makes you feel immediately at ease..."
         },{
             name: "Aaron, LAPD Captain",
             quote: "Stephanie was amazing! Lots of great feedback from the class participants and an excellent workout experience. Go Yoga!"
@@ -45,7 +45,7 @@ export default class Reviews extends Component {
     }
 
     render(){
-        const { reviews } = this.state
+        const { reviews } = this.state;
             const ReviewList = reviews.map((review, key) => {
                 return (
                     <Review key={key}>
@@ -127,7 +127,6 @@ const LocalWrapper = styled.div`
         }
     }
 `;
-
 const Arrow = styled.i`
     border: solid #744A9E;
     border-width: 0 1px 1px 0;
