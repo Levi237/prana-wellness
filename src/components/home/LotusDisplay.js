@@ -22,8 +22,8 @@ export default class LotusDisplay extends Component {
                 <div className="lotus-box" style={lotusStyleOverride}>
                     <div></div>
                     <div>
-                       <section>WANT TO SEE WELLNESS IN YOUR WORKPLACE?</section>
-                       <section>with various options for incorporating Prana Wellness into your work and personal life, we can help you curate a healthy work environment that works for you.</section>
+                       <section>ONSITE & ONLINE</section>
+                       <section>with various options for incorporating Prana Wellness into your work and personal life, we can help you curate a healthy lifestyle that works for you.</section>
                     </div>
 
                     <section>
