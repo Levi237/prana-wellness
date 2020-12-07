@@ -7,7 +7,7 @@ export default class MeetStephanie extends Component {
         meetStephanie: { 
             title: "Stepahnie Erazo",
             subtitle: "Meet the Founder",
-            content: "Namaste! I know the problem of work stress all too well. I spent 7 years as a Producer for one of the largest media companies in the world. I had an exciting, rewarding, and fast-paced role there, where I got to network and mingle with many influential public figures. However, after a scary panic attack at work, I decided to follow my true passion for health and wellness. 3 days after leaving my job, I journeyed to Rishikesh, India to study yoga, meditation, and breath work. From there I knew there was no turning back. I studied under master yogis, and have a true desire to spread knowledge of those traditional practices.I am an avid adventure seeker and travel junkie, always on the move. I have been to over 25 countries, lived in Costa Rica, and Spain, and am fluent in Spanish. In my free time, you can find me cooking, boxing, hiking, traveling, playing with my dog Beamer, or trying new restaurants.",
+            content: `After spending 7 years as a CNN producer and experiencing a scary panic attack, Stephanie decided to leave the fast pace of the newsroom for a life of wellness, and follow her passion for health and fitness. Prana Wellness was born in India, out of Stephanie’s own need for wellness in a challenging work environment. She is also passionate about food and health equity. Stephanie is a member of the Philanthropic Leadership Board for EatREAL, a non-profit working to increase kids’ access to real food and education, as well as the Board of Directors for WIFA (Women in Fitness Association). Stephanie has been called upon as a wellness expert to be a speaker for: Wonder Women Tech conference, GA Department of Public Health, Myridian Global, Youth Entrepreneurs, Mastermind Yoga Summit and more. Her features include Essence Magazine, Voyage LA, ShoutoutLA, and various podcasts. Stephanie believes that a person’s physical and mental wellbeing can dictate their entire life, so she motivates people to prioritize all around wellness, by being their "Motivator in Chief."`,
             image: "about-meet.png",
             skills: [
                 'Yoga Therapy RX',
@@ -16,7 +16,6 @@ export default class MeetStephanie extends Component {
                 'Prenatal & Postpartum Yoga Certified',
                 // 'Personal Trainer',
             ]
-
         }
     };
 
@@ -27,18 +26,18 @@ export default class MeetStephanie extends Component {
             return <><span key={key}>{skill}</span><br /></>
         })
 
-            return(
-                <div className="meetStephanie-container">
+        return(
+            <div className="meetStephanie-container">
+                <div>
                     <div>
-                        <div>
-                            <section>{meetStephanie.title}</section>
-                            <section>{meetStephanie.subtitle}</section>
-                            <section>{meetStephanie.content}</section>
-                            <section>{founderSkills}</section>
-                        </div>
+                        <section>{meetStephanie.title}</section>
+                        <section>{meetStephanie.subtitle}</section>
+                        <section>{meetStephanie.content}</section>
+                        <section>{founderSkills}</section>
                     </div>
-                    <div><img src={`${meetStephanie.image}`} alt="meetStephanie-box" /></div>
                 </div>
-            );
-        };
+                <div><img src={`${meetStephanie.image}`} alt="meetStephanie-box" /></div>
+            </div>
+        );
+    };
 };
