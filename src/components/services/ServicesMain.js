@@ -15,7 +15,7 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Relaxing",
             largeText: "Meditation",
-            image: "relaxing_meditation.png",
+            image: "meditation.png",
             content: "Accessible guided meditations to calm, bring focus, and de-stress.",
         },{
             smallText: "Mindful",
@@ -76,21 +76,20 @@ export default class ServicesMain extends Component {
     };
 };
 const Container = styled.div`
-
-margin-bottom: 5vw;
-margin-top: calc(25.86vw - 100vh + 196px);
-position: relative;
-z-index: 1;
-padding-bottom: 8vw;
-background: rgb(191, 158, 200);
-button {
+    margin-bottom: 5vw;
+    margin-top: calc(25.86vw - 100vh + 196px);
+    position: relative;
+    z-index: 1;
+    padding-bottom: 8vw;
+    background: rgb(191, 158, 200);
+    button {
     margin-left: 2vw;
     margin-right: 2vw;
-  }
-  @media screen and (max-width: 945px) {
-    margin-top: calc(32.3vw - 100vh + 58px);
-    padding-top: 5vw;
-  }
+    }
+    @media screen and (max-width: 945px) {
+        margin-top: calc(32.3vw - 100vh + 58px);
+        padding-top: 5vw;
+    }
 `;
 const Header = styled.h1`
     margin: 50px auto; 
