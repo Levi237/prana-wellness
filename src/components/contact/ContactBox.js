@@ -43,6 +43,7 @@ const Contact = styled.div`
         height: 30px;
         width: 30px;
         position: absolute;
+        z-index: 9999999;
         right: 8px;
         top: 8px;
     }
