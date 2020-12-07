@@ -15,7 +15,7 @@ export default class ServicesMain extends Component {
         },{
             smallText: "Relaxing",
             largeText: "Meditation",
-            image: "meditation.png",
+            image: "meditate.png",
             content: "Accessible guided meditations to calm, bring focus, and de-stress.",
         },{
             smallText: "Mindful",
