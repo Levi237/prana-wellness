@@ -1,27 +1,27 @@
-div.meetStephanie-container {
+div.why-container {
     position: relative;
 }
 
-.meetStephanie-container > div {
+.why-container > div {
     width: 50vw;
     height: 50vw;
     background-color: #E0CEE5;    
 }
-.meetStephanie-container img {
+.why-container img {
     width: 50vw;
     height: 50vw;
 }
 
-.meetStephanie-container > div:first-of-type {
+.why-container > div:first-of-type {
     float: left;
     background-image: url(../meet-background.png);
     text-align: left;
 }
-.meetStephanie-container > div:last-of-type {
+.why-container > div:last-of-type {
     float: right;  
 }
 
-.meetStephanie-container > div > div {
+.why-container > div > div {
     width: 30vw;
     height: 30vw;
     margin: 5vw;
@@ -30,11 +30,11 @@ div.meetStephanie-container {
     padding: 3vw 5vw 7vw 5vw;
 }
 
-.meetStephanie-container section {
+.why-container section {
     font-style: normal;
 }
 
-.meetStephanie-container > div > div > section:first-of-type {
+.why-container > div > div > section:first-of-type {
     font-family: Merriweather;
     font-style: italic;
     font-weight: 300;
@@ -43,7 +43,7 @@ div.meetStephanie-container {
     letter-spacing: .33vw;
     color: #965BA5;
 }
-.meetStephanie-container > div > div > section:nth-of-type(2) {
+.why-container > div > div > section:nth-of-type(2) {
     font-weight: normal;
     font-size: 1.3vw;
     line-height: 1.5vw;
@@ -51,7 +51,7 @@ div.meetStephanie-container {
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.meetStephanie-container > div > div > section:nth-of-type(3) {
+.why-container > div > div > section:nth-of-type(3) {
     font-weight: 300;
     font-size: 1.25vw;
     line-height: 1.5vw;
@@ -63,7 +63,7 @@ div.meetStephanie-container {
     transition: all .3s ease-in-out;
     transition-delay: .5s!important;
 }
-.meetStephanie-container:hover > div > div > section:nth-of-type(3) {
+.why-container:hover > div > div > section:nth-of-type(3) {
     background-color: rgba(255,255,255,.3);
     margin-right: -4vw;
     margin-left: -4vw;
@@ -72,7 +72,7 @@ div.meetStephanie-container {
     box-shadow: inset 0px 0px 6px 4px #E0CEE5;
     /* transition-delay: .5s!important; */
 }
-.meetStephanie-container > div > div > section:nth-of-type(4) {
+.why-container > div > div > section:nth-of-type(4) {
     font-weight: bold;
     font-size: 1vw;
     line-height: 1.8vw;
@@ -82,20 +82,20 @@ div.meetStephanie-container {
 }
 
 @media screen and (max-width: 945px) {
-    .meetStephanie-container > div {
+    .why-container > div {
         width: 100vw;
         height: 100vw;
     }
-    .meetStephanie-container img {
+    .why-container img {
         width: 100vw;
         height: 100vw;
     }
     
-    .meetStephanie-container > div:first-of-type, .meetStephanie-container > div:last-of-type {
+    .why-container > div:first-of-type, .why-container > div:last-of-type {
         float: off;
     }
 
-    .meetStephanie-container > div > div {
+    .why-container > div > div {
         width: 70vw;
         height: 70vw;
         margin: 10vw;
@@ -103,22 +103,22 @@ div.meetStephanie-container {
         background: #E0CEE5;
         padding: 5vw;
     }
-    .meetStephanie-container > div > div > section:first-of-type {
+    .why-container > div > div > section:first-of-type {
         font-size: 7vw;
         letter-spacing: .33vw;
         color: #965BA5;
     }
-    .meetStephanie-container > div > div > section:nth-of-type(2) {
+    .why-container > div > div > section:nth-of-type(2) {
         font-size: 3.1vw;
         line-height: 9vw;
     }
-    .meetStephanie-container > div > div > section:nth-of-type(3) {
+    .why-container > div > div > section:nth-of-type(3) {
         font-size: 3.3vw;
         line-height: 3vw;
         margin: 2vw 0;
         height: 34vw;
     }
-    .meetStephanie-container > div > div > section:nth-of-type(4) {
+    .why-container > div > div > section:nth-of-type(4) {
         font-size: 3vw;
         line-height: 4vw;
         margin-top: 2vw;
