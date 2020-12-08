@@ -117,4 +117,8 @@
     margin: 5vw;
     font-size: 2.6vw;
   }
+  .main-title {
+    margin-block-start: 9vw;
+    font-size: 8vw;
+  }
 }
