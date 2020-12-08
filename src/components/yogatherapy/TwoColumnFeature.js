@@ -9,9 +9,13 @@ export default class TwoColumnFeature extends Component {
     render(){
 
         return(
-            <>
-
-            </>
+            <Container>
+HELLO WORLD
+            </Container>
         );
     };
 };
+
+const Container = styled.div`
+    background-color: #C09EC8;
+`;
