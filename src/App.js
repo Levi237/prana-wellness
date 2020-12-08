@@ -23,6 +23,8 @@ import CorporateMain        from './components/corporate/CorporateMain';
 import IndividualMain       from './components/individual/IndividualMain';
 import ServicesMain         from './components/services/ServicesMain';
 
+import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
+
 import RightFooter          from './components/footer/RightFooter';
 import MidFooter            from './components/footer/MidFooter';
 import LeftFooter           from './components/footer/LeftFooter';
@@ -180,6 +182,8 @@ export default class App extends Component {
                     this.state.user && <></>  }/>  
             <Route path={routes.INFO} exact render={() => 
                       <AboutMain /> }/>
+            <Route path={routes.YOGA} exact render={() => 
+                      <YogaTherapyMain /> }/>
             <Route path={routes.WELL} exact render={() => 
                       <IndividualMain 
                         toggleReferralBtn={this.toggleReferralBtn} 
