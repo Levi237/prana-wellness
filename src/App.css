@@ -112,11 +112,9 @@
 }
 
 @media screen and (max-width: 945px) {
- 
   .main-cta {
     width: 90vw;
     margin: 5vw;
-    font-size: 2.5vw;
+    font-size: 2.6vw;
   }
-
 }
