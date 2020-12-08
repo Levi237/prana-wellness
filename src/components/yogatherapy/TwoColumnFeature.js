@@ -5,7 +5,7 @@ export default class TwoColumnFeature extends Component {
     state = {
         leftInfo: {
             title: 'COMMON ISSUES TREATED',
-            info1: [
+            list1: [
                 'Chronic pain',
                 'Arthritis',
                 'Hips',
@@ -13,7 +13,7 @@ export default class TwoColumnFeature extends Component {
                 'Shoulder',
                 'Lower back',
             ],
-            info2: [
+            list2: [
                 'Depression',
                 'Anxiety',
                 'Obesity',
@@ -24,7 +24,7 @@ export default class TwoColumnFeature extends Component {
         },
         rightInfo: {
             title: 'CUSTOMIZED THERAPY',
-            info1: [
+            list1: [
                 'Thorough physical evaluation',
                 'Custom "yoga prescription"',
                 'Complimentary consult',
@@ -47,20 +47,20 @@ export default class TwoColumnFeature extends Component {
                             {leftInfo.title}
                         </h1>
                         <ul>
-                            <li>{leftInfo.info1[0]}</li>
-                            <li>{leftInfo.info1[1]}</li>
-                            <li>{leftInfo.info1[2]}</li>
-                            <li>{leftInfo.info1[3]}</li>
-                            <li>{leftInfo.info1[4]}</li>
-                            <li>{leftInfo.info1[5]}</li>
+                            <li>{leftInfo.list1[0]}</li>
+                            <li>{leftInfo.list1[1]}</li>
+                            <li>{leftInfo.list1[2]}</li>
+                            <li>{leftInfo.list1[3]}</li>
+                            <li>{leftInfo.list1[4]}</li>
+                            <li>{leftInfo.list1[5]}</li>
                         </ul>
                         <ul>
-                            <li>{leftInfo.info2[0]}</li>
-                            <li>{leftInfo.info2[1]}</li>
-                            <li>{leftInfo.info2[2]}</li>
-                            <li>{leftInfo.info2[3]}</li>
-                            <li>{leftInfo.info2[4]}</li>
-                            <li>{leftInfo.info2[5]}</li>
+                            <li>{leftInfo.list2[0]}</li>
+                            <li>{leftInfo.list2[1]}</li>
+                            <li>{leftInfo.list2[2]}</li>
+                            <li>{leftInfo.list2[3]}</li>
+                            <li>{leftInfo.list2[4]}</li>
+                            <li>{leftInfo.list2[5]}</li>
                         </ul>
                     </div>
                 </LeftColumn>
@@ -71,13 +71,13 @@ export default class TwoColumnFeature extends Component {
                             {rightInfo.title}
                         </h1>
                         <ul>
-                            <li>{rightInfo.info1[0]}</li>
-                            <li>{rightInfo.info1[1]}</li>
-                            <li>{rightInfo.info1[2]}</li>
-                            <li>{rightInfo.info1[3]}</li>
-                            <li>{rightInfo.info1[4]}</li>
-                            <li>{rightInfo.info1[5]}</li>
-                            <li>{rightInfo.info1[6]}</li>
+                            <li>{rightInfo.list1[0]}</li>
+                            <li>{rightInfo.list1[1]}</li>
+                            <li>{rightInfo.list1[2]}</li>
+                            <li>{rightInfo.list1[3]}</li>
+                            <li>{rightInfo.list1[4]}</li>
+                            <li>{rightInfo.list1[5]}</li>
+                            <li>{rightInfo.list1[6]}</li>
                         </ul>
                     </div>    
                 </RightColumn>
