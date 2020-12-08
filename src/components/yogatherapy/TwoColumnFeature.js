@@ -113,7 +113,7 @@ const Column = styled.div`
     }
     h1 {
         font-size: 1.8vw;
-        color: green;
+        color: #689E3C;
         margin-block-end: 1vw!important;
     }
     ul {

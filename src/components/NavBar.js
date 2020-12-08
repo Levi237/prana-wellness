@@ -22,7 +22,7 @@ const NavBar = ({ page, user, logout, toggleHamburger }) => {
         : <><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties><GlobalPatties></GlobalPatties></>
       }
       </Hamburger>
-      {user && <button onClick={logout} style={{color:'green', float: 'right', margin: '20px'}}>LOGOUT</button>}
+      {user && <button onClick={logout} style={{color:'#689E3C', float: 'right', margin: '20px'}}>LOGOUT</button>}
     </NavContainer>);
 };
 

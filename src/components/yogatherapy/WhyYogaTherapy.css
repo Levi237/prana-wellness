@@ -91,12 +91,12 @@ div.why-container {
     }
 
     .why-container > div > div {
-        width: 70vw;
-        height: 70vw;
-        margin: 10vw;
+        width: 75vw;
+        height: 68vw;
+        margin: 9vw;
         border: 1px solid #965BA5;
         background: #E0CEE5;
-        padding: 5vw;
+        padding: 7vw 3vw;
     }
     .why-container > div > div > section:first-of-type {
         font-size: 7vw;
@@ -108,14 +108,19 @@ div.why-container {
         line-height: 9vw;
     }
     .why-container > div > div > section:nth-of-type(3) {
-        font-size: 3.3vw;
+        font-size: 3vw;
         line-height: 3vw;
-        margin: 2vw 0;
-        height: 34vw;
+        margin: 0;
+        height: 38vw;
     }
     .why-container > div > div > section:nth-of-type(4) {
         font-size: 3vw;
         line-height: 4vw;
         margin-top: 2vw;
+    }
+    .why-container > div > div > ul {
+        font-size: 2.5vw;
+        line-height: 3vw;
+        margin: 1vw 0 1vw 2vw;
     }
 }
