@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import styled               from 'styled-components';
 
+const mobileMax = "650px";
+
 export default class TwoColumnFeature extends Component {
     state = {
         leftInfo: {
@@ -38,6 +40,17 @@ export default class TwoColumnFeature extends Component {
 
     render(){
         const { leftInfo, rightInfo } = this.state
+
+        const leftListOne = leftInfo.list1.map((data) => {
+            return (<li>{data}</li>)
+        })
+        const leftListTwo = leftInfo.list2.map((data) => {
+            return (<li>{data}</li>)
+        })
+        const rightListOne = rightInfo.list1.map((data) => {
+            return (<li>{data}</li>)
+        })
+
         return(
             <Container>
                 <LeftColumn>
@@ -47,20 +60,10 @@ export default class TwoColumnFeature extends Component {
                             {leftInfo.title}
                         </h1>
                         <ul>
-                            <li>{leftInfo.list1[0]}</li>
-                            <li>{leftInfo.list1[1]}</li>
-                            <li>{leftInfo.list1[2]}</li>
-                            <li>{leftInfo.list1[3]}</li>
-                            <li>{leftInfo.list1[4]}</li>
-                            <li>{leftInfo.list1[5]}</li>
+                            {leftListOne}
                         </ul>
                         <ul>
-                            <li>{leftInfo.list2[0]}</li>
-                            <li>{leftInfo.list2[1]}</li>
-                            <li>{leftInfo.list2[2]}</li>
-                            <li>{leftInfo.list2[3]}</li>
-                            <li>{leftInfo.list2[4]}</li>
-                            <li>{leftInfo.list2[5]}</li>
+                            {leftListTwo}
                         </ul>
                     </div>
                 </LeftColumn>
@@ -71,13 +74,7 @@ export default class TwoColumnFeature extends Component {
                             {rightInfo.title}
                         </h1>
                         <ul>
-                            <li>{rightInfo.list1[0]}</li>
-                            <li>{rightInfo.list1[1]}</li>
-                            <li>{rightInfo.list1[2]}</li>
-                            <li>{rightInfo.list1[3]}</li>
-                            <li>{rightInfo.list1[4]}</li>
-                            <li>{rightInfo.list1[5]}</li>
-                            <li>{rightInfo.list1[6]}</li>
+                            {rightListOne}
                         </ul>
                     </div>    
                 </RightColumn>
@@ -127,6 +124,8 @@ const Column = styled.div`
         margin-block-start: 1vw;
         margin-block-end: 1vw;
         padding-inline-start: 3vw;
+    }
+    @media screen and (max-width: ${mobileMax}) {
     }
 `;
 const LeftColumn = styled(Column)`
