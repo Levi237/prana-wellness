@@ -16,7 +16,7 @@ const YogaTherapyMain = () => {
         <WhyYogaTherapy />
         <TwoColumnFeature />
         <br/><br/>
-        <VideoBox src="https://player.vimeo.com/video/387594093"></VideoBox>
+        {/* <VideoBox src="https://player.vimeo.com/video/387594093"></VideoBox> */}
       </Container>);
 };
 
