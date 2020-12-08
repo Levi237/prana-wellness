@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import WhyYogaTherapy  from './WhyYogaTherapy';
+import TwoColumnFeature  from './TwoColumnFeature';
 
 const YogaTherapyMain = () => {
     return(
@@ -13,7 +14,7 @@ const YogaTherapyMain = () => {
           Yoga Therapy blends Eastern and Western medicine in a wholistic practice of healing the whole person. Yoga meets Integrative Medicine. Yoga Therapy is the adaptation of yoga practices for people with specific health challenges, chronic pain, anxiety, depression, and illness. Yoga Therapists are trained to work alongside medical doctors, chiropractors, physical therapists, and physiatrists.
         </section>
         <WhyYogaTherapy />
-        {/* <TeamMembers /> */}
+        <TwoColumnFeature />
         <VideoBox src="https://player.vimeo.com/video/387594093"></VideoBox>
       </Container>);
 };
