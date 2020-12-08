@@ -58,14 +58,26 @@ const Column = styled.div`
         background-color: #fff;
     }
     img {
-        width: 20vw;
+        margin: 10vw 6vw;
+        width: 15vw;
         border-radius: 100%;
         border: 5px solid #C09EC8;
+        position: absolute;
     }
 `;
 const LeftColumn = styled(Column)`
-        text-align:right;
+        div {
+            margin-left: 14.42vw;
+        }
+        img {
+
+        }
 `;
 const RightColumn = styled(Column)`
-        text-align:left;
+        div {
+            margin-right: 14.42vw;
+        }
+        img {
+right: 0;
+        }
 `;
