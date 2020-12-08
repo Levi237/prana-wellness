@@ -22,9 +22,9 @@ div.why-container {
 }
 
 .why-container > div > div {
-    width: 30vw;
-    height: 30vw;
-    margin: 5vw;
+    width: 32vw;
+    height: 32vw;
+    margin: 4vw;
     border: 1px solid #965BA5;
     background: #E0CEE5;
     padding: 3vw 5vw 7vw 5vw;
@@ -43,11 +43,11 @@ div.why-container {
     letter-spacing: .33vw;
     color: #965BA5;
 }
-.why-container > div > div > section:nth-of-type(2) {
+.why-container > div > div > section:nth-of-type(2), .why-container > div > div > section:nth-of-type(4) {
     font-weight: normal;
     font-size: 1.3vw;
     line-height: 1.5vw;
-    letter-spacing: .33vw;
+    letter-spacing: .03vw;
     text-transform: uppercase;
     color: #FFFFFF;
 }
@@ -63,24 +63,19 @@ div.why-container {
     transition: all .3s ease-in-out;
     transition-delay: .5s!important;
 }
-.why-container:hover > div > div > section:nth-of-type(3) {
-    background-color: rgba(255,255,255,.3);
-    margin-right: -4vw;
-    margin-left: -4vw;
-    padding: 0 4vw;
-    transition: all .3s ease-in-out;
-    box-shadow: inset 0px 0px 6px 4px #E0CEE5;
-    /* transition-delay: .5s!important; */
-}
-.why-container > div > div > section:nth-of-type(4) {
+.why-container > div > div > ul {
     font-weight: bold;
     font-size: 1vw;
-    line-height: 1.8vw;
+    line-height: 1.5vw;
+    padding-inline-start: 2vw;
     text-transform: uppercase;
     color: #965BA5;
     transition: all .3s ease-in-out;
 }
-
+.why-container > div > div > ul > li:last-of-type {
+    text-transform: lowercase!important;
+    list-style-type: none;
+}
 @media screen and (max-width: 945px) {
     .why-container > div {
         width: 100vw;
@@ -108,7 +103,7 @@ div.why-container {
         letter-spacing: .33vw;
         color: #965BA5;
     }
-    .why-container > div > div > section:nth-of-type(2) {
+    .why-container > div > div > section:nth-of-type(2), .why-container > div > div > section:nth-of-type(4) {
         font-size: 3.1vw;
         line-height: 9vw;
     }
