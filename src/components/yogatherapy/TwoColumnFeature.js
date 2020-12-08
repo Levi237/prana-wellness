@@ -54,8 +54,8 @@ export default class TwoColumnFeature extends Component {
         return(
             <Container>
                 <LeftColumn>
-                    <img src="bamboo.jpg"/>
                     <div>
+                    <img src="bamboo.jpg"/>
                         <h1>
                             {leftInfo.title}
                         </h1>
@@ -68,8 +68,8 @@ export default class TwoColumnFeature extends Component {
                     </div>
                 </LeftColumn>
                 <RightColumn>
-                    <img src="guru.png"/>
                     <div>                        
+                    <img src="guru.png"/>
                         <h1>
                             {rightInfo.title}
                         </h1>
@@ -92,6 +92,7 @@ const Column = styled.div`
     width: 50%;
     vertical-align: top;
     div {
+        position: relative;
         display: inline-block;
         font-size: 3vw;
         color: white;
@@ -104,7 +105,7 @@ const Column = styled.div`
     }
     img {
         position: absolute;
-        margin: 9vw 3.5vw;
+        margin: 4vw auto;
         width: 15vw;
         border-radius: 100%;
         border: 1vw solid #C09EC8;
@@ -126,6 +127,32 @@ const Column = styled.div`
         padding-inline-start: 3vw;
     }
     @media screen and (max-width: ${mobileMax}) {
+        display: block;
+        position: relative;
+        width: 100%;
+        div {
+            margin: 10vw 5vw!important;
+            height: 80vh;
+            width: 90vw;
+        }
+        img {
+            width: 30vw;
+            border: 0;
+            margin: 0;
+            right: 30vw!important;
+            left: 30vw!important;
+            top: 8vw;
+        }
+        h1 {
+            font-size: 5.5vw;
+            margin-top: 42vw;
+            margin-bottom: 5vw!important;
+        }
+        ul {
+            display: block;
+            font-size: 4vw;
+            line-height: 6vw;
+        }
     }
 `;
 const LeftColumn = styled(Column)`
@@ -133,12 +160,15 @@ const LeftColumn = styled(Column)`
             margin-left: 12.5vw;
         }
         img {
-            left: 0;
-        }
-        ul {
+            left: -10vw;
         }
         ul:first-of-type {
             margin-left: 5vw;
+        }
+        @media screen and (max-width: ${mobileMax}) {
+            ul {
+                margin-left: 20vw!important;
+            }
         }
 `;
 const RightColumn = styled(Column)`
@@ -146,12 +176,22 @@ const RightColumn = styled(Column)`
             margin-right: 12.5vw;
         }
         img {
-            right: 0;
+            right: -10vw;
         }
         ul {
             margin-right: 5vw;
         }
         li:last-of-type {
             list-style-type: none;
+            font-size: 1.025vw;
+        }
+        @media screen and (max-width: ${mobileMax}) {
+            ul {
+                margin-left: 14vw!important;
+                line-height: 10vw;
+            }
+            li:last-of-type {
+                font-size: 3.5vw;
+            }
         }
 `;
