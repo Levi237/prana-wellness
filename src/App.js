@@ -168,9 +168,9 @@ export default class App extends Component {
             <Route path={routes.SERV} exact render={() => 
                     <HeaderComponent purpleBox={(true)} title="EXPLORE OUR WIDE-RANGING" subtitle="Wellness Services" image="service-header.png"/> }/> 
             <Route path={routes.YOGA} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="THE REASON FOR" subtitle="YOGA THERAPY" image="yoga-therapy-header.jpg"/> }/> 
+                    <HeaderComponent purpleBox={(false)} title="THE REASON FOR" subtitle="Yoga Therapy" image="yoga-therapy-header.jpg"/> }/> 
             <Route path={routes.PREG} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="BETTER HEALTH WITH" subtitle="MATERNITY YOGA" image="yoga-therapy-header.jpg"/> }/> 
+                    <HeaderComponent purpleBox={(false)} title="BETTER HEALTH WITH" subtitle="Maternity Yoga" image="yoga-therapy-header.jpg"/> }/> 
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
           </Switch>
