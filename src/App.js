@@ -22,8 +22,8 @@ import AboutMain            from './components/about/AboutMain';
 import CorporateMain        from './components/corporate/CorporateMain';
 import IndividualMain       from './components/individual/IndividualMain';
 import ServicesMain         from './components/services/ServicesMain';
-
 import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
+import PrenatalMain         from './components/prenatal/PrenatalMain   ';
 
 import RightFooter          from './components/footer/RightFooter';
 import MidFooter            from './components/footer/MidFooter';
@@ -184,6 +184,8 @@ export default class App extends Component {
                       <AboutMain /> }/>
             <Route path={routes.YOGA} exact render={() => 
                       <YogaTherapyMain /> }/>
+            <Route path={routes.PREG} exact render={() => 
+                      <PrenatalMain /> }/>
             <Route path={routes.WELL} exact render={() => 
                       <IndividualMain 
                         toggleReferralBtn={this.toggleReferralBtn} 
