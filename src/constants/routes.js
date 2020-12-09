@@ -7,3 +7,4 @@ export const ADMN = '/admin';
 export const SOLO = '/services_individual';
 export const CORP = '/services_corporate';
 export const YOGA = '/yoga_therapy';
+export const PREG = '/pre-post_natal';
