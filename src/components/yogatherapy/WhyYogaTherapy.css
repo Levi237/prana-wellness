@@ -43,7 +43,10 @@ div.why-container {
     letter-spacing: .33vw;
     color: #965BA5;
 }
-.why-container > div > div > section:nth-of-type(2), .why-container > div > div > section:nth-of-type(4) {
+.why-container > div > div > section:nth-of-type(2) {
+    font-size: 0!important;
+}
+.why-container > div > div > section:nth-of-type(4) {
     font-weight: normal;
     font-size: 1.3vw;
     line-height: 1.5vw;
@@ -103,7 +106,10 @@ div.why-container {
         letter-spacing: .33vw;
         color: #965BA5;
     }
-    .why-container > div > div > section:nth-of-type(2), .why-container > div > div > section:nth-of-type(4) {
+    .why-container > div > div > section:nth-of-type(2) {
+        font-size: 0!important;
+    }
+    .why-container > div > div > section:nth-of-type(4) {
         font-size: 3.1vw;
         line-height: 9vw;
     }

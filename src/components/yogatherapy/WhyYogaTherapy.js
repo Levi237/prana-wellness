@@ -31,6 +31,7 @@ export default class WhyYogaTherapy extends Component {
                 <div>
                     <div>
                         <section>{why.title}</section>
+                        <br/>
                         <section>{why.subtitle}</section>
                         <section>{why.content}</section>
                         <section>{why.servicesTitle}</section>
