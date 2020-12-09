@@ -23,7 +23,7 @@ import CorporateMain        from './components/corporate/CorporateMain';
 import IndividualMain       from './components/individual/IndividualMain';
 import ServicesMain         from './components/services/ServicesMain';
 import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
-import PrenatalMain         from './components/prenatal/PrenatalMain   ';
+import PrenatalMain         from './components/prenatal/PrenatalMain';
 
 import RightFooter          from './components/footer/RightFooter';
 import MidFooter            from './components/footer/MidFooter';
