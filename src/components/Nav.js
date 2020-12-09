@@ -47,7 +47,7 @@ const NavContainer = styled.div`
     a {
         text-decoration: none;
         display: block;
-        height: 44px;
+        height: 36px;
         padding-top: 20px;
         color: #FFF;
     }
