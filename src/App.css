@@ -106,7 +106,8 @@
   font-weight: 300;
   font-size: 1.6vw;
   width: 80vw;
-  margin: 3vw 10vw 6vw;
+  margin: 0vw 10vw;
+  padding-bottom: 6vw;
   text-align: center;
   color: #4D3B5C;
 }
