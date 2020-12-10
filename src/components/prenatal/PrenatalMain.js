@@ -6,10 +6,10 @@ const PrenatalMain = () => {
       <Container>
         <div>
         <h1 className="main-title">
-        PUT A TITLE HERE
+        Prenatal Yoga Experience
         </h1>
         <section className="main-cta">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.
         </section>
         </div>
         <Circle>
@@ -121,6 +121,18 @@ const Circle = styled.section`
     margin-block-start: 0;
     margin-block-end: 0;
   }
+  @media screen and (max-width: 945px) {
+    height: 54vw;
+    h1 {
+      font-size: 4.25vw;
+    }
+    p {
+      font-size: 2vw;
+    }
+    > section {
+      height: 50vw;
+    }
+  }
 `;
 
 const PostCircle = styled.div`
@@ -142,6 +154,7 @@ const PostCircle = styled.div`
     text-align:left;
     margin-left: 7.25vw;
     line-height: 2.5vw;
+    padding-inline-start: 40px;
   }
   p {
     padding: 2vw 5vw 0 0;
@@ -150,6 +163,16 @@ const PostCircle = styled.div`
   img {
     width: 40vw;
     margin-top: 5vw;
+  }
+  @media screen and (max-width: 945px) {
+    h2 {
+      padding: 0 5vw 0;
+    }
+    ul {
+      margin-left: 0;
+      padding-inline-start: 9vw;
+      font-size: 2vw;
+    }
   }
 `;
 export default PrenatalMain;
