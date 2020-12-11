@@ -5,22 +5,24 @@ import './TeamMembers.css'
 export default class TeamMembers extends Component {
     state = {
         team: [{
-        //     name: "Safiya",
-        //     skills: [
-        //         "300 RYT Meditation & Yoga Nidra",
-        //         "200RYT Yoga",
-        //         "Holistic Health Coach",
-        //         ],
-        //     description: 
-        //         "Safiya educates individuals on how to heal from anxiety and burnout while building a foundation of health to thrive through mentorship, events, and retreats. A disruptor of hustle culture, Safiya is passionate about educating people on how they can take tangible steps towards incorporating self-care and mindfulness into their daily lives. She believes that you don’t have to sacrifice health to make an impact, and that health looks different to each person."
-        //     ,
-        //     image: "safiya.png",
-        // },{
+            name: "Jackson",
+            skills: [
+                "Speaker | Author | Educator",
+                "Certified Life Coach",
+                "Reiki Master (I, II, & III)",
+                "Neuro-Linguistic Programming (NLP) Master Practitioner",
+                "Certified Cognitive Behavioral Therapist (CBT)"
+                ],
+            description: 
+                "Jackson Pallas is an existential philosopher & life guide. He has spent the better part of two decades working as a management consultant, helping companies—of all sizes, across all industries—grow their bottom line by building better infrastructures to optimize process and human performance. Now, he is on a mission to help people. Millions and millions (and millions) of people. Ultimately, Jackson believes that with an enlightened understanding about the fundamental essence of humanity, each of us will be better able to recognize purpose and achieve peace in our everyday lives. His content (books, lectures, and trainings) typically addresses the following: focus, awareness, perception, meaning, alignment, and/or holistic well-being."
+            ,
+            image: "jackson.jpg",
+        },{
             name: "Alexeyeva",
             skills: [
                 "200CYT Meditation",
                 "RYT200 Yoga",
-                "Reiki 1 & 2"
+                "Reiki I & II"
                 ],
             description: 
                 "Alexeyeva is an advocate, mentor, and educator for mindfulness and conscious breathing. She knows the power of the breath and how it can transform a situation - or a life. She believes that meditation is a call home to yourself and that the breath is a direct pathway to get there. Alexeyeva is passionate about people and curious about their lives. She enjoys creating a safe and comfortable space, free of judgment, where individuals can come to sit, slow down, explore and reconnect with themselves and their purpose through the power and sensations of their own breath. She believes in sharing practical mindfulness and breathing techniques that can be applied in daily life and that when someone is ready and willing to surrender to the power of their breath, it is an invitation for the ultimate journey of self-love to begin."
