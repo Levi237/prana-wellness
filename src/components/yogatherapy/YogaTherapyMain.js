@@ -16,7 +16,8 @@ const YogaTherapyMain = () => {
         <WhyYogaTherapy />
         <TwoColumnFeature />
         <br/><br/>
-        {/* <VideoBox src="https://player.vimeo.com/video/387594093"></VideoBox> */}
+        <VideoBox src="https://player.vimeo.com/video/488789376"></VideoBox>
+        {/* https://vimeo.com/488789376/28e4ee5b48 */}
       </Container>);
 };
 
@@ -40,8 +41,8 @@ const Container = styled.div`
 const VideoBox = styled.embed`
     width: 80vw;
     height: 33vw;
-    max-width: 800px;
-    max-height: 330px;
+    max-width: 1600px;
+    max-height: 660px;
     margin: 0 auto 40px;
     @media screen and (max-width: 945px) {
       width: 100vw;
