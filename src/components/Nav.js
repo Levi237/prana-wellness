@@ -64,4 +64,6 @@ const NavContainer = styled.div`
         border: none;
         font-size: 14px;
     }
+    @media screen and (max-width: 945px) {
+    }
 `;
