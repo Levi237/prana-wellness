@@ -52,9 +52,9 @@ const FeatureContainer = styled.div`
     width: 1200px;
     margin: 0 auto;
     color: #fff;  
-    transition: all .3s ease-in-out;
-    transition-delay: .5s!important;  
     > div {
+        transition: all .3s ease-in-out;
+        transition-delay: .5s!important;  
         &:hover > div > div > div > section:first-of-type {
             color: rgba(150,198,68,1);
             transition: all .8s ease-in-out;
@@ -105,6 +105,35 @@ const FeatureContainer = styled.div`
             background-position: center;
             background-repeat: no-repeat;
             display: inline-block;
+            width: 45vw;
+            height: 45vw;
+            margin: 2.5vw;
+            font-size: 0;
+            > div {
+                width: 100%;
+                height: 100%;
+                > div {
+                    > div {
+                        > section {
+                            padding: 2.5%;
+                            &:first-of-type {
+                                font-size: 4vw;
+                            }
+                            &:last-of-type {
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    @media screen and (max-width: 945px) {
+        width: 100vw;
+        > div {
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: inline-block;
             width: 90vw;
             height: 90vw;
             margin: 2.5vw 5vw;
@@ -127,4 +156,5 @@ const FeatureContainer = styled.div`
                 }
             }
     }
+   
 `;
