@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import Speaking from './Speaking';
+import Coaching from './Coaching';
 
 const CoachingMain = () => {
     return(
@@ -13,6 +14,7 @@ const CoachingMain = () => {
         Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.
         </section>
       <Speaking/>
+      <Coaching/>
     </Container>);
 };
 
