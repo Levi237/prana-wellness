@@ -162,18 +162,18 @@ export default class App extends Component {
                     !this.state.user ? <Enter /> : <AdminPortal /> }/>       
             <Route path={routes.INFO} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="THE TEAM BEHIND" subtitle="Prana Wellness" image="about-header2.png"/> }/>
-            <Route path={routes.WELL} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} title="REDISCOVER" subtitle="Personal Wellness" image="wellness-header.png"/> }/>
-            <Route path={routes.CORP} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="CONSIDER" subtitle="Corporate Wellness" image="corporate-header2.png"/> }/>   
             <Route path={routes.SERV} exact render={() => 
                     <HeaderComponent purpleBox={(true)} title="EXPLORE OUR WIDE-RANGING" subtitle="Wellness Services" image="service-header.png"/> }/> 
-            <Route path={routes.YOGA} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="THE REASON FOR" subtitle="Yoga Therapy" image="yoga-therapy-header.jpg"/> }/> 
-            <Route path={routes.PREG} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="YOGA FOR" subtitle="Maternal Health" image="prenatal-header2.jpg"/> }/> 
+            <Route path={routes.WELL} exact render={() => 
+                    <HeaderComponent purpleBox={(true)} title="REDISCOVER" subtitle="Personal Wellness" image="personal-header.png"/> }/>
+            <Route path={routes.CORP} exact render={() => 
+                    <HeaderComponent purpleBox={(false)} title="CONSIDER" subtitle="Corporate Wellness" image="corporate-header2.png"/> }/>   
             <Route path={routes.COAC} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="ENGAGE WITH" subtitle="Speaking &amp; Coaching" image="coaching-header.jpg"/> }/> 
+            <Route path={routes.PREG} exact render={() => 
+                    <HeaderComponent purpleBox={(false)} title="YOGA FOR" subtitle="Maternal Health" image="prenatal-header2.jpg"/> }/> 
+            <Route path={routes.YOGA} exact render={() => 
+                    <HeaderComponent purpleBox={(false)} title="THE REASON FOR" subtitle="Yoga Therapy" image="yoga-header.jpg"/> }/> 
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
           </Switch>
