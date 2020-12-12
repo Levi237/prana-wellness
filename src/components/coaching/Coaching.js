@@ -40,18 +40,19 @@ export default class Coaching extends Component {
 const Container = styled.div`
     text-align: center;
     > h1 {
-        margin-top: 100px;
+        margin-top: 40px;
     }
     > h3 {
         font-family: Merriweather;
         font-size: 24px;
     }
-        >div {
-            font-size: 18px;
-            width: 320px;
-            margin: 0 auto;
-            text-align: left;
-            padding: 10px;
+    > div {
+        font-size: 18px;
+        width: 320px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 10px;
+        
         img {
             width: 20px;
             padding-right: 10px;
