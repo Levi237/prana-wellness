@@ -16,15 +16,15 @@ export default class Nav extends Component {
                     <button className="close xClose" onClick={() => {toggleHamburger()}}>
                          CLOSE X
                     </button>
-                    <br /><br /><br /><br />
+                    <br /><br /><br />
                     <NavLink activeClassName="nav-active" to={routes.HOME} onClick={() => {toggleHamburger()}}>HOME</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.INFO} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.SERV} onClick={() => {toggleHamburger()}}>WELLNESS SERVICES</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.CORP} onClick={() => {toggleHamburger()}}>CORPORATE WELLNESS</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.WELL} onClick={() => {toggleHamburger()}}>PERSONAL WELLNESS</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={() => {toggleHamburger()}}>YOGA THERAPY</NavLink>
-                    <NavLink activeClassName="nav-active" to={routes.PREG} onClick={() => {toggleHamburger()}}>MATERNAL HEALTH</NavLink>
+                    <NavLink activeClassName="nav-active" to={routes.CORP} onClick={() => {toggleHamburger()}}>CORPORATE WELLNESS</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.COAC} onClick={() => {toggleHamburger()}}>SPEAKING & COACHING</NavLink>
+                    <NavLink activeClassName="nav-active" to={routes.PREG} onClick={() => {toggleHamburger()}}>MATERNAL HEALTH</NavLink>
+                    <NavLink activeClassName="nav-active" to={routes.YOGA} onClick={() => {toggleHamburger()}}>YOGA THERAPY</NavLink>
                 </div>
             </NavContainer>
         );
@@ -64,6 +64,11 @@ const NavContainer = styled.div`
         border: none;
         font-size: 14px;
     }
-    @media screen and (max-width: 945px) {
+    @media screen and (max-height: 500px) {
+        font-size: 5vh;
+        a {
+            height: 9vh;
+            padding-top: 0;
+        }
     }
 `;
