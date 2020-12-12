@@ -29,8 +29,12 @@ export default class FeatureFour extends Component {
             return (
                 <div key={key} style={{ backgroundImage: `url(../features/${feature.image})` }}>
                     <div>
-                        <section>{feature.title}</section>
-                        <section>{feature.decription}</section>
+                        <div>
+                            <div>
+                            <section>"{feature.title}"</section>
+                            <section>{feature.decription}</section>
+                            </div>
+                        </div>
                     </div>
                 </div>
             );
@@ -46,29 +50,45 @@ export default class FeatureFour extends Component {
 
 const FeatureContainer = styled.div`
     width: 1200px;
+    margin: 0 auto;
     color: #fff;    
     > div {
-        background-size: 80%;
+        background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
         display: inline-block;
-        width: 600px;
-        height: 600px;
+        width: 560px;
+        height: 560px;
+        margin: 20px;
         font-size: 0;
         > div {
-            margin: 10%;
-            height: 80%;
-            width: 80%;
-            background-color: rgba(0,0,0,.2);
-            > section {
-                font-size: 14px;
-                &:first-of-type {
-                    font-family: Merriweather;
-                }
-                &:first-of-type {
-                    
+            width: 560px;
+            height: 560px;
+            background-color: rgba(0,0,0,.4);
+            position: relative;
+            > div {
+                position: absolute;
+                top: 10%;
+                left: 10%;
+                width: 80%;
+                height: 80%;
+                border: 2px solid #fff;
+                display: table;
+                text-align: center;
+> div {
+                display: table-cell;
+                vertical-align: middle;
+                > section {
+                    font-size: 24px;
+                    &:first-of-type {
+                        font-family: Merriweather;
+                    }
+                    &:first-of-type {
+                        
+                    }
                 }
             }
+        }
         }
     }
     @media screen and (max-width: 1200px) {
