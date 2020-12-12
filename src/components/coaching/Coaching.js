@@ -21,7 +21,8 @@ export default class Coaching extends Component {
         const list = coachingList.map((i, k) => {
             return (
                 <div key={k}>
-                <img src="../checkmark/check-green.png"/><span>{i}</span>
+                    <img src="../checkmark/check-green.png"/>
+                    <span>{i}</span>
                 </div>
             );
         });
@@ -37,13 +38,16 @@ export default class Coaching extends Component {
 };
 
 const Container = styled.div`
-    font-size: 18px;
     text-align: center;
+    > h1 {
+        margin-top: 100px;
+    }
     > h3 {
         font-family: Merriweather;
         font-size: 24px;
     }
         >div {
+            font-size: 18px;
             width: 320px;
             margin: 0 auto;
             text-align: left;
@@ -53,7 +57,24 @@ const Container = styled.div`
             padding-right: 10px;
         }
     }
-    @media screen and (max-width: 1200px) {
-
+    @media screen and (max-width: 945px) {
+        > h1 {
+            margin-top: 15vw;
+        }
+        > h3 {
+            font-family: Merriweather;
+            font-size: 7vw;
+        }
+        > div {
+                font-size: 4vw;
+                width: 70vw;
+                margin: 0 auto;
+                text-align: left;
+                padding: 10px 0;
+            img {
+                width: 3vw;
+                padding: 0 2vw;
+            }
+        }
     }
 `;
