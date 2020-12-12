@@ -87,13 +87,6 @@ const Container = styled.div`
     }
     @media screen and (max-width: 800px) {
         width: 90vw;
-        margin: 100px auto;
-        text-align: center;
-        border: 0 solid black;
-        padding: 0 0 40px 0;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 2px 2px 70px rgba(0,0,0,.15);
         > h1 {
             width: 100%;
             padding: 8vw 0 2vw;
