@@ -172,7 +172,7 @@ export default class App extends Component {
             <Route path={routes.PREG} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="YOGA FOR" subtitle="Maternal Health" image="prenatal-header2.jpg"/> }/> 
             <Route path={routes.COAC} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="ENGAGE WITH" subtitle="Speaking &amp; Coacthing" image="prenatal-header2.jpg"/> }/> 
+                    <HeaderComponent purpleBox={(false)} title="ENGAGE WITH" subtitle="Speaking &amp; Coacthing" image="coaching-header.jpg"/> }/> 
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
           </Switch>

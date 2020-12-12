@@ -31,8 +31,8 @@ export default class FeatureFour extends Component {
                     <div>
                         <div>
                             <div>
-                            <section>"{feature.title}"</section>
-                            <section>{feature.decription}</section>
+                            <section>{feature.title}</section>
+                            <section>{feature.description}</section>
                             </div>
                         </div>
                     </div>
@@ -51,8 +51,14 @@ export default class FeatureFour extends Component {
 const FeatureContainer = styled.div`
     width: 1200px;
     margin: 0 auto;
-    color: #fff;    
+    color: #fff;  
+    transition: all .3s ease-in-out;
+    transition-delay: .5s!important;  
     > div {
+        &:hover > div > div > div > section:first-of-type {
+            color: rgba(150,198,68,1);
+            transition: all .8s ease-in-out;
+        }
         background-size: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -64,7 +70,7 @@ const FeatureContainer = styled.div`
         > div {
             width: 560px;
             height: 560px;
-            background-color: rgba(0,0,0,.4);
+            background-color: rgba(0,0,0,.5);
             position: relative;
             > div {
                 position: absolute;
@@ -75,27 +81,50 @@ const FeatureContainer = styled.div`
                 border: 2px solid #fff;
                 display: table;
                 text-align: center;
-> div {
-                display: table-cell;
-                vertical-align: middle;
-                > section {
-                    font-size: 24px;
-                    &:first-of-type {
-                        font-family: Merriweather;
-                    }
-                    &:first-of-type {
-                        
+                > div {
+                    display: table-cell;
+                    vertical-align: middle;
+                    > section {
+                        padding: 25px;
+                        &:first-of-type {
+                            font-size: 42px;
+                            font-family: Merriweather;
+                        }
+                        &:last-of-type {
+                            font-size: 32px;
+                        }
                     }
                 }
             }
-        }
         }
     }
     @media screen and (max-width: 1200px) {
         width: 100vw;
         > div {
-            width: 50vw;
-            height: 50vw;
-        }
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 90vw;
+            height: 90vw;
+            margin: 2.5vw 5vw;
+            font-size: 0;
+            > div {
+                width: 90vw;
+                height: 90vw;
+                > div {
+                    > div {
+                        > section {
+                            padding: 2.5%;
+                            &:first-of-type {
+                                font-size: 8vw;
+                            }
+                            &:last-of-type {
+                                font-size: 6vw;
+                            }
+                        }
+                    }
+                }
+            }
     }
 `;
