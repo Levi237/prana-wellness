@@ -25,6 +25,7 @@ import ServicesMain         from './components/services/ServicesMain';
 import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
 import PrenatalMain         from './components/prenatal/PrenatalMain';
 import CoachingMain         from './components/coaching/CoachingMain';
+
 import RightFooter          from './components/footer/RightFooter';
 import MidFooter            from './components/footer/MidFooter';
 import LeftFooter           from './components/footer/LeftFooter';
