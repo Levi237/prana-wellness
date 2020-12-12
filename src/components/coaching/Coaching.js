@@ -42,7 +42,7 @@ export default class Coaching extends Component {
 const ArrowBackgroundColor = "rgba(150, 91, 165, 1)"
 const ArrowColor = "#fff"
 const Container = styled.div`
-    width: 650px;
+    width: 90vw;
     margin: 100px auto;
     text-align: center;
     border: 0 solid black;
@@ -70,12 +70,12 @@ const Container = styled.div`
     > section {
         border-bottom: none;
         border-top: 50px solid ${ArrowBackgroundColor};
-        border-left: 325px solid transparent;
-        border-right: 325px solid transparent;
+        border-left: 45vw solid transparent;
+        border-right: 45vw solid transparent;
     }
     > div {
         font-size: 18px;
-        width: 220px;
+        width: 30vw;
         margin: 0 auto;
         text-align: left;
         padding: 10px;
@@ -104,6 +104,7 @@ const Container = styled.div`
             border-right: 45vw solid transparent;
         }
         > div {
+            width: 220px;
             img {
             }
         }
