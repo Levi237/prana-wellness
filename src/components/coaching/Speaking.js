@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-export default class FeatureFour extends Component {
+export default class Speaking extends Component {
     state = {
         features: [{
             title: "Wellness for the Working Mind",

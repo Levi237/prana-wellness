@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FeatureFour from './FeatureFour';
+import Speaking from './Speaking';
 
 const CoachingMain = () => {
     return(
@@ -12,7 +12,7 @@ const CoachingMain = () => {
         <section className="main-cta">
         Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.
         </section>
-      <FeatureFour/>
+      <Speaking/>
     </Container>);
 };
 
