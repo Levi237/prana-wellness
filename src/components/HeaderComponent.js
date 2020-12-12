@@ -34,7 +34,9 @@ const Container = styled.div`
     > div {
         z-index: 12;
         width: 80vw;
+        height: 100%;
         text-align: center;
+        // background-color: rgba(0,0,0,.3);
         > div {
             section {
                 &:first-of-type {

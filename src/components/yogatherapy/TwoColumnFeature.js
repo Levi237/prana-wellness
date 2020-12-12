@@ -55,7 +55,7 @@ export default class TwoColumnFeature extends Component {
             <Container>
                 <LeftColumn>
                     <div>
-                    <img src="bamboo.jpg"/>
+                    <img src="chakras.png"/>
                         <h1>
                             {leftInfo.title}
                         </h1>
