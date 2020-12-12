@@ -25,10 +25,6 @@ const Container = styled.div`
   z-index: 1;
   padding-bottom: 8vw;
 
-  button {
-      margin-left: 2vw;
-      margin-right: 2vw;
-    }
     @media screen and (max-width: 945px) {
       margin-top: calc(32.3vw - 100vh + 58px);
       padding-top: 5vw;
