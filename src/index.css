@@ -31,14 +31,7 @@ h1 {
   position: relative;
   z-index: 1;
 }
-h1.main-title {
-  padding-top: 4vw;
-}
-@media screen and (max-width: 945px) {
-  h1.main-title {
-    padding-top: 0vw;
-  }
-}
+
 button {
   box-sizing: border-box;
   padding: 20px 50px;

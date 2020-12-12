@@ -66,14 +66,17 @@ export default class CorporateMain extends Component {
     const { toggleContactBtn } = this.props;
 
     return(<>
-      <Container className="about-main-container">
-        <div className="main-title">
-        <h1>the power of prana</h1>
-            <section className="main-cta">
-              <i>
-                “Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.”
-              </i>            
-            </section>
+      <Container>
+      <h1 className="main-title">
+        the power of prana
+      </h1>
+        <section className="main-cta">
+          <i>
+              “Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.”
+            </i>   
+        </section>
+        </Container>      
+        <div>
           <PranaDifference />
           <BenefitsDisplay />
         </div>
@@ -82,7 +85,7 @@ export default class CorporateMain extends Component {
         <div className="custom-quote purple-content">
           <PurpleContent content={CorporatePurpleContent} toggle={toggleContactBtn}/>
         </div>  
-      </Container>      
+
     </>);
   };
 };
