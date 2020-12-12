@@ -24,7 +24,7 @@ import IndividualMain       from './components/individual/IndividualMain';
 import ServicesMain         from './components/services/ServicesMain';
 import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
 import PrenatalMain         from './components/prenatal/PrenatalMain';
-
+import CoachingMain         from './components/coaching/CoachingMain';
 import RightFooter          from './components/footer/RightFooter';
 import MidFooter            from './components/footer/MidFooter';
 import LeftFooter           from './components/footer/LeftFooter';
@@ -171,6 +171,8 @@ export default class App extends Component {
                     <HeaderComponent purpleBox={(false)} title="THE REASON FOR" subtitle="Yoga Therapy" image="yoga-therapy-header.jpg"/> }/> 
             <Route path={routes.PREG} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="YOGA FOR" subtitle="Maternal Health" image="prenatal-header2.jpg"/> }/> 
+            <Route path={routes.COAC} exact render={() => 
+                    <HeaderComponent purpleBox={(false)} title="ENGAGE WITH" subtitle="Speaking &amp; Coacthing" image="prenatal-header2.jpg"/> }/> 
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
           </Switch>
@@ -188,6 +190,8 @@ export default class App extends Component {
                       <YogaTherapyMain /> }/>
             <Route path={routes.PREG} exact render={() => 
                       <PrenatalMain /> }/>
+            <Route path={routes.COAC} exact render={() => 
+                      <CoachingMain /> }/>                      
             <Route path={routes.WELL} exact render={() => 
                       <IndividualMain 
                         toggleReferralBtn={this.toggleReferralBtn} 

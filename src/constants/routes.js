@@ -8,4 +8,4 @@ export const SOLO = '/services_individual';
 export const CORP = '/services_corporate';
 export const YOGA = '/yoga_therapy';
 export const PREG = '/pre-post_natal';
-export const SPCO = '/speaking_and_coaching';
+export const COAC = '/speaking_coaching';
