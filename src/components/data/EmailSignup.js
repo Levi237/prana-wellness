@@ -8,17 +8,24 @@ export default class EmailSignup extends Component {
     
     render(){
 
-        const { toggleEmailSignup } = this.props
+        const { toggleEmailSignup, contactType } = this.props
         return(
             <Container id="email" className="inactive contact-container">
                 <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</button>
-                <p>
-                    No matter your schedule, or location, experience wellness{" "}
-                    for the working mind with our signature virtual packages{" "}
-                    including yoga, meditation, and breathwork.
-                    <br/><br/>
-                    Sign up now for a free guided meditation.
-                </p>
+                {(contactType === "freebie") 
+                &&
+                    <p>
+                        No matter your schedule, or location, experience wellness{" "}
+                        for the working mind with our signature virtual packages{" "}
+                        including yoga, meditation, and breathwork.
+                        <br/><br/>
+                        Sign up now for a free guided meditation.
+                    </p>
+                }
+                {(contactType === "contact") 
+                &&
+<></>
+                }
 
                 <EmailComponent/>
 
