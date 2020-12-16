@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import EmailComponent from './EmailComponent';
 import ContactComponent from './ContactComponent';
+import MailChimp from './MailChimp';
 // import ContactRequest from '../admin/ContactRequest';
 // "https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&amp;id=fe06177933"
 
@@ -26,6 +27,9 @@ export default class EmailSignup extends Component {
                 </>}
                 {(contactType === "contact") && <>
                     <ContactComponent/>
+                </>}
+                {(contactType === "mailchimp") && <>
+                    <MailChimp/>
                 </>}
 
                 
