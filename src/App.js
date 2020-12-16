@@ -119,7 +119,7 @@ export default class App extends Component {
 
         <Nav toggleHamburger={this.toggleHamburger}/>
         <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
-        <EmailSignup contactType="freebie" toggleEmailSignup={this.toggleEmailSignup}/>
+        <EmailSignup contactType="contact" toggleEmailSignup={this.toggleEmailSignup}/>
 
         <ContactRequest 
           toggleContactBtn={this.toggleContactBtn} 

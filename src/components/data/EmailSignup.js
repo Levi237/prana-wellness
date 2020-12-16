@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import EmailComponent from './EmailComponent';
+import ContactComponent from './ContactComponent';
+// import ContactRequest from '../admin/ContactRequest';
 // "https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&amp;id=fe06177933"
 
 export default class EmailSignup extends Component { 
@@ -12,8 +14,7 @@ export default class EmailSignup extends Component {
         return(
             <Container id="email" className="inactive contact-container">
                 <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</button>
-                {(contactType === "freebie") 
-                &&
+                {(contactType === "freebie") && <>
                     <p>
                         No matter your schedule, or location, experience wellness{" "}
                         for the working mind with our signature virtual packages{" "}
@@ -21,13 +22,13 @@ export default class EmailSignup extends Component {
                         <br/><br/>
                         Sign up now for a free guided meditation.
                     </p>
-                }
-                {(contactType === "contact") 
-                &&
-<></>
-                }
+                    <EmailComponent/>
+                </>}
+                {(contactType === "contact") && <>
+                    <ContactComponent/>
+                </>}
 
-                <EmailComponent/>
+                
 
             </Container>
 
