@@ -6,7 +6,7 @@ import Mailchimp from 'react-mailchimp-form';
 class ContactComponent extends Component {
   render() {
     // select the element that will be replaced
-    var el = document.getElementsByName('MESSAGE');
+    // var el = document.getElementsByName('MESSAGE');
     // console.log(el)
     // <a href="/javascript/manipulation/creating-a-dom-element-51/">create a new element</a> that will take the place of "el"
     // var newEl = document.createElement('textarea');
