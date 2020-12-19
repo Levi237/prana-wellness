@@ -14,12 +14,20 @@ export default class MailChimp extends Component {
     };
     render(){
 
-        const { emailValue, fNameValue, lNameValue } = this.state
+        const { emailValue, fNameValue, lNameValue, locationValue, subjectValue, messageValue } = this.state
         return(
             <Container>
-                <form action="https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933" method="POST" noValidate>
-                  <input type="hidden" name="u" value="eb05e4f830c2a04be30171b01"/>
-                <input type="hidden" name="id" value="8281a64779"/>
+                <form 
+                    action="https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933" 
+                    method="post" 
+                    id="mc-embedded-subscribe-form" 
+                    name="mc-embedded-subscribe-form" 
+                    className="validate" 
+                    target="_blank" 
+                    novalidate 
+                >
+                {/* <input type="hidden" name="u" value="eb05e4f830c2a04be30171b01"/> */}
+                {/* <input type="hidden" name="id" value="8281a64779"/> */}
                 <label htmlFor='MERGE0'>
                     Email
                     <input 
@@ -52,9 +60,39 @@ export default class MailChimp extends Component {
                         onChange={(e)=>{this.setState({lNameValue: e.target.value});}}
                     />
                 </label>
+                <label htmlFor='LOCATION'>
+                    LOCATION
+                    <input 
+                        type="text" 
+                        name="LOCATION" 
+                        id="LOCATION" 
+                        value={locationValue} 
+                        onChange={(e)=>{this.setState({locationValue: e.target.value});}}
+                    />
+                </label>
+                <label htmlFor='SUBJECT'>
+                    Subject
+                    <input 
+                        type="text" 
+                        name="SUBJECT" 
+                        id="SUBJECT" 
+                        value={subjectValue} 
+                        onChange={(e)=>{this.setState({subjectValue: e.target.value});}}
+                    />
+                </label>
+                <label htmlFor='MESSAGE'>
+                    MESSAGE
+                    <textarea 
+                        type="text" 
+                        name="MESSAGE" 
+                        id="MESSAGE" 
+                        value={messageValue} 
+                        onChange={(e)=>{this.setState({messageValue: e.target.value});}}
+                    />
+                </label>
                   {/* <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/> */}
 
-                {/* <div style={{position: 'absolute', left: '-5000px'}} aria-hidden='true' aria-label="Please leave the following three fields empty">
+                <div style={{position: 'absolute', left: '-5000px'}} aria-hidden='true' aria-label="Please leave the following three fields empty">
                     <label htmlFor="b_name">Name: </label>
                     <input type="text" name="b_name" tabIndex="-1" value="" placeholder="Freddie" id="b_name"/>
 
@@ -63,19 +101,17 @@ export default class MailChimp extends Component {
 
                     <label htmlFor="b_comment">Comment: </label>
                     <textarea name="b_comment" tabIndex="-1" placeholder="Please comment" id="b_comment"></textarea>
-                </div> */}
-                <AuthFilter style={{}} aria-hidden="true"><input type="text" name="b_eb05e4f830c2a04be30171b01_8281a64779" tabindex="-1" value=""/></AuthFilter>
-<div className="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/></div>
+                </div>
+                <AuthFilter aria-hidden="true"><input type="text" name="b_eb05e4f830c2a04be30171b01_8281a64779" tabindex="-1" value=""/></AuthFilter>
+                <div className="clear">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
+                </div>
               </form>
-
-                
-
-            </Container>
-
-            
+            </Container>     
         );
     };
 };
+
 const AuthFilter = styled.div`
 position: absolute; left: -5000px;
 `;
