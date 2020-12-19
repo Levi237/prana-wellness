@@ -132,8 +132,8 @@ export default class MailChimp extends Component {
                     {buttonSelectors}
                 <input 
                     type="hidden" 
-                    name="MESSAGE" 
-                    id="MESSAGE" 
+                    name="SERVICES" 
+                    id="SERVICES" 
                     value={addServices}
                 />
 
@@ -219,7 +219,7 @@ const Container = styled.div`
     form input {
         height: 40px;
         width: 300px;
-        display: block;
+        display: inline-block;
         margin: 10px auto;
         font-size: 18px;
         padding: 4px 15px;
