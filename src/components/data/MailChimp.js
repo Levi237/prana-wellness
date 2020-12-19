@@ -75,7 +75,7 @@ export default class MailChimp extends Component {
             <Container>
                 <form 
                     action="https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933" 
-                    method="post" 
+                    method="POST" 
                     id="mc-embedded-subscribe-form" 
                     name="mc-embedded-subscribe-form" 
                     className="validate" 
@@ -170,7 +170,7 @@ export default class MailChimp extends Component {
                     <label htmlFor="b_comment">Comment: </label>
                     <textarea name="b_comment" tabIndex="-1" placeholder="Please comment" id="b_comment"></textarea>
                 </div>
-                <AuthFilter aria-hidden="true"><input type="text" name="b_eb05e4f830c2a04be30171b01_8281a64779" tabindex="-1" value=""/></AuthFilter>
+                <AuthFilter aria-hidden="true"><input type="text" name="b_0e3bf36f8cbe7c4f0019bd050_fe06177933" tabindex="-1" value=""/></AuthFilter>
                 <div className="clear">
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
                 </div>
