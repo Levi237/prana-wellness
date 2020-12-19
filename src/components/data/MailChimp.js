@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import '../admin/RequestForm.css';
 // "https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&amp;id=fe06177933"
 
 export default class MailChimp extends Component { 
@@ -11,10 +12,65 @@ export default class MailChimp extends Component {
         locationValue: '',
         subjectValue: '',
         messageValue: '',
+        addServices: [],
+        services: ["Corporate Wellness", "Personal Wellness", "Prana Yoga", "Maternal Health", "Coaching", "Speaking"]
     };
+
+    // handleSubmit = async (e) => {
+    //     const { toggleContactBtn } = this.props
+    //     e.preventDefault();
+    //     const newFromDB = await firebase.firestore()
+    //         .collection('requests')
+    //         .add({
+    //             ...this.state,
+    //             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
+    //         }).then(toggleContactBtn);
+    //     return newFromDB;
+    // };
+    handleChange = (e) => {
+        e.preventDefault();
+        this.setState({
+            [e.currentTarget.name]: e.currentTarget.value,
+        });
+    };
+    handleSelect = (e, value) => {
+        const { addServices } = this.state
+        const selectedService = e.currentTarget.name
+        e.preventDefault();
+
+        if (addServices.includes(selectedService)){
+            e.currentTarget.classList.remove('selectedHighlighted');
+            this.setState(prevState => ({     
+                addServices: addServices.filter(x => (
+                    x !== selectedService
+                ))
+            }));
+        } else {
+            e.currentTarget.classList.add('selectedHighlighted')
+            this.setState({
+                addServices: [...addServices, selectedService]
+            });
+        };
+    };
+
     render(){
 
-        const { emailValue, fNameValue, lNameValue, locationValue, subjectValue, messageValue } = this.state
+        const { emailValue, fNameValue, lNameValue, locationValue, subjectValue, messageValue , addServices, services} = this.state
+
+        const buttonSelectors = services.map((service, key) => {
+            return(
+                <button 
+                    key={key} 
+                    id={key}
+                    name={service}
+                    value={service}
+                    className="select-service white"
+                    onClick={(e) => {this.handleSelect(e, service)}
+                }>
+                    <section>{service}</section>
+                </button>
+            );
+        });
         return(
             <Container>
                 <form 
@@ -70,6 +126,18 @@ export default class MailChimp extends Component {
                         onChange={(e)=>{this.setState({locationValue: e.target.value});}}
                     />
                 </label>
+
+                
+                <section>Ask about additional services:</section>
+                    {buttonSelectors}
+                <input 
+                    type="hidden" 
+                    name="MESSAGE" 
+                    id="MESSAGE" 
+                    value={addServices}
+                />
+
+
                 <label htmlFor='SUBJECT'>
                     Subject
                     <input 
