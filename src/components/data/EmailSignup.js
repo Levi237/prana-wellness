@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled               from 'styled-components';
 
-import EmailComponent from './EmailComponent';
-import ContactComponent from './ContactComponent';
-import MailChimp from './MailChimp';
+import EmailComponent       from './EmailComponent';
+import ContactComponent     from './ContactComponent';
+import MailChimp            from './MailChimp';
 // import ContactRequest from '../admin/ContactRequest';
-// "https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&amp;id=fe06177933"
 
 export default class EmailSignup extends Component { 
     
@@ -15,22 +14,9 @@ export default class EmailSignup extends Component {
         return(
             <Container id="email" className="inactive contact-container">
                 <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</button>
-                {(contactType === "freebie") && <>
-                    <p>
-                        No matter your schedule, or location, experience wellness{" "}
-                        for the working mind with our signature virtual packages{" "}
-                        including yoga, meditation, and breathwork.
-                        <br/><br/>
-                        Sign up now for a free guided meditation.
-                    </p>
-                    <EmailComponent/>
-                </>}
-                {(contactType === "contact") && <>
-                    <ContactComponent/>
-                </>}
-                {(contactType === "mailchimp") && <>
-                    <MailChimp/>
-                </>}
+                { (contactType === "freebie") && <EmailComponent/> }
+                { (contactType === "contact") && <ContactComponent/> }
+                { (contactType === "mailchimp") && <MailChimp/> }
 
                 
 
@@ -44,11 +30,8 @@ export default class EmailSignup extends Component {
 const Container = styled.div`
     height: 100vh;
     width: 100vw;
-
     text-align: right;
-
     background-color: #fff;
-
     position: absolute;
     z-index: 91;
 
@@ -69,8 +52,8 @@ const Container = styled.div`
     p {
         text-align: center;
         padding: 2% 20%;
-
     }
+    
     form {
         text-align: center;
     }
@@ -92,7 +75,7 @@ const Container = styled.div`
         background-color: white;
         color: purple;
         border: purple solid 1px;
-        font-size: 18px;
+        font-size: 16px;
         position: relative;
         z-index: 900;
     }

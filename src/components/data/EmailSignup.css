@@ -67,7 +67,7 @@ button.select-service {
     margin: 5px;
 }
 button.selectedHighlighted {
-    background-color: rgba(150, 91, 165, 0.6)!important;
+    background-color: rgba(150, 91, 165, 0.6);
 }
 
 #referral .close, #contact .close {
