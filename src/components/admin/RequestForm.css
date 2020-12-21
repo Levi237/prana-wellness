@@ -5,7 +5,7 @@
     height: 100vh;
     padding: 0 0 3vw 0;
     background: rgba(255, 255, 255, .7);
-    overflow: hidden;
+    overflow: scroll;
 }
 
 /* .form-container {
@@ -21,7 +21,7 @@
     overflow: auto;
 } */
 
-.contact-box > input {
+/* .contact-box > input {
     width: 43%;
     height: 36px;
     border: solid lightgray 1px;
@@ -30,12 +30,12 @@
     font-size: 16px;
     line-height: 20px;
     color: #473E4E;
-}
-.contact-box > input:last-of-type, .contact-box > input:nth-last-of-type(2) {
+} */
+/* .contact-box > input:last-of-type, .contact-box > input:nth-last-of-type(2) {
     width: 90%;
-}
+} */
 
-.contact-box > textarea {
+/* .contact-box > textarea {
     width: 90%;
     border: 1px solid lightgray;
     height: 150px;
@@ -45,7 +45,7 @@
     line-height: 20px;
     color: #473E4E;
     margin: 5px 0 20px 0;
-}
+} */
 
 .contact-box section {
     text-align: left;
@@ -57,16 +57,16 @@
     width: 90%;
     margin: auto;
 }
-.contact-box > button {
+/* .contact-box > button {
     margin: 0 auto;
-}
-button.select-service {
+} */
+/* button.select-service {
     width: 150px;
     height: 54px;
     font-size: 20px;
     padding: 5px 15px;
     margin: 5px;
-}
+} */
 button.selectedHighlighted {
     background-color: rgba(150, 91, 165, 0.6)!important;
 }

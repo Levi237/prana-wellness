@@ -14,7 +14,17 @@ export default class EmailSignup extends Component {
         return(
             <Container id="email" className="inactive contact-container">
                 <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</button>
-                { (contactType === "freebie") && <EmailComponent/> }
+                { (contactType === "freebie") && 
+                    <>
+                        <p>
+                            No matter your schedule, or location, experience wellness{" "}
+                            for the working mind with our signature virtual packages{" "}
+                            including yoga, meditation, and breathwork.
+                            <br/><br/>
+                            Sign up now for a free guided meditation.
+                        </p>
+                        <EmailComponent/>
+                    </> }
                 { (contactType === "contact") && <ContactComponent/> }
                 { (contactType === "mailchimp") && <MailChimp/> }
 
@@ -28,13 +38,14 @@ export default class EmailSignup extends Component {
 };
 
 const Container = styled.div`
+
     height: 100vh;
     width: 100vw;
     text-align: right;
     background-color: #fff;
     position: absolute;
     z-index: 91;
-
+    
     > button {
         background-color: transparent;
         border-radius: 100px;
@@ -56,6 +67,8 @@ const Container = styled.div`
     
     form {
         text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
     }
     form input {
         height: 40px;

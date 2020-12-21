@@ -193,14 +193,14 @@ const AuthFilter = styled.div`
 `;
 
 const Form = styled.form`
-    label {
-        display: inline-block;
-    }
+
     h3 {
         margin: 0;
         text-transform: capitalize;
     }
     label {
+        display: inline-block;
+        
         &:nth-of-type(5){
             width: 100%;
             input {
@@ -211,16 +211,33 @@ const Form = styled.form`
         &:nth-of-type(6){
             width: 100%;
             textarea {
-                width: 100%;
-                height: 300px;
-                background-color: pink;
+                width: 90%;
+                border: 1px solid lightgray;
+                height: 150px;
+                margin: 5px 0;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+                color: #473E4E;
+                margin: 5px 0 20px 0;
             }
+        }
+        input {
+            width: 260px;
         }
     }
     > div {
         width: 100%;
         > button {
             vertical-align: top;
+            width: 150px;
+            height: 54px;
+            font-size: 16px;
+            padding: 5px 15px;
+            margin: 5px;
         }
+    }
+    input[type=submit] {
+        background: yellow;
     }
 `;

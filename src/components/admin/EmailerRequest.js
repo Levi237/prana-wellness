@@ -4,6 +4,10 @@ import './EmailerRequest.css';
 
 import firebase from 'firebase/app';
 
+
+
+//////////////////////////////////////////////   CURRENTLY NOT IN USE
+
 // const sgMail = require('@sendgrid/mail');
 // sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY);
 
@@ -87,13 +91,6 @@ export default class EmailerRequest extends Component {
             <>
             <form className="feedback-form" onSubmit={(e) => {this.handleSubmit(e)}}>
                 <button type="submit" style={btnStyle}><div style={arrowStyle}></div></button>
-                                    <p>
-                        No matter your schedule, or location, experience wellness{" "}
-                        for the working mind with our signature virtual packages{" "}
-                        including yoga, meditation, and breathwork.
-                        <br/><br/>
-                        Sign up now for a free guided meditation.
-                    </p>
                 <input
                     className="emailer-input"
                     name="email"
