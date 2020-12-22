@@ -83,47 +83,51 @@ export default class MailChimp extends Component {
                 >
                 {/* <input type="hidden" name="u" value="eb05e4f830c2a04be30171b01"/> */}
                 {/* <input type="hidden" name="id" value="8281a64779"/> */}
+                <label htmlFor='MERGE1'>
+                    {/* <h3>First name</h3> */}
+                    <input 
+                        type="text" 
+                        name="FNAME" 
+                        id="MERGE1" 
+                        value={fNameValue}
+                        placeholder="First Name" 
+                        onChange={(e)=>{this.setState({fNameValue: e.target.value});}}
+                        required
+                    />
+                </label>
+                <label htmlFor='MERGE2'>
+                    {/* <h3>Last Name</h3> */}
+                    <input 
+                        type="text" 
+                        name="LNAME" 
+                        id="MERGE2" 
+                        value={lNameValue}
+                        placeholder="Last Name" 
+                        onChange={(e)=>{this.setState({lNameValue: e.target.value});}}
+                    />
+                </label>
                 <label htmlFor='MERGE0'>
-                    <h3>Email</h3>
+                    {/* <h3>Email</h3> */}
                     <input 
                         type="email" 
                         name="EMAIL" 
                         id="MERGE0"
-                        value={emailValue} 
+                        value={emailValue}
+                        placeholder="Email" 
                         onChange={ (e)=>{this.setState({emailValue: e.target.value});} } 
                         autoCapitalize="off" 
                         autoCorrect="off"
                         required
                      /> 
                 </label>
-                <label htmlFor='MERGE1'>
-                    <h3>First name</h3>
-                    <input 
-                        type="text" 
-                        name="FNAME" 
-                        id="MERGE1" 
-                        value={fNameValue} 
-                        onChange={(e)=>{this.setState({fNameValue: e.target.value});}}
-                        required
-                    />
-                </label>
-                <label htmlFor='MERGE2'>
-                    <h3>Last name</h3>
-                    <input 
-                        type="text" 
-                        name="LNAME" 
-                        id="MERGE2" 
-                        value={lNameValue} 
-                        onChange={(e)=>{this.setState({lNameValue: e.target.value});}}
-                    />
-                </label>
                 <label htmlFor='LOCATION'>
-                    <h3>Location</h3>
+                    {/* <h3>Location</h3> */}
                     <input 
                         type="text" 
                         name="LOCATION" 
                         id="LOCATION" 
-                        value={locationValue} 
+                        value={locationValue}
+                        placeholder="Location" 
                         onChange={(e)=>{this.setState({locationValue: e.target.value});}}
                     />
                 </label>
@@ -141,22 +145,24 @@ export default class MailChimp extends Component {
                 </div>
                 
                 <label htmlFor='SUBJECT'>
-                    <h3>Subject</h3>
+                    {/* <h3>Subject</h3> */}
                     <input 
                         type="text" 
                         name="SUBJECT" 
                         id="SUBJECT" 
-                        value={subjectValue} 
+                        value={subjectValue}
+                        placeholder="Subject" 
                         onChange={(e)=>{this.setState({subjectValue: e.target.value});}}
                     />
                 </label>
                 <label htmlFor='MESSAGE'>
-                    <h3>Message</h3>
+                    {/* <h3>Message</h3> */}
                     <textarea 
                         type="text" 
                         name="MESSAGE" 
                         id="MESSAGE" 
-                        value={messageValue} 
+                        value={messageValue}
+                        placeholder="Message" 
                         onChange={(e)=>{this.setState({messageValue: e.target.value});}}
                     />
                 </label>
@@ -200,33 +206,48 @@ const Form = styled.form`
     }
     label {
         display: inline-block;
-        
+        width: 42.5%;
+        &:first-of-type{}
+        &:nth-of-type(2){
+            margin-left: 5%
+        }
+        &:nth-of-type(3){}
+        &:nth-of-type(4){
+            margin-left: 5%
+        }
         &:nth-of-type(5){
             width: 100%;
             input {
-                background-color: green!important;
-                width: 100%;
+                width: 86%;
+                padding: 5px 2%!important;
             }
+            // background-color: blue;
         }
         &:nth-of-type(6){
             width: 100%;
             textarea {
-                width: 90%;
-                border: 1px solid lightgray;
+                width: 86%;
+                border: 1px solid black;
+                border-radius: 2px;
                 height: 150px;
                 margin: 5px 0;
+                font-family: Montserrat, Arial;
                 font-weight: 500;
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 20px;
                 color: #473E4E;
                 margin: 5px 0 20px 0;
+                padding: 2%;
             }
         }
         input {
-            width: 260px;
+            width: 90%;
+            padding: 5px 5%;
         }
     }
     > div {
+        max-width: 600px;
+        margin: 0 auto;
         width: 100%;
         > button {
             vertical-align: top;
@@ -238,6 +259,11 @@ const Form = styled.form`
         }
     }
     input[type=submit] {
-        background: yellow;
+        background-color: white;
+        color: purple;
+        border: purple solid 1px;
+        font-size: 18px;
+        text-transform: uppercase;
+        padding: 0 5%;
     }
 `;

@@ -13,7 +13,7 @@ export default class EmailSignup extends Component {
         const { toggleEmailSignup, contactType } = this.props
         return(
             <Container id="email" className="inactive contact-container">
-                <button name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</button>
+                <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</CloseBtn>
                 { (contactType === "freebie") && 
                     <>
                         <p>
@@ -38,52 +38,50 @@ export default class EmailSignup extends Component {
 };
 
 const Container = styled.div`
-
-    height: 100vh;
-    width: 100vw;
-    text-align: right;
-    background-color: #fff;
-    position: absolute;
-    z-index: 91;
-    
+// position: relative;
+overflow: scroll;
+z-index: 99999;   
     > button {
-        background-color: transparent;
-        border-radius: 100px;
-        margin: 10px;
-        font-size: 14px;
-        max-height: 30px;
-        max-width: 30px;
-        min-height: 30px;
-        min-width: 30px;
-        padding: 0;
-        text-align: center;
-        position: relative;
-        z-index: 99999;
+        // background-color: transparent;
+        // border-radius: 100px;
+        // margin: 10px;
+        // font-size: 14px;
+        // max-height: 30px;
+        // max-width: 30px;
+        // min-height: 30px;
+        // min-width: 30px;
+        // padding: 0;
+        // text-align: center;
+
     }
     p {
         text-align: center;
-        padding: 2% 20%;
+        background-color: white;
     }
     
     form {
         text-align: center;
         max-width: 700px;
-        margin: 0 auto;
+        margin: 20px auto 0;
+        background-color: white;
+        padding: 20px 0;
     }
     form input {
-        height: 40px;
-        width: 300px;
-        display: block;
-        margin: 10px auto;
+        height: 36px;
+        // width: 300px;
+        // display: block;
+        margin: 5px auto;
         font-size: 18px;
-        padding: 4px 15px;
+        // padding: 4px 15px;
+        border-width: 1px;
+        border-radius: 2px;
     }
-    form p {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        padding: 2% 0;
-    }
+    // form p {
+    //     position: absolute;
+    //     top: 0;
+    //     width: 100vw;
+    //     padding: 2% 0;
+    // }
     form button {
         background-color: white;
         color: purple;
@@ -92,4 +90,22 @@ const Container = styled.div`
         position: relative;
         z-index: 900;
     }
+`;
+
+const CloseBtn = styled.button`
+    background-color: transparent;
+    border-radius: 100px;
+
+    font-size: 14px;
+    max-height: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    min-width: 30px;
+
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 99999;
 `;
