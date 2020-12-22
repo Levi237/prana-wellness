@@ -3,10 +3,73 @@ import styled from 'styled-components';
 
 // import Mailchimp from 'react-mailchimp-form';
  
-class EmailComponent extends Component {
-  render() {
+export default class EmailComponent extends Component { 
+    state = {
+      emailValue: '',
+      fNameValue: '',
+      lNameValue: '',
+    };
+    render(){
+
+const { emailValue, fNameValue, lNameValue } = this.state
     return (
       <Container>
+        <Form 
+                    action="https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933" 
+                    method="POST" 
+                    id="mc-embedded-subscribe-form" 
+                    name="mc-embedded-subscribe-form" 
+                    className="validate" 
+                    target="_blank" 
+                    novalidate 
+                >
+                <label htmlFor='MERGE1'>
+                    <input 
+                        type="text" 
+                        name="FNAME" 
+                        id="MERGE1" 
+                        value={fNameValue}
+                        placeholder="First Name" 
+                        onChange={(e)=>{this.setState({fNameValue: e.target.value});}}
+                        required
+                    />
+                </label>
+                <label htmlFor='MERGE2'>
+                    <input 
+                        type="text" 
+                        name="LNAME" 
+                        id="MERGE2" 
+                        value={lNameValue}
+                        placeholder="Last Name" 
+                        onChange={(e)=>{this.setState({lNameValue: e.target.value});}}
+                    />
+                </label>
+                <label htmlFor='MERGE0'>
+                    <input 
+                        type="email" 
+                        name="EMAIL" 
+                        id="MERGE0"
+                        value={emailValue}
+                        placeholder="Email" 
+                        onChange={ (e)=>{this.setState({emailValue: e.target.value});} } 
+                        autoCapitalize="off" 
+                        autoCorrect="off"
+                        required
+                     /> 
+                </label>
+               
+                <input 
+                    type="hidden" 
+                    name="SERVICES" 
+                    id="SERVICES" 
+                    value="Free Meditation"
+                />
+                
+                <AuthFilter aria-hidden="true"><input type="text" name="b_0e3bf36f8cbe7c4f0019bd050_fe06177933" tabindex="-1" value=""/></AuthFilter>
+                <div className="clear">
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
+                </div>
+              </Form> 
         {/* <Mailchimp
             action='https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933'
             fields={[
@@ -43,10 +106,13 @@ class EmailComponent extends Component {
         </Container>
     );
   }
+
 }
  
 const Container = styled.div`
-
-
 `;
-export default EmailComponent;
+const Form = styled.form`
+`;
+const AuthFilter = styled.div`
+    position: absolute; left: -5000px;
+`;
