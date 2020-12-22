@@ -5,7 +5,12 @@
     height: 100vh;
     padding: 0 0 3vw 0;
     background: rgba(255, 255, 255, .7);
-    overflow: scroll;
+    overflow: scroll;   
+}
+@media screen and (max-width: 945px) {
+    .contact-container {
+        background: rgba(255, 255, 255, 1);
+    }
 }
 
 /* .form-container {
