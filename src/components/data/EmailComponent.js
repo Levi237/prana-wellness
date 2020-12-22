@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 
-import Mailchimp from 'react-mailchimp-form';
+// import Mailchimp from 'react-mailchimp-form';
  
 class EmailComponent extends Component {
   render() {
     return (
-        <Mailchimp
+      <Container>
+        {/* <Mailchimp
             action='https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933'
             fields={[
                 {
@@ -37,9 +39,14 @@ class EmailComponent extends Component {
                   button: "Subscribe"
                 }
               }
-        />
+        /> */}
+        </Container>
     );
   }
 }
  
+const Container = styled.div`
+
+
+`;
 export default EmailComponent;

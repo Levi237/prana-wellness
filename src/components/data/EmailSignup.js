@@ -68,20 +68,11 @@ z-index: 99999;
     }
     form input {
         height: 36px;
-        // width: 300px;
-        // display: block;
         margin: 5px auto;
         font-size: 18px;
-        // padding: 4px 15px;
         border-width: 1px;
         border-radius: 2px;
     }
-    // form p {
-    //     position: absolute;
-    //     top: 0;
-    //     width: 100vw;
-    //     padding: 2% 0;
-    // }
     form button {
         background-color: white;
         color: purple;

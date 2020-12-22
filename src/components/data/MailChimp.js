@@ -262,6 +262,7 @@ const Form = styled.form`
         background-color: white;
         color: purple;
         border: purple solid 1px;
+        border-radius: 0;
         font-size: 18px;
         text-transform: uppercase;
         padding: 0 5%;
