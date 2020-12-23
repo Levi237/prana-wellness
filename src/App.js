@@ -71,10 +71,6 @@ export default class App extends Component {
       content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
     }]
   };  
-  
-  componentDidMount = () => {
-    this.authListener();
-  };
 
   toggleHamburger = () => {
     const hamburgerMenu = document.getElementById('menu');
@@ -97,7 +93,6 @@ export default class App extends Component {
       <GridContainer className="grid-container">
 
         <Nav toggleHamburger={this.toggleHamburger}/>
-        {/* <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/> */}
         <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
         
         <NavGrid className="grid-nav">
