@@ -13,6 +13,7 @@ const { emailValue, fNameValue, lNameValue } = this.state
     return (
         <Form 
             action="https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933" 
+            // action={`https:/${process.env.REACT_APP_MAILCHIMP_SRC}/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`}
             method="POST" 
             id="mc-embedded-subscribe-form" 
             name="mc-embedded-subscribe-form" 
@@ -63,7 +64,7 @@ const { emailValue, fNameValue, lNameValue } = this.state
             />    
             <AuthFilter aria-hidden="true"><input type="text" name="b_0e3bf36f8cbe7c4f0019bd050_fe06177933" tabindex="-1" value=""/></AuthFilter>
             <div className="clear">
-                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
+                <input type="submit" value="submit" name="Subscribe" id="mc-embedded-subscribe" className="button"/>
             </div>
         </Form> 
     );

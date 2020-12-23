@@ -7,8 +7,8 @@ export default class ReferralRequest extends Component {
         emailValue: '',
         fNameValue: '',
         lNameValue: '',
-        referralName: '',
-        referralEmail: '',
+        referralName: 'Referral Name',
+        referralEmail: 'Referral Email',
         locationValue: '',
         subjectValue: '',
         messageValue: '',
@@ -17,6 +17,7 @@ export default class ReferralRequest extends Component {
 
     
     handleChange = (e) => {
+        console.log(e, "onClick - handleChange")
         e.preventDefault();
         this.setState({
             addServices: 'referral name: ' +this.state.referralName + ', referral email:  ' + this.state.referralEmail
@@ -24,10 +25,11 @@ export default class ReferralRequest extends Component {
     };
     render(){
 
-        const { emailValue, fNameValue, lNameValue, locationValue, subjectValue, messageValue , addServices, referralEmail, referralName } = this.state
+        const { emailValue, fNameValue, lNameValue, locationValue, subjectValue, messageValue, referralEmail, referralName } = this.state
         return(
                 <Form 
                     action="https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933" 
+                    // action={`https:/${process.env.REACT_APP_MAILCHIMP_SRC}/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`}
                     method="POST" 
                     id="mc-embedded-subscribe-form" 
                     name="mc-embedded-subscribe-form" 
@@ -82,7 +84,8 @@ export default class ReferralRequest extends Component {
                 <label htmlFor='SERVICES'>
                     <input 
                         type="text" 
-                        placeholder="Referral Name" 
+                        placeholder={referralName}
+                        value={referralName}
                         onChange={(e)=>{this.setState({referralName: e.target.value});}}
                         autoCapitalize="off" 
                         autoCorrect="off"
@@ -92,7 +95,8 @@ export default class ReferralRequest extends Component {
                 <label htmlFor='SERVICES'>
                     <input 
                         type="email" 
-                        placeholder="Referral Email" 
+                        placeholder={referralEmail} 
+                        value={referralEmail} 
                         onChange={(e)=>{this.setState({referralEmail: e.target.value});}}
                         autoCapitalize="off" 
                         autoCorrect="off"
