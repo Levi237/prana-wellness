@@ -16,17 +16,6 @@ export default class MailChimp extends Component {
         services: ["Corporate Wellness", "Personal Wellness", "Prana Yoga", "Maternal Health", "Coaching", "Speaking"]
     };
 
-    // handleSubmit = async (e) => {
-    //     const { toggleContactBtn } = this.props
-    //     e.preventDefault();
-    //     const newFromDB = await firebase.firestore()
-    //         .collection('requests')
-    //         .add({
-    //             ...this.state,
-    //             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
-    //         }).then(toggleContactBtn);
-    //     return newFromDB;
-    // };
     handleChange = (e) => {
         e.preventDefault();
         this.setState({
@@ -81,10 +70,7 @@ export default class MailChimp extends Component {
                     target="_blank" 
                     novalidate 
                 >
-                {/* <input type="hidden" name="u" value="eb05e4f830c2a04be30171b01"/> */}
-                {/* <input type="hidden" name="id" value="8281a64779"/> */}
                 <label htmlFor='MERGE1'>
-                    {/* <h3>First name</h3> */}
                     <input 
                         type="text" 
                         name="FNAME" 
@@ -96,7 +82,6 @@ export default class MailChimp extends Component {
                     />
                 </label>
                 <label htmlFor='MERGE2'>
-                    {/* <h3>Last Name</h3> */}
                     <input 
                         type="text" 
                         name="LNAME" 
@@ -107,7 +92,6 @@ export default class MailChimp extends Component {
                     />
                 </label>
                 <label htmlFor='MERGE0'>
-                    {/* <h3>Email</h3> */}
                     <input 
                         type="email" 
                         name="EMAIL" 
@@ -121,7 +105,6 @@ export default class MailChimp extends Component {
                      /> 
                 </label>
                 <label htmlFor='LOCATION'>
-                    {/* <h3>Location</h3> */}
                     <input 
                         type="text" 
                         name="LOCATION" 
@@ -145,7 +128,6 @@ export default class MailChimp extends Component {
                 </div>
                 
                 <label htmlFor='SUBJECT'>
-                    {/* <h3>Subject</h3> */}
                     <input 
                         type="text" 
                         name="SUBJECT" 
@@ -156,7 +138,6 @@ export default class MailChimp extends Component {
                     />
                 </label>
                 <label htmlFor='MESSAGE'>
-                    {/* <h3>Message</h3> */}
                     <textarea 
                         type="text" 
                         name="MESSAGE" 
@@ -166,18 +147,6 @@ export default class MailChimp extends Component {
                         onChange={(e)=>{this.setState({messageValue: e.target.value});}}
                     />
                 </label>
-                  {/* <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/> */}
-
-                {/* <div style={{position: 'absolute', left: '-5000px'}} aria-hidden='true' aria-label="Please leave the following three fields empty">
-                    <label htmlFor="b_name">Name: </label>
-                    <input type="text" name="b_name" tabIndex="-1" value="" placeholder="Freddie" id="b_name"/>
-
-                    <label htmlFor="b_email">Email: </label>
-                    <input type="email" name="b_email" tabIndex="-1" value="" placeholder="youremail@gmail.com" id="b_email"/>
-
-                    <label htmlFor="b_comment">Comment: </label>
-                    <textarea name="b_comment" tabIndex="-1" placeholder="Please comment" id="b_comment"></textarea>
-                </div> */}
                 <AuthFilter aria-hidden="true"><input type="text" name="b_0e3bf36f8cbe7c4f0019bd050_fe06177933" tabindex="-1" value=""/></AuthFilter>
                 <div className="clear">
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
