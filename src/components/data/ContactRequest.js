@@ -168,14 +168,14 @@ const Form = styled.form`
     }
     label {
         display: inline-block;
-        width: 42.5%;
+       
         &:first-of-type{}
         &:nth-of-type(2){
-            margin-left: 5%
+            margin-left: 1.75%
         }
         &:nth-of-type(3){}
         &:nth-of-type(4){
-            margin-left: 5%
+            margin-left: 1.75%
         }
         &:nth-of-type(5){
             width: 100%;

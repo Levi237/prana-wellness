@@ -41,7 +41,7 @@ export default class ReferralRequest extends Component {
                         name="FNAME" 
                         id="MERGE1" 
                         value={fNameValue}
-                        placeholder="First Name" 
+                        placeholder="Your First Name" 
                         onChange={(e)=>{this.setState({fNameValue: e.target.value});}}
                         required
                     />
@@ -52,7 +52,7 @@ export default class ReferralRequest extends Component {
                         name="LNAME" 
                         id="MERGE2" 
                         value={lNameValue}
-                        placeholder="Last Name" 
+                        placeholder="Your Last Name" 
                         onChange={(e)=>{this.setState({lNameValue: e.target.value});}}
                     />
                 </label>
@@ -62,7 +62,7 @@ export default class ReferralRequest extends Component {
                         name="EMAIL" 
                         id="MERGE0"
                         value={emailValue}
-                        placeholder="Email" 
+                        placeholder="Your Email" 
                         onChange={ (e)=>{this.setState({emailValue: e.target.value});} } 
                         autoCapitalize="off" 
                         autoCorrect="off"
@@ -75,27 +75,24 @@ export default class ReferralRequest extends Component {
                         name="LOCATION" 
                         id="LOCATION" 
                         value={locationValue}
-                        placeholder="Location" 
+                        placeholder="Referral Location" 
                         onChange={(e)=>{this.setState({locationValue: e.target.value});}}
                     />
                 </label>
-
-                
-                <h3>Ask about additional services:</h3>
-                <label htmlFor=''>
+                <label htmlFor='SERVICES'>
                     <input 
                         type="text" 
-                        placeholder="Name" 
+                        placeholder="Referral Name" 
                         onChange={(e)=>{this.setState({referralName: e.target.value});}}
                         autoCapitalize="off" 
                         autoCorrect="off"
                         required
                      /> 
                 </label>
-                <label htmlFor=''>
+                <label htmlFor='SERVICES'>
                     <input 
                         type="email" 
-                        placeholder="Email" 
+                        placeholder="Referral Email" 
                         onChange={(e)=>{this.setState({referralEmail: e.target.value});}}
                         autoCapitalize="off" 
                         autoCorrect="off"
@@ -123,7 +120,7 @@ export default class ReferralRequest extends Component {
                         onChange={(e)=>{this.setState({messageValue: e.target.value});}}
                     />
                 </label>
-                <AuthFilter aria-hidden="true"><input type="text" name="b_0e3bf36f8cbe7c4f0019bd050_fe06177933" tabindex="-1" value=""/></AuthFilter>
+                <section aria-hidden="true"><input type="text" name="b_0e3bf36f8cbe7c4f0019bd050_fe06177933" tabindex="-1" value=""/></section>
                 <div className="clear">
                     <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" onClick={this.handleChange}/>
                 </div>
@@ -132,44 +129,37 @@ export default class ReferralRequest extends Component {
     };
 };
 
-const ServiceBtn = styled.input`
-    width: 150px;
-    font-size: 20px;
-    padding: 5px 15px;
-    margin: 5px;
-`;
-
-const AuthFilter = styled.div`
-    position: absolute; left: -5000px;
-`;
-
 const Form = styled.form`
-z-index: 90000000000000;
-position: fixed;
     h3 {
         margin: 0;
         text-transform: capitalize;
     }
+    section {
+        position: absolute; left: -5000px;
+    }
     label {
         display: inline-block;
-        width: 42.5%;
+        
         &:first-of-type{}
         &:nth-of-type(2){
-            margin-left: 5%
+            margin-left: 1.75%
         }
         &:nth-of-type(3){}
         &:nth-of-type(4){
-            margin-left: 5%
+            margin-left: 1.75%
         }
-        &:nth-of-type(5){
+        &:nth-of-type(5){}
+        &:nth-of-type(6){
+            margin-left: 1.75%
+        }
+        &:nth-of-type(7){
             width: 100%;
             input {
                 width: 86%;
                 padding: 5px 2%!important;
             }
-            // background-color: blue;
         }
-        &:nth-of-type(6){
+        &:nth-of-type(8){
             width: 100%;
             textarea {
                 width: 86%;
@@ -191,17 +181,4 @@ position: fixed;
             padding: 5px 5%;
         }
     }
-    > div {
-        max-width: 600px;
-        margin: 0 auto;
-        width: 100%;
-        > button {
-            vertical-align: top;
-            width: 150px;
-            height: 54px;
-            font-size: 16px;
-            padding: 5px 15px;
-            margin: 5px;
-        }
-    }}
 `;

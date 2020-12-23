@@ -56,6 +56,9 @@ z-index: 99999;
         font-size: 18px;
         text-transform: uppercase;
     }
+    form label {
+        width: 44%;
+    }
 `;
 
 const CloseBtn = styled.button`
