@@ -75,7 +75,7 @@ export default class CorporateMain extends Component {
           "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!" 
             </i>   
         </section>
-        <button value="referralRequest" onClick={(e) => {toggleEmailSignup(e)}}>Refer into Employer</button>
+        <button value="referralRequest" onClick={(e) => {toggleEmailSignup(e)}}>Refer to Employer</button>
         <br/><br/><br/><br/>
         </Container>      
         <div>
