@@ -12,8 +12,7 @@ export default class FreebieEmailSignup extends Component {
 const { emailValue, fNameValue, lNameValue } = this.state
     return (
         <Form 
-            action="https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933" 
-            // action={`https:/${process.env.REACT_APP_MAILCHIMP_SRC}/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`}
+            action={`https:/${process.env.REACT_APP_MAILCHIMP_SRC}/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`}
             method="POST" 
             id="mc-embedded-subscribe-form" 
             name="mc-embedded-subscribe-form" 

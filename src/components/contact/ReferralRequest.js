@@ -7,29 +7,19 @@ export default class ReferralRequest extends Component {
         emailValue: '',
         fNameValue: '',
         lNameValue: '',
-        referralName: 'Referral Name',
-        referralEmail: 'Referral Email',
+        referralName: '',
+        referralEmail: '',
         locationValue: '',
         subjectValue: '',
         messageValue: '',
         addServices: ['']
     }
-
-    
-    handleChange = (e) => {
-        console.log(e, "onClick - handleChange")
-        e.preventDefault();
-        this.setState({
-            addServices: 'referral name: ' +this.state.referralName + ', referral email:  ' + this.state.referralEmail
-        });
-    };
     render(){
 
-        const { emailValue, fNameValue, lNameValue, locationValue, subjectValue, messageValue, referralEmail, referralName } = this.state
+        const { emailValue, fNameValue, lNameValue, locationValue, subjectValue, messageValue, addServices, referralEmail, referralName } = this.state
         return(
                 <Form 
-                    action="https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933" 
-                    // action={`https:/${process.env.REACT_APP_MAILCHIMP_SRC}/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`}
+                    action={`https:/${process.env.REACT_APP_MAILCHIMP_SRC}/subscribe/post?u=${process.env.REACT_APP_MAILCHIMP_U}&id=${process.env.REACT_APP_MAILCHIMP_ID}`}
                     method="POST" 
                     id="mc-embedded-subscribe-form" 
                     name="mc-embedded-subscribe-form" 
@@ -42,9 +32,11 @@ export default class ReferralRequest extends Component {
                         type="text" 
                         name="FNAME" 
                         id="MERGE1" 
-                        value={fNameValue}
                         placeholder="Your First Name" 
-                        onChange={(e)=>{this.setState({fNameValue: e.target.value});}}
+                        value={fNameValue}
+                        onChange={(e)=>{this.setState({
+                            fNameValue: e.target.value, 
+                            addServices: 'referral name: ' +this.state.referralName + ', referral email:  ' + this.state.referralEmail})}}
                         required
                     />
                 </label>
@@ -53,21 +45,21 @@ export default class ReferralRequest extends Component {
                         type="text" 
                         name="LNAME" 
                         id="MERGE2" 
-                        value={lNameValue}
                         placeholder="Your Last Name" 
+                        value={lNameValue}
                         onChange={(e)=>{this.setState({lNameValue: e.target.value});}}
                     />
                 </label>
                 <label htmlFor='MERGE0'>
                     <input 
                         type="email" 
-                        name="EMAIL" 
-                        id="MERGE0"
-                        value={emailValue}
-                        placeholder="Your Email" 
-                        onChange={ (e)=>{this.setState({emailValue: e.target.value});} } 
                         autoCapitalize="off" 
                         autoCorrect="off"
+                        name="EMAIL" 
+                        id="MERGE0"
+                        placeholder="Your Email" 
+                        value={emailValue}
+                        onChange={ (e)=>{this.setState({emailValue: e.target.value});} } 
                         required
                      /> 
                 </label>
@@ -76,32 +68,44 @@ export default class ReferralRequest extends Component {
                         type="text" 
                         name="LOCATION" 
                         id="LOCATION" 
-                        value={locationValue}
                         placeholder="Referral Location" 
+                        value={locationValue}
                         onChange={(e)=>{this.setState({locationValue: e.target.value});}}
                     />
                 </label>
                 <label htmlFor='SERVICES'>
                     <input 
                         type="text" 
-                        placeholder={referralName}
-                        value={referralName}
-                        onChange={(e)=>{this.setState({referralName: e.target.value});}}
                         autoCapitalize="off" 
                         autoCorrect="off"
+                        placeholder="Referral Name" 
+                        value={referralName}
+                        onChange={(e)=>{this.setState({
+                            referralName: e.target.value,
+                            addServices: 'referral name: ' +this.state.referralName + ', referral email:  ' + this.state.referralEmail
+                        });}}
                         required
                      /> 
                 </label>
                 <label htmlFor='SERVICES'>
                     <input 
                         type="email" 
-                        placeholder={referralEmail} 
-                        value={referralEmail} 
-                        onChange={(e)=>{this.setState({referralEmail: e.target.value});}}
                         autoCapitalize="off" 
                         autoCorrect="off"
+                        placeholder="Referral Email" 
+                        value={referralEmail} 
+                        onChange={(e)=>{this.setState({
+                            referralEmail: e.target.value,
+                            addServices: 'referral name: ' +this.state.referralName + ', referral email:  ' + this.state.referralEmail
+                        });}}
                         required
                      /> 
+                    <input 
+                        type="hidden" 
+                        name="SERVICES" 
+                        id="SERVICES" 
+                        value={addServices}
+                    />
                 </label>
                 
                 <label htmlFor='SUBJECT'>
@@ -126,7 +130,7 @@ export default class ReferralRequest extends Component {
                 </label>
                 <section aria-hidden="true"><input type="text" name="b_0e3bf36f8cbe7c4f0019bd050_fe06177933" tabindex="-1" value=""/></section>
                 <div className="clear">
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" onClick={this.handleChange}/>
+                    <input type="submit" value="submit" name="subscribe" id="mc-embedded-subscribe" className="button"/>
                 </div>
               </Form> 
         );
