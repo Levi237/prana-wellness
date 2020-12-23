@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import '../admin/RequestForm.css';
 // "https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&amp;id=fe06177933"
 
-export default class MailChimp extends Component { 
+export default class ContactRequest extends Component { 
     state = {
         emailValue: '',
         fNameValue: '',

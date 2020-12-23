@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styled               from 'styled-components';
 
 import FreebieEmailSignup       from './FreebieEmailSignup';
-import ContactComponent     from './ContactComponent';
-import MailChimp            from './MailChimp';
+// import ContactComponent     from './ContactComponent';
+import ContactRequest            from './ContactRequest';
 // import ContactRequest from '../admin/ContactRequest';
 
 export default class EmailSignup extends Component { 
@@ -15,7 +15,7 @@ export default class EmailSignup extends Component {
             <Container id="email" className="inactive contact-container">
                 <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</CloseBtn>
                 { (contactType === "freebie") && <FreebieEmailSignup/> }
-                { (contactType === "contactRequest") && <MailChimp/> }
+                { (contactType === "contactRequest") && <ContactRequest/> }
             </Container>
         );
     };
