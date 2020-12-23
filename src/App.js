@@ -6,8 +6,8 @@ import * as routes          from './constants/routes';
 import Nav                  from './components/Nav';
 import NavBar               from './components/NavBar';
 
-import Enter                from './components/admin/Enter';
-import AdminPortal          from './components/admin/AdminPortal';
+// import Enter                from './components/admin/Enter';
+// import AdminPortal          from './components/admin/AdminPortal';
 // import ReferralRequest      from './components/contact/ReferralRequest';
 // import ContactRequest       from './components/contact/ContactRequest';
 
@@ -32,7 +32,7 @@ import LeftFooter           from './components/footer/LeftFooter';
 
 import './App.css';
 
-import firebase from 'firebase/app'
+// import firebase from 'firebase/app'
 
 export default class App extends Component {
   state = {
@@ -75,22 +75,6 @@ export default class App extends Component {
   componentDidMount = () => {
     this.authListener();
   };
-
-  authListener(){
-    firebase.auth().onAuthStateChanged((user) => {
-      if(user){
-        this.setState({
-          user: user.providerData[0],
-          uid: firebase.auth().currentUser.uid
-        });
-      }else{
-        this.setState({user: null, uid: null});
-      }
-    });
-  };
-  logout = () => {
-    firebase.auth().signOut();
-  }
 
   toggleHamburger = () => {
     const hamburgerMenu = document.getElementById('menu');
@@ -148,8 +132,6 @@ export default class App extends Component {
           <Switch>         
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>
-            <Route path={routes.ADMN} exact render={() => 
-                    !this.state.user ? <Enter /> : <AdminPortal /> }/>       
             <Route path={routes.INFO} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="THE TEAM BEHIND" subtitle="Prana Wellness" image="about-header2.png"/> }/>
             <Route path={routes.SERV} exact render={() => 
