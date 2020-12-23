@@ -52,7 +52,7 @@ export default class ReferralRequest extends Component {
     };
 
     render(){
-        const { fromName, fromEmail, businessName, subjectTitle, subjectContent, addServices } = this.state;
+        const { fromName, fromEmail, businessName, subjectTitle, subjectContent } = this.state;
         const { toggleContactBtn, services } = this.props; 
 
         const buttonSelectors = services.map((service, key) => {

@@ -97,16 +97,6 @@ export default class App extends Component {
     hamburgerMenu.classList.toggle('active');
     hamburgerMenu.classList.toggle('inactive');
   };
-  toggleReferralBtn = (e) => {
-    const referralForm = document.getElementById('referral');
-    referralForm.classList.toggle('active');
-    referralForm.classList.toggle('inactive');
-  };
-  toggleContactBtn = (e) => {
-    const contactBtn = document.getElementById('contact');
-    contactBtn.classList.toggle('active');
-    contactBtn.classList.toggle('inactive');
-  };
   toggleEmailSignup = (e) => {
     const emailForm = document.getElementById('email');
     emailForm.classList.toggle('active');
@@ -200,16 +190,14 @@ export default class App extends Component {
                       <CoachingMain toggleEmailSignup={this.toggleEmailSignup}/> }/>                      
             <Route path={routes.WELL} exact render={() => 
                       <IndividualMain 
-                        toggleReferralBtn={this.toggleReferralBtn} 
-                        toggleContactBtn={this.toggleContactBtn}
+                        toggleEmailSignup={this.toggleEmailSignup}
                       /> 
             }/>       
             <Route path={routes.CORP} exact render={() => 
-                      <CorporateMain toggleContactBtn={this.toggleContactBtn}/> }/>  
+                      <CorporateMain toggleEmailSignup={this.toggleEmailSignup}/> }/>  
             <Route path={routes.SERV} exact render={() => 
                       <ServicesMain 
-                        toggleReferralBtn={this.toggleReferralBtn} 
-                        toggleContactBtn={this.toggleContactBtn}
+                        toggleEmailSignup={this.toggleEmailSignup}
                       /> 
             }/>           
             <Route path={routes.ROOT} render={() => 

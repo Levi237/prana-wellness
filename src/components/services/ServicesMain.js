@@ -57,7 +57,7 @@ export default class ServicesMain extends Component {
       };
 
     render(){
-        const { toggleContactBtn } = this.props;
+        const { toggleEmailSignup } = this.props;
 
         return(<>
             <Container className="wellness-main-container main-title">
@@ -70,7 +70,7 @@ export default class ServicesMain extends Component {
             <Header className="services-main-header">WELLNESS SERVICES</Header>
                 <ServiceDisplay services={this.state.otherServices}/>
                 <ButtonContainer>
-            <button className="white" name="contactForm" onClick={(e) => {toggleContactBtn(e)}}>Request Quote</button>
+            <button className="white" name="contactForm" value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Request Quote</button>
             </ButtonContainer>
         </>);
     };

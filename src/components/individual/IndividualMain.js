@@ -52,11 +52,11 @@ export default class IndividualMain extends Component {
   render(){
 
     const { individualPurpleContent } = this.state;
-    const { toggleReferralBtn } = this.props;
+    const { toggleEmailSignup } = this.props;
   
     return(<>
       <Container className="wellness-main-container purple-content">
-        <PurpleContent content={individualPurpleContent} toggle={toggleReferralBtn}/>
+        <PurpleContent content={individualPurpleContent} toggleEmailSignup={toggleEmailSignup}/>
       </Container>
       <div>
       <ServiceDisplay services={this.state.services}/>

@@ -63,7 +63,7 @@ export default class CorporateMain extends Component {
 
   render(){
     const { details, duration, deals, totalMonthly, CorporatePurpleContent } = this.state;
-    const { toggleContactBtn } = this.props;
+    const { toggleEmailSignup } = this.props;
 
     return(<>
       <Container>
@@ -83,7 +83,7 @@ export default class CorporateMain extends Component {
         <h1>Corporate Wellness Solutions</h1>
         <NewPackageDisplay deals={deals} details={details} totalMonthly={totalMonthly} duration={duration}/>
         <div className="custom-quote purple-content">
-          <PurpleContent content={CorporatePurpleContent} toggle={toggleContactBtn}/>
+          <PurpleContent content={CorporatePurpleContent} toggleEmailSignup={toggleEmailSignup}/>
         </div>  
     </>);
   };
