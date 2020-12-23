@@ -56,7 +56,7 @@ export default class IndividualMain extends Component {
   
     return(<>
       <Container className="wellness-main-container purple-content">
-        <PurpleContent content={individualPurpleContent} toggleEmailSignup={toggleEmailSignup}/>
+        <PurpleContent content={individualPurpleContent} value="referralRequest" toggleEmailSignup={toggleEmailSignup}/>
       </Container>
       <div>
       <ServiceDisplay services={this.state.services}/>

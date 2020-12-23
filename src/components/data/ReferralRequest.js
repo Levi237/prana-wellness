@@ -1,58 +1,30 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import './RequestForm.css';
 
-export default class ContactRequest extends Component { 
+export default class ReferralRequest extends Component {
     state = {
         emailValue: '',
         fNameValue: '',
         lNameValue: '',
+        referralName: '',
+        referralEmail: '',
         locationValue: '',
         subjectValue: '',
         messageValue: '',
-        addServices: [],
-        services: ["Corporate Wellness", "Personal Wellness", "Prana Yoga", "Maternal Health", "Coaching", "Speaking"]
-    };
+        addServices: ['']
+    }
 
-    handleSelect = (e, value) => {
-        const { addServices } = this.state
-        const selectedService = e.currentTarget.name
+    
+    handleChange = (e) => {
         e.preventDefault();
-
-        if (addServices.includes(selectedService)){
-            e.currentTarget.classList.remove('selectedHighlighted');
-            this.setState(prevState => ({     
-                addServices: addServices.filter(x => (
-                    x !== selectedService
-                ))
-            }));
-        } else {
-            e.currentTarget.classList.add('selectedHighlighted')
-            this.setState({
-                addServices: [...addServices, selectedService]
-            });
-        };
+        this.setState({
+            addServices: 'referral name: ' +this.state.referralName + ', referral email:  ' + this.state.referralEmail
+        });
     };
-
     render(){
 
-        const { emailValue, fNameValue, lNameValue, locationValue, subjectValue, messageValue , addServices, services} = this.state
-
-        const buttonSelectors = services.map((service, key) => {
-            return(
-                <ServiceBtn 
-                    key={key} 
-                    id={key}
-                    name={service}
-                    value={service}
-                    className="select-service white"
-                    onClick={(e) => {this.handleSelect(e, service)}
-                }>
-                   {service}
-                </ServiceBtn>
-            );
-        });
+        const { emailValue, fNameValue, lNameValue, locationValue, subjectValue, messageValue , addServices, referralEmail, referralName } = this.state
         return(
                 <Form 
                     action="https://travelslay.us12.list-manage.com/subscribe/post?u=0e3bf36f8cbe7c4f0019bd050&id=fe06177933" 
@@ -110,15 +82,26 @@ export default class ContactRequest extends Component {
 
                 
                 <h3>Ask about additional services:</h3>
-                <div>
-                    {buttonSelectors}
+                <label htmlFor=''>
                     <input 
-                        type="hidden" 
-                        name="SERVICES" 
-                        id="SERVICES" 
-                        value={addServices}
-                    />
-                </div>
+                        type="text" 
+                        placeholder="Name" 
+                        onChange={(e)=>{this.setState({referralName: e.target.value});}}
+                        autoCapitalize="off" 
+                        autoCorrect="off"
+                        required
+                     /> 
+                </label>
+                <label htmlFor=''>
+                    <input 
+                        type="email" 
+                        placeholder="Email" 
+                        onChange={(e)=>{this.setState({referralEmail: e.target.value});}}
+                        autoCapitalize="off" 
+                        autoCorrect="off"
+                        required
+                     /> 
+                </label>
                 
                 <label htmlFor='SUBJECT'>
                     <input 
@@ -142,14 +125,14 @@ export default class ContactRequest extends Component {
                 </label>
                 <AuthFilter aria-hidden="true"><input type="text" name="b_0e3bf36f8cbe7c4f0019bd050_fe06177933" tabindex="-1" value=""/></AuthFilter>
                 <div className="clear">
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button"/>
+                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" className="button" onClick={this.handleChange}/>
                 </div>
               </Form> 
         );
     };
 };
 
-const ServiceBtn = styled.button`
+const ServiceBtn = styled.input`
     width: 150px;
     font-size: 20px;
     padding: 5px 15px;
@@ -161,7 +144,8 @@ const AuthFilter = styled.div`
 `;
 
 const Form = styled.form`
-
+z-index: 90000000000000;
+position: fixed;
     h3 {
         margin: 0;
         text-transform: capitalize;

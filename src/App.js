@@ -8,8 +8,8 @@ import NavBar               from './components/NavBar';
 
 import Enter                from './components/admin/Enter';
 import AdminPortal          from './components/admin/AdminPortal';
-import ReferralRequest      from './components/admin/ReferralRequest';
-import ContactRequest       from './components/admin/ContactRequest';
+// import ReferralRequest      from './components/data/ReferralRequest';
+import ContactRequest       from './components/data/ContactRequest';
 
 import EmailSignup          from './components/data/EmailSignup';
 import ContactBox           from './components/contact/ContactBox'; 
@@ -113,13 +113,8 @@ export default class App extends Component {
       <GridContainer className="grid-container">
 
         <Nav toggleHamburger={this.toggleHamburger}/>
-        <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
+        {/* <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/> */}
         <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
-
-        <ContactRequest 
-          toggleContactBtn={this.toggleContactBtn} 
-          services={this.state.otherServices} 
-        />
         
         <NavGrid className="grid-nav">
           <Switch>

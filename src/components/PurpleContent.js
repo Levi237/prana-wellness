@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const PurpleContent = ({ content, toggleEmailSignup}) => {
+const PurpleContent = ({ content, toggleEmailSignup, value}) => {
     return(<>
             <Title>{content.header}</Title>
 
@@ -10,7 +10,7 @@ const PurpleContent = ({ content, toggleEmailSignup}) => {
                     {content.message}  
                 </Content>
                 <ButtonContaner>
-                    <button className="purple mobile-fill" value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>{content.button}</button>
+                    <button className="purple mobile-fill" value={value} onClick={(e) => {toggleEmailSignup(e)}}>{content.button}</button>
                 </ButtonContaner>
 
             </section>
