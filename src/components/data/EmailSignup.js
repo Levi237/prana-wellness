@@ -14,18 +14,9 @@ export default class EmailSignup extends Component {
         return(
             <Container id="email" className="inactive contact-container">
                 <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</CloseBtn>
-                { (contactType === "freebie") && 
-                    <>
-                        <FreebieEmailSignup/>
-                    </> }
-                { (contactType === "contact") && <ContactComponent/> }
-                { (contactType === "mailchimp") && <MailChimp/> }
-
-                
-
+                { (contactType === "freebie") && <FreebieEmailSignup/> }
+                { (contactType === "contactRequest") && <MailChimp/> }
             </Container>
-
-            
         );
     };
 };
@@ -34,19 +25,7 @@ const Container = styled.div`
 position: fixed;
 overflow: scroll;
 z-index: 99999;   
-    > button {
-        // background-color: transparent;
-        // border-radius: 100px;
-        // margin: 10px;
-        // font-size: 14px;
-        // max-height: 30px;
-        // max-width: 30px;
-        // min-height: 30px;
-        // min-width: 30px;
-        // padding: 0;
-        // text-align: center;
 
-    }
     p {
         text-align: center;
         background-color: white;

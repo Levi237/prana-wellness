@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Speaking from './Speaking';
 import Coaching from './Coaching';
 
-const CoachingMain = () => {
+const CoachingMain = ({toggleEmailSignup}) => {
     return(
       <Container>
         <h1 className="main-title">
@@ -13,6 +13,8 @@ const CoachingMain = () => {
         <section className="main-cta">
         Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.
         </section>
+        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Button</button>
+        <br/><br/><br/><br/>
       <Speaking/>
       <Coaching/>
     </Container>);

@@ -49,6 +49,10 @@ button {
   background: transparent;
 
   transition: all .3s ease-in-out;
+
+  border: 1px solid #965BA5;
+  background-color: #FFF;
+  color: #965BA5;
 }
 button.white {
   border: 1px solid #965BA5;
@@ -56,8 +60,9 @@ button.white {
   color: #965BA5;
 }
 button.purple {
-  border: 1px solid #FFF;
-  color: #FFF;
+  border: 1px solid #FFF!important;
+  background-color: transparent;
+  color: #FFF!important;
 }
 button.white:hover {
   background-color: rgba(150, 91, 165, .5);

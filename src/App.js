@@ -38,6 +38,7 @@ export default class App extends Component {
   state = {
     user: null,
     uid: null,
+    emailContact: "",
     otherServices: [{ 
       smallText: "Bootcamp",
       largeText: "Fitness",
@@ -110,16 +111,20 @@ export default class App extends Component {
     const emailForm = document.getElementById('email');
     emailForm.classList.toggle('active');
     emailForm.classList.toggle('inactive');
+    this.setState({
+      emailContact: e.currentTarget.value
+    });
   };
+
   
   render(){
-    const { user } = this.state
+    const { user, emailContact } = this.state
     return(
       <GridContainer className="grid-container">
 
         <Nav toggleHamburger={this.toggleHamburger}/>
         <ReferralRequest toggleReferralBtn={this.toggleReferralBtn}/>
-        <EmailSignup contactType="freebie" toggleEmailSignup={this.toggleEmailSignup}/>
+        <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
 
         <ContactRequest 
           toggleContactBtn={this.toggleContactBtn} 
@@ -188,11 +193,11 @@ export default class App extends Component {
             <Route path={routes.INFO} exact render={() => 
                       <AboutMain /> }/>
             <Route path={routes.YOGA} exact render={() => 
-                      <YogaTherapyMain /> }/>
+                      <YogaTherapyMain toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.PREG} exact render={() => 
-                      <PrenatalMain /> }/>
+                      <PrenatalMain toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.COAC} exact render={() => 
-                      <CoachingMain /> }/>                      
+                      <CoachingMain toggleEmailSignup={this.toggleEmailSignup}/> }/>                      
             <Route path={routes.WELL} exact render={() => 
                       <IndividualMain 
                         toggleReferralBtn={this.toggleReferralBtn} 

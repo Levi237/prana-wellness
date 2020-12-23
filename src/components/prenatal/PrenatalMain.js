@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const PrenatalMain = () => {
+const PrenatalMain = ({toggleEmailSignup}) => {
     return(
       <Container>
         <div>
@@ -11,6 +11,8 @@ const PrenatalMain = () => {
         <section className="main-cta">
         You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.
         </section>
+        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Button</button>
+        <br/><br/><br/><br/>
         </div>
         <Circle>
           <div></div>

@@ -232,9 +232,6 @@ const Container = styled.div`
         padding: 2% 0;
     }
     form button {
-        background-color: white;
-        color: purple;
-        border: purple solid 1px;
         font-size: 18px;
         position: relative;
         z-index: 900;

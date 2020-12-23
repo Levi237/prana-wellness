@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-
-// import Mailchimp from 'react-mailchimp-form';
  
 export default class FreebieEmailSignup extends Component { 
     state = {
