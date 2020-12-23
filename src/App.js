@@ -8,11 +8,11 @@ import NavBar               from './components/NavBar';
 
 import Enter                from './components/admin/Enter';
 import AdminPortal          from './components/admin/AdminPortal';
-// import ReferralRequest      from './components/data/ReferralRequest';
-import ContactRequest       from './components/data/ContactRequest';
+// import ReferralRequest      from './components/contact/ReferralRequest';
+// import ContactRequest       from './components/contact/ContactRequest';
 
-import EmailSignup          from './components/data/EmailSignup';
-import ContactBox           from './components/contact/ContactBox'; 
+import EmailSignup          from './components/contact/EmailSignup';
+import ContactBox           from './components/contact/AnnouncementBanner'; 
 
 import HomeHeader           from './components/home/HomeHeader';
 import HeaderComponent      from './components/HeaderComponent';

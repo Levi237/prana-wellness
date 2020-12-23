@@ -1,18 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ContactBox = ({user,toggleEmailSignup}) => {
+const ContactBox = ({ toggleEmailSignup }) => {
     return(
         <Contact>
             <span>Experience Virtual Wellness Packages{"  "}</span><button className="purple" value="freebie" onClick={(e) => {toggleEmailSignup(e)}}>Free Meditation Offer</button>
             <a href="https://www.instagram.com/pranawellnessworks/" target="_blank" rel="noopener noreferrer" alt="instagram @pranawellnessworks">
                 <img src="../instagram-icon.png" alt="IG"/>
             </a>
-            {user 
-                ? <section>Welcome Stephanie!</section>
-                // : <section>info@pranawellness.life</section> 
-                : <></>
-            }
         </Contact>
     );
 };
