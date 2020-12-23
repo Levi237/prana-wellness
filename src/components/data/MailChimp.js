@@ -257,14 +257,5 @@ const Form = styled.form`
             padding: 5px 15px;
             margin: 5px;
         }
-    }
-    input[type=submit] {
-        background-color: white;
-        color: purple;
-        border: purple solid 1px;
-        border-radius: 0;
-        font-size: 18px;
-        text-transform: uppercase;
-        padding: 0 5%;
-    }
+    }}
 `;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled               from 'styled-components';
 
-import EmailComponent       from './EmailComponent';
+import FreebieEmailSignup       from './FreebieEmailSignup';
 import ContactComponent     from './ContactComponent';
 import MailChimp            from './MailChimp';
 // import ContactRequest from '../admin/ContactRequest';
@@ -16,14 +16,7 @@ export default class EmailSignup extends Component {
                 <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</CloseBtn>
                 { (contactType === "freebie") && 
                     <>
-                        <p>
-                            No matter your schedule, or location, experience wellness{" "}
-                            for the working mind with our signature virtual packages{" "}
-                            including yoga, meditation, and breathwork.
-                            <br/><br/>
-                            Sign up now for a free guided meditation.
-                        </p>
-                        <EmailComponent/>
+                        <FreebieEmailSignup/>
                     </> }
                 { (contactType === "contact") && <ContactComponent/> }
                 { (contactType === "mailchimp") && <MailChimp/> }
@@ -38,7 +31,7 @@ export default class EmailSignup extends Component {
 };
 
 const Container = styled.div`
-// position: relative;
+position: fixed;
 overflow: scroll;
 z-index: 99999;   
     > button {
@@ -62,6 +55,7 @@ z-index: 99999;
     form {
         text-align: center;
         max-width: 700px;
+        min-height: 80vh;
         margin: 20px auto 0;
         background-color: white;
         padding: 20px 0;
@@ -73,13 +67,15 @@ z-index: 99999;
         border-width: 1px;
         border-radius: 2px;
     }
-    form button {
-        background-color: white;
+    form input[type=submit] {
+        background-color: #fff;
         color: purple;
         border: purple solid 1px;
-        font-size: 16px;
         position: relative;
         z-index: 900;
+        border-radius: 0;
+        font-size: 18px;
+        text-transform: uppercase;
     }
 `;
 
