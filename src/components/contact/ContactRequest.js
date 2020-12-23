@@ -12,7 +12,7 @@ export default class ContactRequest extends Component {
         subjectValue: '',
         messageValue: '',
         addServices: 'Services Request:',
-        services: ["Corporate Wellness", "Personal Wellness", "Prana Yoga", "Maternal Health", "Coaching", "Speaking"]
+        services: ["Corporate Wellness", "Personal Wellness", "Yoga Therapy", "Maternal Health", "Coaching", "Speaking"]
     };
 
     handleSelect = (e, value) => {
