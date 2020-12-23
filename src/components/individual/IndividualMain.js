@@ -42,11 +42,11 @@ export default class IndividualMain extends Component {
         image: "clarity.png"
     }],
     individualPurpleContent: {
-      header: "Want Prana in Your Workplace?",
+      header: "the power of prana",
       message: 
-        "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!"
+      'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.'
       ,
-      button: "refer to employer",
+      button: "Schedule A Session",
     }
   };
   render(){

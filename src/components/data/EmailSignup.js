@@ -58,6 +58,22 @@ z-index: 99999;
     }
     form label {
         width: 44%;
+        &:nth-of-type(even){
+            margin-left: 1.75%
+        }
+        textarea {
+            width: 86%;
+            border: 1px solid black;
+            border-radius: 2px;
+            height: 150px;
+            margin: 5px 0;
+            font-family: Montserrat, Arial;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #473E4E;
+            padding: 2%;
+        }
     }
 `;
 

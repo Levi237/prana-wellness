@@ -68,13 +68,15 @@ export default class CorporateMain extends Component {
     return(<>
       <Container>
         <h1 className="main-title">
-          the power of prana
+        Want Prana in Your Workplace?
         </h1>
         <section className="main-cta">
           <i>
-              “Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.”
+          "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!" 
             </i>   
         </section>
+        <button value="referralRequest" onClick={(e) => {toggleEmailSignup(e)}}>Refer into Employer</button>
+        <br/><br/><br/><br/>
         </Container>      
         <div>
           <PranaDifference />
@@ -83,7 +85,7 @@ export default class CorporateMain extends Component {
         <h1>Corporate Wellness Solutions</h1>
         <NewPackageDisplay deals={deals} details={details} totalMonthly={totalMonthly} duration={duration}/>
         <div className="custom-quote purple-content">
-          <PurpleContent content={CorporatePurpleContent} toggleEmailSignup={toggleEmailSignup}/>
+          <PurpleContent content={CorporatePurpleContent} value="contactRequest" toggleEmailSignup={toggleEmailSignup}/>
         </div>  
     </>);
   };

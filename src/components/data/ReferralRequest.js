@@ -139,19 +139,7 @@ const Form = styled.form`
     }
     label {
         display: inline-block;
-        
-        &:first-of-type{}
-        &:nth-of-type(2){
-            margin-left: 1.75%
-        }
-        &:nth-of-type(3){}
-        &:nth-of-type(4){
-            margin-left: 1.75%
-        }
-        &:nth-of-type(5){}
-        &:nth-of-type(6){
-            margin-left: 1.75%
-        }
+
         &:nth-of-type(7){
             width: 100%;
             input {
@@ -161,20 +149,7 @@ const Form = styled.form`
         }
         &:nth-of-type(8){
             width: 100%;
-            textarea {
-                width: 86%;
-                border: 1px solid black;
-                border-radius: 2px;
-                height: 150px;
-                margin: 5px 0;
-                font-family: Montserrat, Arial;
-                font-weight: 500;
-                font-size: 16px;
-                line-height: 20px;
-                color: #473E4E;
-                margin: 5px 0 20px 0;
-                padding: 2%;
-            }
+            margin-left: 0!important;
         }
         input {
             width: 90%;

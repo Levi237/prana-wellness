@@ -13,9 +13,9 @@ export default class Nav extends Component {
         return(
             <NavContainer id="menu" className="inactive">
                 <div>
-                    <button className="close xClose" onClick={() => {toggleHamburger()}}>
-                         CLOSE X
-                    </button>
+                    <CloseBtn className="close xClose" onClick={() => {toggleHamburger()}}>
+                        x
+                    </CloseBtn>
                     <br /><br /><br />
                     <NavLink activeClassName="nav-active" to={routes.HOME} onClick={() => {toggleHamburger()}}>HOME</NavLink>
                     <NavLink activeClassName="nav-active" to={routes.INFO} onClick={() => {toggleHamburger()}}>ABOUT US</NavLink>
@@ -71,4 +71,16 @@ const NavContainer = styled.div`
             padding-top: 0;
         }
     }
+`;
+const CloseBtn = styled.button`
+    background-color: transparent;
+    border: 1px solid white!important;
+    border-radius: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    max-height: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    min-width: 30px;
 `;
