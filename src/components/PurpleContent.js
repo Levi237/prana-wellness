@@ -19,9 +19,6 @@ const PurpleContent = ({ content, toggleEmailSignup, value}) => {
 
 export default PurpleContent;
 
-
-
-
 const Title = styled.h1 `
     font-weight: normal;
     color: #FFFFFF;
