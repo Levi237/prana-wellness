@@ -13,7 +13,7 @@ const CoachingMain = ({toggleEmailSignup}) => {
         <section className="main-cta">
         Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.
         </section>
-        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Button</button>
+        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>BRING PRANA TO YOU</button>
         <br/><br/><br/><br/>
       <Speaking/>
       <Coaching/>

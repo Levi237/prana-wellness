@@ -13,7 +13,7 @@ const YogaTherapyMain = ({toggleEmailSignup}) => {
         <section className="main-cta">
           Yoga Therapy blends Eastern and Western medicine in a wholistic practice of healing the whole person. Yoga meets Integrative Medicine. Yoga Therapy is the adaptation of yoga practices for people with specific health challenges, chronic pain, anxiety, depression, and illness. Yoga Therapists are trained to work alongside medical doctors, chiropractors, physical therapists, and physiatrists.
         </section>
-        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Button</button>
+        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>BRING PRANA TO YOU</button>
         <br/><br/><br/><br/>
         <WhyYogaTherapy />
         <TwoColumnFeature />
