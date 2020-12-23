@@ -12,7 +12,7 @@ export default class ReferralRequest extends Component {
         locationValue: '',
         subjectValue: '',
         messageValue: '',
-        addServices: ['']
+        addServices: ''
     }
     render(){
 
@@ -36,7 +36,7 @@ export default class ReferralRequest extends Component {
                         value={fNameValue}
                         onChange={(e)=>{this.setState({
                             fNameValue: e.target.value, 
-                            addServices: 'referral name: ' +this.state.referralName + ', referral email:  ' + this.state.referralEmail})}}
+                            addServices: 'Referral Name: ' +this.state.referralName + ', Referral Email:  ' + this.state.referralEmail})}}
                         required
                     />
                 </label>
