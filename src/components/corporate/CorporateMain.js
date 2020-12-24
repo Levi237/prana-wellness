@@ -57,6 +57,8 @@ export default class CorporateMain extends Component {
     CorporatePurpleContent: {
       header: "DON'T SEE A PACKAGE THAT'S RIGHT?",
       message: "Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.",
+      value: "contactRequest",
+      backgroundColor: "purple",
       button: "Bring Prana to Your Workplace",
     }
   };
@@ -73,7 +75,7 @@ export default class CorporateMain extends Component {
         <h1>Corporate Wellness Solutions</h1>
         <NewPackageDisplay deals={deals} details={details} totalMonthly={totalMonthly} duration={duration}/>
         <div className="custom-quote purple-content">
-          <PurpleContent content={CorporatePurpleContent} value="contactRequest" toggleEmailSignup={toggleEmailSignup}/>
+          <PurpleContent purpleContent={CorporatePurpleContent} toggleEmailSignup={toggleEmailSignup}/>
         </div>  
     </>);
   };

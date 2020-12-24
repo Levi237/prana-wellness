@@ -13,7 +13,7 @@ import HomeHeader           from './components/home/HomeHeader';
 import HeaderComponent      from './components/HeaderComponent';
 
 import HeaderMessage from './components/header/HeaderMessage'
-import PurpleContent from './components/PurpleContent';
+// import PurpleContent from './components/PurpleContent';
 import HomeMain             from './components/home/HomeMain';
 import AboutMain            from './components/about/AboutMain';
 import CorporateMain        from './components/corporate/CorporateMain';
