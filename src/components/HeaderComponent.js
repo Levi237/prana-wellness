@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
 
- const HeaderComponent = ({title, subtitle, image, purpleBox}) => {
+ const HeaderComponent = ({headerData, purpleBox}) => {
     return(<>
-    <Container style={{ backgroundImage: `url(${image})` }}>
+    <Container style={{ backgroundImage: `url(${headerData.image})` }}>
         <div>
             <div>
-                <section>{title}</section>
-                <section>{subtitle}</section>
+                <section>{headerData.title}</section>
+                <section>{headerData.subtitle}</section>
             </div>
         </div>
     </Container>

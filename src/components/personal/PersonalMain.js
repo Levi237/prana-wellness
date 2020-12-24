@@ -52,11 +52,11 @@ export default class PersonalMain extends Component {
   render(){
 
     const { personalPlans, personalPurpleContent, services } = this.state;
-    const { toggleEmailSignup } = this.props;
+    const { toggleEmailSignup, headerData } = this.props;
   
     return(<>
       <Container className="wellness-main-container purple-content">
-        <PurpleContent content={personalPurpleContent} value="contactRequest" toggleEmailSignup={toggleEmailSignup}/>
+        <PurpleContent content={headerData} value="contactRequest" toggleEmailSignup={toggleEmailSignup}/>
       </Container>
       <div>
       <ServiceDisplay services={services}/>

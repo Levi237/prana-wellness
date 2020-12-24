@@ -27,8 +27,6 @@ import LeftFooter           from './components/footer/LeftFooter';
 
 import './App.css';
 
-// import firebase from 'firebase/app'
-
 export default class App extends Component {
   state = {
     user: null,
@@ -64,7 +62,63 @@ export default class App extends Component {
       largeText: "Fairs",
       image: "health_fairs.png",
       content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
-    }]
+    }],
+    aboutPage: {
+      title: "THE TEAM BEHIND", 
+      subtitle: "Prana Wellness",
+      image: "about-header2.png",
+      header: "the power of prana",
+      message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
+      button: "Schedule A Session",
+    },  
+    wellnessServices: {
+      title: "EXPLORE OUR WIDE-RANGING",
+      subtitle: "Wellness Services",
+      image: "service-header.png",
+      header: "",
+      message: "",
+      button: ""
+    },
+    personalWellness: {
+      title: "REDISCOVER",
+      subtitle: "Personal Wellness",
+      image: "personal-header.jpg",
+      header: "the power of prana",
+      message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
+      button: "Schedule A Session",
+    },  
+    corporateWellness: {
+      title: "CONSIDER",
+      subtitle: "Corporate Wellness",
+      image: "corporate-header2.png",
+      header: "Want Prana in Your Workplace?",
+      message: "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!",
+      button: "Refer to Employer",
+    },
+    yogaTherapy: {
+      title: "THE REASON FOR", 
+      subtitle: "Yoga Therapy", 
+      image: "yoga-header.jpg",
+      header: "",
+      message: "",
+      button: ""
+    },
+    maternalHealth: {
+      title: "YOGA FOR",
+      subtitle: "Maternal Health",
+      image: "prenatal-header2.jpg",
+      header: "",
+      message: "",
+      button: ""
+    },
+    coachingSpeaking: {
+      title: "ENGAGE WITH",
+       subtitle: "Speaking & Coaching",
+        image: "coaching-header.jpg",
+      header: "",
+      message: "",
+      button: ""
+    }
   };  
 
   toggleHamburger = () => {
@@ -83,7 +137,7 @@ export default class App extends Component {
 
   
   render(){
-    const { user, emailContact } = this.state
+    const { user, emailContact, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking } = this.state
     return(
       <GridContainer className="grid-container">
 
@@ -120,55 +174,47 @@ export default class App extends Component {
 
         <GridHeader className="grid-header">
           <Switch>         
+            <Route path={routes.ROOT} render={() => 
+                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                    
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.INFO} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="THE TEAM BEHIND" subtitle="Prana Wellness" image="about-header2.png"/> }/>
+                    <HeaderComponent purpleBox={(false)} headerData={aboutPage}/> }/>
             <Route path={routes.SERV} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} title="EXPLORE OUR WIDE-RANGING" subtitle="Wellness Services" image="service-header.png"/> }/> 
+                    <HeaderComponent purpleBox={(true)} headerData={wellnessServices}/> }/> 
             <Route path={routes.WELL} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} title="REDISCOVER" subtitle="Personal Wellness" image="personal-header.jpg"/> }/>
+                    <HeaderComponent purpleBox={(true)} headerData={personalWellness}/> }/>
             <Route path={routes.CORP} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="CONSIDER" subtitle="Corporate Wellness" image="corporate-header2.png"/> }/>   
-            <Route path={routes.COAC} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="ENGAGE WITH" subtitle="Speaking &amp; Coaching" image="coaching-header.jpg"/> }/> 
-            <Route path={routes.PREG} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="YOGA FOR" subtitle="Maternal Health" image="prenatal-header2.jpg"/> }/> 
+                    <HeaderComponent purpleBox={(false)} headerData={corporateWellness}/> }/>   
             <Route path={routes.YOGA} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} title="THE REASON FOR" subtitle="Yoga Therapy" image="yoga-header.jpg"/> }/> 
-            <Route path={routes.ROOT} render={() => 
-                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                    
+                    <HeaderComponent purpleBox={(false)} headerData={yogaTherapy}/> }/> 
+            <Route path={routes.PREG} exact render={() => 
+                    <HeaderComponent purpleBox={(false)} headerData={maternalHealth}/> }/> 
+            <Route path={routes.COAC} exact render={() => 
+                    <HeaderComponent purpleBox={(false)} headerData={coachingSpeaking}/> }/> 
           </Switch>
         </GridHeader>
 
         <MainGrid className="grid-main">
           <Switch>
-            <Route path={routes.HOME} exact render={() => 
-                      <HomeMain /> }/>
-            <Route path={routes.ADMN} exact render={() => 
-                    this.state.user && <></>  }/>  
-            <Route path={routes.INFO} exact render={() => 
-                      <AboutMain /> }/>
-            <Route path={routes.YOGA} exact render={() => 
-                      <YogaTherapyMain toggleEmailSignup={this.toggleEmailSignup}/> }/>
-            <Route path={routes.PREG} exact render={() => 
-                      <PrenatalMain toggleEmailSignup={this.toggleEmailSignup}/> }/>
-            <Route path={routes.COAC} exact render={() => 
-                      <CoachingMain toggleEmailSignup={this.toggleEmailSignup}/> }/>                      
-            <Route path={routes.WELL} exact render={() => 
-                      <PersonalMain 
-                        toggleEmailSignup={this.toggleEmailSignup}
-                      /> 
-            }/>       
-            <Route path={routes.CORP} exact render={() => 
-                      <CorporateMain toggleEmailSignup={this.toggleEmailSignup}/> }/>  
-            <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain 
-                        toggleEmailSignup={this.toggleEmailSignup}
-                      /> 
-            }/>           
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
+            <Route path={routes.HOME} exact render={() => 
+                      <HomeMain /> }/>
+            <Route path={routes.INFO} exact render={() => 
+                      <AboutMain  headerData={aboutPage}/> }/>
+            <Route path={routes.WELL} exact render={() => 
+                      <PersonalMain toggleEmailSignup={this.toggleEmailSignup} headerData={wellnessServices} /> }/>       
+            <Route path={routes.SERV} exact render={() => 
+                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} headerData={personalWellness} /> }/>           
+            <Route path={routes.CORP} exact render={() => 
+                      <CorporateMain toggleEmailSignup={this.toggleEmailSignup} headerData={corporateWellness} /> }/>  
+            <Route path={routes.YOGA} exact render={() => 
+                      <YogaTherapyMain toggleEmailSignup={this.toggleEmailSignup} headerData={yogaTherapy} /> }/>
+            <Route path={routes.PREG} exact render={() => 
+                      <PrenatalMain toggleEmailSignup={this.toggleEmailSignup} headerData={maternalHealth} /> }/>
+            <Route path={routes.COAC} exact render={() => 
+                      <CoachingMain toggleEmailSignup={this.toggleEmailSignup} headerData={coachingSpeaking} /> }/>                      
           </Switch>          
         </MainGrid>
 
