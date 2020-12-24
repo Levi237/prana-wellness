@@ -7,7 +7,7 @@ import ServiceDisplay       from '../services/ServiceDisplay';
 import PurpleContent        from '../PurpleContent';
 import '../PurpleContent';
 
-export default class IndividualMain extends Component {
+export default class PersonalMain extends Component {
   state = {
     individualPlans: [{ 
         title: "Asana",

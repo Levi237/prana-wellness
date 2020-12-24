@@ -20,7 +20,7 @@ import HeaderComponent      from './components/HeaderComponent';
 import HomeMain             from './components/home/HomeMain';
 import AboutMain            from './components/about/AboutMain';
 import CorporateMain        from './components/corporate/CorporateMain';
-import IndividualMain       from './components/individual/IndividualMain';
+import PersonalMain         from './components/personal/PersonalMain';
 import ServicesMain         from './components/services/ServicesMain';
 import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
 import PrenatalMain         from './components/prenatal/PrenatalMain';
@@ -161,7 +161,7 @@ export default class App extends Component {
             <Route path={routes.COAC} exact render={() => 
                       <CoachingMain toggleEmailSignup={this.toggleEmailSignup}/> }/>                      
             <Route path={routes.WELL} exact render={() => 
-                      <IndividualMain 
+                      <PersonalMain 
                         toggleEmailSignup={this.toggleEmailSignup}
                       /> 
             }/>       
