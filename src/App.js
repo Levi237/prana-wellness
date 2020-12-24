@@ -99,25 +99,25 @@ export default class App extends Component {
       title: "THE REASON FOR", 
       subtitle: "Yoga Therapy", 
       image: "yoga-header.jpg",
-      header: "",
-      message: "",
-      button: ""
+      header: "WHAT IS YOGA THERAPY?",
+      message: "Yoga Therapy blends Eastern and Western medicine in a wholistic practice of healing the whole person. Yoga meets Integrative Medicine. Yoga Therapy is the adaptation of yoga practices for people with specific health challenges, chronic pain, anxiety, depression, and illness. Yoga Therapists are trained to work alongside medical doctors, chiropractors, physical therapists, and physiatrists.",
+      button: "BRING PRANA TO YOU"
     },
     maternalHealth: {
       title: "YOGA FOR",
       subtitle: "Maternal Health",
       image: "prenatal-header2.jpg",
-      header: "",
-      message: "",
-      button: ""
+      header: "Prenatal Yoga Experience",
+      message: "You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.",
+      button: "BRING PRANA TO YOU"
     },
     coachingSpeaking: {
       title: "ENGAGE WITH",
        subtitle: "Speaking & Coaching",
         image: "coaching-header.jpg",
-      header: "",
-      message: "",
-      button: ""
+      header: "SPEAKING TO INSPIRE",
+      message: "Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.",
+      button: "BRING PRANA TO YOU"
     }
   };  
 
