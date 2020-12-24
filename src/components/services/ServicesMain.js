@@ -68,6 +68,8 @@ export default class ServicesMain extends Component {
                 </ButtonContainer>
             </Container>
             <Header className="services-main-header">WELLNESS SERVICES</Header>
+            <button className="white" name="contactForm" value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Bring Prana to You</button>
+            <br/><br/><br/><br/>
                 <ServiceDisplay services={this.state.otherServices}/>
                 <ButtonContainer>
             <button className="white" name="contactForm" value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Request Quote</button>

@@ -11,7 +11,7 @@ const PrenatalMain = ({toggleEmailSignup}) => {
         <section className="main-cta">
         You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.
         </section>
-        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>Button</button>
+        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>BRING PRANA TO YOU</button>
         <br/><br/><br/><br/>
         </div>
         <Circle>

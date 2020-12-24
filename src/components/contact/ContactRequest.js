@@ -11,8 +11,8 @@ export default class ContactRequest extends Component {
         locationValue: '',
         subjectValue: '',
         messageValue: '',
-        addServices: [],
-        services: ["Corporate Wellness", "Personal Wellness", "Prana Yoga", "Maternal Health", "Coaching", "Speaking"]
+        addServices: 'Services Request:',
+        services: ["Corporate Wellness", "Personal Wellness", "Yoga Therapy", "Maternal Health", "Coaching", "Speaking"]
     };
 
     handleSelect = (e, value) => {
@@ -30,7 +30,7 @@ export default class ContactRequest extends Component {
         } else {
             e.currentTarget.classList.add('selectedHighlighted')
             this.setState({
-                addServices: [...addServices, selectedService]
+                addServices: addServices + " " + selectedService
             });
         };
     };

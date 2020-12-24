@@ -20,7 +20,7 @@ import HeaderComponent      from './components/HeaderComponent';
 import HomeMain             from './components/home/HomeMain';
 import AboutMain            from './components/about/AboutMain';
 import CorporateMain        from './components/corporate/CorporateMain';
-import IndividualMain       from './components/individual/IndividualMain';
+import PersonalMain         from './components/personal/PersonalMain';
 import ServicesMain         from './components/services/ServicesMain';
 import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
 import PrenatalMain         from './components/prenatal/PrenatalMain';
@@ -126,7 +126,7 @@ export default class App extends Component {
         <GridHeader className="grid-header">
           <Switch>         
             <Route path={routes.HOME} exact render={() => 
-                    <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>
+                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.INFO} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="THE TEAM BEHIND" subtitle="Prana Wellness" image="about-header2.png"/> }/>
             <Route path={routes.SERV} exact render={() => 
@@ -142,7 +142,7 @@ export default class App extends Component {
             <Route path={routes.YOGA} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="THE REASON FOR" subtitle="Yoga Therapy" image="yoga-header.jpg"/> }/> 
             <Route path={routes.ROOT} render={() => 
-                    <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
+                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                    
           </Switch>
         </GridHeader>
 
@@ -161,7 +161,7 @@ export default class App extends Component {
             <Route path={routes.COAC} exact render={() => 
                       <CoachingMain toggleEmailSignup={this.toggleEmailSignup}/> }/>                      
             <Route path={routes.WELL} exact render={() => 
-                      <IndividualMain 
+                      <PersonalMain 
                         toggleEmailSignup={this.toggleEmailSignup}
                       /> 
             }/>       
