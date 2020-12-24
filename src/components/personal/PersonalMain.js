@@ -9,7 +9,7 @@ import '../PurpleContent';
 
 export default class PersonalMain extends Component {
   state = {
-    individualPlans: [{ 
+    personalPlans: [{ 
         title: "Asana",
         price: "$80/hour",
         duration: "Private Yoga Instruction",
@@ -41,7 +41,7 @@ export default class PersonalMain extends Component {
         largeText: "Clarity",
         image: "clarity.png"
     }],
-    individualPurpleContent: {
+    personalPurpleContent: {
       header: "the power of prana",
       message: 
       'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.'
@@ -51,19 +51,19 @@ export default class PersonalMain extends Component {
   };
   render(){
 
-    const { individualPurpleContent } = this.state;
+    const { personalPlans, personalPurpleContent, services } = this.state;
     const { toggleEmailSignup } = this.props;
   
     return(<>
       <Container className="wellness-main-container purple-content">
-        <PurpleContent content={individualPurpleContent} value="contactRequest" toggleEmailSignup={toggleEmailSignup}/>
+        <PurpleContent content={personalPurpleContent} value="contactRequest" toggleEmailSignup={toggleEmailSignup}/>
       </Container>
       <div>
-      <ServiceDisplay services={this.state.services}/>
+      <ServiceDisplay services={services}/>
       </div>
       <br/>      <br/>      <br/>
       <h1>subscribe to personal wellness</h1>
-      <PackageDisplay pricePack={this.state.individualPlans}/>
+      <PackageDisplay pricePack={personalPlans}/>
     </>);
   };
 };
