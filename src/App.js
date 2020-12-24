@@ -142,7 +142,7 @@ export default class App extends Component {
             <Route path={routes.YOGA} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="THE REASON FOR" subtitle="Yoga Therapy" image="yoga-header.jpg"/> }/> 
             <Route path={routes.ROOT} render={() => 
-                    <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>                    
+                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                    
           </Switch>
         </GridHeader>
 
