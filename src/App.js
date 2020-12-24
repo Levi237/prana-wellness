@@ -12,6 +12,8 @@ import ContactBox           from './components/contact/AnnouncementBanner';
 import HomeHeader           from './components/home/HomeHeader';
 import HeaderComponent      from './components/HeaderComponent';
 
+import HeaderMessage from './components/header/headerMessage'
+
 import HomeMain             from './components/home/HomeMain';
 import AboutMain            from './components/about/AboutMain';
 import CorporateMain        from './components/corporate/CorporateMain';
@@ -19,7 +21,9 @@ import PersonalMain         from './components/personal/PersonalMain';
 import ServicesMain         from './components/services/ServicesMain';
 import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
 import PrenatalMain         from './components/prenatal/PrenatalMain';
-import CoachingMain         from './components/coaching/CoachingMain';
+// import CoachingMain         from './components/coaching/CoachingMain';
+import Coaching from './components/coaching/Coaching';
+import Speaking from './components/coaching/Speaking';
 
 import RightFooter          from './components/footer/RightFooter';
 import MidFooter            from './components/footer/MidFooter';
@@ -63,13 +67,15 @@ export default class App extends Component {
       image: "health_fairs.png",
       content: "Create a wellness fair for your office or add us on to your existing fair for various wellness sessions.",
     }],
+    // CONTENT FOR PAGES
     aboutPage: {
       title: "THE TEAM BEHIND", 
       subtitle: "Prana Wellness",
       image: "about-header2.png",
       header: "the power of prana",
       message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
-      button: "Schedule A Session",
+      value: "contactRequest",
+      button: "Schedule A Session"
     },  
     wellnessServices: {
       title: "EXPLORE OUR WIDE-RANGING",
@@ -77,6 +83,7 @@ export default class App extends Component {
       image: "service-header.png",
       header: "",
       message: "",
+      value: "contactRequest",
       button: ""
     },
     personalWellness: {
@@ -85,6 +92,7 @@ export default class App extends Component {
       image: "personal-header.jpg",
       header: "the power of prana",
       message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
+      value: "contactRequest",
       button: "Schedule A Session",
     },  
     corporateWellness: {
@@ -93,6 +101,7 @@ export default class App extends Component {
       image: "corporate-header2.png",
       header: "Want Prana in Your Workplace?",
       message: "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!",
+      value: "contactRequest",
       button: "Refer to Employer",
     },
     yogaTherapy: {
@@ -101,6 +110,7 @@ export default class App extends Component {
       image: "yoga-header.jpg",
       header: "WHAT IS YOGA THERAPY?",
       message: "Yoga Therapy blends Eastern and Western medicine in a wholistic practice of healing the whole person. Yoga meets Integrative Medicine. Yoga Therapy is the adaptation of yoga practices for people with specific health challenges, chronic pain, anxiety, depression, and illness. Yoga Therapists are trained to work alongside medical doctors, chiropractors, physical therapists, and physiatrists.",
+      value: "contactRequest",
       button: "BRING PRANA TO YOU"
     },
     maternalHealth: {
@@ -109,6 +119,7 @@ export default class App extends Component {
       image: "prenatal-header2.jpg",
       header: "Prenatal Yoga Experience",
       message: "You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.",
+      value: "contactRequest",
       button: "BRING PRANA TO YOU"
     },
     coachingSpeaking: {
@@ -117,6 +128,7 @@ export default class App extends Component {
         image: "coaching-header.jpg",
       header: "SPEAKING TO INSPIRE",
       message: "Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.",
+      value: "contactRequest",
       button: "BRING PRANA TO YOU"
     }
   };  
@@ -214,7 +226,7 @@ export default class App extends Component {
             <Route path={routes.PREG} exact render={() => 
                       <PrenatalMain toggleEmailSignup={this.toggleEmailSignup} headerContent={maternalHealth} /> }/>
             <Route path={routes.COAC} exact render={() => 
-                      <CoachingMain toggleEmailSignup={this.toggleEmailSignup} headerContent={coachingSpeaking} /> }/>                      
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={coachingSpeaking}><Speaking/><Coaching/></HeaderMessage> }/>                      
           </Switch>          
         </MainGrid>
 
