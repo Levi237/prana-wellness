@@ -12,7 +12,7 @@ import ContactBox           from './components/contact/AnnouncementBanner';
 import HomeHeader           from './components/home/HomeHeader';
 import HeaderComponent      from './components/HeaderComponent';
 
-import HeaderMessage from './components/header/headerMessage'
+import HeaderMessage from './components/header/HeaderMessage'
 
 import HomeMain             from './components/home/HomeMain';
 import AboutMain            from './components/about/AboutMain';
@@ -101,7 +101,7 @@ export default class App extends Component {
       image: "corporate-header2.png",
       header: "Want Prana in Your Workplace?",
       message: "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!",
-      value: "contactRequest",
+      value: "referralRequest",
       button: "Refer to Employer",
     },
     yogaTherapy: {
@@ -212,19 +212,31 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                       <HomeMain /> }/>
             <Route path={routes.INFO} exact render={() => 
-                      <AboutMain  headerContent={aboutPage}/> }/>
-            <Route path={routes.WELL} exact render={() => 
-                      <PersonalMain toggleEmailSignup={this.toggleEmailSignup} headerContent={wellnessServices} /> }/>       
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={aboutPage}>
+                        <AboutMain /> 
+                      </HeaderMessage> }/>      
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} headerContent={personalWellness} /> }/>           
+                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} headerContent={wellnessServices} /> }/>           
+            <Route path={routes.WELL} exact render={() => 
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={personalWellness}>
+                        <PersonalMain/>
+                      </HeaderMessage> }/>       
             <Route path={routes.CORP} exact render={() => 
-                      <CorporateMain toggleEmailSignup={this.toggleEmailSignup} headerContent={corporateWellness} /> }/>  
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={corporateWellness}>
+                        <CorporateMain/>
+                      </HeaderMessage> }/>  
             <Route path={routes.YOGA} exact render={() => 
-                      <YogaTherapyMain toggleEmailSignup={this.toggleEmailSignup} headerContent={yogaTherapy} /> }/>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={yogaTherapy}>
+                        <YogaTherapyMain/>
+                      </HeaderMessage>}/>
             <Route path={routes.PREG} exact render={() => 
-                      <PrenatalMain toggleEmailSignup={this.toggleEmailSignup} headerContent={maternalHealth} /> }/>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={maternalHealth} >
+                        <PrenatalMain/>
+                      </HeaderMessage> }/>
             <Route path={routes.COAC} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={coachingSpeaking}><Speaking/><Coaching/></HeaderMessage> }/>                      
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={coachingSpeaking}>
+                        <Speaking/><Coaching/>
+                      </HeaderMessage> }/>                      
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>          

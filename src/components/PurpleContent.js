@@ -1,23 +1,25 @@
-import React from 'react';
+import React, {Component }from 'react';
 import styled from 'styled-components';
 
-const PurpleContent = ({ content, toggleEmailSignup, value}) => {
+export default class PurpleContent extends Component {
+    render(){
+ const { headerContent, toggleEmailSignup } = this.props
+ console.log(headerContent)
     return(<>
-            <Title>{content.header}</Title>
+            <Title>{headerContent.header}</Title>
 
             <section>
                 <Content>
-                    {content.message}  
+                    {headerContent.message}  
                 </Content>
                 <ButtonContaner>
-                    <button className="purple mobile-fill" value={value} onClick={(e) => {toggleEmailSignup(e)}}>{content.button}</button>
+                    <button className="purple mobile-fill" value={headerContent.value} onClick={(e) => {toggleEmailSignup(e)}}>{headerContent.button}</button>
                 </ButtonContaner>
 
             </section>
     </>);
 };
-
-export default PurpleContent;
+}
 
 const Title = styled.h1 `
     font-weight: normal;

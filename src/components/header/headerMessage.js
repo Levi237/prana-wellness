@@ -1,24 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
-// import Speaking from './Speaking';
-// import Coaching from './Coaching';
-
-const HeaderMessage = ({toggleEmailSignup, headerContent}) => {
+export default class HeaderMessage extends Component {
+  render(){
+    const {toggleEmailSignup, headerContent} = this.props
     return(
       <Container>
         <h1 className="main-title">
-        {headerContent.header}}
+        {headerContent.header}
         </h1>
         <section className="main-cta">
-        {headerContent.message}}
+        {headerContent.message}
         </section>
-        <button value={headerContent.value} onClick={(e) => {toggleEmailSignup(e)}}>}{headerContent.button}</button>
+        <button value={headerContent.value} onClick={(e) => {toggleEmailSignup(e)}}>{headerContent.button}</button>
         <br/><br/><br/><br/>
-
-      {this.props.children}
+        {this.props.children}
     </Container>);
+  }
 };
+
 
 const Container = styled.div`
   margin-bottom: 5vw;
@@ -32,4 +32,3 @@ const Container = styled.div`
       padding-top: 5vw;
     }
 `;
-export default HeaderMessage;
