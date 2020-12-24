@@ -4,18 +4,19 @@ import styled from 'styled-components';
 import Speaking from './Speaking';
 import Coaching from './Coaching';
 
-const CoachingMain = ({toggleEmailSignup}) => {
+const CoachingMain = ({toggleEmailSignup, headerContent}) => {
     return(
       <Container>
         <h1 className="main-title">
-        SPEAKING TO INSPIRE
+        {headerContent.header}}
         </h1>
         <section className="main-cta">
-        Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.
+        {headerContent.message}}
         </section>
-        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>BRING PRANA TO YOU</button>
+        <button value="contactRequest" onClick={(e) => {toggleEmailSignup(e)}}>}{headerContent.button}</button>
         <br/><br/><br/><br/>
       <Speaking/>
+      {this.props.children}
       <Coaching/>
     </Container>);
 };
