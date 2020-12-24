@@ -186,8 +186,6 @@ export default class App extends Component {
 
         <GridHeader className="grid-header">
           <Switch>         
-            {/* <Route path={routes.ROOT} render={() => 
-                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                     */}
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.INFO} exact render={() => 
@@ -204,13 +202,13 @@ export default class App extends Component {
                     <HeaderComponent purpleBox={(false)} headerContent={maternalHealth}/> }/> 
             <Route path={routes.COAC} exact render={() => 
                     <HeaderComponent purpleBox={(false)} headerContent={coachingSpeaking}/> }/> 
+            <Route path={routes.ROOT} render={() => 
+                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                    
           </Switch>
         </GridHeader>
 
         <MainGrid className="grid-main">
           <Switch>
-            <Route path={routes.ROOT} render={() => 
-                      <HomeMain /> }/>
             <Route path={routes.HOME} exact render={() => 
                       <HomeMain /> }/>
             <Route path={routes.INFO} exact render={() => 
@@ -227,6 +225,8 @@ export default class App extends Component {
                       <PrenatalMain toggleEmailSignup={this.toggleEmailSignup} headerContent={maternalHealth} /> }/>
             <Route path={routes.COAC} exact render={() => 
                       <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={coachingSpeaking}><Speaking/><Coaching/></HeaderMessage> }/>                      
+            <Route path={routes.ROOT} render={() => 
+                      <HomeMain /> }/>
           </Switch>          
         </MainGrid>
 
