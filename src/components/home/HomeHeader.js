@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-const HomeHeader = ({toggleContactBtn}) => {
+const HomeHeader = ({toggleEmailSignup}) => {
   
   return(
     <>
@@ -34,8 +34,9 @@ const HomeHeader = ({toggleContactBtn}) => {
         <ButtonWrapper>
           <ButtonCTA 
             name="contactForm" 
-            className="ctaBtn mobile-fill" 
-            onClick={(e) => {toggleContactBtn(e)}}
+            className="ctaBtn mobile-fill"
+            value="contactRequest" 
+            onClick={(e) => {toggleEmailSignup(e)}}
           >
             Bring Prana to You
           </ButtonCTA>

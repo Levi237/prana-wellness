@@ -126,7 +126,7 @@ export default class App extends Component {
         <GridHeader className="grid-header">
           <Switch>         
             <Route path={routes.HOME} exact render={() => 
-                    <HomeHeader toggleContactBtn={this.toggleContactBtn}/> }/>
+                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.INFO} exact render={() => 
                     <HeaderComponent purpleBox={(false)} title="THE TEAM BEHIND" subtitle="Prana Wellness" image="about-header2.png"/> }/>
             <Route path={routes.SERV} exact render={() => 
