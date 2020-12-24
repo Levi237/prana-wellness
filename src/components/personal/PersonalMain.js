@@ -40,23 +40,16 @@ export default class PersonalMain extends Component {
         smallText: "Increased Focus +",
         largeText: "Clarity",
         image: "clarity.png"
-    }],
-    personalPurpleContent: {
-      header: "the power of prana",
-      message: 
-      'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.'
-      ,
-      button: "Schedule A Session",
-    }
+    }]
   };
   render(){
 
-    const { personalPlans, personalPurpleContent, services } = this.state;
-    const { toggleEmailSignup, headerData } = this.props;
+    const { personalPlans, services } = this.state;
+    const { toggleEmailSignup, headerContent } = this.props;
   
     return(<>
       <Container className="wellness-main-container purple-content">
-        <PurpleContent content={headerData} value="contactRequest" toggleEmailSignup={toggleEmailSignup}/>
+        <PurpleContent content={headerContent} value="contactRequest" toggleEmailSignup={toggleEmailSignup}/>
       </Container>
       <div>
       <ServiceDisplay services={services}/>
