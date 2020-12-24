@@ -6,11 +6,6 @@ import * as routes          from './constants/routes';
 import Nav                  from './components/Nav';
 import NavBar               from './components/NavBar';
 
-// import Enter                from './components/admin/Enter';
-// import AdminPortal          from './components/admin/AdminPortal';
-// import ReferralRequest      from './components/contact/ReferralRequest';
-// import ContactRequest       from './components/contact/ContactRequest';
-
 import EmailSignup          from './components/contact/EmailSignup';
 import ContactBox           from './components/contact/AnnouncementBanner'; 
 
