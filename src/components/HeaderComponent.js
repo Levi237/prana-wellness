@@ -1,19 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import PurpleContent from './PurpleContent';
 
- const HeaderComponent = ({headerContent, purpleBox}) => {
+import './PurpleContent';
+
+ const HeaderComponent = ({headerContent, purpleBox, toggleEmailSignup}) => {
     return(<>
-    <Container style={{ backgroundImage: `url(${headerContent.image})` }}>
-        <div>
+        <Container style={{ backgroundImage: `url(${headerContent.image})` }}>
             <div>
-                <section>{headerContent.title}</section>
-                <section>{headerContent.subtitle}</section>
+                <div>
+                    <section>{headerContent.title}</section>
+                    <section>{headerContent.subtitle}</section>
+                </div>
             </div>
-        </div>
-    </Container>
-        {purpleBox && <PurpleBox className="wellness-header-purple"></PurpleBox>}
+        </Container>
+        {(headerContent.backgroundColor === "purple") && <>
+            <PurpleBox className="wellness-header-purple"></PurpleBox>
+        </>}
     </>);
 };
+
 const PurpleBox = styled.div`
     position: relative;
     z-index: 0;

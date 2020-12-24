@@ -13,7 +13,7 @@ import HomeHeader           from './components/home/HomeHeader';
 import HeaderComponent      from './components/HeaderComponent';
 
 import HeaderMessage from './components/header/HeaderMessage'
-
+import PurpleContent from './components/PurpleContent';
 import HomeMain             from './components/home/HomeMain';
 import AboutMain            from './components/about/AboutMain';
 import CorporateMain        from './components/corporate/CorporateMain';
@@ -75,6 +75,7 @@ export default class App extends Component {
       header: "the power of prana",
       message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
       value: "contactRequest",
+      backgroundColor: "white",
       button: "Schedule A Session"
     },  
     wellnessServices: {
@@ -83,7 +84,8 @@ export default class App extends Component {
       image: "service-header.png",
       header: "",
       message: "",
-      value: "contactRequest",
+      value: "",
+      backgroundColor: "purple",
       button: ""
     },
     personalWellness: {
@@ -93,6 +95,7 @@ export default class App extends Component {
       header: "the power of prana",
       message: 'Prana is Sanskrit for breath, considered as a life-giving force. Prana is seen as a universal energy, which flows in currents in and around the body.',
       value: "contactRequest",
+      backgroundColor: "purple",
       button: "Schedule A Session",
     },  
     corporateWellness: {
@@ -102,6 +105,7 @@ export default class App extends Component {
       header: "Want Prana in Your Workplace?",
       message: "If you’d love to see a wellness program in your workplace, refer Prana Wellness to your company or HR manager and get a promo code to unlock premium content!",
       value: "referralRequest",
+      backgroundColor: "white",
       button: "Refer to Employer",
     },
     yogaTherapy: {
@@ -111,6 +115,7 @@ export default class App extends Component {
       header: "WHAT IS YOGA THERAPY?",
       message: "Yoga Therapy blends Eastern and Western medicine in a wholistic practice of healing the whole person. Yoga meets Integrative Medicine. Yoga Therapy is the adaptation of yoga practices for people with specific health challenges, chronic pain, anxiety, depression, and illness. Yoga Therapists are trained to work alongside medical doctors, chiropractors, physical therapists, and physiatrists.",
       value: "contactRequest",
+      backgroundColor: "white",
       button: "BRING PRANA TO YOU"
     },
     maternalHealth: {
@@ -120,6 +125,7 @@ export default class App extends Component {
       header: "Prenatal Yoga Experience",
       message: "You can expect to learn something new each time, as we explore the pregnant body's challenges and strengths. Leave class feeling encouraged and motivated. We really want clients to honor their bodies in this practice, and do what feels good. We are  motivated to do this work because there is major inequity in maternal health care. We want to close that gap.",
       value: "contactRequest",
+      backgroundColor: "white",
       button: "BRING PRANA TO YOU"
     },
     coachingSpeaking: {
@@ -129,6 +135,7 @@ export default class App extends Component {
       header: "SPEAKING TO INSPIRE",
       message: "Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.",
       value: "contactRequest",
+      backgroundColor: "white",
       button: "BRING PRANA TO YOU"
     }
   };  
