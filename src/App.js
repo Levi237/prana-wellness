@@ -179,19 +179,19 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.INFO} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerData={aboutPage}/> }/>
+                    <HeaderComponent purpleBox={(false)} headerContent={aboutPage}/> }/>
             <Route path={routes.SERV} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} headerData={wellnessServices}/> }/> 
+                    <HeaderComponent purpleBox={(true)} headerContent={wellnessServices}/> }/> 
             <Route path={routes.WELL} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} headerData={personalWellness}/> }/>
+                    <HeaderComponent purpleBox={(true)} headerContent={personalWellness}/> }/>
             <Route path={routes.CORP} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerData={corporateWellness}/> }/>   
+                    <HeaderComponent purpleBox={(false)} headerContent={corporateWellness}/> }/>   
             <Route path={routes.YOGA} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerData={yogaTherapy}/> }/> 
+                    <HeaderComponent purpleBox={(false)} headerContent={yogaTherapy}/> }/> 
             <Route path={routes.PREG} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerData={maternalHealth}/> }/> 
+                    <HeaderComponent purpleBox={(false)} headerContent={maternalHealth}/> }/> 
             <Route path={routes.COAC} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerData={coachingSpeaking}/> }/> 
+                    <HeaderComponent purpleBox={(false)} headerContent={coachingSpeaking}/> }/> 
           </Switch>
         </GridHeader>
 
@@ -202,19 +202,19 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                       <HomeMain /> }/>
             <Route path={routes.INFO} exact render={() => 
-                      <AboutMain  headerData={aboutPage}/> }/>
+                      <AboutMain  headerContent={aboutPage}/> }/>
             <Route path={routes.WELL} exact render={() => 
-                      <PersonalMain toggleEmailSignup={this.toggleEmailSignup} headerData={wellnessServices} /> }/>       
+                      <PersonalMain toggleEmailSignup={this.toggleEmailSignup} headerContent={wellnessServices} /> }/>       
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} headerData={personalWellness} /> }/>           
+                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} headerContent={personalWellness} /> }/>           
             <Route path={routes.CORP} exact render={() => 
-                      <CorporateMain toggleEmailSignup={this.toggleEmailSignup} headerData={corporateWellness} /> }/>  
+                      <CorporateMain toggleEmailSignup={this.toggleEmailSignup} headerContent={corporateWellness} /> }/>  
             <Route path={routes.YOGA} exact render={() => 
-                      <YogaTherapyMain toggleEmailSignup={this.toggleEmailSignup} headerData={yogaTherapy} /> }/>
+                      <YogaTherapyMain toggleEmailSignup={this.toggleEmailSignup} headerContent={yogaTherapy} /> }/>
             <Route path={routes.PREG} exact render={() => 
-                      <PrenatalMain toggleEmailSignup={this.toggleEmailSignup} headerData={maternalHealth} /> }/>
+                      <PrenatalMain toggleEmailSignup={this.toggleEmailSignup} headerContent={maternalHealth} /> }/>
             <Route path={routes.COAC} exact render={() => 
-                      <CoachingMain toggleEmailSignup={this.toggleEmailSignup} headerData={coachingSpeaking} /> }/>                      
+                      <CoachingMain toggleEmailSignup={this.toggleEmailSignup} headerContent={coachingSpeaking} /> }/>                      
           </Switch>          
         </MainGrid>
 
