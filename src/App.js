@@ -124,8 +124,8 @@ export default class App extends Component {
     },
     coachingSpeaking: {
       title: "ENGAGE WITH",
-       subtitle: "Speaking & Coaching",
-        image: "coaching-header.jpg",
+      subtitle: "Speaking & Coaching",
+      image: "coaching-header.jpg",
       header: "SPEAKING TO INSPIRE",
       message: "Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.",
       value: "contactRequest",
@@ -186,8 +186,8 @@ export default class App extends Component {
 
         <GridHeader className="grid-header">
           <Switch>         
-            <Route path={routes.ROOT} render={() => 
-                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                    
+            {/* <Route path={routes.ROOT} render={() => 
+                    <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                     */}
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.INFO} exact render={() => 
