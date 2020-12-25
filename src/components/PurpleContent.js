@@ -3,20 +3,18 @@ import styled from 'styled-components';
 
 export default class PurpleContent extends Component {
     render(){
- const { headerContent, toggleEmailSignup } = this.props
- console.log(headerContent)
+ const { textCopy, toggleEmailSignup } = this.props
+ console.log(toggleEmailSignup)
     return(<>
-            <Title>{headerContent.header}</Title>
-
-            <section>
-                <Content>
-                    {headerContent.message}  
-                </Content>
-                <ButtonContaner>
-                    <button className="purple mobile-fill" value={headerContent.value} onClick={(e) => {toggleEmailSignup(e)}}>{headerContent.button}</button>
-                </ButtonContaner>
-
-            </section>
+        <Title>{textCopy.header}</Title>
+        <section>
+            <Content>
+                {textCopy.message}  
+            </Content>
+            <ButtonContaner>
+                <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
+            </ButtonContaner>
+        </section>
     </>);
 };
 }
@@ -24,6 +22,7 @@ export default class PurpleContent extends Component {
 const Title = styled.h1 `
     font-weight: normal;
     color: #FFFFFF;
+    background: transparent;
     @media screen and (max-width: 945px){
             padding: 2.5vw;
         }
@@ -38,6 +37,7 @@ const Content = styled.div`
     float: left;
     color: #fff;
     text-align: left;
+
     @media screen and (max-width: 945px){
         display: block;
         width: 80vw;
@@ -57,7 +57,6 @@ const ButtonContaner = styled.div`
     float: right;
     text-align: center;
     @media screen and (max-width: 945px){
-
         display: block;
         float: none;
         width: 100%;

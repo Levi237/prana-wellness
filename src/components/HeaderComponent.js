@@ -1,20 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import PurpleContent from './PurpleContent';
 
-import './PurpleContent';
-
- const HeaderComponent = ({headerContent, purpleBox, toggleEmailSignup}) => {
+ const HeaderComponent = ({textCopy}) => {
     return(<>
-        <Container style={{ backgroundImage: `url(${headerContent.image})` }}>
+        <Container style={{ backgroundImage: `url(${textCopy.image})` }}>
             <div>
                 <div>
-                    <section>{headerContent.title}</section>
-                    <section>{headerContent.subtitle}</section>
+                    <section>{textCopy.title}</section>
+                    <section>{textCopy.subtitle}</section>
                 </div>
             </div>
         </Container>
-        {(headerContent.backgroundColor === "purple") && <>
+        {(textCopy.backgroundColor === "purple") && <>
             <PurpleBox className="wellness-header-purple"></PurpleBox>
         </>}
     </>);

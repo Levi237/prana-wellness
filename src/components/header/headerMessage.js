@@ -5,22 +5,22 @@ import PurpleContent from '../PurpleContent';
 
 export default class HeaderMessage extends Component {
   render(){
-    const {toggleEmailSignup, headerContent} = this.props
+    const {toggleEmailSignup, textCopy} = this.props
     return(<>
-      { (headerContent.backgroundColor === "purple")? <>
-        <PurpleContainer className="wellness-main-content purple-content">
-            <PurpleContent headerContent={headerContent} toggleEmailSignup={toggleEmailSignup}/>
+      { (textCopy.backgroundColor === "purple")? <>
+        <PurpleContainer className="wellness-main-content">
+            <PurpleContent textCopy={textCopy} toggleEmailSignup={toggleEmailSignup}/>
         </PurpleContainer>
         {this.props.children}
       </> : <>
         <Container>
           <h1 className="main-title">
-          {headerContent.header}
+          {textCopy.header}
           </h1>
           <section className="main-cta">
-          {headerContent.message}
+          {textCopy.message}
           </section>
-          <button value={headerContent.value} onClick={(e) => {toggleEmailSignup(e)}}>{headerContent.button}</button>
+          <button value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
           <br/><br/><br/><br/>
           {this.props.children}
         </Container>
@@ -35,10 +35,6 @@ const PurpleContainer = styled.div`
   z-index: 1;
   padding-bottom: 8vw;
   background: rgb(191, 158, 200);
-  button {
-    margin-left: 2vw;
-    margin-right: 2vw;
-  }
     @media screen and (max-width: 945px) {
       margin-top: calc(32.3vw - 100vh + 58px);
       padding-top: 5vw;

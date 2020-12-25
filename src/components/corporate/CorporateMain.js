@@ -7,7 +7,7 @@ import NewPackageDisplay   from './NewPackageDisplay';
 import PranaDifference      from './PranaDifference';
 
 import PurpleContent        from '../PurpleContent';
-import '../PurpleContent.css';
+// import '../PurpleContent.css';
 
 
 export default class CorporateMain extends Component {
@@ -53,30 +53,33 @@ export default class CorporateMain extends Component {
           product: "Team building day",
           included: ["checkmark/check-blank.png","checkmark/check-blank.png","checkmark/check-blank.png","/checkmark/check-purple.png"],
         } 
-      ],
-    CorporatePurpleContent: {
-      header: "DON'T SEE A PACKAGE THAT'S RIGHT?",
-      message: "Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.",
-      value: "contactRequest",
-      backgroundColor: "purple",
-      button: "Bring Prana to Your Workplace",
-    }
+      ]
   };
 
   render(){
-    const { details, duration, deals, totalMonthly, CorporatePurpleContent } = this.state;
-    const { toggleEmailSignup } = this.props;
+    const { details, duration, deals, totalMonthly } = this.state;
 
     return(<>
-<div>
-          <PranaDifference />
-          <BenefitsDisplay />
-        </div>
-        <h1>Corporate Wellness Solutions</h1>
-        <NewPackageDisplay deals={deals} details={details} totalMonthly={totalMonthly} duration={duration}/>
-        <div className="custom-quote purple-content">
-          <PurpleContent purpleContent={CorporatePurpleContent} toggleEmailSignup={toggleEmailSignup}/>
-        </div>  
+      <div>
+        <PranaDifference />
+        <BenefitsDisplay />
+      </div>
+      <h1>Corporate Wellness Solutions</h1>
+      <NewPackageDisplay deals={deals} details={details} totalMonthly={totalMonthly} duration={duration}/>
+      <PurpleContainer>
+        {this.props.children}
+      </PurpleContainer>  
     </>);
   };
 };
+const PurpleContainer = styled.div`
+  margin: -150px 0 0;
+  height: 20vw;
+  padding: 16vw 0 0;
+  background-color: rgba(150,91,165,.6);
+  @media screen and (max-width: 945px){
+      margin: -40vw 0 0;
+      height: 68vw;
+      padding: 42vw 0 4vw;
+  }
+`;

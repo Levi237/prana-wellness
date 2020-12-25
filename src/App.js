@@ -13,7 +13,7 @@ import HomeHeader           from './components/home/HomeHeader';
 import HeaderComponent      from './components/HeaderComponent';
 
 import HeaderMessage from './components/header/HeaderMessage'
-// import PurpleContent from './components/PurpleContent';
+import PurpleContent from './components/PurpleContent';
 import HomeMain             from './components/home/HomeMain';
 import AboutMain            from './components/about/AboutMain';
 import CorporateMain        from './components/corporate/CorporateMain';
@@ -137,6 +137,13 @@ export default class App extends Component {
       value: "contactRequest",
       backgroundColor: "white",
       button: "BRING PRANA TO YOU"
+    },
+    corporateBodyContent: {
+      header: "DON'T SEE A PACKAGE THAT'S RIGHT?",
+      message: "Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.",
+      value: "contactRequest",
+      backgroundColor: "purple",
+      button: "Bring Prana to Your Workplace",
     }
   };  
 
@@ -156,7 +163,7 @@ export default class App extends Component {
 
   
   render(){
-    const { user, emailContact, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking } = this.state
+    const { user, emailContact, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking, corporateBodyContent } = this.state
     return(
       <GridContainer className="grid-container">
 
@@ -196,19 +203,19 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                     <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>
             <Route path={routes.INFO} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerContent={aboutPage}/> }/>
+                    <HeaderComponent purpleBox={(false)} textCopy={aboutPage}/> }/>
             <Route path={routes.SERV} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} headerContent={wellnessServices}/> }/> 
+                    <HeaderComponent purpleBox={(true)} textCopy={wellnessServices}/> }/> 
             <Route path={routes.WELL} exact render={() => 
-                    <HeaderComponent purpleBox={(true)} headerContent={personalWellness}/> }/>
+                    <HeaderComponent purpleBox={(true)} textCopy={personalWellness}/> }/>
             <Route path={routes.CORP} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerContent={corporateWellness}/> }/>   
+                    <HeaderComponent purpleBox={(false)} textCopy={corporateWellness}/> }/>   
             <Route path={routes.YOGA} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerContent={yogaTherapy}/> }/> 
+                    <HeaderComponent purpleBox={(false)} textCopy={yogaTherapy}/> }/> 
             <Route path={routes.PREG} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerContent={maternalHealth}/> }/> 
+                    <HeaderComponent purpleBox={(false)} textCopy={maternalHealth}/> }/> 
             <Route path={routes.COAC} exact render={() => 
-                    <HeaderComponent purpleBox={(false)} headerContent={coachingSpeaking}/> }/> 
+                    <HeaderComponent purpleBox={(false)} textCopy={coachingSpeaking}/> }/> 
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                    
           </Switch>
@@ -219,29 +226,31 @@ export default class App extends Component {
             <Route path={routes.HOME} exact render={() => 
                       <HomeMain /> }/>
             <Route path={routes.INFO} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={aboutPage}>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={aboutPage}>
                         <AboutMain /> 
                       </HeaderMessage> }/>      
             <Route path={routes.SERV} exact render={() => 
-                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} headerContent={wellnessServices} /> }/>           
+                      <ServicesMain toggleEmailSignup={this.toggleEmailSignup} textCopy={wellnessServices} /> }/>           
             <Route path={routes.WELL} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={personalWellness}>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={personalWellness}>
                         <PersonalMain/>
                       </HeaderMessage> }/>       
             <Route path={routes.CORP} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={corporateWellness}>
-                        <CorporateMain/>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={corporateWellness}>
+                        <CorporateMain>
+                          <PurpleContent textCopy={corporateBodyContent} toggleEmailSignup={this.toggleEmailSignup}/>
+                        </CorporateMain>
                       </HeaderMessage> }/>  
             <Route path={routes.YOGA} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={yogaTherapy}>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={yogaTherapy}>
                         <YogaTherapyMain/>
                       </HeaderMessage>}/>
             <Route path={routes.PREG} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={maternalHealth} >
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={maternalHealth} >
                         <PrenatalMain/>
                       </HeaderMessage> }/>
             <Route path={routes.COAC} exact render={() => 
-                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} headerContent={coachingSpeaking}>
+                      <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={coachingSpeaking}>
                         <Speaking/><Coaching/>
                       </HeaderMessage> }/>                      
             <Route path={routes.ROOT} render={() => 
