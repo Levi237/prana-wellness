@@ -60,7 +60,7 @@ export default class ServicesMain extends Component {
         const { toggleEmailSignup } = this.props;
 
         return(<>
-            <Container className="wellness-main-container main-title">
+            <Container>
                 <ServiceDisplay services={this.state.services}/>
                 <ButtonContainer className="optionBtn">
                     <NavLink to={routes.CORP}><button className="purple">Corporate Solutions</button></NavLink>
@@ -82,15 +82,22 @@ const Container = styled.div`
     margin-top: calc(25.86vw - 100vh + 196px);
     position: relative;
     z-index: 1;
+    padding-top: 4vw;
     padding-bottom: 8vw;
     background: rgb(191, 158, 200);
     button {
     margin-left: 2vw;
     margin-right: 2vw;
+    > section {
+        color: #FFF;
+        position: relative;
+        z-index: 1;
+      }
     }
     @media screen and (max-width: 945px) {
         margin-top: calc(32.3vw - 100vh + 58px);
         padding-top: 5vw;
+        font-size: 8vw;
     }
 `;
 const Header = styled.h1`

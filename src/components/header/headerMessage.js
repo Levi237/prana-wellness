@@ -14,10 +14,10 @@ export default class HeaderMessage extends Component {
         {this.props.children}
       </> : <>
         <Container>
-          <h1 className="main-title">
+          <h1 class="header">
           {textCopy.header}
           </h1>
-          <section className="main-cta">
+          <section className="message">
           {textCopy.message}
           </section>
           <button value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
@@ -46,9 +46,31 @@ const Container = styled.div`
   position: relative;
   z-index: 1;
   padding-bottom: 8vw;
-
+  > h1.header {
+    padding-top: 4vw;
+  }
+  > section.message {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6vw;
+    width: 80vw;
+    margin: 0vw 10vw;
+    padding-bottom: 6vw;
+    text-align: center;
+    color: #4D3B5C;
+  }
     @media screen and (max-width: 945px) {
       margin-top: calc(32.3vw - 100vh + 58px);
       padding-top: 5vw;
+      > h1.header {
+        padding-top: 0vw;
+        margin-block-start: 9vw;
+        font-size: 8vw;
+      }
+      > section.message {
+        width: 90vw;
+        margin: 5vw;
+        font-size: 2.6vw;
+      }
     }
 `;
