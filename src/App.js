@@ -135,10 +135,10 @@ export default class App extends Component {
       header: "SPEAKING TO INSPIRE",
       message: "Book Stephanie, “Motivator in Chief,” to motivate, inspire, and provide valuable tools to educate your team at work, youth group, newbie entrepreneurs, or wellness providers.",
       value: "contactRequest",
-      backgroundColor: "white",
+      backgroundColor: "purple",
       button: "BRING PRANA TO YOU"
     },
-    corporateBodyContent: {
+    corporateBodyText: {
       header: "DON'T SEE A PACKAGE THAT'S RIGHT?",
       message: "Whether you want one activity or all of them, we can help you find a program that works best for your company. Mix and match services, define your timeline, and help us understand your unique needs for wellness in the workplace.",
       value: "contactRequest",
@@ -163,7 +163,7 @@ export default class App extends Component {
 
   
   render(){
-    const { user, emailContact, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking, corporateBodyContent } = this.state
+    const { user, emailContact, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking, corporateBodyText } = this.state
     return(
       <GridContainer className="grid-container">
 
@@ -238,7 +238,7 @@ export default class App extends Component {
             <Route path={routes.CORP} exact render={() => 
                       <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={corporateWellness}>
                         <CorporateMain>
-                          <PurpleContent textCopy={corporateBodyContent} toggleEmailSignup={this.toggleEmailSignup}/>
+                          <PurpleContent textCopy={corporateBodyText} toggleEmailSignup={this.toggleEmailSignup}/>
                         </CorporateMain>
                       </HeaderMessage> }/>  
             <Route path={routes.YOGA} exact render={() => 

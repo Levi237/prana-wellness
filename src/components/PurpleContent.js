@@ -3,20 +3,19 @@ import styled from 'styled-components';
 
 export default class PurpleContent extends Component {
     render(){
- const { textCopy, toggleEmailSignup } = this.props
- console.log(toggleEmailSignup)
-    return(<>
-        <Title>{textCopy.header}</Title>
-        <section>
-            <Content>
-                {textCopy.message}  
-            </Content>
-            <ButtonContaner>
-                <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
-            </ButtonContaner>
-        </section>
-    </>);
-};
+        const { textCopy, toggleEmailSignup } = this.props
+        return(<>
+            <Title>{textCopy.header}</Title>
+            <section>
+                <Content>
+                    {textCopy.message}  
+                </Content>
+                <ButtonContaner>
+                    <button className="purple mobile-fill" value={textCopy.value} onClick={(e) => {toggleEmailSignup(e)}}>{textCopy.button}</button>
+                </ButtonContaner>
+            </section>
+        </>);
+    };
 }
 
 const Title = styled.h1 `
