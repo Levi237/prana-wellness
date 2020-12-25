@@ -119,7 +119,7 @@ const Column = styled.div`
     ul {
         display: inline-block;
         font-size: 1.25vw;
-        color: purple;
+        color: #965ba5;
         text-align: left;
         line-height: 2.25vw;
         margin-block-start: 1vw;

@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import './ServiceDisplay.css';
 
 const ServiceDisplay = ({services, transformStyle}) => {
 

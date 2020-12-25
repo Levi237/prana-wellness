@@ -107,7 +107,7 @@ const LocalWrapper = styled.div`
 
     button {
         text-align: center;
-        color: purple;
+        color: #965ba5;
 
         width: 20px;
         height: calc(${mobileWinHeight});

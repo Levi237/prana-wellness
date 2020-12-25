@@ -108,7 +108,6 @@ export default class ContactRequest extends Component {
                     />
                 </label>
 
-                
                 <h3>Ask about additional services:</h3>
                 <div>
                     {buttonSelectors}
@@ -162,8 +161,9 @@ const AuthFilter = styled.div`
 
 const Form = styled.form`
     h3 {
-        margin: 0;
+        margin: 10px 0 0 0;
         text-transform: capitalize;
+        color: #965ba5;
     }
     label {
         display: inline-block;

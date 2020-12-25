@@ -48,7 +48,7 @@ z-index: 99999;
     }
     form input[type=submit] {
         background-color: #fff;
-        color: purple;
+        color: #965ba5;
         border: purple solid 1px;
         position: relative;
         z-index: 900;

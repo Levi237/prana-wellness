@@ -40,7 +40,7 @@ button {
   font-weight: normal;
   font-size: 16px;
 
-  line-height: auto;
+  line-height: 100%;
   letter-spacing: 2px;
 
   text-align: center;
