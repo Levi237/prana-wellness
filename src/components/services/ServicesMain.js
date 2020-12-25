@@ -114,7 +114,7 @@ const ButtonContainer = styled.div`
             margin: 2.5vw;
             width: 80vw;
             height: 68px;
-            font-size: 4.5vw;
+            font-size: 4.125vw;
         }
     }
 `;
