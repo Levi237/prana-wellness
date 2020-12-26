@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import './LogoDisplay.css';
-
 const CustomerDisplay = ({ logos, clients }) => {
 
     const carouselId = document.getElementById("scroll");
