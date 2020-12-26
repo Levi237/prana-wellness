@@ -57,7 +57,7 @@ const Container = styled.div`
         background-color: #E0CEE5;    
         &:first-of-type {
             float: left;
-            background-image: url(../meet-background.png);
+            background-image: url(/static/media/meet-background.a73f4094.png);
             text-align: left;
         }
         &:last-of-type {
