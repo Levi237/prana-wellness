@@ -36,7 +36,7 @@
   }
 }
 
-/* SERVICES DISPLAY */
+/* SERVICES DISPLAY - Flip Card*/
 .card-box.card-hover:hover, .card-box.card-hover:active {
   max-width: 0;
   overflow: hidden;
@@ -60,4 +60,15 @@
   /* color: #965ba5; */
   transition: all .3s ease-in-out;
   transition-delay: .2s;
+}
+
+/* Carousel */
+div.scrollmenu.carousel > div {
+  transform: translateX(-200%);
+  transition: all 80s ease-in-out;
+}
+
+/* Email Form */
+button.selectedHighlighted {
+  background-color: rgba(150, 91, 165, 0.6)!important;
 }

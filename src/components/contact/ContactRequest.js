@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import './RequestForm.css';
-
 export default class ContactRequest extends Component { 
     state = {
         emailValue: '',
