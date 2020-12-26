@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FloralBoxComponent from '../FloralBoxComponent';
+import FloralBoxComponent   from '../FloralBoxComponent';
 
 export default class AboutStephanie extends Component {
     state = {

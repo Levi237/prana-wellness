@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React            from 'react';
+import styled           from 'styled-components';
 
-import AboutStephanie  from './AboutStephanie';
-import TeamMembers  from './TeamMembers';
+import AboutStephanie   from './AboutStephanie';
+import TeamMembers      from './TeamMembers';
 
 const AboutMain = () => {
     return(
