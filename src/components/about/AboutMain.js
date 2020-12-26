@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import MeetStephanie  from './MeetStephanie';
+import AboutStephanie  from './AboutStephanie';
 import TeamMembers  from './TeamMembers';
 
 const AboutMain = () => {
     return(
       <>
         <VideoBox src="https://player.vimeo.com/video/387594093"></VideoBox>
-        <MeetStephanie />
+        <AboutStephanie />
         <TeamMembers />
       </>);
 };
