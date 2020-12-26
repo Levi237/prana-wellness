@@ -19,7 +19,7 @@ div.lotus-box {
     width: 60vw;
     line-height: 3vw;
     position: absolute;
-    z-index: 171;
+    z-index: 100;
     color: #FFF;
 }
 .lotus-box > div:last-of-type > section:first-of-type {
