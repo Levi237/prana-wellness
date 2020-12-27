@@ -1,17 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-const desktopBreak = "620px";
-
-const desktopWidth = 400
-const desktopWinWidth = desktopWidth + "px";
-const desktopWinHeight = "150px";
-
-const mobileWidth = 250;
-const mobileWinWidth =  mobileWidth + "px";
-const mobileWinHeight = "120px";
-
-const reviewsLength = 6;
 export default class Reviews extends Component { 
     state = {
         reviews: [{
@@ -48,17 +37,17 @@ export default class Reviews extends Component {
         const { reviews } = this.state;
             const ReviewList = reviews.map((review, key) => {
                 return (
-                    <Review key={key}>
-                        <Text>{review.quote}</Text>
-                        <Reviewer>{"- "}{review.name}</Reviewer>
-                    </Review>
+                    <div key={key}>
+                        <p>{review.quote}</p>
+                        <h1>{review.name}</h1>
+                    </div>
                 )
             })
 
         return(
             <LocalWrapper>
                 <button onClick={this.scrollLeft}>
-                <ArrowLeft className="left"></ArrowLeft>
+                    <ArrowLeft className="left"></ArrowLeft>
                 </button>
                 <img className="left" src="quote.png"/>
                 <WindowContainerDesktop className='desktop' id='desktop'>
@@ -80,6 +69,18 @@ export default class Reviews extends Component {
     };
 };
 
+const desktopBreak = "620px";
+
+const desktopWidth = 400
+const desktopWinWidth = desktopWidth + "px";
+const desktopWinHeight = "200px";
+
+const mobileWidth = 250;
+const mobileWinWidth =  mobileWidth + "px";
+const mobileWinHeight = "200px";
+
+const reviewsLength = 6;
+
 const LocalWrapper = styled.div`
     width: 100vw;
     height: ${mobileWinHeight};
@@ -88,6 +89,9 @@ const LocalWrapper = styled.div`
         width: calc(49.5vw - 150px);
         vertical-align: middle;
         max-width: 30px;
+        @media (max-width: ${desktopBreak}) {
+            max-width: 20px;
+        }
     }
     img.left{  
         transform: rotate(-180deg);
@@ -199,41 +203,38 @@ const ReviewContainer = styled.div`
         height: ${desktopWinHeight};
         width: calc(${desktopWinWidth}*${reviewsLength});
     }
-`;
-
-const Review = styled.div`
-    width: ${mobileWinWidth};
-    height: ${mobileWinHeight};
-    display: inline-block;
-    @media (min-width: ${desktopBreak}) {
-        width: ${desktopWinWidth};
-        height: ${desktopWinHeight};
-    }
-`;
-
-const Text = styled.div`
-    vertical-align: middle;
-    height: calc(${mobileWinHeight} - 30px);
-    overflow: hidden;
-    vertical-align: middle;
-    font-size: 10px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    @media (min-width: ${desktopBreak}) {
-        height: calc(${desktopWinHeight} - 30px);
-        font-size: ${desktopBreak};
-        font-size: 13px;
-        line-height: 23px;
-    }
-`;
-
-const Reviewer = styled.h1`
-    font-size: 11px;
-    margin: 0 auto;
-    display: inline-block;
-    height: 30px;
-    @media (min-width: ${desktopBreak}) {
-        font-size: 14px;
+    > div {
+        width: ${mobileWinWidth};
+        height: ${mobileWinHeight};
+        display: inline-block;
+        @media (min-width: ${desktopBreak}) {
+            width: ${desktopWinWidth};
+            height: ${desktopWinHeight};
+        }
+        > p {
+            vertical-align: middle;
+            height: calc(${mobileWinHeight} - 80px);
+            overflow: hidden;
+            vertical-align: middle;
+            font-size: 11px;
+            line-height: 18px;
+            display: flex;
+            align-items: center;
+            @media (min-width: ${desktopBreak}) {
+                height: calc(${desktopWinHeight} - 80px);
+                font-size: ${desktopBreak};
+                font-size: 13px;
+                line-height: 23px;
+            }
+        }
+        > h1 {
+            font-size: 14px;
+            margin: 0 auto;
+            display: inline-block;
+            height: 30px;
+            @media (min-width: ${desktopBreak}) {
+                font-size: 14px;
+            }
+        }
     }
 `;
