@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ContactBox = ({ toggleEmailSignup }) => {
+const AnnouncementBanner = ({ toggleEmailSignup }) => {
     return(
         <Contact>
             <span>Experience Virtual Wellness Packages{"  "}</span><button className="purple" value="freebie" onClick={(e) => {toggleEmailSignup(e)}}>Free Meditation Offer</button>
@@ -52,4 +52,4 @@ const Contact = styled.div`
     }
 `;
 
-export default ContactBox;
+export default AnnouncementBanner;

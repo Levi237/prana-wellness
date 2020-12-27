@@ -3,17 +3,18 @@ import { Switch, Route }    from 'react-router-dom';
 import styled               from 'styled-components';
 
 import * as routes          from './constants/routes';
-import Nav                  from './components/Nav';
-import NavBar               from './components/NavBar';
+import Nav                  from './components/nav/Nav';
+import NavBar               from './components/nav/NavBar';
 
 import EmailSignup          from './components/contact/EmailSignup';
-import ContactBox           from './components/contact/AnnouncementBanner'; 
+import AnnouncementBanner   from './components/contact/AnnouncementBanner'; 
 
 import HomeHeader           from './components/home/HomeHeader';
 import HeaderComponent      from './components/HeaderComponent';
 
-import HeaderMessage from './components/header/HeaderMessage'
-import PurpleContent from './components/PurpleContent';
+import HeaderMessage        from './components/header/HeaderMessage'
+import PurpleContent        from './components/PurpleContent';
+
 import HomeMain             from './components/home/HomeMain';
 import AboutMain            from './components/about/AboutMain';
 import CorporateMain        from './components/corporate/CorporateMain';
@@ -21,9 +22,9 @@ import PersonalMain         from './components/personal/PersonalMain';
 import ServicesMain         from './components/services/ServicesMain';
 import YogaTherapyMain      from './components/yogatherapy/YogaTherapyMain';
 import PrenatalMain         from './components/prenatal/PrenatalMain';
-// import CoachingMain         from './components/coaching/CoachingMain';
-import Coaching from './components/coaching/Coaching';
-import Speaking from './components/coaching/Speaking';
+
+import Coaching             from './components/coaching/Coaching';
+import Speaking             from './components/coaching/Speaking';
 
 import RightFooter          from './components/footer/RightFooter';
 import MidFooter            from './components/footer/MidFooter';
@@ -259,7 +260,7 @@ export default class App extends Component {
         </MainGrid>
 
         <ContactGrid className="grid-contact">
-          <ContactBox 
+          <AnnouncementBanner 
             toggleEmailSignup={this.toggleEmailSignup}/>
         </ContactGrid>
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-import * as routes from '../constants/routes';
+import * as routes from '../../constants/routes';
 
 export default class Nav extends Component {
 
