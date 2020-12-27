@@ -143,7 +143,10 @@ const Container = styled.div`
             height: 100vw;
         }
         span {
-            display: inline-block; padding: 1vw 0; font-size: 3vw;
+            display: inline-block; 
+            padding: 1vw 0;
+            font-size: 2.5vw;
+            line-height: 1vw;
             &:nth-of-type(odd){
 
                 padding-right: 2vw;
