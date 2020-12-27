@@ -19,8 +19,8 @@ export default class FloralBoxComponent extends Component {
             })
             return(
                 <Container style={{ backgroundColor: `${passedInfo.backgroundColor}` }}>
-                    <div style={{ float: `${passedInfo.boxOne}` }}>
-                        <div style={{ backgroundColor: `${passedInfo.backgroundColor}` }}>
+                    <div style={{ float: `${passedInfo.boxOne}`, backgroundImage: "url('../floral-background.png')" }}>
+                        <div id="floral-box" style={{ backgroundColor: `${passedInfo.backgroundColor}` }}>
                             <section>{passedInfo.title}</section>
                             <section style={{ color: `${passedInfo.subtitleColor}` }}>{passedInfo.subtitle}</section>
                             <section>{passedInfo.content}</section>
@@ -59,16 +59,14 @@ const Container = styled.div`
         width: 50vw;
         height: 50vw;
     }
-span {
-    display: block;
-}
+    span {
+        display: block;
+    }
     > div {
         width: 50vw;
         height: 50vw;
 
         &:first-of-type {
-            // background-image: url(../meet-background.png);
-            background-image: url(/static/media/meet-background.a73f4094.png);
             background-blend-mode: screen;
             text-align: left;
         }
@@ -80,6 +78,7 @@ span {
             border: 1px solid #965BA5;
             padding: 3vw 5vw 7vw 5vw;
             text-align: left;
+
             > section {
                 font-style: normal;
 
@@ -150,13 +149,14 @@ span {
             width: 100vw;
             height: 100vw;
         }
-span {
-    display: inline-block; padding: 1vw 0; font-size: 3vw;
-    &:nth-of-type(odd){
+        span {
+            display: inline-block; padding: 1vw 0; font-size: 3vw;
+            &:nth-of-type(odd){
 
-        padding-right: 2vw;
-    }
-}
+                padding-right: 2vw;
+            }
+        }
+
         > div {
             width: 100vw;
             height: 100vw;
@@ -187,9 +187,9 @@ span {
                 }
             }
         }
-       a.about > button {
-        margin-top: 18vw;
-       }
 
+        a.about > button {
+            margin-top: 18vw;
+        }
     }
 `;
