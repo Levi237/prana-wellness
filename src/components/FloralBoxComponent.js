@@ -67,6 +67,7 @@ span {
         height: 50vw;
 
         &:first-of-type {
+            // background-image: url(../meet-background.png);
             background-image: url(/static/media/meet-background.a73f4094.png);
             background-blend-mode: screen;
             text-align: left;
