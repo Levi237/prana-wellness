@@ -36,6 +36,20 @@
   }
 }
 
+.contact-container {
+  position: fixed;
+  z-index: 50;
+  width: 100vw;
+  height: 100vh;
+  padding: 0 0 3vw;
+  background: hsla(0,0%,100%,.7);
+  overflow: scroll;
+}
+@media screen and (max-width: 700px) {
+  .contact-container {
+      background: #fff;
+  }
+}
 /* SERVICES DISPLAY - Flip*/
 .card-box.card-hover:hover, .card-box.card-hover:active {
   max-width: 0;

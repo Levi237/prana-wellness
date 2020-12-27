@@ -11,7 +11,7 @@ export default class EmailSignup extends Component {
 
         const { toggleEmailSignup, contactType } = this.props
         return(
-            <Container id="email" className="inactive">
+            <Container id="email" className="inactive contact-container">
                 <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailSignup(e)}}>X</CloseBtn>
                 { (contactType === "freebie") && <FreebieEmailSignup/> }
                 { (contactType === "contactRequest") && <ContactRequest/> }
