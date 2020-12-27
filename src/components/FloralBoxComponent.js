@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+import { NavLink }          from 'react-router-dom';
+import styled               from 'styled-components';
 
 export default class FloralBoxComponent extends Component {
 
@@ -135,14 +135,7 @@ const Container = styled.div`
             list-style-type: none;
         }
     }
-    // section:hover > div > div > section:nth-of-type(3) {
-    //     background-color: rgba(255,255,255,.3);
-    //     margin-right: -4vw;
-    //     margin-left: -4vw;
-    //     padding: 0 4vw;
-    //     transition: all .3s ease-in-out;
-    //     box-shadow: inset 0px 0px 6px 4px #E0CEE5;
-    // }
+
     @media screen and (max-width: 945px) {
         height: 100vw;
         img {
