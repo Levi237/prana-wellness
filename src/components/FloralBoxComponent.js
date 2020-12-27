@@ -9,7 +9,7 @@ export default class FloralBoxComponent extends Component {
 
             const skillsList = passedInfo.skills.map((skill, key) => {
                 if (passedInfo.skills[0] !== "none"){
-                    return <><span key={key}>{skill}</span><br /></>
+                    return <span key={key}>{skill}</span>
                 }
             })
             const servicesList =  passedInfo.services.map((service, key) => {
@@ -25,7 +25,7 @@ export default class FloralBoxComponent extends Component {
                             <section style={{ color: `${passedInfo.subtitleColor}` }}>{passedInfo.subtitle}</section>
                             <section>{passedInfo.content}</section>
                             { passedInfo.route && 
-                                <NavLink to={passedInfo.route}>
+                                <NavLink class={passedInfo.route} to={passedInfo.route}>
                                     <button className={passedInfo.ctaColor}>
                                         {passedInfo.cta}
                                     </button>
@@ -59,13 +59,16 @@ const Container = styled.div`
         width: 50vw;
         height: 50vw;
     }
-
+span {
+    display: block;
+}
     > div {
         width: 50vw;
         height: 50vw;
 
         &:first-of-type {
             background-image: url(/static/media/meet-background.a73f4094.png);
+            background-blend-mode: screen;
             text-align: left;
         }
 
@@ -94,7 +97,6 @@ const Container = styled.div`
                     line-height: 1.5vw;
                     letter-spacing: .3vw;
                     text-transform: uppercase;
-                    // color: #A0CD4D;
                 }
                 &:nth-of-type(3) {
                     font-weight: 300;
@@ -102,7 +104,8 @@ const Container = styled.div`
                     line-height: 1.5vw;
                     color: #965BA5;
                     margin: 1vw 0;
-                    height: 19vw;
+                    min-height: 19vw;
+                    max-height: 50vw;
                     overflow: auto;
                     background-color: transparent;
                     transition: all .3s ease-in-out;
@@ -141,20 +144,22 @@ const Container = styled.div`
     //     box-shadow: inset 0px 0px 6px 4px #E0CEE5;
     // }
     @media screen and (max-width: 945px) {
+        height: 100vw;
         img {
             width: 100vw;
             height: 100vw;
         }
+span {
+    display: inline-block; padding: 1vw 0; font-size: 3vw;
+    &:nth-of-type(odd){
 
+        padding-right: 2vw;
+    }
+}
         > div {
             width: 100vw;
             height: 100vw;
-            &:first-of-type {
-                float: off;
-            }
-            &:last-of-type {
-                float: off;
-            }
+
             > div {
                 width: 70vw;
                 height: 70vw;
@@ -162,7 +167,7 @@ const Container = styled.div`
                 padding: 5vw;
                 > section {
                     &:first-of-type {
-                        font-size: 7vw;
+                        font-size: 6vw;
                         letter-spacing: .33vw;
                     }
                     &:nth-of-type(2) {
@@ -172,18 +177,18 @@ const Container = styled.div`
                     &:nth-of-type(3) {
                         font-size: 3vw;
                         line-height: 3vw;
-                        margin: 2vw 0;
+                        margin: 0;
                     }
                     &:nth-of-type(4) {
                         font-size: 3.6vw;
                         line-height: 5vw;
-                        margin-top: 18vw;
                     }
                 }
             }
         }
-       
-
+       a.about > button {
+        margin-top: 18vw;
+       }
 
     }
 `;
