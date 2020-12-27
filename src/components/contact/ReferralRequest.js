@@ -122,6 +122,7 @@ export default class ReferralRequest extends Component {
                 <label htmlFor='MESSAGE'>
                     <textarea 
                         type="text" 
+                        maxlength="215"
                         name="MESSAGE" 
                         id="MESSAGE" 
                         value={messageValue}

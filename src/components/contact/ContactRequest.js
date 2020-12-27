@@ -130,6 +130,7 @@ export default class ContactRequest extends Component {
                 <label htmlFor='MESSAGE'>
                     <textarea 
                         type="text" 
+                        maxlength="215"
                         name="MESSAGE" 
                         id="MESSAGE" 
                         value={messageValue}
