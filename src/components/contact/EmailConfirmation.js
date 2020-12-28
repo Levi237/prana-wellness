@@ -8,10 +8,8 @@ export default class EmailConfirmation extends Component {
         hamburgerMenu.classList.toggle('active');
         hamburgerMenu.classList.toggle('inactive');
         window.history.back();
-        console.log(e);
       };
     render(){
-        // const { toggleEmailConfirmation } = this.props
         return (<>
             <Container id="confirmation" className="active contact-container">
                 <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {this.toggleEmailConfirmation(e)}}>X</CloseBtn>
