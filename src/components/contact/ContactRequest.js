@@ -13,22 +13,22 @@ export default class ContactRequest extends Component {
         services: ["Corporate Wellness", "Personal Wellness", "Yoga Therapy", "Maternal Health", "Coaching", "Speaking"]
     };
 
-    handleSelect = (e, value) => {
+    handleSelect = (e, service) => {
+        console.log(service)
         const { addServices } = this.state
-        const selectedService = e.currentTarget.name
         e.preventDefault();
 
-        if (addServices.includes(selectedService)){
+        if (addServices.includes(service)){
             e.currentTarget.classList.remove('selectedHighlighted');
             this.setState(prevState => ({     
                 addServices: addServices.filter(x => (
-                    x !== selectedService
+                    x !== service
                 ))
             }));
         } else {
             e.currentTarget.classList.add('selectedHighlighted')
             this.setState({
-                addServices: addServices + " " + selectedService
+                addServices: addServices + " " + service
             });
         };
     };
