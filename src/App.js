@@ -162,12 +162,6 @@ export default class App extends Component {
       emailContact: e.currentTarget.value
     });
   };
-  toggleEmailConfirmation = () => {
-    const hamburgerMenu = document.getElementById('confirmation');
-    hamburgerMenu.classList.toggle('active');
-    hamburgerMenu.classList.toggle('inactive');
-    window.history.back();
-  };
   
   render(){
     const { user, emailContact, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking, corporateBodyText } = this.state
@@ -178,7 +172,7 @@ export default class App extends Component {
         <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
         <Switch>
           <Route path={routes.MAIL} exact render={() => 
-            <EmailConfirmation toggleEmailConfirmation={this.toggleEmailConfirmation}/>
+            <EmailConfirmation/>
           }/>
         </Switch>
         <NavGrid className="grid-nav">

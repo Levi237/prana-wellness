@@ -3,11 +3,18 @@ import styled               from 'styled-components';
 
 export default class EmailConfirmation extends Component {
     state = {}
+    toggleEmailConfirmation = (e) => {
+        const hamburgerMenu = document.getElementById('confirmation');
+        hamburgerMenu.classList.toggle('active');
+        hamburgerMenu.classList.toggle('inactive');
+        window.history.back();
+        console.log(e);
+      };
     render(){
-        const { toggleEmailConfirmation } = this.props
+        // const { toggleEmailConfirmation } = this.props
         return (<>
             <Container id="confirmation" className="active contact-container">
-                <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {toggleEmailConfirmation(e)}}>X</CloseBtn>
+                <CloseBtn name="emailForm" className="close xClose white" onClick={(e) => {this.toggleEmailConfirmation(e)}}>X</CloseBtn>
                 <div>
                     <div>
                         <section>
