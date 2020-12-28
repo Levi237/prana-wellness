@@ -50,6 +50,9 @@ button {
 
   transition: all .3s ease-in-out;
 
+  position: relative;
+  z-index: 10;
+
   border: 1px solid #965BA5;
   background-color: #FFF;
   color: #965BA5;
