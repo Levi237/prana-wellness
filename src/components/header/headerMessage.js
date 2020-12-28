@@ -9,7 +9,7 @@ export default class HeaderMessage extends Component {
     return(<>
       { (textCopy.backgroundColor === "purple")? <>
         <PurpleContainer className="wellness-main-content">
-            <PurpleContent textCopy={textCopy} toggleEmailSignup={toggleEmailSignup}/>
+            <PurpleContent textCopy={textCopy} toggleEmailSignup={toggleEmailSignup(e)}/>
         </PurpleContainer>
         {this.props.children}
       </> : <>
