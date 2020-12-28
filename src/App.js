@@ -297,7 +297,7 @@ grid-template-areas:
   grid-gap: 0;
 
 @media screen and (max-width: 945px) {
-    grid-template-rows: 40px 18vw 90vh auto 40vw 100px 120px;
+    grid-template-rows: 40px 80px 90vh auto 40vw 100px 120px;
     grid-template-columns: 100vw;
   grid-template-areas:
     ' contact '

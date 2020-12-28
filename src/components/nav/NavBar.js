@@ -52,7 +52,8 @@ const LogoBox = styled.div`
 const Logo = styled.img`
   width: 100%;
   @media screen and (max-width: 945px) {
-    width: 20vw;
+    width: 80px;
+    margin-top: -10px;
   }
 `;
 
