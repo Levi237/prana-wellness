@@ -172,7 +172,7 @@ const ButtonCTA = styled.button`
     transition: all .3s ease-in-out;
   }
 @media screen and (max-width: 945px) {
-  font-size: 3vw!important;
+  font-size: 4vw!important;
   padding: 1vh auto;
   bottom: off;
 }
