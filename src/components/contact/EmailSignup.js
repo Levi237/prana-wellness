@@ -22,9 +22,9 @@ export default class EmailSignup extends Component {
 };
 
 const Container = styled.div`
-position: fixed;
-overflow: scroll;
-z-index: 99999;
+    position: fixed;
+    overflow: scroll;
+    z-index: 99999;
 
     p {
         text-align: center;

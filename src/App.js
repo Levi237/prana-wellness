@@ -8,6 +8,7 @@ import NavBar               from './components/nav/NavBar';
 
 import EmailSignup          from './components/contact/EmailSignup';
 import AnnouncementBanner   from './components/contact/AnnouncementBanner'; 
+import EmailConfirmation    from './components/contact/EmailConfirmation';
 
 import HomeHeader           from './components/home/HomeHeader';
 import HeaderComponent      from './components/HeaderComponent';
@@ -161,7 +162,12 @@ export default class App extends Component {
       emailContact: e.currentTarget.value
     });
   };
-
+  toggleEmailConfirmation = () => {
+    const hamburgerMenu = document.getElementById('confirmation');
+    hamburgerMenu.classList.toggle('active');
+    hamburgerMenu.classList.toggle('inactive');
+    window.history.back();
+  };
   
   render(){
     const { user, emailContact, aboutPage, wellnessServices, personalWellness, corporateWellness, yogaTherapy, maternalHealth, coachingSpeaking, corporateBodyText } = this.state
@@ -170,7 +176,11 @@ export default class App extends Component {
 
         <Nav toggleHamburger={this.toggleHamburger}/>
         <EmailSignup contactType={emailContact} toggleEmailSignup={this.toggleEmailSignup}/>
-        
+        <Switch>
+          <Route path={routes.MAIL} exact render={() => 
+            <EmailConfirmation toggleEmailConfirmation={this.toggleEmailConfirmation}/>
+          }/>
+        </Switch>
         <NavGrid className="grid-nav">
           <Switch>
             <Route path={routes.HOME} exact render={() => 
@@ -180,6 +190,8 @@ export default class App extends Component {
                         toggleEmailSignup={this.toggleEmailSignup}
                         /> 
             }/>          
+            <Route path={routes.MAIL} exact render={() => 
+                      <></> }/>  
             <Route path={routes.ROOT} exact render={() => 
                       <NavBar 
                         page={"home"} 
@@ -217,6 +229,8 @@ export default class App extends Component {
                     <HeaderComponent purpleBox={(false)} textCopy={maternalHealth}/> }/> 
             <Route path={routes.COAC} exact render={() => 
                     <HeaderComponent purpleBox={(false)} textCopy={coachingSpeaking}/> }/> 
+            <Route path={routes.MAIL} exact render={() => 
+                      <></> }/>  
             <Route path={routes.ROOT} render={() => 
                     <HomeHeader toggleEmailSignup={this.toggleEmailSignup}/> }/>                    
           </Switch>
@@ -253,7 +267,9 @@ export default class App extends Component {
             <Route path={routes.COAC} exact render={() => 
                       <HeaderMessage toggleEmailSignup={this.toggleEmailSignup} textCopy={coachingSpeaking}>
                         <Speaking/><Coaching/>
-                      </HeaderMessage> }/>                      
+                      </HeaderMessage> }/>      
+            <Route path={routes.MAIL} exact render={() => 
+                      <></> }/>                
             <Route path={routes.ROOT} render={() => 
                       <HomeMain /> }/>
           </Switch>          

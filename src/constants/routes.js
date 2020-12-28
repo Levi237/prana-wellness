@@ -9,3 +9,4 @@ export const CORP = '/services_corporate';
 export const YOGA = '/yoga_therapy';
 export const PREG = '/pre-post_natal';
 export const COAC = '/speaking_coaching';
+export const MAIL = '/thank_you_for_reaching_out'

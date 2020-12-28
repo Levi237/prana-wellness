@@ -22,7 +22,7 @@
 .inactive {
   max-width: 0;
   transition: .8s ease-in-out;
-  transition-delay: .3s !important;
+  transition-delay: .3s!important;
 }
 .nav-active {
   color:#965BA5 !important;
