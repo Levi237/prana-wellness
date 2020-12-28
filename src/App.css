@@ -50,7 +50,7 @@
       background: #fff;
   }
 }
-/* SERVICES DISPLAY - Flip*/
+/* SERVICES DISPLAY - Flip */
 .card-box.card-hover:hover, .card-box.card-hover:active {
   max-width: 0;
   overflow: hidden;
@@ -71,7 +71,6 @@
   border: 1px solid #669F35!important;
   color: rgb(191, 158, 200);
   background-color: transparent;
-  /* color: #965ba5; */
   transition: all .3s ease-in-out;
   transition-delay: .2s;
 }
@@ -85,4 +84,5 @@ div.scrollmenu.carousel > div {
 /* Email Form */
 button.selectedHighlighted {
   background-color: rgba(150, 91, 165, 0.6)!important;
+  color: white;
 }
