@@ -8,8 +8,6 @@ import styled from 'styled-components';
     <Container>
         <section>Have Questions?</section>
         <section>Stephanie@pranawellnessworks.com</section> 
-            {/* <section>sign up for our WELLNESS NEWSLETTER </section> */}
-            {/* <EmailerRequest /> */}
     </Container>);
 };
 
