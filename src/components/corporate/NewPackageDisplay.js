@@ -55,9 +55,6 @@ const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
                 {detail}
             </Table>
             <RulesDiv>
-                *Class types include: Yoga, Meditation/Breathwork, Bootcamp<br/>
-                **More than 30 employees + $50/session<br/>
-                ***All packages require 6 month commitment
             </RulesDiv>
             </div>
         </Container>
