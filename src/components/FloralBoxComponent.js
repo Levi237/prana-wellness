@@ -25,7 +25,7 @@ export default class FloralBoxComponent extends Component {
                             <section style={{ color: `${passedInfo.subtitleColor}` }}>{passedInfo.subtitle}</section>
                             <section>{passedInfo.content}</section>
                             { passedInfo.route && 
-                                <NavLink class={passedInfo.route} to={passedInfo.route}>
+                                <NavLink className={passedInfo.route} to={passedInfo.route}>
                                     <button className={passedInfo.ctaColor}>
                                         {passedInfo.cta}
                                     </button>

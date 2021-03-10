@@ -14,7 +14,7 @@ export default class HeaderMessage extends Component {
         {this.props.children}
       </> : <>
         <Container>
-          <h1 class="header">
+          <h1 className="header">
           {textCopy.header}
           </h1>
           <section className="message">
