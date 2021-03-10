@@ -1,14 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-// import BenefitsDisplay      from './BenefitsDisplay';
-// import PackageDisplay       from './PackageDisplay';
 import NewPackageDisplay   from './NewPackageDisplay';
 import PranaDifference      from './PranaDifference';
-
-// import PurpleContent        from '../PurpleContent';
-// import '../PurpleContent.css';
-
 
 export default class CorporateMain extends Component {
   state = {
