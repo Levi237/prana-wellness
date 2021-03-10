@@ -1,4 +1,7 @@
 
+.pranaDifference-container {
+    height: 50vw;
+}
 .pranaDifference-container img {
     width: 50vw;
     height: 50vw;
@@ -17,6 +20,7 @@
     background-image: url(./meet-background-white.png);
     text-align: left;
     position: relative;  
+    display: flex;
 }
 .pranaDifference-container > div:last-of-type {
     float: left;
@@ -66,6 +70,9 @@
 }
 
 @media screen and (max-width: 945px) {
+    .pranaDifference-container {
+        height: 200vw;
+    }
     .pranaDifference-container img {
         width: 100vw;
         height: 100vw;
@@ -76,14 +83,14 @@
         height: 100vw;
     }
     .pranaDifference-container > div:first-of-type, .pranaDifference-container > div:last-of-type {
-        float: off;
+        float: none;
     }
 
     .pranaDifference-container > div > div {
-        width: 70vw;
-        height: 70vw;
-        margin: 10vw;
-        padding: 5vw;
+        width: 70%;
+        height: 70%;
+        margin: 10%;
+        padding: 5%;
     }
     .pranaDifference-container > div > div > section:first-of-type {
         font-size: 7vw;
