@@ -67,8 +67,8 @@ export default class CorporateMain extends Component {
   };
 };
 const PackageTitle = styled.h1`
-padding-top: 40px;
-position: relative;
+  padding-top: 40px;
+  position: relative;
 `;
 const BenefitsDisplay = styled.img`
   width: 100%;

@@ -323,7 +323,6 @@ grid-template-areas:
 const GridHeader = styled.div`
   grid-area: header;
   text-align: center;
-
   @media screen and (max-width: 945px) {
       margin-bottom: 0;
       margin-top: 0;
@@ -344,7 +343,6 @@ const NavGrid = styled.div`
     @media screen and (max-width: 945px) {
       margin-left: 5vw;
       width: 90vw;
-
       margin-top: 40px;
     }
 `;
@@ -368,11 +366,9 @@ const FooterGrid = styled.div`
 
 const LeftFooterGrid = styled(FooterGrid)`
   grid-area: footer-left;
-
   @media screen and (max-width: 945px) {
-
-      text-align: center;
-  div {
+    text-align: center;
+    div {
       margin-left: auto;
       margin-right: auto;
     }
@@ -397,7 +393,6 @@ const MidFooterGrid = styled(FooterGrid)`
       font-weight: bold;
       font-size: 2.8vw;
       letter-spacing: 3px;
-
     }
     input {
       width: 90vw;
@@ -409,6 +404,4 @@ const MidFooterGrid = styled(FooterGrid)`
 
 const RightFooterGrid = styled(FooterGrid)`
   grid-area: footer-right;
-  @media screen and (max-width: 945px) {
-  }
 `;
