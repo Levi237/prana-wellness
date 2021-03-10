@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React    from 'react';
+import styled   from 'styled-components';
 
 const mobileMax = "650px";
 const lightGreen = "rgba(150, 198, 68)";
@@ -16,7 +16,7 @@ const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
     const detail = details.map((detail, k) => {
         return (
             <tr key={k}>
-                <td>{detail.product}</td>
+                <td><span>&emsp;</span>{detail.product}</td>
                 <td><img src={detail.included[0]}/></td>
                 <td><img src={detail.included[1]}/></td>
                 <td><img src={detail.included[2]}/></td>
@@ -37,7 +37,7 @@ const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
                 <TitleTR>
                     <td></td><td></td><td></td><td></td><td></td>
                 </TitleTR>
-                <ColorBlockTR>
+                <ColorBlockTR className="pricing-table">
                     <td>PRICING TABLE
                         <br/>
                         <small>per session:</small>
@@ -48,10 +48,10 @@ const NewPackageDisplay =({deals, details, duration, totalMonthly})=> {
                     <td></td><td></td><td></td><td></td><td></td>
                 </ArrowTR>
                 <tr>
-                    <td>Monthly Price</td>{totalMonthlys}
+                    <td><span>&emsp;</span>Monthly Price</td>{totalMonthlys}
                 </tr>
                 <tr>
-                    <td>Monthly Sessions</td>{durations}
+                    <td><span>&emsp;</span>Monthly Sessions</td>{durations}
                 </tr>
                 {detail}
             </Table>
@@ -82,8 +82,10 @@ const Table = styled.table`
         border-spacing: 1px;
         padding: 10px;
     }
-    tr > td:first-of-type{
+    tr:not(.pricing-table) > td:first-of-type{
         text-align: left;
+        > span {
+        }
     }
     tr:first-of-type, tr:nth-of-type(2) td, tr:nth-of-type(3) td {
         border-bottom:none;
@@ -94,9 +96,16 @@ const Table = styled.table`
     }
     td:last-of-type {
         background-color: ${lightGreen};
+    }
     @media screen and (max-width: ${mobileMax}) {
+        tr:not(.pricing-table) > td:first-of-type{
+            padding-left: 2vw;
+            > span {
+                display: none;
+            }
+        }
         td {
-            font-size: 2.8vw;
+            font-size: 3.6vw;
         }
     }
 `;
