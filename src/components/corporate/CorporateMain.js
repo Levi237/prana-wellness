@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import BenefitsDisplay      from './BenefitsDisplay';
+// import BenefitsDisplay      from './BenefitsDisplay';
 // import PackageDisplay       from './PackageDisplay';
 import NewPackageDisplay   from './NewPackageDisplay';
 import PranaDifference      from './PranaDifference';
 
-import PurpleContent        from '../PurpleContent';
+// import PurpleContent        from '../PurpleContent';
 // import '../PurpleContent.css';
 
 
@@ -59,19 +59,26 @@ export default class CorporateMain extends Component {
   render(){
     const { details, duration, deals, totalMonthly } = this.state;
 
-    return(<>
-      <div>
+    return(
+      <>
         <PranaDifference />
-        <BenefitsDisplay />
-      </div>
-      <h1>Corporate Wellness Solutions</h1>
-      <NewPackageDisplay deals={deals} details={details} totalMonthly={totalMonthly} duration={duration}/>
-      <PurpleContainer>
-        {this.props.children}
-      </PurpleContainer>  
-    </>);
+        <PackageTitle>Corporate Wellness Solutions</PackageTitle>
+        <NewPackageDisplay deals={deals} details={details} totalMonthly={totalMonthly} duration={duration}/>
+        <PurpleContainer>
+          {this.props.children}
+        </PurpleContainer>  
+        <BenefitsDisplay src="../benefits.png" alt="benefits"/>
+      </>
+    );
   };
 };
+const PackageTitle = styled.h1`
+padding-top: 40px;
+position: relative;
+`;
+const BenefitsDisplay = styled.img`
+  width: 100%;
+`;
 const PurpleContainer = styled.div`
   margin: -150px 0 0;
   height: 20vw;
